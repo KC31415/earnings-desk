@@ -119,8 +119,7 @@ s = note["summary"]
 bs = s["by_status"]
 m1, m2, m3, m4 = st.columns(4)
 pct = s["numeric_verified_pct"]
-m1.metric("Numeric claims verified", f"{s['numeric_verified']}/{s['numeric']}", f"{pct:.0%}" if pct is not None else None,
-          delta_color="off")
+m1.metric("Numeric claims verified", f"{s['numeric_verified']}/{s['numeric']}" + (f" ({pct:.0%})" if pct is not None else ""))
 m2.metric("⚠ Mismatches", bs.get("mismatch", 0))
 m3.metric("◦ Sourced (qualitative)", bs.get("sourced", 0))
 m4.metric("✗ Unsupported", bs.get("unsupported", 0))

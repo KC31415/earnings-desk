@@ -45,11 +45,14 @@ inj_total = inj.injected.sum()
 overall_catch = inj.caught.sum() / inj_total if inj_total else None
 
 c1, c2, c3, c4 = st.columns(4)
-c1.metric("Company-quarters", r["company_quarters"], f"{len(r['tickers'])} tickers", delta_color="off")
-c2.metric("Numeric claims verified", f"{r['numeric']['verified_pct']}%", f"of {r['numeric']['claims']}", delta_color="off")
-c3.metric("Quotes matched verbatim", f"{r['quote']['match_pct']}%", f"of {r['quote']['claims']}", delta_color="off")
-c4.metric("Injected errors caught", f"{overall_catch:.1%}" if overall_catch is not None else "—",
-          f"of {inj_total}", delta_color="off")
+c1.metric("Company-quarters", r["company_quarters"])
+c1.caption(f"{len(r['tickers'])} tickers × last 5 quarters")
+c2.metric("Numeric claims verified", f"{r['numeric']['verified_pct']}%")
+c2.caption(f"of {r['numeric']['claims']} numeric claims")
+c3.metric("Quotes matched verbatim", f"{r['quote']['match_pct']}%")
+c3.caption(f"of {r['quote']['claims']} quotes")
+c4.metric("Injected errors caught", f"{overall_catch:.1%}" if overall_catch is not None else "—")
+c4.caption(f"of {inj_total} injected errors")
 st.caption(f"{r['claims']} claims in total: " + ", ".join(f"{v} {k}" for k, v in r["status_counts"].items()) + ".")
 
 st.subheader("Numeric accuracy")
@@ -64,7 +67,10 @@ with b:
     fig = px.bar(df, x="fye_group", y="verified_pct", text="claims", range_y=[0, 100],
                  labels={"fye_group": "", "verified_pct": "% verified"}, title="By fiscal calendar (bar label = claims)")
     st.plotly_chart(fig, width="stretch")
-st.dataframe(pd.DataFrame(r["numeric_q4_vs_other"]).rename(columns={"q": "quarter type"}), hide_index=True, width="stretch")
+RENAME = {"q": "quarter type", "claims": "claims", "verified_pct": "verified %", "mismatch_pct": "mismatch %",
+          "unsupported_pct": "unsupported %"}
+st.dataframe(pd.DataFrame(r["numeric_q4_vs_other"]).rename(columns=RENAME), hide_index=True, width="stretch")
+st.caption("Q4 figures are derived (full year − 9-month YTD from the 10-K), so they are the riskiest numbers in the data layer.")
 
 st.subheader("Does the verifier catch errors?")
 st.markdown("Each verified claim is corrupted in a known way and re-checked. Injections that happen to produce a "

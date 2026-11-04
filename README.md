@@ -21,6 +21,8 @@ Showcase tickers: CRM, NOW, ADBE, SNOW, DDOG, NVDA, MSFT, PLTR, AI (C3 AI), NDAQ
 
 ![Verified note](docs/note.png)
 
+![Scorecard](docs/scorecard.png)
+
 ## Scorecard headline
 
 <!-- SCORECARD:START -->
@@ -118,7 +120,7 @@ Tests run in about a second on saved SEC samples (`tests/samples/`) with canned 
 ## Deploy (Streamlit Community Cloud)
 
 1. Go to share.streamlit.io, sign in with GitHub, then **Create app** → **Deploy a public app from GitHub**.
-2. Set Repository `KC31415/earnings-desk`, Branch `main`, Main file `app.py`.
+2. Set Repository `KC31415/earnings-desk`, Branch = the repo's default branch (rename it to `main` under Settings → Branches if you like), Main file `app.py`.
 3. Under **Advanced settings**, choose Python 3.11 and paste the secrets below.
 
 | Secret | Where | Required |
