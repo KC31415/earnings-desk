@@ -59,7 +59,7 @@ if cov["blocked"]:
 take = load_take(company["ticker"])
 if take:
     with st.container(border=True):
-        st.markdown("**Analyst's take** (Kechun Wu's own view, not AI-generated, not investment advice)")
+        st.markdown("**Analyst's take** · Kechun Wu · not investment advice")
         st.markdown(take)
 
 quarters = company["quarters"][-N:]
