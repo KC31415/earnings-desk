@@ -1,0 +1,1075 @@
+{
+ "ticker": "AI",
+ "name": "C3.ai, Inc.",
+ "fiscal_label": "FY2026 Q4",
+ "calendar_label": "CY2026 Q1",
+ "period_end": "2026-04-30",
+ "source": {
+  "earnings_8k_accn": "0001193125-26-218253",
+  "earnings_8k_date": "2026-05-12",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1577526/000119312526218253/0001193125-26-218253-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1577526/000157752626000078/ai-20260430.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1577526/000119312526218253/d147244dex991.htm"
+ },
+ "generated_at": "2026-11-04T19:13:15+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 9621,
+   "output_tokens": 1836,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P1",
+  "P2",
+  "P3",
+  "P4",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P11",
+  "P12",
+  "P13",
+  "P14",
+  "P15",
+  "P16",
+  "P17",
+  "P18",
+  "P19",
+  "P20",
+  "P21",
+  "P22",
+  "P23",
+  "P24",
+  "P25",
+  "P26",
+  "P27",
+  "P28",
+  "P29",
+  "P30",
+  "P31",
+  "P32",
+  "P33",
+  "P34",
+  "P35",
+  "P36",
+  "P37",
+  "P38",
+  "P39",
+  "P40",
+  "P41",
+  "P42",
+  "P43",
+  "P44"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "C3 AI reported fourth-quarter fiscal 2026 revenue of $51.6 million.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q4",
+     "value": "51.6",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 51600000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 51600000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating loss was $121.16 million in the quarter.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q4",
+     "value": "121.16",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -121158000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "operating_income",
+         "value": -121158000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Net loss was $115.57 million in the quarter.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q4",
+     "value": "115.57",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -115569000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "net_income",
+         "value": -115569000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP loss from operations was $54.4 million, better than the guidance range.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "54.4",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P14"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P14"
+      }
+     }
+    },
+    {
+     "text": "Free cash flow was negative $54.76 million for the quarter.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow",
+     "period": "FY2026 Q4",
+     "value": "54.76",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -54763000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "free_cash_flow",
+         "value": -54763000.0,
+         "concept": "(derived)",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue declined 52.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q4",
+     "value": "52.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -52.53994095085677,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 51600000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-04-30",
+         "metric": "revenue",
+         "value": 108723000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue was down 3.1% sequentially.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2026 Q4",
+     "value": "3.1",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -3.1167855801727375,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 51600000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-01-31",
+         "metric": "revenue",
+         "value": 53260000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000024",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2026 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Gross margin was 21.9% in the quarter.",
+     "claim_type": "numeric",
+     "metric": "gross_margin",
+     "period": "FY2026 Q4",
+     "value": "21.9",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "GrossProfit"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 21.9437984496124,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "gross_profit",
+         "value": 11323000.0,
+         "concept": "GrossProfit",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 51600000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "gross_profit / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations fell 13.6% year over year to $203.1 million.",
+     "claim_type": "numeric",
+     "metric": "rpo_yoy",
+     "period": "FY2026 Q4",
+     "value": "13.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -13.611229264142919,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "rpo",
+         "value": 203100000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001577526-26-000078",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-04-30",
+         "metric": "rpo",
+         "value": 235100000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001628280-25-032604",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Sales and marketing expense declined 30.2% year over year.",
+     "claim_type": "numeric",
+     "metric": "sm_yoy",
+     "period": "FY2026 Q4",
+     "value": "30.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "SellingAndMarketingExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -30.199462441646624,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "sm",
+         "value": 49342000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-04-30",
+         "metric": "sm",
+         "value": 70690000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "Management said bookings were lower than expected despite customer validation.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P24"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P24"
+      }
+     }
+    },
+    {
+     "text": "The restructuring plan targets about $135 million in annualized non-GAAP cost savings.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "135",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P25"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P25"
+      }
+     }
+    },
+    {
+     "text": "The CFO said the results reflect the early benefit of cost actions, in his words \"we are well positioned to drive operating leverage as the savings fully take hold in the back half of fiscal 2027.\"",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "we are well positioned to drive operating leverage as the savings fully take hold in the back half of fiscal 2027",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P26"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P26",
+       "spans": [
+        "we are well positioned to drive operating leverage as the savings fully take hold in the back half of fiscal 2027"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Cash, cash equivalents and investments totaled $575.4 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "575.4",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P15"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P15"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Investors should watch whether Siebel's return as CEO changes the sales motion and bookings trend.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P8"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P8"
+      }
+     }
+    },
+    {
+     "text": "Watch the realization of non-employee expense reductions expected in the second half of fiscal 2027.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P25"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P25"
+      }
+     }
+    },
+    {
+     "text": "Final audited results are due June 3, 2026 and may differ from these preliminary figures.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P22"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P22"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 17,
+  "by_status": {
+   "verified": 13,
+   "sourced": 4
+  },
+  "numeric": 12,
+  "numeric_verified": 12,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "C3 AI reported fourth-quarter fiscal 2026 revenue of $51.6 million.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q4",
+      "value": "51.6",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP operating loss was $121.16 million in the quarter.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q4",
+      "value": "121.16",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Net loss was $115.57 million in the quarter.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q4",
+      "value": "115.57",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Non-GAAP loss from operations was $54.4 million, better than the guidance range.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "54.4",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P14"
+      }
+     },
+     {
+      "text": "Free cash flow was negative $54.76 million for the quarter.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow",
+      "period": "FY2026 Q4",
+      "value": "54.76",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue declined 52.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q4",
+      "value": "52.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Revenue was down 3.1% sequentially.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2026 Q4",
+      "value": "3.1",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Gross margin was 21.9% in the quarter.",
+      "claim_type": "numeric",
+      "metric": "gross_margin",
+      "period": "FY2026 Q4",
+      "value": "21.9",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "GrossProfit"
+      }
+     },
+     {
+      "text": "Remaining performance obligations fell 13.6% year over year to $203.1 million.",
+      "claim_type": "numeric",
+      "metric": "rpo_yoy",
+      "period": "FY2026 Q4",
+      "value": "13.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     },
+     {
+      "text": "Sales and marketing expense declined 30.2% year over year.",
+      "claim_type": "numeric",
+      "metric": "sm_yoy",
+      "period": "FY2026 Q4",
+      "value": "30.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "SellingAndMarketingExpense"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "Management said bookings were lower than expected despite customer validation.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P24"
+      }
+     },
+     {
+      "text": "The restructuring plan targets about $135 million in annualized non-GAAP cost savings.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "135",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P25"
+      }
+     },
+     {
+      "text": "The CFO said the results reflect the early benefit of cost actions, in his words \"we are well positioned to drive operating leverage as the savings fully take hold in the back half of fiscal 2027.\"",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "we are well positioned to drive operating leverage as the savings fully take hold in the back half of fiscal 2027",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P26"
+      }
+     },
+     {
+      "text": "Cash, cash equivalents and investments totaled $575.4 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "575.4",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P15"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Investors should watch whether Siebel's return as CEO changes the sales motion and bookings trend.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P8"
+      }
+     },
+     {
+      "text": "Watch the realization of non-employee expense reductions expected in the second half of fiscal 2027.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P25"
+      }
+     },
+     {
+      "text": "Final audited results are due June 3, 2026 and may differ from these preliminary figures.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P22"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 d147244dex991.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Exhibit 99.1"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "PRESS RELEASE"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "C3 AI Announces Preliminary Fourth Quarter and Full Fiscal Year 2026 Results; Thomas M. Siebel Resumes Role of Chief Executive Officer"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "Q4 Revenue of $51.6 Million Within Guidance Range; Non-GAAP Operating Loss Better Than Guidance; Stephen Ehikian Continues as President"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "REDWOOD CITY, California - May 12, 2026 - C3.ai, Inc. (\"C3 AI,\" \"C3,\" or the \"Company\") (NYSE: AI), the Enterprise AI application software company, today announced preliminary financial results for its fourth quarter and full fiscal year ended April 30, 2026, and significant changes to its executive leadership."
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "Leadership Update"
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "Effective May 8, 2026, Thomas M. Siebel resumed the role of Chief Executive Officer of C3 AI and continues to serve as Chairman of the Board of Directors. Stephen Ehikian continues as President of C3 AI, reporting to Mr. Siebel."
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "\"I am energized to be back in the CEO role and to lead C3 AI through this next chapter in this exciting market,\" said Thomas M. Siebel, Chairman and Chief Executive Officer. \"Stephen has done important work over the past two quarters to right-size our cost structure, sharpen our sales motion, and accelerate product velocity. I look forward to partnering with Stephen closely in his role as President to execute the path to consistent free cash flow generation, non-GAAP profitability and a return to significant top line growth.\""
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "\"While my vision remains impaired, it is improving. The health issues I encountered during 2025 are largely resolved.\""
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "Fourth Quarter Fiscal 2026 Financial Highlights"
+  },
+  {
+   "id": "P12",
+   "kind": "table",
+   "text": "\u2022 | Total Revenue was $51.6 million, within the Company's guidance range of $48.0 to $52.0 million."
+  },
+  {
+   "id": "P13",
+   "kind": "table",
+   "text": "\u2022 | GAAP Loss from Operations was $(121.2) million."
+  },
+  {
+   "id": "P14",
+   "kind": "table",
+   "text": "\u2022 | Non-GAAP Loss from Operations was $(54.4) million, better than the Company's guidance range of $(56.0) to $(64.0) million."
+  },
+  {
+   "id": "P15",
+   "kind": "table",
+   "text": "\u2022 | Cash, Cash Equivalents, and Investments: $575.4 million, reflecting the Company's strong balance sheet."
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "Non-GAAP Loss from Operations exclude approximately $10.8 million of pre-tax restructuring expenses related to the operational efficiency plan announced last quarter, including severance, stock-based compensation, payments under the WARN Act, and other benefits for terminated employees."
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "Full Fiscal Year 2026 Financial Highlights"
+  },
+  {
+   "id": "P18",
+   "kind": "table",
+   "text": "\u2022 | Total Revenue was $250.3 million, within the Company's guidance range of $246.7 to $250.7 million."
+  },
+  {
+   "id": "P19",
+   "kind": "table",
+   "text": "\u2022 | GAAP Loss from Operations was $(498.5) million."
+  },
+  {
+   "id": "P20",
+   "kind": "table",
+   "text": "\u2022 | Non-GAAP Loss from Operations was $(217.8) million, better than the Company's guidance range of $(219.5) to $(227.5) million."
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "Non-GAAP Loss from Operations exclude approximately $10.8 million of pre-tax restructuring expenses related to the operational efficiency plan announced last quarter, including severance, stock-based compensation, payments under the WARN Act, and other benefits for terminated employees."
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "All numbers reported are unaudited, preliminary estimates. Completed financial results for the fourth quarter and full fiscal year ended April 30, 2026 will be provided on June 3, 2026."
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "Business Commentary"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "During the quarter, C3 AI signed 28 agreements, including nine new Initial Production Deployments (IPDs) and seven IPD conversions. Even though bookings were lower than expected, the Company continues to see strong customer validation and an accelerating Enterprise AI market opportunity."
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "As previously disclosed, C3 AI implemented a restructuring plan in the fourth quarter designed to deliver approximately $135 million in annualized non-GAAP cost savings and reduce cash burn by approximately the same amount. The workforce-related actions are substantially complete, and non-employee expense reductions are expected to be substantially realized starting in the second half of fiscal year 2027."
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\"We came in within our revenue guidance and meaningfully better than guidance on operating loss, which reflects the early benefit of the cost actions we took in the fourth quarter,\" said Hitesh Lath, Chief Financial Officer. \"We ended the year with $575.4 million in cash, cash equivalents, and investments. With Tom returning to the CEO role and our restructuring substantially complete, we are well positioned to drive operating leverage as the savings fully take hold in the back half of fiscal 2027.\""
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "About C3.ai, Inc."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "C3 AI is the Enterprise AI application software company. C3 AI delivers a family of fully integrated products including the C3 Agentic AI Platform, an end-to-end platform for developing, deploying, and operating Enterprise AI applications and C3 AI applications, a portfolio of industry-specific SaaS Enterprise AI applications that enable the digital transformation of organizations globally, and C3 Generative AI, a suite of domain-specific generative AI offerings for the enterprise. Learn more at: www.c3.ai."
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "Cautionary Note Regarding Preliminary Results and Forward-Looking Statements"
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "The preliminary financial results presented herein are estimates and subject to the completion of the Company's financial closing and other procedures and finalization of the Company's consolidated financial statements for its quarter and fiscal year ended April 30, 2026 and subsequent events may occur that require adjustments to these results. These preliminary financial results have not been audited by the Company's independent auditors. Accordingly, actual financial and operating results that will be reflected in the Company's Annual Report on Form 10-K for the year ended April 30, 2026, including in its financial statements, may differ materially from these preliminary results. In addition, any statements regarding the Company's preliminary financial results included herein do not present all information necessary for an understanding of the Company's financial condition and results of operations as of and for the quarterly and annual periods ended April 30, 2026."
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "The Company undertakes no obligation to update or supplement the information provided in this press release until the Company releases its financial statements for the quarter and fiscal year ended April 30, 2026. The preliminary financial information included in this press release reflects the Company's current estimates based on information available as of the date of this press release. This preliminary financial and operational information should not be viewed as a substitute for full financial statements prepared in accordance with GAAP and is not necessarily indicative of the results to be achieved for any future periods."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "This press release contains forward-looking statements within the meaning of the federal securities laws, including statements regarding the Company's leadership transition, the expected benefits of its restructuring plan, anticipated cost savings, the path to non-GAAP profitability, market opportunity, and a return to growth. These statements are based on current expectations and assumptions and are subject to risks and uncertainties that could cause actual results to differ materially. Factors that could cause actual results to differ include, but are not limited to, the factors discussed in the Company's filings with the U.S. Securities and Exchange Commission, including its most recent Annual Report on Form 10-K and subsequent Quarterly Reports on Form 10-Q. Forward-looking statements speak only as of the date hereof, and C3 AI disclaims any obligation to update them, except as required by law."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "The Company reports herein the following non-GAAP financial measures, which has not been prepared in accordance with generally accepted accounting principles in the United States (\"GAAP\"), in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP."
+  },
+  {
+   "id": "P34",
+   "kind": "table",
+   "text": "\u2022 | Non-GAAP loss from operations. Our non-GAAP loss from operations excludes the effect of restructuring expenses, stock-based compensation expense-related charges and employer payroll tax expense related to employee stock-based compensation. We believe the presentation of operating results that exclude these items provides useful supplemental information to investors and facilitates the analysis of our operating results and comparison of operating results across reporting periods."
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "We use this non-GAAP financial measure internally for financial and operational decision-making purposes and as a means to evaluate period-to-period comparisons. Non-GAAP financial measures are not meant to be considered in isolation or as a substitute for comparable GAAP financial measures and should be read only in conjunction with our condensed consolidated financial statements prepared in accordance with GAAP. Our presentation of this non-GAAP financial measure may not be comparable to similar measures used by other companies. We encourage investors to carefully consider our results under GAAP, as well as our supplemental non-GAAP information and the reconciliation between these presentations, to more fully understand our business. Please see the tables included at the end of this release for the reconciliation of GAAP loss from operations to Non-GAAP loss from operations."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "Contacts"
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "Investor Relations: Amit Berry, C3 AI | ir@c3.ai"
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "C3 AI Public Relations"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "Axicom"
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "Mindy Nelson (830) 214-4823 pr@c3.ai"
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "C3.AI, INC."
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "RECONCILIATION OF PRELIMINARY GAAP TO NON-GAAP FINANCIAL MEASURES (In millions)"
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P44",
+   "kind": "table",
+   "text": "Three Months Ended April 30, | Fiscal Year Ended April 30,\n2026 | 2025 | 2026 | 2025\nReconciliation of GAAP loss from operations to non-GAAP loss from operations:\nLoss from operations on a GAAP basis | $ | (121.2 | ) | $ | (89.0 | ) | $ | (498.5 | ) | $ | (324.4 | )\nStock-based compensation expense | 54.1 | 56.6 | 263.6 | 231.0\nEmployer payroll tax expense related to employee stock-based compensation | 1.9 | 1.2 | 6.3 | 5.3\nRestructuring charges | 10.8 | - | 10.8 | -\nLoss from operations on a non-GAAP basis | $ | (54.4 | ) | $ | (31.2 | ) | $ | (217.8 | ) | $ | (88.1 | )"
+  }
+ ]
+}

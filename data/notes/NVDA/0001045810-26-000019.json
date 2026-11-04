@@ -1,0 +1,1469 @@
+{
+ "ticker": "NVDA",
+ "name": "NVIDIA CORP",
+ "fiscal_label": "FY2026 Q4",
+ "calendar_label": "CY2025 Q4",
+ "period_end": "2026-01-25",
+ "source": {
+  "earnings_8k_accn": "0001045810-26-000019",
+  "earnings_8k_date": "2026-02-25",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/0001045810-26-000019-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"
+ },
+ "generated_at": "2026-11-04T19:13:14+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 12658,
+   "output_tokens": 96
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 11147,
+   "output_tokens": 2175,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P3",
+  "P4",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P13",
+  "P14",
+  "P16",
+  "P17",
+  "P19",
+  "P21",
+  "P22",
+  "P23",
+  "P24",
+  "P27",
+  "P28",
+  "P30",
+  "P46",
+  "P51",
+  "P55",
+  "P78",
+  "P82",
+  "P83",
+  "P85"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "NVIDIA reported fourth-quarter FY2026 revenue of $68.1 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q4",
+     "value": "68.1",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 68127000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "revenue",
+         "value": 68127000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $44.3 billion in the quarter.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q4",
+     "value": "44.3",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 44299000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "operating_income",
+         "value": 44299000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP net income reached $42.96 billion.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q4",
+     "value": "42.96",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 42960000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "net_income",
+         "value": 42960000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Data Center revenue was a record $62.3 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "62.3",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P4"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P4"
+      }
+     }
+    },
+    {
+     "text": "GAAP gross margin was 75.0% in the quarter.",
+     "claim_type": "numeric",
+     "metric": "gross_margin",
+     "period": "FY2026 Q4",
+     "value": "75.0",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "GrossProfit"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 74.99669734466511,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "gross_profit",
+         "value": 51093000000.0,
+         "concept": "GrossProfit",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "revenue",
+         "value": 68127000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "gross_profit / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Free cash flow (operating cash flow less capex) was $34.9 billion.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow",
+     "period": "FY2026 Q4",
+     "value": "34.9",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 34904000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "free_cash_flow",
+         "value": 34904000000.0,
+         "concept": "(derived)",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue grew 73.2% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q4",
+     "value": "73.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 73.21451272533116,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "revenue",
+         "value": 68127000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-26",
+         "metric": "revenue",
+         "value": 39331000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue rose 19.5% sequentially.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2026 Q4",
+     "value": "19.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 19.50847279233765,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "revenue",
+         "value": 68127000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2025-10-26",
+         "metric": "revenue",
+         "value": 57006000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-25-000230",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2026 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating income was up 84.3% year over year.",
+     "claim_type": "numeric",
+     "metric": "operating_income_yoy",
+     "period": "FY2026 Q4",
+     "value": "84.3",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 84.31804942997421,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "operating_income",
+         "value": 44299000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-26",
+         "metric": "operating_income",
+         "value": 24034000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Net income increased 94.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "net_income_yoy",
+     "period": "FY2026 Q4",
+     "value": "94.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 94.468335521253,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "net_income",
+         "value": 42960000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-26",
+         "metric": "net_income",
+         "value": 22091000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "R&D expense rose 48.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "rnd_yoy",
+     "period": "FY2026 Q4",
+     "value": "48.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "ResearchAndDevelopmentExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 48.411416262789444,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "rnd",
+         "value": 5512000000.0,
+         "concept": "ResearchAndDevelopmentExpense",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-26",
+         "metric": "rnd",
+         "value": 3714000000.0,
+         "concept": "ResearchAndDevelopmentExpense",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Free cash flow was up 124.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow_yoy",
+     "period": "FY2026 Q4",
+     "value": "124.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 124.43415637860082,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "free_cash_flow",
+         "value": 34904000000.0,
+         "concept": "(derived)",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-26",
+         "metric": "free_cash_flow",
+         "value": 15552000000.0,
+         "concept": "(derived)",
+         "accn": "0001045810-26-000021",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "Management said the AI inflection is driving demand, stating \"Computing demand is growing exponentially - the agentic AI inflection point has arrived.\"",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "Computing demand is growing exponentially - the agentic AI inflection point has arrived.",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P9"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P9",
+       "spans": [
+        "Computing demand is growing exponentially - the agentic AI inflection point has arrived"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Data Center growth was attributed to the platform shifts toward accelerated computing and AI.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P27"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P27"
+      }
+     }
+    },
+    {
+     "text": "Q1 FY2027 revenue is guided to $78.0 billion, plus or minus 2%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "78.0",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P21"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P21"
+      }
+     }
+    },
+    {
+     "text": "GAAP gross margin for Q1 FY2027 is expected at 74.9%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "74.9",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P22"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P22"
+      }
+     }
+    },
+    {
+     "text": "The outlook assumes no Data Center compute revenue from China.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P21"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P21"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Watch whether Q1 revenue lands near the guided midpoint given the Blackwell ramp and Vera Rubin rollout.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P28"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P28"
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP measures will include stock-based compensation beginning in Q1 FY2027, changing comparability.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    },
+    {
+     "text": "GAAP operating expenses are expected to be approximately $7.7 billion in Q1.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "7.7",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P23"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P23"
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations declined 8.0% sequentially, which is worth monitoring.",
+     "claim_type": "numeric",
+     "metric": "rpo_qoq",
+     "period": "FY2026 Q4",
+     "value": "8.0",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -8.0,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-25",
+         "metric": "rpo",
+         "value": 2300000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001045810-26-000021",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2025-10-26",
+         "metric": "rpo",
+         "value": 2500000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001045810-25-000230",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2026 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 21,
+  "by_status": {
+   "verified": 17,
+   "sourced": 4
+  },
+  "numeric": 16,
+  "numeric_verified": 16,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "NVIDIA reported fourth-quarter FY2026 revenue of $68.1 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q4",
+      "value": "68.1",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "GAAP operating income was $44.3 billion in the quarter.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q4",
+      "value": "44.3",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP net income reached $42.96 billion.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q4",
+      "value": "42.96",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Data Center revenue was a record $62.3 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "62.3",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P4"
+      }
+     },
+     {
+      "text": "GAAP gross margin was 75.0% in the quarter.",
+      "claim_type": "numeric",
+      "metric": "gross_margin",
+      "period": "FY2026 Q4",
+      "value": "75.0",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "GrossProfit"
+      }
+     },
+     {
+      "text": "Free cash flow (operating cash flow less capex) was $34.9 billion.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow",
+      "period": "FY2026 Q4",
+      "value": "34.9",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue grew 73.2% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q4",
+      "value": "73.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "Revenue rose 19.5% sequentially.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2026 Q4",
+      "value": "19.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "Operating income was up 84.3% year over year.",
+      "claim_type": "numeric",
+      "metric": "operating_income_yoy",
+      "period": "FY2026 Q4",
+      "value": "84.3",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Net income increased 94.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "net_income_yoy",
+      "period": "FY2026 Q4",
+      "value": "94.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "R&D expense rose 48.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "rnd_yoy",
+      "period": "FY2026 Q4",
+      "value": "48.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "ResearchAndDevelopmentExpense"
+      }
+     },
+     {
+      "text": "Free cash flow was up 124.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow_yoy",
+      "period": "FY2026 Q4",
+      "value": "124.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "Management said the AI inflection is driving demand, stating \"Computing demand is growing exponentially - the agentic AI inflection point has arrived.\"",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "Computing demand is growing exponentially - the agentic AI inflection point has arrived.",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P9"
+      }
+     },
+     {
+      "text": "Data Center growth was attributed to the platform shifts toward accelerated computing and AI.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P27"
+      }
+     },
+     {
+      "text": "Q1 FY2027 revenue is guided to $78.0 billion, plus or minus 2%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "78.0",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P21"
+      }
+     },
+     {
+      "text": "GAAP gross margin for Q1 FY2027 is expected at 74.9%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "74.9",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P22"
+      }
+     },
+     {
+      "text": "The outlook assumes no Data Center compute revenue from China.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P21"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Watch whether Q1 revenue lands near the guided midpoint given the Blackwell ramp and Vera Rubin rollout.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P28"
+      }
+     },
+     {
+      "text": "Non-GAAP measures will include stock-based compensation beginning in Q1 FY2027, changing comparability.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     },
+     {
+      "text": "GAAP operating expenses are expected to be approximately $7.7 billion in Q1.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "7.7",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P23"
+      }
+     },
+     {
+      "text": "Remaining performance obligations declined 8.0% sequentially, which is worth monitoring.",
+      "claim_type": "numeric",
+      "metric": "rpo_qoq",
+      "period": "FY2026 Q4",
+      "value": "8.0",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 q4fy26pr.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "\u2022Record quarterly revenue of $68.1 billion, up 20% from Q3 and up 73% from a year ago"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "\u2022Record quarterly Data Center revenue of $62.3 billion, up 22% from Q3 and up 75% from a year ago"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "\u2022Record full-year revenue of $215.9 billion, up 65%"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "SANTA CLARA, Calif.-Feb. 25, 2026\u2015NVIDIA (NASDAQ: NVDA) today reported record revenue for the fourth quarter ended January 25, 2026, of $68.1 billion, up 20% from the previous quarter and up 73% from a year ago. For fiscal 2026, revenue was $215.9 billion, up 65% from a year ago."
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "For the quarter, GAAP and non-GAAP gross margins were 75.0% and 75.2%, respectively. For fiscal 2026, GAAP and non-GAAP gross margins were 71.1% and 71.3%, respectively."
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "For the quarter, GAAP and non-GAAP earnings per diluted share were $1.76 and $1.62, respectively. For fiscal 2026, GAAP and non-GAAP earnings per diluted share were $4.90 and $4.77, respectively."
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "\"Computing demand is growing exponentially - the agentic AI inflection point has arrived. Grace Blackwell with NVLink is the king of inference today - delivering an order-of-magnitude lower cost per token - and Vera Rubin will extend that leadership even further,\" said Jensen Huang, founder and CEO of NVIDIA. \"Enterprise adoption of agents is skyrocketing. Our customers are racing to invest in AI compute - the factories powering the AI industrial revolution and their future growth.\""
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "During fiscal 2026, NVIDIA returned $41.1 billion to shareholders in the form of shares repurchased and cash dividends. As of the end of the fourth quarter, the company had $58.5 billion remaining under its share repurchase authorization."
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "NVIDIA will pay its next quarterly cash dividend of $0.01 per share on April 1, 2026, to all shareholders of record on March 11, 2026."
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "Q4 Fiscal 2026 Summary"
+  },
+  {
+   "id": "P13",
+   "kind": "table",
+   "text": "GAAP\n($ in millions, except earnings per share) | Q4 FY26 | Q3 FY26 | Q4 FY25 | Q/Q | Y/Y\nRevenue | $68,127 | $57,006 | $39,331 | 20 | % | 73 | %\nGross margin | 75.0 | % | 73.4 | % | 73.0 | % | 1.6 pts | 2.0 pts\nOperating expenses | $6,794 | $5,839 | $4,689 | 16 | % | 45 | %\nOperating income | $44,299 | $36,010 | $24,034 | 23 | % | 84 | %\nNet income | $42,960 | $31,910 | $22,091 | 35 | % | 94 | %\nDiluted earnings per share | $1.76 | $1.30 | $0.89 | 35 | % | 98 | %"
+  },
+  {
+   "id": "P14",
+   "kind": "table",
+   "text": "Non-GAAP\n($ in millions, except earnings per share) | Q4 FY26 | Q3 FY26 | Q4 FY25 | Q/Q | Y/Y\nRevenue | $68,127 | $57,006 | $39,331 | 20 | % | 73 | %\nGross margin | 75.2 | % | 73.6 | % | 73.5 | % | 1.6 pts | 1.7 pts\nOperating expenses | $5,102 | $4,215 | $3,378 | 21 | % | 51 | %\nOperating income | $46,107 | $37,752 | $25,516 | 22 | % | 81 | %\nNet income | $39,552 | $31,767 | $22,066 | 25 | % | 79 | %\nDiluted earnings per share | $1.62 | $1.30 | $0.89 | 25 | % | 82 | %"
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "Fiscal 2026 Summary"
+  },
+  {
+   "id": "P16",
+   "kind": "table",
+   "text": "GAAP\n($ in millions, except earnings per share) | FY26 | FY25 | Y/Y\nRevenue | $215,938 | $130,497 | 65 | %\nGross margin | 71.1 | % | 75.0 | % | (3.9) pts\nOperating expenses | $23,076 | $16,405 | 41 | %\nOperating income | $130,387 | $81,453 | 60 | %\nNet income | $120,067 | $72,880 | 65 | %\nDiluted earnings per share | $4.90 | $2.94 | 67 | %"
+  },
+  {
+   "id": "P17",
+   "kind": "table",
+   "text": "Non-GAAP\n($ in millions, except earnings per share) | FY26 | FY25 | Y/Y\nRevenue | $215,938 | $130,497 | 65 | %\nGross margin | 71.3 | % | 75.5 | % | (4.2) pts\nOperating expenses | $16,694 | $11,716 | 42 | %\nOperating income | $137,300 | $86,789 | 58 | %\nNet income | $116,997 | $74,265 | 58 | %\nDiluted earnings per share | $4.77 | $2.99 | 60 | %"
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "Outlook"
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "Beginning in the first quarter of fiscal 2027, NVIDIA will include stock-based compensation expense in non-GAAP financial measures. Stock-based compensation is a foundational component of NVIDIA's compensation program to attract and retain world-class talent."
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "NVIDIA's outlook for the first quarter of fiscal 2027 is as follows:"
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "\u2022Revenue is expected to be $78.0 billion, plus or minus 2%. NVIDIA is not assuming any Data Center compute revenue from China in its outlook."
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "\u2022GAAP and non-GAAP gross margins are expected to be 74.9% and 75.0%, respectively, plus or minus 50 basis points, inclusive of a 0.1% impact from stock-based compensation expense."
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "\u2022GAAP and non-GAAP operating expenses are expected to be approximately $7.7 billion and $7.5 billion, respectively, inclusive of $1.9 billion of stock-based compensation expense."
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "For the full year fiscal 2027, GAAP and non-GAAP tax rates are expected to be between 17.0% and 19.0%, excluding any discrete items and material changes to NVIDIA's tax environment."
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "Highlights"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "Data Center"
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "\u2022Fourth-quarter revenue was a record $62.3 billion, up 22% from the previous quarter and up 75% from a year ago, driven by the major platform shifts - accelerated computing and AI. Full-year revenue rose 68% to a record $193.7 billion."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "\u2022Unveiled the NVIDIA Rubin platform, comprising six new chips to deliver up to a 10x reduction in inference token cost, compared with the NVIDIA Blackwell platform; cloud providers Amazon Web Services (AWS), Google Cloud, Microsoft Azure and Oracle Cloud Infrastructure will be among the first to deploy Vera Rubin-based instances."
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "\u2022Announced that the NVIDIA BlueField\u00ae-4 data processor powers the NVIDIA Inference Context Memory Storage Platform, a new class of AI-native storage infrastructure for the next frontier of AI."
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "\u2022Announced a multiyear, multigenerational strategic partnership with Meta spanning on-premises, cloud and AI infrastructure, including the large-scale deployment of NVIDIA CPUs, networking and millions of NVIDIA Blackwell and Rubin GPUs."
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "\u2022Revealed that NVIDIA Blackwell Ultra delivers up to 50x better performance and 35x lower cost for agentic AI compared with the NVIDIA Hopper platform, according to new SemiAnalysis InferenceX benchmark results."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "\u2022Expanded AWS partnership with new technology integrations across interconnect technology, cloud infrastructure, open models and physical AI."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "\u2022Revealed that leading inference providers, including Baseten, DeepInfra, Fireworks AI and Together AI, cut AI costs by up to 10x with open source models on NVIDIA Blackwell."
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "\u2022Debuted the NVIDIA Nemotron\u2122 3 family of open models, data and libraries designed to power transparent, efficient and specialized agentic AI development across industries; released new open models, data and tools for agentic AI, physical AI and autonomous vehicle development."
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "\u2022Announced an investment and deep technology partnership with Anthropic, which is scaling its Claude model on Microsoft Azure, powered by NVIDIA systems."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "\u2022Entered into a non-exclusive licensing agreement with Groq to accelerate AI inference at global scale."
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "\u2022Strengthened a collaboration with CoreWeave to accelerate the buildout of more than 5 gigawatts of AI factories by 2030."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "\u2022Announced an expanded strategic partnership with Synopsys to revolutionize engineering and design across industries."
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "\u2022Announced a co-innovation AI lab with Lilly to reinvent drug discovery in the age of AI."
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "\u2022Announced a major expansion of NVIDIA BioNeMo\u2122, an open development platform that enables lab-in-the-loop workflows to develop breakthroughs in AI-driven biology and drug discovery."
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "\u2022Joined the U.S. Department of Energy's Genesis Mission as a private industry partner to support U.S. AI leadership in key areas including energy, scientific research and national security."
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "\u2022Launched the NVIDIA Earth-2 family of open models - the world's first fully open, accelerated set of models and tools for AI weather."
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "\u2022Revealed that India's global systems integrators Infosys, Persistent, Tech Mahindra and Wipro are building the next wave of enterprise agents with NVIDIA AI."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "\u2022Partnered with global industrial software leaders Cadence, Siemens and Synopsys and India's largest manufacturers to drive India's AI boom using applications accelerated by NVIDIA CUDA-X\u2122 and NVIDIA Omniverse\u2122 libraries."
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "Gaming and AI PC"
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "\u2022Fourth-quarter Gaming revenue was $3.7 billion, up 47% from a year ago, driven by strong Blackwell demand, and down 13% from the previous quarter as channel inventory naturally moderated following a season of strong holiday demand. Full-year revenue rose 41% to a record $16.0 billion."
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "\u2022Announced NVIDIA DLSS 4.5, delivering major AI-powered advances in graphics quality."
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "\u2022Launched NVIDIA G-SYNC\u00ae Pulsar, extending the ultimate gaming display platform with new levels of motion clarity in esports."
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "\u2022Advanced NVIDIA RTX\u2122 AI performance and adoption, delivering up to 35% faster large language model inference in leading AI PC frameworks and up to 3x performance in AI-generated visuals."
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "Professional Visualization"
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "\u2022Fourth-quarter revenue was $1.3 billion, up 74% from the previous quarter and up 159% from a year ago, driven by exceptional demand for Blackwell. Full-year revenue rose 70% to a record $3.2 billion."
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "\u2022Launched the NVIDIA RTX PRO\u2122 5000 72GB Blackwell GPU to power larger models and agentic workflows."
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "\u2022Expanded global availability of NVIDIA DGX Spark\u2122 for the latest open models and delivered updates for improved performance."
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "Automotive and Robotics"
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "\u2022Fourth-quarter Automotive revenue was $604 million, up 2% from the previous quarter and up 6% from a year ago, driven by continued adoption of NVIDIA's self-driving platforms. Full-year revenue rose 39% to a record $2.3 billion."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "\u2022Unveiled the NVIDIA Alpamayo family of open AI models, simulation tools and datasets designed to accelerate the next era of safe, reasoning\u2011based autonomous vehicle (AV) development."
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "\u2022Partnered with Mercedes-Benz on the all-new Mercedes-Benz CLA, which introduces enhanced level 2 driver assistance powered by NVIDIA DRIVE AV software, AI infrastructure and accelerated compute."
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "\u2022Announced that the NVIDIA DRIVE Hyperion\u2122 ecosystem is expanding to include tier 1 suppliers, automotive integrators and sensor partners including Aeva, AUMOVIO, Astemo, Arbe, Bosch, Hesai, Magna, Omnivision, Quanta, Sony and ZF Group."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "\u2022Announced new NVIDIA Cosmos\u2122 and NVIDIA Isaac\u2122 GR00T open models, frameworks and AI infrastructure for physical AI; global industry leaders including Boston Dynamics, Caterpillar, Franka Robotics, Humanoid, LG Electronics and NEURA Robotics are using the NVIDIA robotics stack."
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "\u2022Expanded a strategic partnership with Siemens to build the industrial AI operating system."
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "\u2022Announced a strategic partnership with Dassault Syst\u00e8mes to build an industrial AI platform powering virtual twins."
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "CFO Commentary"
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "Commentary on the quarter by Colette Kress, NVIDIA's executive vice president and chief financial officer, is available at https://investor.nvidia.com."
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "Conference Call and Webcast Information"
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "NVIDIA will conduct a conference call with analysts and investors to discuss its fourth quarter and fiscal 2026 financial results and current financial prospects today at 2 p.m. Pacific time (5 p.m. Eastern time). A live webcast (listen-only mode) of the conference call will be accessible at NVIDIA's investor relations website, https://investor.nvidia.com. The webcast will be recorded and available for replay until NVIDIA's conference call to discuss its financial results for its first quarter of fiscal 2027."
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "Non-GAAP Measures"
+  },
+  {
+   "id": "P67",
+   "kind": "text",
+   "text": "To supplement NVIDIA's condensed consolidated financial statements presented in accordance with GAAP, the company uses non-GAAP measures of certain components of financial performance. These non-GAAP measures include non-GAAP gross profit, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP operating income, non-GAAP other income (expense), net, non-GAAP net income, non-GAAP net income, or earnings, per diluted share, and free cash flow. For NVIDIA's investors to be better able to compare its current results with those of previous periods, the company has shown a reconciliation of GAAP to non-GAAP financial measures. The reconciliations for fiscal years 2025 and 2026 adjust the related GAAP financial measures to exclude stock-based compensation expense, acquisition-related and other costs, other, gains/losses from non-marketable and publicly-held equity securities, net, interest expense related to amortization of debt discount, and the associated tax impact of these items where applicable. Beginning in the first quarter of fiscal 2027, NVIDIA's non-GAAP financial measures will no longer exclude stock-based compensation expense. Free cash flow is calculated as GAAP net cash provided by operating activities less both purchases related to property and equipment and intangible assets and principal payments on property and equipment and intangible assets. NVIDIA believes the presentation of its non-GAAP financial measures enhances the user's overall understanding of the company's historical financial performance. The presentation of the company's non-GAAP financial measures is not meant to be considered in isolation or as a substitute for the company's financial results prepared in accordance with GAAP, and the company's non-GAAP measures may be different from non-GAAP measures used by other companies."
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "About NVIDIA"
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing."
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "###"
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "For further information, contact:"
+  },
+  {
+   "id": "P72",
+   "kind": "table",
+   "text": "Toshiya Hari | Mylene Mangalindan\nInvestor Relations | Corporate Communications\nNVIDIA Corporation | NVIDIA Corporation\ntoshiyah@nvidia.com | mmangalindan@nvidia.com"
+  },
+  {
+   "id": "P73",
+   "kind": "text",
+   "text": "Certain statements in this press release including, but not limited to, statements as to: computing demand growing exponentially; Grace Blackwell with NVLink being the king of inference today - delivering an order-of-magnitude lower cost per token - and Vera Rubin extending that leadership even further; enterprise adoption of agents skyrocketing; NVIDIA's customers racing to invest in AI compute - the factories powering the AI industrial revolution and their future growth; expectations with respect to growth, performance and benefits of NVIDIA's products, services and technologies, including Blackwell, and related trends and drivers; expectations with respect to supply and demand for NVIDIA's products, services and technologies, including Blackwell, and related matters including inventory, production and distribution; expectations with respect to NVIDIA's third party arrangements, including with its collaborators and partners; expectations with respect to technology developments, including Vera Rubin, and related trends and drivers; future NVIDIA cash dividends or other returns to stockholders; NVIDIA's financial and business outlook for the first quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities Exchange Act of 1934, as amended, which are subject to the \"safe harbor\" created by those sections based on management's beliefs and assumptions and on information currently available to management and are subject to risks and uncertainties that could cause results to be materially different than expectations. Important factors that could cause actual results to differ materially include: global economic and political conditions; NVIDIA's reliance on third parties to manufacture, assemble, package and test NVIDIA's products; the impact of technological development and competition; development of new products and technologies or enhancements to NVIDIA's existing products and technologies; market acceptance of NVIDIA's products or NVIDIA's partners' products; design, manufacturing or software defects; changes in consumer preferences or demands; changes in industry standards and interfaces; unexpected loss of performance of NVIDIA's products or technologies when integrated into systems; NVIDIA's ability to realize the potential benefits of business investments or acquisitions; and changes in applicable laws and regulations, as well as other factors detailed from time to time in the most recent reports NVIDIA files with the Securities and Exchange Commission, or SEC, including, but not limited to, its annual report on Form 10-K and quarterly reports on Form 10-Q. Copies of reports filed with the SEC are posted on the company's website and are available from NVIDIA without charge. These forward-looking statements are not guarantees of future performance and speak only as of the date hereof, and, except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances."
+  },
+  {
+   "id": "P74",
+   "kind": "text",
+   "text": "\u00a9 2026 NVIDIA Corporation. All rights reserved. NVIDIA, the NVIDIA logo, DGX Spark, BlueField, NVIDIA DRIVE Hyperion, NVIDIA RTX, NVIDIA RTX PRO, NVIDIA Cosmos, NVIDIA Isaac, Nemotron, BioNeMo, CUDA-X, Omniverse and G-SYNC are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and/or other countries. Other company and product names may be trademarks of the respective companies with which they are associated. Features, pricing, availability and specifications are subject to change without notice."
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "NVIDIA CORPORATION"
+  },
+  {
+   "id": "P76",
+   "kind": "text",
+   "text": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME (In millions, except per share data)"
+  },
+  {
+   "id": "P77",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P78",
+   "kind": "table",
+   "text": "Three Months Ended | Twelve Months Ended\nJanuary 25, | January 26, | January 25, | January 26,\n2026 | 2025 | 2026 | 2025\nRevenue | $ | 68,127 | $ | 39,331 | $ | 215,938 | $ | 130,497\nCost of revenue | 17,034 | 10,608 | 62,475 | 32,639\nGross profit | 51,093 | 28,723 | 153,463 | 97,858\nOperating expenses\nResearch and development | 5,512 | 3,714 | 18,497 | 12,914\nSales, general and administrative | 1,282 | 975 | 4,579 | 3,491\nTotal operating expenses | 6,794 | 4,689 | 23,076 | 16,405\nOperating income | 44,299 | 24,034 | 130,387 | 81,453\nInterest income | 568 | 511 | 2,300 | 1,786\nInterest expense | (74) | (61) | (259) | (247)\nOther income, net | 5,604 | 733 | 9,022 | 1,034\nTotal other income, net | 6,098 | 1,183 | 11,063 | 2,573\nIncome before income tax | 50,397 | 25,217 | 141,450 | 84,026\nIncome tax expense | 7,437 | 3,126 | 21,383 | 11,146\nNet income | $ | 42,960 | $ | 22,091 | $ | 120,067 | $ | 72,880\nNet income per share:\nBasic | $ | 1.77 | $ | 0.90 | $ | 4.93 | $ | 2.97\nDiluted | $ | 1.76 | $ | 0.89 | $ | 4.90 | $ | 2.94\nWeighted average shares used in per share computation:\nBasic | 24,304 | 24,489 | 24,359 | 24,555\nDiluted | 24,432 | 24,706 | 24,514 | 24,804"
+  },
+  {
+   "id": "P79",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nCONDENSED CONSOLIDATED BALANCE SHEETS\n(In millions)\n(Unaudited)\nJanuary 25, | January 26,\n2026 | 2025\nASSETS\nCurrent assets:\nCash, cash equivalents and marketable securities | $ | 62,556 | $ | 43,210\nAccounts receivable, net | 38,466 | 23,065\nInventories | 21,403 | 10,080\nPrepaid expenses and other current assets | 3,180 | 3,771\nTotal current assets | 125,605 | 80,126\nProperty and equipment, net | 10,383 | 6,283\nOperating lease assets | 2,867 | 1,793\nGoodwill | 20,832 | 5,188\nIntangible assets, net | 3,306 | 807\nDeferred income tax assets | 13,258 | 10,979\nNon-marketable equity securities | 22,251 | 3,387\nOther assets | 8,301 | 3,038\nTotal assets | $ | 206,803 | $ | 111,601\nLIABILITIES AND SHAREHOLDERS' EQUITY\nCurrent liabilities:\nAccounts payable | $ | 9,812 | $ | 6,310\nAccrued and other current liabilities | 21,352 | 11,737\nShort-term debt | 999 | -\nTotal current liabilities | 32,163 | 18,047\nLong-term debt | 7,469 | 8,463\nLong-term operating lease liabilities | 2,572 | 1,519\nOther long-term liabilities | 7,306 | 4,245\nTotal liabilities | 49,510 | 32,274\nShareholders' equity | 157,293 | 79,327\nTotal liabilities and shareholders' equity | $ | 206,803 | $ | 111,601"
+  },
+  {
+   "id": "P80",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nCONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS\n(In millions)\n(Unaudited)\nThree Months Ended | Twelve Months Ended\nJanuary 25, | January 26, | January 25, | January 26,\n2026 | 2025 | 2026 | 2025\nCash flows from operating activities:\nNet income | $ | 42,960 | $ | 22,091 | $ | 120,067 | $ | 72,880\nAdjustments to reconcile net income to net cash\nprovided by operating activities:\nStock-based compensation expense | 1,633 | 1,321 | 6,386 | 4,737\nDepreciation and amortization | 811 | 543 | 2,843 | 1,864\nGains on non-marketable equity securities and publicly-held equity securities, net | (5,491) | (727) | (8,918) | (1,030)\nDeferred income taxes | 611 | (598) | (1,424) | (4,477)\nOther | (9) | (138) | (287) | (502)\nChanges in operating assets and liabilities, net of acquisitions:\nAccounts receivable | (5,073) | (5,370) | (15,399) | (13,063)\nInventories | (1,621) | (2,424) | (11,324) | (4,781)\nPrepaid expenses and other assets | (281) | 331 | 577 | (395)\nAccounts payable | 1,064 | 867 | 3,096 | 3,357\nAccrued and other current liabilities | 1,053 | 360 | 5,257 | 4,278\nOther long-term liabilities | 533 | 372 | 1,844 | 1,221\nNet cash provided by operating activities | 36,190 | 16,628 | 102,718 | 64,089\nCash flows from investing activities:\nProceeds from sales of marketable securities | 14,670 | 177 | 15,157 | 495\nProceeds from maturities of marketable securities | 2,246 | 1,710 | 11,226 | 11,195\nProceeds from sales of non-marketable equity securities | 12 | - | 84 | 171\nPurchases of marketable securities | (20,540) | (7,010) | (40,616) | (26,575)\nPurchases of non-marketable equity securities | (12,800) | (478) | (17,502) | (1,486)\nGroq, Inc. | (13,000) | - | (13,000) | -\nPurchases related to property and equipment and intangible assets | (1,284) | (1,077) | (6,042) | (3,236)\nAcquisitions, net of cash acquired | (165) | (542) | (1,535) | (1,007)\nOther | - | 22 | - | 22\nNet cash used in investing activities | (30,861) | (7,198) | (52,228) | (20,421)"
+  },
+  {
+   "id": "P81",
+   "kind": "table",
+   "text": "Cash flows from financing activities:\nProceeds related to employee stock plans | - | - | 644 | 490\nPayments related to repurchases of common stock | (3,815) | (7,810) | (40,086) | (33,706)\nPayments related to employee stock plan taxes | (2,139) | (1,861) | (7,948) | (6,930)\nDividends paid | (243) | (245) | (974) | (834)\nPrincipal payments on property and equipment and intangible assets | (4) | (32) | (101) | (129)\nRepayment of debt | - | - | - | (1,250)\nOther | (9) | - | (9) | -\nNet cash used in financing activities | (6,210) | (9,948) | (48,474) | (42,359)\nChange in cash and cash equivalents | (881) | (518) | 2,016 | 1,309\nCash and cash equivalents at beginning of period | 11,486 | 9,107 | 8,589 | 7,280\nCash and cash equivalents at end of period | $ | 10,605 | $ | 8,589 | $ | 10,605 | $ | 8,589\nSupplemental disclosures of cash flow information:\nCash paid for income taxes, net | $ | 6,979 | $ | 4,129 | $ | 20,288 | $ | 15,118"
+  },
+  {
+   "id": "P82",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nRECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES\n(In millions, except per share data)\n(Unaudited)\nThree Months Ended | Twelve Months Ended\nJanuary 25, | October 26, | January 26, | January 25, | January 26,\n2026 | 2025 | 2025 | 2026 | 2025\nGAAP cost of revenue | $ | 17,034 | $ | 15,157 | $ | 10,608 | $ | 62,475 | $ | 32,639\nGAAP gross profit | $ | 51,093 | $ | 41,849 | $ | 28,723 | $ | 153,463 | $ | 97,858\nGAAP gross margin | 75.0 | % | 73.4 | % | 73.0 | % | 71.1 | % | 75.0 | %\nAcquisition-related and other costs (A) | 48 | 48 | 118 | 267 | 472\nStock-based compensation expense (B) | 69 | 70 | 53 | 261 | 178\nOther | (1) | - | - | 3 | (3)\nNon-GAAP cost of revenue | $ | 16,918 | $ | 15,039 | $ | 10,437 | $ | 61,944 | $ | 31,992\nNon-GAAP gross profit | $ | 51,209 | $ | 41,967 | $ | 28,894 | $ | 153,994 | $ | 98,505\nNon-GAAP gross margin** | 75.2 | % | 73.6 | % | 73.5 | % | 71.3 | % | 75.5 | %\nGAAP operating expenses | $ | 6,794 | $ | 5,839 | $ | 4,689 | $ | 23,076 | $ | 16,405\nStock-based compensation expense (B) | (1,564) | (1,585) | (1,268) | (6,125) | (4,559)\nAcquisition-related and other costs (A) | (90) | (39) | (43) | (204) | (130)\nOther | (38) | - | - | (53) | -\nNon-GAAP operating expenses | $ | 5,102 | $ | 4,215 | $ | 3,378 | $ | 16,694 | $ | 11,716\nGAAP operating income | $ | 44,299 | $ | 36,010 | $ | 24,034 | $ | 130,387 | $ | 81,453\nTotal impact of non-GAAP adjustments to operating income | 1,808 | 1,742 | 1,482 | 6,913 | 5,336\nNon-GAAP operating income | $ | 46,107 | $ | 37,752 | $ | 25,516 | $ | 137,300 | $ | 86,789\nGAAP total other income, net | $ | 6,098 | $ | 1,926 | $ | 1,183 | $ | 11,063 | $ | 2,573\nGains from non-marketable equity securities and publicly-held equity securities, net | (5,491) | (1,354) | (727) | (8,918) | (1,030)\nOther (C) | 13 | 1 | 1 | 16 | 4\nNon-GAAP total other income, net | $ | 620 | $ | 573 | $ | 457 | $ | 2,161 | $ | 1,547\nGAAP net income | $ | 42,960 | $ | 31,910 | $ | 22,091 | $ | 120,067 | $ | 72,880\nTotal pre-tax impact of non-GAAP adjustments | (3,670) | 389 | 756 | (1,989) | 4,310\nIncome tax impact of non-GAAP adjustments (D) | 262 | (532) | (781) | (1,129) | (2,925)\nTax expense from OBBBA* | - | - | - | 48 | -\nNon-GAAP net income** | $ | 39,552 | $ | 31,767 | $ | 22,066 | $ | 116,997 | $ | 74,265"
+  },
+  {
+   "id": "P83",
+   "kind": "table",
+   "text": "Diluted net income per share\nGAAP | $ | 1.76 | $ | 1.30 | $ | 0.89 | $ | 4.90 | $ | 2.94\nNon-GAAP** | $ | 1.62 | $ | 1.30 | $ | 0.89 | $ | 4.77 | $ | 2.99\nWeighted average shares used in diluted net income per share computation | 24,432 | 24,483 | 24,706 | 24,514 | 24,804\nGAAP net cash provided by operating activities | $ | 36,190 | $ | 23,750 | $ | 16,628 | $ | 102,718 | $ | 64,089\nPurchases related to property and equipment and intangible assets | (1,284) | (1,637) | (1,077) | (6,042) | (3,236)\nPrincipal payments on property and equipment and intangible assets | (4) | (24) | (32) | (101) | (129)\nFree cash flow | $ | 34,902 | $ | 22,089 | $ | 15,519 | $ | 96,575 | $ | 60,724\n*Tax expense included represents impact from OBBBA (One Big Beautiful Bill Act).\n**Includes H20 charges/(releases), net, which were $4.5 billion and ($180 million) for the first and second quarter of fiscal 2026, respectively, and insignificant for both the third and fourth quarter of fiscal 2026."
+  },
+  {
+   "id": "P84",
+   "kind": "table",
+   "text": "(A) Acquisition-related and other costs are comprised of amortization of intangible assets, transaction costs, and certain compensation charges and are included in the following line items:\nThree Months Ended | Twelve Months Ended\nJanuary 25, | October 26, | January 26, | January 25, | January 26,\n2026 | 2025 | 2025 | 2026 | 2025\nCost of revenue | $ | 48 | $ | 48 | $ | 118 | $ | 267 | $ | 472\nResearch and development | $ | 83 | $ | 35 | $ | 27 | $ | 176 | $ | 79\nSales, general and administrative | $ | 7 | $ | 4 | $ | 16 | $ | 28 | $ | 51\n(B) Stock-based compensation consists of the following:\nThree Months Ended | Twelve Months Ended\nJanuary 25, | October 26, | January 26, | January 25, | January 26,\n2026 | 2025 | 2025 | 2026 | 2025\nCost of revenue | $ | 69 | $ | 70 | $ | 53 | $ | 261 | $ | 178\nResearch and development | $ | 1,217 | $ | 1,206 | $ | 955 | $ | 4,676 | $ | 3,423\nSales, general and administrative | $ | 347 | $ | 379 | $ | 313 | $ | 1,449 | $ | 1,136\n(C) Interest expense related to acquisition consideration discount to be paid in the future and amortization of debt discount.\n(D) Income tax impact of non-GAAP adjustments, including the recognition of excess tax benefits or deficiencies related to stock-based compensation under GAAP accounting standard (ASU 2016-09)."
+  },
+  {
+   "id": "P85",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nRECONCILIATION OF GAAP TO NON-GAAP OUTLOOK\nQ1 FY2027 Outlook\n($ in millions)\nGAAP gross margin | 74.9 | %\nImpact of acquisition-related costs and other costs | 0.1 | %\nNon-GAAP gross margin* | 75.0 | %\nGAAP operating expenses | $ | 7,700\nAcquisition-related costs and other costs | (200)\nNon-GAAP operating expenses* | $ | 7,500\n*Beginning in the first quarter of fiscal 2027, NVIDIA will include stock-based compensation expense in its non-GAAP financial measures. Stock-based compensation expense for the first quarter of fiscal 2027 is expected to have a 0.1% impact on non-GAAP gross margin and $1.9 billion in non-GAAP operating expenses."
+  }
+ ]
+}

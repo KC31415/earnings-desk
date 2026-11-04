@@ -1,0 +1,1956 @@
+{
+ "ticker": "CRM",
+ "name": "Salesforce, Inc.",
+ "fiscal_label": "FY2026 Q4",
+ "calendar_label": "CY2025 Q4",
+ "period_end": "2026-01-31",
+ "source": {
+  "earnings_8k_accn": "0001108524-26-000056",
+  "earnings_8k_date": "2026-02-25",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/0001108524-26-000056-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm"
+ },
+ "generated_at": "2026-11-04T19:13:13+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 20246,
+   "output_tokens": 129
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 11121,
+   "output_tokens": 2110,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P4",
+  "P5",
+  "P9",
+  "P10",
+  "P11",
+  "P12",
+  "P13",
+  "P14",
+  "P15",
+  "P16",
+  "P17",
+  "P18",
+  "P19",
+  "P20",
+  "P22",
+  "P23",
+  "P24",
+  "P25",
+  "P26",
+  "P27",
+  "P30",
+  "P32",
+  "P34",
+  "P35",
+  "P36",
+  "P37",
+  "P38",
+  "P39",
+  "P41",
+  "P42",
+  "P48",
+  "P53",
+  "P115",
+  "P141",
+  "P150",
+  "P155",
+  "P168",
+  "P183"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "Salesforce reported Q4 FY2026 revenue of $11.2 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q4",
+     "value": "11.2",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 11201000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "revenue",
+         "value": 11201000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $1.869 billion.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q4",
+     "value": "1.869",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1869000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "operating_income",
+         "value": 1869000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Net income came in at $1.943 billion.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q4",
+     "value": "1.943",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1943000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "net_income",
+         "value": 1943000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Operating cash flow for the quarter was $5.464 billion.",
+     "claim_type": "numeric",
+     "metric": "operating_cash_flow",
+     "period": "FY2026 Q4",
+     "value": "5.464",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetCashProvidedByUsedInOperatingActivities"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 5464000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "operating_cash_flow",
+         "value": 5464000000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligation reached $72.4 billion.",
+     "claim_type": "numeric",
+     "metric": "rpo",
+     "period": "FY2026 Q4",
+     "value": "72.4",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 72400000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "rpo",
+         "value": 72400000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001108524-26-000190",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue grew 12.1% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q4",
+     "value": "12.1",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 12.088461923346342,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "revenue",
+         "value": 11201000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-31",
+         "metric": "revenue",
+         "value": 9993000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Free cash flow rose 39.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow_yoy",
+     "period": "FY2026 Q4",
+     "value": "39.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 39.4916142557652,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "free_cash_flow",
+         "value": 5323000000.0,
+         "concept": "(derived)",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-31",
+         "metric": "free_cash_flow",
+         "value": 3816000000.0,
+         "concept": "(derived)",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "GAAP operating margin was 16.7%.",
+     "claim_type": "numeric",
+     "metric": "operating_margin",
+     "period": "FY2026 Q4",
+     "value": "16.7",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 16.68601017766271,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "operating_income",
+         "value": 1869000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "revenue",
+         "value": 11201000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "operating_income / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating income was down 14.6% from the prior quarter.",
+     "claim_type": "numeric",
+     "metric": "operating_income_qoq",
+     "period": "FY2026 Q4",
+     "value": "14.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -14.579524680073124,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "operating_income",
+         "value": 1869000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2025-10-31",
+         "metric": "operating_income",
+         "value": 2188000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001108524-25-000238",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2026 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Sales and marketing expense rose 15.7% year over year.",
+     "claim_type": "numeric",
+     "metric": "sm_yoy",
+     "period": "FY2026 Q4",
+     "value": "15.7",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "SellingAndMarketingExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 15.730337078651685,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "sm",
+         "value": 4017000000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-01-31",
+         "metric": "sm",
+         "value": 3471000000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001108524-26-000060",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q4 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Informatica contributed to the quarter's revenue growth.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P12"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P12"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "The CFO said she is more confident in the path to organic reacceleration: \"Our performance makes us even more confident in our path to reaccelerate organic revenue growth in H2 FY27.\"",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "Our performance makes us even more confident in our path to reaccelerate organic revenue growth in H2 FY27.",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P20"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P20",
+       "spans": [
+        "Our performance makes us even more confident in our path to reaccelerate organic revenue growth in H2 FY27"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Salesforce guided Q1 FY27 diluted GAAP EPS in a range starting at $1.77.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "1.77",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "press_release",
+      "ref": "P41"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P41"
+      }
+     }
+    },
+    {
+     "text": "Management guided FY27 non-GAAP operating margin of 34.3%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q4",
+     "value": "34.3",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P37"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P37"
+      }
+     }
+    },
+    {
+     "text": "Agentforce ARR reached $800 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "800",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P24"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P24"
+      }
+     }
+    },
+    {
+     "text": "The company announced a new $50 billion share repurchase authorization.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "50",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P17"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P17"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Investors should watch whether organic revenue growth reaccelerates in the second half of FY27.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P35"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P35"
+      }
+     }
+    },
+    {
+     "text": "Q1 FY27 revenue is guided to $11.03 billion at the low end.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "11.03",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P41"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P41"
+      }
+     }
+    },
+    {
+     "text": "Watch Agentforce and Data 360 adoption, with ARR above $2.9 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "2.9",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P24"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P24"
+      }
+     }
+    },
+    {
+     "text": "Informatica's contribution to growth and integration remain a watch item.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P34"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P34"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 20,
+  "by_status": {
+   "verified": 17,
+   "sourced": 3
+  },
+  "numeric": 16,
+  "numeric_verified": 16,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "Salesforce reported Q4 FY2026 revenue of $11.2 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q4",
+      "value": "11.2",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP operating income was $1.869 billion.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q4",
+      "value": "1.869",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Net income came in at $1.943 billion.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q4",
+      "value": "1.943",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Operating cash flow for the quarter was $5.464 billion.",
+      "claim_type": "numeric",
+      "metric": "operating_cash_flow",
+      "period": "FY2026 Q4",
+      "value": "5.464",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetCashProvidedByUsedInOperatingActivities"
+      }
+     },
+     {
+      "text": "Remaining performance obligation reached $72.4 billion.",
+      "claim_type": "numeric",
+      "metric": "rpo",
+      "period": "FY2026 Q4",
+      "value": "72.4",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue grew 12.1% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q4",
+      "value": "12.1",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Free cash flow rose 39.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow_yoy",
+      "period": "FY2026 Q4",
+      "value": "39.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     },
+     {
+      "text": "GAAP operating margin was 16.7%.",
+      "claim_type": "numeric",
+      "metric": "operating_margin",
+      "period": "FY2026 Q4",
+      "value": "16.7",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Operating income was down 14.6% from the prior quarter.",
+      "claim_type": "numeric",
+      "metric": "operating_income_qoq",
+      "period": "FY2026 Q4",
+      "value": "14.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Sales and marketing expense rose 15.7% year over year.",
+      "claim_type": "numeric",
+      "metric": "sm_yoy",
+      "period": "FY2026 Q4",
+      "value": "15.7",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "SellingAndMarketingExpense"
+      }
+     },
+     {
+      "text": "Informatica contributed to the quarter's revenue growth.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P12"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "The CFO said she is more confident in the path to organic reacceleration: \"Our performance makes us even more confident in our path to reaccelerate organic revenue growth in H2 FY27.\"",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "Our performance makes us even more confident in our path to reaccelerate organic revenue growth in H2 FY27.",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P20"
+      }
+     },
+     {
+      "text": "Salesforce guided Q1 FY27 diluted GAAP EPS in a range starting at $1.77.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "1.77",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "press_release",
+       "ref": "P41"
+      }
+     },
+     {
+      "text": "Management guided FY27 non-GAAP operating margin of 34.3%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q4",
+      "value": "34.3",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P37"
+      }
+     },
+     {
+      "text": "Agentforce ARR reached $800 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "800",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P24"
+      }
+     },
+     {
+      "text": "The company announced a new $50 billion share repurchase authorization.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "50",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P17"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Investors should watch whether organic revenue growth reaccelerates in the second half of FY27.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P35"
+      }
+     },
+     {
+      "text": "Q1 FY27 revenue is guided to $11.03 billion at the low end.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "11.03",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P41"
+      }
+     },
+     {
+      "text": "Watch Agentforce and Data 360 adoption, with ARR above $2.9 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "2.9",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P24"
+      }
+     },
+     {
+      "text": "Informatica's contribution to growth and integration remain a watch item.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P34"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 crm-q4fy26xexhibit991.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Exhibit 99.1"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "Salesforce Delivers Record Fourth Quarter Fiscal 2026 Results"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "RPO Exceeds $72B, Up 14% Y/Y; $15B OCF"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "Scaling The Agentic Enterprise With 2.4B Agentic Work Units Delivered & 19T Tokens Processed All-Time"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "CEOs of SharkNinja, Wyndham Hotels & Resorts and SaaStr to join Salesforce Earnings Show"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "SAN FRANCISCO, Calif. - February 25, 2026 - Salesforce (NYSE: CRM), the world's #1 AI CRM, today announced results for its fourth quarter and full fiscal year ended January 31, 2026."
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "Financial Highlights"
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "\u2022Current remaining performance obligation of $35.1 billion, up 16% year-over-year (\"Y/Y\") and 13% in constant currency (\"CC\"), including 4pts Informatica contribution"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "\u2022Remaining performance obligation of $72.4 billion, up 14% Y/Y"
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "\u2022Fourth quarter subscription & support revenue of $10.7 billion, up 13% Y/Y and 11% in CC, including $388 million Informatica contribution"
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "\u2022Fourth quarter revenue of $11.2 billion, up 12% Y/Y and 10% in CC, including $399 million Informatica contribution"
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "\u2022FY26 revenue of $41.5 billion, up 10% Y/Y and 9% in CC, including $399 million Informatica contribution"
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "\u2022FY26 GAAP operating margin of 20.1% and non-GAAP operating margin of 34.1%"
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "\u2022FY26 operating cash flow of $15.0 billion, up 15% Y/Y, and free cash flow of $14.4 billion, up 16% Y/Y"
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "\u2022Returned $14.3 billion to shareholders, including $12.7 billion in share repurchases and $1.6 billion in dividends"
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "\u2022Announces $50 billion share repurchase program authorization, replacing all previously unused authorizations"
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "\u2022Increased quarterly dividend to $0.44 per share of outstanding common stock, up 5.8% Y/Y"
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "\"We delivered a phenomenal quarter to close out a record fiscal 2026, delivering $41.5 billion in revenue, up 10% year-over-year and we passed an incredible milestone, with $72 billion in total RPO, up 14% year-over-year,\" said Marc Benioff, Chair and CEO, Salesforce. \"We've rebuilt Salesforce to become the operating system for the Agentic Enterprise, bringing humans and agents together on one trusted platform. And the more intelligence moves to where work happens, the more valuable Salesforce becomes. Agentforce ARR reached $800 million, up 169% year-over-year, and we've closed 29,000 deals, up 50% quarter-over-quarter. We've consumed nearly 20 trillion tokens, and converted them into more than 2.4 billion agentic work units to date, moments where AI wasn't just reasoning - it was delivering real work. Agentic AI is a tailwind for our business, and we're well on our way to $63 billion in revenue in FY30.\""
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "\"Salesforce delivered a record Q4 as our customers' shift to the Agentic Enterprise surges, fueling NNAOV acceleration in H2 FY26,\" said Robin Washington, President and Chief Financial and Operating Officer, Salesforce. \"Our performance makes us even more confident in our path to reaccelerate organic revenue growth in H2 FY27. By driving adoption of Agentforce and Data 360 across our platform, we are building a powerful engine that converts raw intelligence into enterprise work. Reflecting our strong trajectory, we've increased our authorization to $50 billion for share repurchases and increased our quarterly dividend, reinforcing our commitment to delivering significant shareholder value.\""
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "Salesforce Company Highlights"
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "\u2022Introduced Agentic Work Units (\"AWUs\") to measures tasks accomplished by an AI Agent, with 2.4 billion AWUs delivered to date across Agentforce and Slack, growing 57% quarter-over-quarter (\"Q/Q\")"
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "\u2022Salesforce has processed more than 19 trillion tokens to date, up 5x Y/Y"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "\u2022Agentforce and Data 360 annual recurring revenue (\"ARR\") exceeds $2.9 billion, up over 200% Y/Y, including $1.1 billion Informatica Cloud ARR and $800 million Agentforce ARR, up 169% Y/Y"
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "\u2022Salesforce has closed over 29,000 Agentforce deals since launch, up 50% Q/Q"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\u2022More than 60% of Agentforce and Data 360 Q4 bookings came from existing customer expansion"
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "\u2022Agentforce accounts in production increased nearly 50% Q/Q"
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "\u2022In FY26, Data 360 ingested 112 trillion records, up 114% Y/Y, including 53 trillion via Zero Copy, up 310% Y/Y, and processed 18 terabytes of unstructured data"
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "\u2022All Salesforce Top 10 Q4 wins included Agentforce 360, Data 360, Agentforce Sales, Agentforce Service, Agentforce 360 Platform, and Agentforce Analytics"
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "\u2022Collectively, Salesforce industry businesses finished the year at $6.6 billion ARR, up nearly 20% Y/Y"
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "Salesforce Announces Increase to Quarterly Dividend"
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "Salesforce's Board of Directors declared a quarterly cash dividend of $0.44 per share of outstanding common stock, which represents a 5.8% Y/Y increase. The dividend is payable on April 23, 2026 to stockholders of record as of the close of business on April 9, 2026."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "Guidance"
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "\u2022Initiates full year FY27 revenue guidance of $45.8 billion to $46.2 billion, up 10% - 11% Y/Y and in CC, including approximately 3pts Informatica contribution"
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "\u2022Expects organic revenue re-acceleration in the second half of FY27"
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "\u2022Initiates full year FY27 subscription & support revenue growth guidance of slightly under 12% Y/Y and approximately 11% in CC, including approximately 3pts Informatica contribution"
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "\u2022Initiates full year FY27 GAAP operating margin guidance of 20.9%, and non-GAAP operating margin guidance of 34.3%"
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "\u2022Initiates full year FY27 operating cash flow growth guidance of approximately 9% - 10% Y/Y"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "\u2022Raises full year FY30 revenue target to $63 billion including Informatica"
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "Salesforce's guidance includes GAAP and non-GAAP financial measures. The following tables summarize Salesforce's guidance for the first quarter fiscal 2027 and full-year fiscal 2027:"
+  },
+  {
+   "id": "P41",
+   "kind": "table",
+   "text": "Q1 FY27 Guidance\nGAAP | Non-GAAP(1)\nRevenue | $11.03 - $11.08 billion | N/A\nRevenue growth(2) | 12% - 13% | 10% - 11% CC, $175M Y/Y FX\nIncludes slightly above 4pts Informatica contribution\nDiluted net income per share | $1.77 - $1.79 | $3.11 - $3.13\nCurrent remaining performance obligation growth(3) | Approximately 14% | Approximately 13% CC, $100M Y/Y FX"
+  },
+  {
+   "id": "P42",
+   "kind": "table",
+   "text": "Full Year FY27 Guidance\nGAAP | Non-GAAP(1)\nRevenue | $45.80 - $46.20 billion | N/A\nRevenue growth(2) | 10% - 11% | Approximately 10% - 11% CC, $300M Y/Y FX\nIncludes approximately 3pts Informatica contribution\nSubscription & support revenue growth(4) | Slightly under 12% | Approximately 11% CC\nIncludes approximately 3pts Informatica contribution\nOperating margin | 20.9% | 34.3%\nDiluted net income per share | $7.85 - $7.93 | $13.11 - $13.19\nOperating cash flow growth | Approximately 9% - 10% | N/A\nFree cash flow growth | N/A | Approximately 9% - 10%\nCapital expenditures | N/A | Approximately 1.5% of revenue"
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "(1) Non-GAAP CC revenue growth, non-GAAP CC remaining performance obligation growth, non-GAAP CC subscription & support revenue growth, non-GAAP operating margin, non-GAAP diluted net income per share, and free cash flow growth are non-GAAP financial measures. See below for an explanation of non-GAAP financial measures. The Company's shares used in computing GAAP diluted net income per share guidance and non-GAAP diluted net income per share guidance excludes any impact to share count from potential Q1 - Q4 FY27 repurchase activity under our share repurchase program."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "(2) Revenue FX impact is calculated by taking the current period rates compared to the prior period average rates."
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "(3) Current remaining performance obligation FX impact is calculated by taking the current period rates compared to the prior period ending rates."
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "(4) Subscription & support revenue excludes professional services revenue."
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "The following is a reconciliation of GAAP operating margin guidance to non-GAAP operating margin guidance for the full year:"
+  },
+  {
+   "id": "P48",
+   "kind": "table",
+   "text": "Full Year FY27 Guidance\nGAAP operating margin(1) | 20.9%\nPlus\nAmortization of purchased intangibles(2) | 4.1%\nStock-based compensation expense(2)(3) | 9.0%\nRestructuring and acquisition-related costs(2)(3) | 0.3%\nNon-GAAP operating margin(1) | 34.3%"
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "(1) GAAP operating margin is the proportion of GAAP income from operations as a percentage of GAAP revenue. Non-GAAP operating margin is the proportion of non-GAAP income from operations as a percentage of GAAP revenue."
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "(2) The percentages shown above have been calculated based on the midpoint of the low and high ends of the revenue guidance for full year FY27."
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "(3) The percentages shown in the restructuring and acquisition-related costs line have been calculated based on charges associated with the Company's restructuring initiatives and acquisition-related costs. Stock-based compensation expense excludes stock-based compensation expense related to the Company's restructuring initiatives, which is included in the restructuring and acquisition-related costs line."
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "The following is a per share reconciliation of GAAP diluted net income per share to non-GAAP diluted net income per share guidance for the next quarter and the full year:"
+  },
+  {
+   "id": "P53",
+   "kind": "table",
+   "text": "Fiscal 2027\nQ1 | FY27\nGAAP diluted net income per share range(1)(2) | $1.77 - $1.79 | $7.85 - $7.93\nPlus\nAmortization of purchased intangibles | $ | 0.59 | $ | 2.00\nStock-based compensation expense | $ | 1.03 | $ | 4.41\nRestructuring and acquisition-related costs(3) | $ | 0.05 | $ | 0.14\nLess\nIncome tax effects and adjustments(4) | $ | (0.33) | $ | (1.29)\nNon-GAAP diluted net income per share(2) | $3.11 - $3.13 | $13.11 - $13.19\nShares used in computing basic net income per share (millions)(5) | 931 | 938\nShares used in computing diluted net income per share (millions)(5) | 937 | 943"
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "(1) The Company's GAAP tax provision is expected to be approximately 21.0% for the three months ended April 30, 2026 and for the year ended January 31, 2027. The GAAP tax rates may fluctuate due to discrete tax items, changes in valuation allowance assessment, future acquisitions, or other transactions."
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "(2) The Company's projected GAAP and non-GAAP diluted net income per share assumes no change to the value of our strategic investment portfolio as it is not possible to forecast future gains and losses. The impact of future gains or losses from the Company's strategic investment portfolio could be material."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "(3) The estimated impact to GAAP diluted net income per share is in connection with the Company's restructuring initiatives and acquisition-related costs."
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "(4) The Company's non-GAAP tax provision uses a long-term projected tax rate of 20.5%, which reflects currently available information and could be subject to change."
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "(5) The Company's shares used in computing GAAP net income per share guidance and non-GAAP net income per share guidance excludes any impact to share count from potential Q1 - Q4 FY27 repurchase activity under our share repurchase program."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "For additional information regarding non-GAAP financial measures see the reconciliation of results and related explanations below."
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "Management will provide further commentary around these guidance assumptions on its earnings call."
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "Product Releases and Enhancements"
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "Salesforce releases major updates for our core platform and apps three times a year, with additional updates happening regularly across our portfolio. These releases are a result of significant research and development investments made over multiple years, and are designed to help customers drive cost savings, boost efficiency, and build trust."
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "Salesforce leaders will participate in a Q4 FY26 Agentforce 360 Platform Evolution & Innovation webinar on Friday, February 27, 2026, at 8:00 AM PT / 11:00 AM ET. A live webcast and replay details of the event will be available on the Salesforce Investor Relations website at www.salesforce.com/investor."
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "To learn more about our newest innovations and product release highlights, including our latest Spring 2026 Product Release, see FY26 Q4 Product Releases and Announcements at https://www.salesforce.com/news/stories/fy26-q4-highlights/ and see our latest major release at www.salesforce.com/releases."
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "Environmental, Social, and Governance (ESG) Strategy"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "To learn more about our latest initiatives and priorities, review our Stakeholder Impact Report at https://salesforce.com/stakeholder-impact-report."
+  },
+  {
+   "id": "P67",
+   "kind": "text",
+   "text": "TBPN Appearance"
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "Marc Benioff is expected to appear on TBPN (Technology Business Programming Network) at 1:30 p.m. (PT) / 4:30 p.m. (ET) to discuss the company's recent performance and vision for the Agentic Enterprise. A livestream and replay will be available at https://x.com/tbpn."
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "Quarterly Earnings Show"
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "Salesforce plans to host a live \"earnings show\" broadcast at 2:00 p.m. (PT) / 5:00 p.m. (ET) to discuss its financial results with the investment community. A live webcast and replay details of the event will be available on the Salesforce Investor Relations website at www.salesforce.com/investor."
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "About Salesforce"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "Salesforce helps organizations of any size become agentic enterprises - integrating humans, agents, apps, and data on a trusted, unified platform to unlock unprecedented growth and innovation. Visit www.salesforce.com for more information."
+  },
+  {
+   "id": "P73",
+   "kind": "text",
+   "text": "Mike Spencer"
+  },
+  {
+   "id": "P74",
+   "kind": "text",
+   "text": "Salesforce"
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "Investor Relations investor@salesforce.com"
+  },
+  {
+   "id": "P76",
+   "kind": "text",
+   "text": "Carolyn Guss"
+  },
+  {
+   "id": "P77",
+   "kind": "text",
+   "text": "Salesforce"
+  },
+  {
+   "id": "P78",
+   "kind": "text",
+   "text": "Public Relations 415-536-4966 pr@salesforce.com"
+  },
+  {
+   "id": "P79",
+   "kind": "text",
+   "text": "###"
+  },
+  {
+   "id": "P80",
+   "kind": "text",
+   "text": "\"Safe harbor\" statement under the Private Securities Litigation Reform Act of 1995: This press release contains forward-looking statements about the Company's financial and operating results and guidance, which include, but are not limited to, expected GAAP and non-GAAP financial and other operating and non-operating results, including revenue, net income, net income per share, operating cash flow growth, operating margin, expected revenue growth, expected foreign currency exchange rate impact, expected current remaining performance obligation growth, expected tax rates or provisions, stock-based compensation expenses, amortization of purchased intangibles, shares outstanding, market growth, strategic investments, expected restructuring expense or charges and expected timing of product releases and enhancements. The achievement or success of the matters covered by such forward-looking statements involves risks, uncertainties and assumptions. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, the Company's results or outcomes could differ materially and adversely from those expressed or implied by our forward-looking statements. Readers are cautioned not to place undue reliance on such forward-looking statements."
+  },
+  {
+   "id": "P81",
+   "kind": "text",
+   "text": "The risks and uncertainties referred to above include -- but are not limited to -- risks associated with:"
+  },
+  {
+   "id": "P82",
+   "kind": "text",
+   "text": "\u2022the effect of the acquisition of Informatica on our operating results, the market price of our common stock, our ability to retain and hire key personnel and our ability to maintain relationships with customers, suppliers and others with whom we or Informatica do business;"
+  },
+  {
+   "id": "P83",
+   "kind": "text",
+   "text": "\u2022our ability to maintain sufficient security levels and service performance, avoid downtime and prevent, detect and remediate performance degradation and security breaches;"
+  },
+  {
+   "id": "P84",
+   "kind": "text",
+   "text": "\u2022our ability to secure sufficient data center capacity;"
+  },
+  {
+   "id": "P85",
+   "kind": "text",
+   "text": "\u2022our reliance on third-party infrastructure providers, including hardware, software, energy and platform providers and the organizations responsible for the development and maintenance of Internet infrastructure;"
+  },
+  {
+   "id": "P86",
+   "kind": "text",
+   "text": "\u2022uncertainties regarding AI technologies and their integration into our product offerings;"
+  },
+  {
+   "id": "P87",
+   "kind": "text",
+   "text": "\u2022the evolving landscape related to environmental, social and governance (\"ESG\") matters;"
+  },
+  {
+   "id": "P88",
+   "kind": "text",
+   "text": "\u2022the effect of evolving government regulations, including those related to our industry and providing services on or accessing the Internet, and those addressing ESG matters, data privacy, cybersecurity, cross-border data transfers, government contracting and procurement, and import and export controls;"
+  },
+  {
+   "id": "P89",
+   "kind": "text",
+   "text": "\u2022current and potential litigation and regulatory investigations involving us or our industry;"
+  },
+  {
+   "id": "P90",
+   "kind": "text",
+   "text": "\u2022our ability to successfully expand or introduce new services and product features, including related to AI and Agentforce;"
+  },
+  {
+   "id": "P91",
+   "kind": "text",
+   "text": "\u2022our ability to successfully complete, integrate and realize the benefits from acquisitions or other strategic transactions;"
+  },
+  {
+   "id": "P92",
+   "kind": "text",
+   "text": "\u2022uncertainties regarding the pace of change and innovation and our ability to compete in the markets in which we participate;"
+  },
+  {
+   "id": "P93",
+   "kind": "text",
+   "text": "\u2022our ability to successfully execute our business strategy and our business plans, including efforts to expand internationally and related risks;"
+  },
+  {
+   "id": "P94",
+   "kind": "text",
+   "text": "\u2022our ability to meet our long-term revenue target and profitable growth framework;"
+  },
+  {
+   "id": "P95",
+   "kind": "text",
+   "text": "\u2022our ability to predict and meet expectations regarding our operating results and cash flows, including revenue and remaining performance obligation, including as a result of the seasonal nature of our sales cycle and the variability in our results arising from the accounting for term license revenue products and some complex transactions;"
+  },
+  {
+   "id": "P96",
+   "kind": "text",
+   "text": "\u2022our ability to predict and limit customer attrition and costs related to those efforts;"
+  },
+  {
+   "id": "P97",
+   "kind": "text",
+   "text": "\u2022the demands on our personnel and infrastructure resulting from significant growth in our customer base and operations, including as a result of acquisitions;"
+  },
+  {
+   "id": "P98",
+   "kind": "text",
+   "text": "\u2022our real estate and office facilities strategy and related costs and uncertainties;"
+  },
+  {
+   "id": "P99",
+   "kind": "text",
+   "text": "\u2022the performance of our strategic investment portfolio, including fluctuations in the fair value of our investments;"
+  },
+  {
+   "id": "P100",
+   "kind": "text",
+   "text": "\u2022our ability to protect our intellectual property rights;"
+  },
+  {
+   "id": "P101",
+   "kind": "text",
+   "text": "\u2022our ability to maintain and enhance our brands;"
+  },
+  {
+   "id": "P102",
+   "kind": "text",
+   "text": "\u2022uncertainties regarding the realizability, valuation and potential availability of certain tax assets;"
+  },
+  {
+   "id": "P103",
+   "kind": "text",
+   "text": "\u2022the impact of new accounting pronouncements and tax rules;"
+  },
+  {
+   "id": "P104",
+   "kind": "text",
+   "text": "\u2022uncertainties affecting our ability to estimate our tax rate;"
+  },
+  {
+   "id": "P105",
+   "kind": "text",
+   "text": "\u2022uncertainties regarding the effect of geopolitical events, inflationary pressures, market and macroeconomic volatility, financial institution instability, changes in monetary policy, foreign currency exchange rate and interest rate fluctuations, uncertainty regarding changes in trade policies, including trade wars, the threat or imposition of tariffs or other trade restrictions as well as any retaliatory actions, and climate change, natural disasters and actual or threatened public health emergencies on our workforce, business, and operating results;"
+  },
+  {
+   "id": "P106",
+   "kind": "text",
+   "text": "\u2022uncertainties regarding the impact of expensing stock options and other equity awards;"
+  },
+  {
+   "id": "P107",
+   "kind": "text",
+   "text": "\u2022the sufficiency of our capital resources, including our ability to execute our share repurchase program and declare future cash dividends;"
+  },
+  {
+   "id": "P108",
+   "kind": "text",
+   "text": "\u2022our ability to comply with our debt covenants and lease obligations; and"
+  },
+  {
+   "id": "P109",
+   "kind": "text",
+   "text": "\u2022uncertainties regarding impacts to our workforce and workplace culture, such as those arising from our current and future office environments or remote work policies or our ability to realize the expected benefits of the Company's restructuring initiatives."
+  },
+  {
+   "id": "P110",
+   "kind": "text",
+   "text": "Further information on these and other factors that could affect the Company's actual results or outcomes is included in the reports on Forms 10-K, 10-Q and 8-K and in other filings it makes with the Securities and Exchange Commission from time to time. These documents are available on the SEC Filings section of the Financials section of the Company's website at investor.salesforce.com/financials/."
+  },
+  {
+   "id": "P111",
+   "kind": "text",
+   "text": "Salesforce, Inc. assumes no obligation and does not intend to revise or update publicly any forward-looking statements for any reason, except as required by law."
+  },
+  {
+   "id": "P112",
+   "kind": "text",
+   "text": "\u00a9 2026 Salesforce, Inc. All rights reserved. Salesforce and other marks are trademarks of Salesforce, Inc. Other brands featured herein may be trademarks of their respective owners."
+  },
+  {
+   "id": "P113",
+   "kind": "text",
+   "text": "Salesforce, Inc."
+  },
+  {
+   "id": "P114",
+   "kind": "text",
+   "text": "Consolidated Statements of Operations (in millions, except per share data)"
+  },
+  {
+   "id": "P115",
+   "kind": "table",
+   "text": "4 | Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nRevenues: | (unaudited) | (unaudited) | (unaudited)\nSubscription and support | $ | 10,675 | $ | 9,451 | $ | 39,388 | $ | 35,679\nProfessional services and other | 526 | 542 | 2,137 | 2,216\nTotal revenues | 11,201 | 9,993 | 41,525 | 37,895\nCost of revenues (1)(2):\nSubscription and support | 1,875 | 1,581 | 6,796 | 6,198\nProfessional services and other | 633 | 636 | 2,474 | 2,445\nTotal cost of revenues | 2,508 | 2,217 | 9,270 | 8,643\nGross profit | 8,693 | 7,776 | 32,255 | 29,252\nOperating expenses (1)(2):\nResearch and development | 1,619 | 1,420 | 5,993 | 5,493\nSales and marketing | 4,017 | 3,471 | 14,345 | 13,257\nGeneral and administrative | 902 | 767 | 3,000 | 2,836\nRestructuring | 286 | 298 | 586 | 461\nTotal operating expenses | 6,824 | 5,956 | 23,924 | 22,047\nIncome from operations | 1,869 | 1,820 | 8,331 | 7,205\nGains (losses) on strategic investments, net | 811 | 96 | 1,017 | (121)\nOther income (expense) | (52) | 72 | 172 | 354\nIncome before provision for income taxes | 2,628 | 1,988 | 9,520 | 7,438\nProvision for income taxes | (685) | (280) | (2,063) | (1,241)\nNet income | $ | 1,943 | $ | 1,708 | $ | 7,457 | $ | 6,197\nBasic net income per share | $ | 2.08 | $ | 1.78 | $ | 7.85 | $ | 6.44\nDiluted net income per share (3) | $ | 2.07 | $ | 1.75 | $ | 7.80 | $ | 6.36\nShares used in computing basic net income per share | 935 | 959 | 950 | 962\nShares used in computing diluted net income per share | 940 | 974 | 956 | 974"
+  },
+  {
+   "id": "P116",
+   "kind": "text",
+   "text": "(1)Amounts include amortization of intangible assets acquired through business combinations, as follows:"
+  },
+  {
+   "id": "P117",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nCost of revenues | $ | 224 | $ | 150 | $ | 692 | $ | 750\nSales and marketing | 302 | 232 | 995 | 901"
+  },
+  {
+   "id": "P118",
+   "kind": "text",
+   "text": "(2)Amounts include stock-based compensation expense, as follows:"
+  },
+  {
+   "id": "P119",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nCost of revenues | $ | 147 | $ | 132 | $ | 553 | $ | 518\nResearch and development | 336 | 277 | 1,162 | 1,091\nSales and marketing | 413 | 294 | 1,287 | 1,205\nGeneral and administrative | 187 | 100 | 478 | 367\nRestructuring | 0 | 0 | 29 | 2"
+  },
+  {
+   "id": "P120",
+   "kind": "text",
+   "text": "(3)During the three months ended January 31, 2026 and 2025, gains on strategic investments impacted GAAP diluted net income per share by $0.66 and $0.07 based on a U.S. tax rate of 23.5% and 24.0%, respectively, and non-GAAP diluted net income per share by $0.67 and $0.08 based on a non-GAAP tax rate of 22.0%. During the fiscal year ended January 31, 2026 and 2025, gains (losses) on strategic investments impacted GAAP diluted EPS by $0.81 and $(0.09) based on a U.S. tax rate of 23.5% and 24.0%, respectively, and non-GAAP diluted EPS by $0.83 and $(0.10) based on a non-GAAP tax rate of 22.0%."
+  },
+  {
+   "id": "P121",
+   "kind": "text",
+   "text": "Salesforce, Inc."
+  },
+  {
+   "id": "P122",
+   "kind": "text",
+   "text": "Consolidated Statements of Operations (As a percentage of total revenues)"
+  },
+  {
+   "id": "P123",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nRevenues: | (unaudited) | (unaudited) | (unaudited)\nSubscription and support | 95 | % | 95 | % | 95 | % | 94 | %\nProfessional services and other | 5 | 5 | 5 | 6\nTotal revenues | 100 | 100 | 100 | 100\nCost of revenues (1)(2):\nSubscription and support | 17 | 16 | 16 | 16\nProfessional services and other | 5 | 6 | 6 | 7\nTotal cost of revenues | 22 | 22 | 22 | 23\nGross profit | 78 | 78 | 78 | 77\nOperating expenses (1)(2):\nResearch and development | 14 | 14 | 15 | 15\nSales and marketing | 36 | 35 | 35 | 35\nGeneral and administrative | 8 | 8 | 7 | 7\nRestructuring | 3 | 3 | 1 | 1\nTotal operating expenses | 61 | 60 | 58 | 58\nIncome from operations | 17 | 18 | 20 | 19\nGains on strategic investments, net | 7 | 1 | 3 | 0\nOther income (expense) | (1) | 1 | 0 | 1\nIncome before provision for income taxes | 23 | 20 | 23 | 20\nProvision for income taxes | (6) | (3) | (5) | (4)\nNet income | 17 | % | 17 | % | 18 | % | 16 | %"
+  },
+  {
+   "id": "P124",
+   "kind": "text",
+   "text": "(1)Amounts include amortization of intangible assets acquired through business combinations as a percentage of total revenues, as follows:"
+  },
+  {
+   "id": "P125",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nCost of revenues | 2 | % | 2 | % | 2 | % | 2 | %\nSales and marketing | 3 | 2 | 2 | 2"
+  },
+  {
+   "id": "P126",
+   "kind": "text",
+   "text": "(2)Amounts include stock-based compensation expense as a percentage of total revenues, as follows:"
+  },
+  {
+   "id": "P127",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nCost of revenues | 1 | % | 1 | % | 1 | % | 1 | %\nResearch and development | 3 | 3 | 3 | 3\nSales and marketing | 4 | 3 | 3 | 3\nGeneral and administrative | 2 | 1 | 1 | 1\nRestructuring | 0 | 0 | 0 | 0"
+  },
+  {
+   "id": "P128",
+   "kind": "text",
+   "text": "Salesforce, Inc."
+  },
+  {
+   "id": "P129",
+   "kind": "text",
+   "text": "Condensed Consolidated Balance Sheets (in millions)"
+  },
+  {
+   "id": "P130",
+   "kind": "table",
+   "text": "January 31, 2026 | January 31, 2025\nAssets | (unaudited)\nCurrent assets:\nCash and cash equivalents | $ | 7,327 | $ | 8,848\nMarketable securities | 2,238 | 5,184\nAccounts receivable, net | 14,339 | 11,945\nCosts capitalized to obtain revenue contracts, net | 2,075 | 1,971\nPrepaid expenses and other current assets | 2,243 | 1,779\nTotal current assets | 28,222 | 29,727\nProperty and equipment, net | 3,120 | 3,236\nOperating lease right-of-use assets, net | 2,003 | 2,157\nNoncurrent costs capitalized to obtain revenue contracts, net | 2,985 | 2,475\nStrategic investments | 7,591 | 4,852\nGoodwill | 57,941 | 51,283\nIntangible assets acquired through business combinations, net | 6,815 | 4,428\nDeferred tax assets and other assets, net | 3,628 | 4,770\nTotal assets | $ | 112,305 | $ | 102,928\nLiabilities and stockholders' equity\nCurrent liabilities:\nAccounts payable, accrued expenses and other liabilities | $ | 8,253 | $ | 6,658\nOperating lease liabilities, current | 548 | 579\nUnearned revenue | 24,317 | 20,743\nDebt, current | 4,000 | 0\nTotal current liabilities | 37,118 | 27,980\nNoncurrent debt | 10,439 | 8,433\nNoncurrent operating lease liabilities | 2,189 | 2,380\nOther noncurrent liabilities | 3,417 | 2,962\nTotal liabilities | 53,163 | 41,755\nStockholders' equity:\nCommon stock | 1 | 1\nTreasury stock, at cost | (32,228) | (19,507)\nAdditional paid-in capital | 68,835 | 64,576\nAccumulated other comprehensive income (loss) | 313 | (266)\nRetained earnings | 22,221 | 16,369\nTotal stockholders' equity | 59,142 | 61,173\nTotal liabilities and stockholders' equity | $ | 112,305 | $ | 102,928"
+  },
+  {
+   "id": "P131",
+   "kind": "text",
+   "text": "Salesforce, Inc."
+  },
+  {
+   "id": "P132",
+   "kind": "text",
+   "text": "Consolidated Statements of Cash Flows (in millions)"
+  },
+  {
+   "id": "P133",
+   "kind": "table",
+   "text": "4 | Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nOperating activities: | (unaudited) | (unaudited) | (unaudited)\nNet income | $ | 1,943 | $ | 1,708 | $ | 7,457 | $ | 6,197\nAdjustments to reconcile net income to net cash provided by operating activities:\nDepreciation and amortization (1) | 1,120 | 877 | 3,631 | 3,477\nAmortization of costs capitalized to obtain revenue contracts, net | 560 | 527 | 2,197 | 2,095\nStock-based compensation expense | 1,083 | 803 | 3,509 | 3,183\n(Gains) losses on strategic investments, net | (811) | (96) | (1,017) | 121\nChanges in assets and liabilities, net of business combinations:\nAccounts receivable, net | (8,632) | (7,171) | (2,160) | (490)\nCosts capitalized to obtain revenue contracts, net | (1,492) | (1,016) | (2,811) | (2,121)\nPrepaid expenses and other current assets and other assets | 936 | (232) | 819 | (1,495)\nAccounts payable and accrued expenses and other liabilities | 2,238 | 1,592 | 1,014 | 1,089\nOperating lease liabilities | (152) | (161) | (567) | (548)\nUnearned revenue | 8,671 | 7,139 | 2,924 | 1,584\nNet cash provided by operating activities | 5,464 | 3,970 | 14,996 | 13,092\nInvesting activities:\nBusiness combinations, net of cash acquired | (8,236) | (2,217) | (9,268) | (2,734)\nPurchases of strategic investments | (512) | (165) | (1,958) | (539)\nSales of strategic investments | 72 | 8 | 184 | 126\nPurchases of marketable securities | (193) | (1,838) | (3,763) | (6,879)\nSales of marketable securities | 225 | 491 | 4,414 | 4,143\nMaturities of marketable securities | 78 | 939 | 2,395 | 3,378\nCapital expenditures | (141) | (154) | (594) | (658)\nNet cash used in investing activities | (8,707) | (2,936) | (8,590) | (3,163)\nFinancing activities:\nProceeds from issuance of debt, net of issuance costs | 6,000 | 0 | 6,000 | 0\nRepurchases of common stock | (3,937) | (76) | (12,596) | (7,829)\nPayments for taxes related to net share settlement of equity awards | (212) | 0 | (351) | 0\nProceeds from employee stock plans | 274 | 484 | 1,039 | 1,540\nPrincipal payments on financing obligations | (146) | (98) | (584) | (603)\nRepayments of debt | 0 | 0 | 0 | (1,000)\nPayments of dividends and dividend equivalents | (391) | (383) | (1,587) | (1,537)\nNet cash provided by (used in) financing activities | 1,588 | (73) | (8,079) | (9,429)\nEffect of exchange rate changes | 4 | (110) | 152 | (124)\nNet increase (decrease) in cash and cash equivalents | (1,651) | 851 | (1,521) | 376\nCash and cash equivalents, beginning of period | 8,978 | 7,997 | 8,848 | 8,472\nCash and cash equivalents, end of period | $ | 7,327 | $ | 8,848 | $ | 7,327 | $ | 8,848"
+  },
+  {
+   "id": "P134",
+   "kind": "text",
+   "text": "(1) Includes amortization of intangible assets acquired through business combinations, depreciation of fixed assets and amortization and impairment of right-of-use assets."
+  },
+  {
+   "id": "P135",
+   "kind": "text",
+   "text": "Salesforce, Inc."
+  },
+  {
+   "id": "P136",
+   "kind": "text",
+   "text": "Additional Metrics (Unaudited)"
+  },
+  {
+   "id": "P137",
+   "kind": "text",
+   "text": "Supplemental Revenue Analysis"
+  },
+  {
+   "id": "P138",
+   "kind": "text",
+   "text": "Remaining Performance Obligation"
+  },
+  {
+   "id": "P139",
+   "kind": "text",
+   "text": "Remaining performance obligation (\"RPO\") represents contracted revenue that has not yet been recognized, which includes unearned revenue and unbilled amounts that will be recognized as revenue in future periods. RPO is influenced by several factors, including seasonality, the timing of renewals, the timing of term license deliveries, average contract terms and foreign currency exchange rates. Remaining performance obligation is also impacted by acquisitions. Unbilled portions of RPO denominated in foreign currencies are revalued each period based on the period end exchange rates. The portion of RPO that is unbilled is not recorded on the condensed consolidated balance sheets."
+  },
+  {
+   "id": "P140",
+   "kind": "text",
+   "text": "RPO consisted of the following (in billions):"
+  },
+  {
+   "id": "P141",
+   "kind": "table",
+   "text": "Current | Noncurrent | Total\nAs of January 31, 2026 (1) | $ | 35.1 | $ | 37.3 | $ | 72.4\nAs of October 31, 2025 | 29.4 | 30.1 | 59.5\nAs of July 31, 2025 | 29.4 | 30.5 | 59.9\nAs of April 30, 2025 | 29.6 | 31.3 | 60.9\nAs of January 31, 2025 | 30.2 | 33.2 | 63.4"
+  },
+  {
+   "id": "P142",
+   "kind": "text",
+   "text": "(1) Includes approximately $2.2 billion of remaining performance obligation related to Informatica, Inc. (\"Informatica\")."
+  },
+  {
+   "id": "P143",
+   "kind": "text",
+   "text": "Unearned Revenue"
+  },
+  {
+   "id": "P144",
+   "kind": "text",
+   "text": "Unearned revenue represents amounts that have been invoiced in advance of revenue recognition and is recognized as revenue when transfer of control to customers has occurred or services have been provided. The change in unearned revenue was as follows (in millions):"
+  },
+  {
+   "id": "P145",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nUnearned revenue, beginning of period | $ | 14,996 | $ | 13,472 | $ | 20,743 | $ | 19,003\nBillings and other (1) | 20,522 | 17,264 | 45,099 | 39,635\nRevenue recognized over time | (10,313) | (9,182) | (39,041) | (35,628)\nRevenue recognized at a point in time | (888) | (811) | (2,484) | (2,267)\nUnearned revenue, end of period | $ | 24,317 | $ | 20,743 | $ | 24,317 | $ | 20,743"
+  },
+  {
+   "id": "P146",
+   "kind": "text",
+   "text": "(1) Other includes, for example, the impact of foreign currency translation as well as contributions from contract assets and business combinations, including $651 million from Informatica as of the acquisition date."
+  },
+  {
+   "id": "P147",
+   "kind": "text",
+   "text": "Disaggregation of Revenue"
+  },
+  {
+   "id": "P148",
+   "kind": "text",
+   "text": "Subscription and Support Revenue by the Company's service offerings (1)"
+  },
+  {
+   "id": "P149",
+   "kind": "text",
+   "text": "Subscription and support revenues consisted of the following (in millions):"
+  },
+  {
+   "id": "P150",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nAgentforce Sales | $ | 2,333 | $ | 2,134 | $ | 9,028 | $ | 8,322\nAgentforce Service | 2,531 | 2,327 | 9,818 | 9,054\nAgentforce 360 Platform, Slack and Other (2) | 2,655 | 1,918 | 8,882 | 7,247\nAgentforce Marketing and Agentforce Commerce | 1,377 | 1,357 | 5,428 | 5,281\nAgentforce Integration and Agentforce Analytics | 1,779 | 1,715 | 6,232 | 5,775\n$ | 10,675 | $ | 9,451 | $ | 39,388 | $ | 35,679"
+  },
+  {
+   "id": "P151",
+   "kind": "text",
+   "text": "(1) In the third quarter of fiscal 2026, the Company renamed its service offerings to reference Agentforce. There were no changes in the allocation of revenue between these service offerings coming from this change."
+  },
+  {
+   "id": "P152",
+   "kind": "text",
+   "text": "(2) Agentforce 360 Platform, Slack and Other revenue for the year ended January 31, 2026 includes $388 million in subscription and support revenue from Informatica, which the Company acquired in November 2025."
+  },
+  {
+   "id": "P153",
+   "kind": "text",
+   "text": "Total Revenue by Geographic Locations"
+  },
+  {
+   "id": "P154",
+   "kind": "text",
+   "text": "Revenues by geographical region consisted of the following (in millions):"
+  },
+  {
+   "id": "P155",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nAmericas | $ | 7,285 | $ | 6,660 | $ | 27,193 | $ | 25,143\nEurope | 2,781 | 2,334 | 10,017 | 8,891\nAsia Pacific | 1,135 | 999 | 4,315 | 3,861\n$ | 11,201 | $ | 9,993 | $ | 41,525 | $ | 37,895"
+  },
+  {
+   "id": "P156",
+   "kind": "text",
+   "text": "Constant Currency Growth Rates"
+  },
+  {
+   "id": "P157",
+   "kind": "text",
+   "text": "Subscription and support revenues constant currency growth rates by the Company's service offerings were as follows:"
+  },
+  {
+   "id": "P158",
+   "kind": "table",
+   "text": "Three Months EndedJanuary 31, 2026Compared to Three MonthsEnded January 31, 2025 | Three Months EndedOctober 31, 2025Compared to Three MonthsEnded October 31, 2024 | Three Months EndedJanuary 31, 2025Compared to Three MonthsEnded January 31, 2024\nAgentforce Sales | 8% | 8% | 9%\nAgentforce Service | 7% | 8% | 9%\nAgentforce 360 Platform, Slack and Other | 37% | 19% | 12%\nAgentforce Marketing and Agentforce Commerce | (1)% | 1% | 8%\nAgentforce Integration and Agentforce Analytics | 3% | 6% | 6%\nTotal growth | 11% | 9% | 9%"
+  },
+  {
+   "id": "P159",
+   "kind": "text",
+   "text": "Revenue constant currency growth rates by geographical region were as follows:"
+  },
+  {
+   "id": "P160",
+   "kind": "table",
+   "text": "Three Months EndedJanuary 31, 2026Compared to Three MonthsEnded January 31, 2025 | Three Months EndedOctober 31, 2025Compared to Three MonthsEnded October 31, 2024 | Three Months EndedJanuary 31, 2025Compared to Three MonthsEnded January 31, 2024\nAmericas | 9% | 8% | 8%\nEurope | 13% | 7% | 7%\nAsia Pacific | 13% | 11% | 14%\nTotal growth | 10% | 8% | 9%"
+  },
+  {
+   "id": "P161",
+   "kind": "text",
+   "text": "Current remaining performance obligation constant currency growth rates were as follows:"
+  },
+  {
+   "id": "P162",
+   "kind": "table",
+   "text": "January 31, 2026Compared toJanuary 31, 2025 | October 31, 2025Compared toOctober 31, 2024 | January 31, 2025Compared toJanuary 31, 2024\nTotal growth | 13% | 11% | 11%"
+  },
+  {
+   "id": "P163",
+   "kind": "text",
+   "text": "Salesforce, Inc."
+  },
+  {
+   "id": "P164",
+   "kind": "text",
+   "text": "GAAP Results Reconciled to Non-GAAP Results"
+  },
+  {
+   "id": "P165",
+   "kind": "text",
+   "text": "The following tables reflect selected GAAP results reconciled to Non-GAAP results."
+  },
+  {
+   "id": "P166",
+   "kind": "text",
+   "text": "(in millions, except per share data)"
+  },
+  {
+   "id": "P167",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P168",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nNon-GAAP income from operations\nGAAP income from operations | $ | 1,869 | $ | 1,820 | $ | 8,331 | $ | 7,205\nPlus:\nAmortization of purchased intangibles (1) | 526 | 382 | 1,687 | 1,651\nStock-based compensation expense (2)(3) | 1,083 | 803 | 3,480 | 3,181\nRestructuring and acquisition-related costs | 358 | 298 | 658 | 461\nNon-GAAP income from operations | $ | 3,836 | $ | 3,303 | $ | 14,156 | $ | 12,498\nNon-GAAP operating margin as a percentage of revenues\nTotal revenues | $ | 11,201 | $ | 9,993 | $ | 41,525 | $ | 37,895\nGAAP operating margin (4) | 16.7 | % | 18.2 | % | 20.1 | % | 19.0 | %\nNon-GAAP operating margin (4) | 34.2 | % | 33.1 | % | 34.1 | % | 33.0 | %\nNon-GAAP net income\nGAAP net income | $ | 1,943 | $ | 1,708 | $ | 7,457 | $ | 6,197\nPlus:\nAmortization of purchased intangibles (1) | 526 | 382 | 1,687 | 1,651\nStock-based compensation expense (2)(3) | 1,083 | 803 | 3,480 | 3,181\nRestructuring and acquisition-related costs | 358 | 298 | 658 | 461\nIncome tax effects and adjustments | (326) | (484) | (1,313) | (1,560)\nNon-GAAP net income | $ | 3,584 | $ | 2,707 | $ | 11,969 | $ | 9,930"
+  },
+  {
+   "id": "P169",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nNon-GAAP diluted net income per share\nGAAP diluted net income per share | $ | 2.07 | $ | 1.75 | $ | 7.80 | $ | 6.36\nPlus:\nAmortization of purchased intangibles (1) | 0.56 | 0.39 | 1.76 | 1.70\nStock-based compensation expense (2)(3) | 1.15 | 0.82 | 3.64 | 3.27\nRestructuring and acquisition-related costs | 0.38 | 0.31 | 0.69 | 0.47\nIncome tax effects and adjustments | (0.35) | (0.49) | (1.37) | (1.60)\nNon-GAAP diluted net income per share | $ | 3.81 | $ | 2.78 | $ | 12.52 | $ | 10.20\nShares used in computing non-GAAP diluted net income per share | 940 | 974 | 956 | 974"
+  },
+  {
+   "id": "P170",
+   "kind": "text",
+   "text": "(1)Amortization of purchased intangibles was as follows:"
+  },
+  {
+   "id": "P171",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nCost of revenues | $ | 224 | $ | 150 | $ | 692 | $ | 750\nSales and marketing | 302 | 232 | 995 | 901\n$ | 526 | $ | 382 | $ | 1,687 | $ | 1,651"
+  },
+  {
+   "id": "P172",
+   "kind": "text",
+   "text": "(2)Stock-based compensation expense, excluding stock-based compensation expense related to restructuring, was as follows:"
+  },
+  {
+   "id": "P173",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nCost of revenues | $ | 147 | $ | 132 | $ | 553 | $ | 518\nResearch and development | 336 | 277 | 1,162 | 1,091\nSales and marketing | 413 | 294 | 1,287 | 1,205\nGeneral and administrative | 187 | 100 | 478 | 367\n$ | 1,083 | $ | 803 | $ | 3,480 | $ | 3,181"
+  },
+  {
+   "id": "P174",
+   "kind": "text",
+   "text": "(3) Stock-based compensation expense included in the GAAP to non-GAAP reconciliation tables above excludes stock-based compensation expense related to restructuring initiatives for each of the three months ended January 31, 2026 and 2025 of $0 million and for the fiscal year ended January 31, 2026 and 2025 of $29 million and $2 million, respectively, which are included in the restructuring line."
+  },
+  {
+   "id": "P175",
+   "kind": "text",
+   "text": "(4) GAAP operating margin is the proportion of GAAP income from operations as a percentage of GAAP revenue. Non-GAAP operating margin is the proportion of non-GAAP income from operations as a percentage of GAAP revenue. Non-GAAP income from operations excludes the impact of the amortization of purchased intangibles, stock-based compensation expense, charges associated with the Company's restructuring initiatives and acquisition-related costs."
+  },
+  {
+   "id": "P176",
+   "kind": "text",
+   "text": "Salesforce, Inc."
+  },
+  {
+   "id": "P177",
+   "kind": "text",
+   "text": "Computation of Basic and Diluted GAAP and Non-GAAP Net Income Per Share (in millions, except per share data)"
+  },
+  {
+   "id": "P178",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P179",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nGAAP Basic Net Income Per Share\nNet income | $ | 1,943 | $ | 1,708 | $ | 7,457 | $ | 6,197\nBasic net income per share | $ | 2.08 | $ | 1.78 | $ | 7.85 | $ | 6.44\nShares used in computing basic net income per share | 935 | 959 | 950 | 962\nThree Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nNon-GAAP Basic Net Income Per Share\nNon-GAAP net income | $ | 3,584 | $ | 2,707 | $ | 11,969 | $ | 9,930\nNon-GAAP basic net income per share | $ | 3.83 | $ | 2.82 | $ | 12.60 | $ | 10.32\nShares used in computing non-GAAP basic net income per share | 935 | 959 | 950 | 962\nThree Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nGAAP Diluted Net Income Per Share\nNet income | $ | 1,943 | $ | 1,708 | $ | 7,457 | $ | 6,197\nDiluted net income per share | $ | 2.07 | $ | 1.75 | $ | 7.80 | $ | 6.36\nShares used in computing diluted net income per share | 940 | 974 | 956 | 974\nThree Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nNon-GAAP Diluted Net Income Per Share\nNon-GAAP net income | $ | 3,584 | $ | 2,707 | $ | 11,969 | $ | 9,930\nNon-GAAP diluted net income per share | $ | 3.81 | $ | 2.78 | $ | 12.52 | $ | 10.20\nShares used in computing non-GAAP diluted net income per share | 940 | 974 | 956 | 974"
+  },
+  {
+   "id": "P180",
+   "kind": "text",
+   "text": "Supplemental Cash Flow Information"
+  },
+  {
+   "id": "P181",
+   "kind": "text",
+   "text": "Computation of Free Cash Flow, a Non-GAAP Measure (in millions)"
+  },
+  {
+   "id": "P182",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P183",
+   "kind": "table",
+   "text": "Three Months Ended January 31, | Fiscal Year Ended January 31,\n2026 | 2025 | 2026 | 2025\nGAAP net cash provided by operating activities | $ | 5,464 | $ | 3,970 | $ | 14,996 | $ | 13,092\nCapital expenditures | (141) | (154) | (594) | (658)\nFree cash flow | $ | 5,323 | $ | 3,816 | $ | 14,402 | $ | 12,434"
+  },
+  {
+   "id": "P184",
+   "kind": "text",
+   "text": "Non-GAAP Financial Measures: This press release includes information about non-GAAP operating margin, non-GAAP net income per share, non-GAAP tax rates, free cash flow, constant currency revenue and revenue growth rate, constant currency subscription and support revenue growth rate and constant currency current remaining performance obligation growth rates (collectively the \"non-GAAP financial measures\"). These non-GAAP financial measures are measurements of financial performance that are not prepared in accordance with U.S. generally accepted accounting principles and computational methods may differ from those used by other companies. Non-GAAP financial measures are not meant to be considered in isolation or as a substitute for comparable GAAP measures and should be read only in conjunction with the Company's condensed consolidated financial statements prepared in accordance with GAAP. Management uses both GAAP and non-GAAP financial measures when planning, monitoring and evaluating the Company's performance."
+  },
+  {
+   "id": "P185",
+   "kind": "text",
+   "text": "The primary purpose of using non-GAAP financial measures is to provide supplemental information that may prove useful to investors and to enable investors to evaluate the Company's results in the same way management does. Management believes that supplementing GAAP disclosure with non-GAAP disclosure provides investors with a more complete view of the Company's operational performance and allows for meaningful period-to-period comparisons and analysis of trends in the Company's business. Further to the extent that other companies use similar methods in calculating non-GAAP financial measures, the provision of supplemental non-GAAP information can allow for a comparison of the Company's relative performance against other companies that also report non-GAAP operating results."
+  },
+  {
+   "id": "P186",
+   "kind": "text",
+   "text": "Non-GAAP operating margin is the proportion of non-GAAP income from operations as a percentage of GAAP revenue. Non-GAAP income from operations excludes the impact of the following items: stock-based compensation expense, amortization of acquisition-related intangibles and charges associated with the Company's restructuring initiatives. Non-GAAP net income per share excludes, to the extent applicable, the impact of the following items: stock-based compensation expense, amortization of purchased intangibles, charges related to the Company's restructuring initiatives and income tax adjustments. These items are excluded because the decisions that give rise to them are not made to increase revenue in a particular period, but instead for the Company's long-term benefit over multiple periods."
+  },
+  {
+   "id": "P187",
+   "kind": "text",
+   "text": "As described above, the Company excludes or adjusts for the following in its non-GAAP results and guidance:"
+  },
+  {
+   "id": "P188",
+   "kind": "text",
+   "text": "\u2022Stock-Based Compensation Expense: The Company's compensation strategy includes the use of stock-based compensation expense to attract and retain employees and executives. It is principally aimed at aligning their interests with those of our stockholders and at long-term employee retention, rather than to motivate or reward operational performance for any particular period. Thus, stock-based compensation expense varies for reasons that are generally unrelated to operational decisions and performance in any particular period."
+  },
+  {
+   "id": "P189",
+   "kind": "text",
+   "text": "\u2022Amortization of Purchased Intangibles: The Company views amortization of acquisition-related intangible assets, such as the amortization of the cost associated with an acquired company's research and development efforts, trade names, customer lists and customer relationships, and, in some cases, acquired lease intangibles, as items arising from pre-acquisition activities determined at the time of an acquisition. While these intangible assets are continually evaluated for impairment, amortization of the cost of purchased intangibles is a static expense, which is not typically affected by operations during any particular period. Although the Company excludes the amortization of purchased intangibles from these non-GAAP financial measures, management believes that it is important for investors to understand that such intangible assets were recorded as part of purchase accounting and contribute to revenue generation."
+  },
+  {
+   "id": "P190",
+   "kind": "text",
+   "text": "\u2022Restructuring: Restructuring charges are costs associated with a formal restructuring plan and may include employee notice period costs and severance payments, lease or contract termination costs, asset impairments, accelerated depreciation and amortization and other related expenses. The Company excludes these restructuring charges because they are distinct from ongoing operational costs and it does not believe they are reflective of current and expected future business performance and operating results."
+  },
+  {
+   "id": "P191",
+   "kind": "text",
+   "text": "\u2022Acquisition-related costs: Acquisition-related expenses include transaction and integration expenses for consummated transactions that are incurred prior to the acquisition closing or within the first year of the acquisition close date, which may include transaction or integration expenses paid to third parties, one-time severance and retention bonuses for acquired and transitional employees, or exit costs associated with an acquired company's long-lived assets, such as real estate, or other long-term commercial agreements. The Company excludes these acquisition-related expenses because they are distinct from ongoing operational costs and the Company does not believe they are reflective of current and expected future business performance and operating results."
+  },
+  {
+   "id": "P192",
+   "kind": "text",
+   "text": "\u2022Gains (Losses) on Strategic Investments, net: The Company records all fair value adjustments to its equity securities held within the strategic investment portfolio through the statement of operations. As it is not possible to forecast future gains and losses, the Company assumes no change to the value of its strategic investment portfolio in its GAAP and non-GAAP estimates for future periods, including its guidance. Gains (Losses) on Strategic Investments, net, are included in its GAAP financial statements."
+  },
+  {
+   "id": "P193",
+   "kind": "text",
+   "text": "\u2022Income Tax Effects and Adjustments: The Company utilizes a fixed long-term projected non-GAAP tax rate in order to provide better consistency across the interim reporting periods by eliminating the effects of items such as changes in the tax valuation allowance and tax effects of acquisition-related costs, since each of these can vary in size and frequency. When projecting this long-term rate, the Company evaluated a three-year financial projection that excludes the direct impact of the following non-cash items: stock-based compensation expenses and the amortization of purchased intangibles. The projected rate also considers factors including the Company's expected tax structure, its tax positions in various jurisdictions and key legislation in major jurisdictions where the Company operates. For fiscal 2025 and 2026, the Company used a projected non-GAAP tax rate of 22.0%. For fiscal 2027, the Company uses a projected non-GAAP tax rate of 20.5%, which reflects currently available information, as well as other factors and assumptions. The non-GAAP tax rate could be subject to change for a variety of reasons, including the rapidly evolving global tax environment, significant changes in the Company's geographic earnings mix due to acquisition activity or other changes to the Company's strategy or business operations. The Company will re-evaluate its long-term rate as appropriate."
+  },
+  {
+   "id": "P194",
+   "kind": "text",
+   "text": "The Company presents constant currency information to provide a framework for assessing how the Company's underlying business performed excluding the effect of foreign currency rate fluctuations. To present constant currency revenue growth rates, current and comparative prior period results for entities reporting in currencies other than United States dollars are converted into United States dollars at the weighted average exchange rate for the quarter being compared to rather than the actual exchange rates in effect during that period. To present current remaining performance obligation growth rates on a constant currency basis, current remaining performance obligation balances in local currencies in previous comparable periods are converted using the United States dollar currency exchange rate as of the most recent balance sheet date."
+  },
+  {
+   "id": "P195",
+   "kind": "text",
+   "text": "The Company defines the non-GAAP measure free cash flow as GAAP net cash provided by operating activities, less capital expenditures."
+  },
+  {
+   "id": "P196",
+   "kind": "text",
+   "text": "Other Metrics: The Company defines Agentforce and Data 360 annual recurring revenue (\"ARR\") as the annualized recurring value of active Data 360 and certain generative artificial intelligence (\"AI\") subscription agreements, including those for Agentforce and generative AI products and features, that were executed at the end of the reporting period."
+  },
+  {
+   "id": "P197",
+   "kind": "text",
+   "text": "The Company defines Net New Annual Order Value (\"NNAOV\") as the net change in the annual order value of our customer subscription agreements during a given period. NNAOV is calculated as the sum of: (i) the annualized contract value from new and existing customers who enter into subscription agreements during the period; less (ii) the reduction in annualized order value from customer cancellations, non-renewals, or downgrades during the period."
+  },
+  {
+   "id": "P198",
+   "kind": "text",
+   "text": "The Company defines an Agentic Work Unit (\"AWU\") as a measure of discrete tasks executed by AI agents in production across the Salesforce platform, including Agentforce and Slack. AWUs represent the conversion of generative AI capabilities into measurable business outputs, such as resolving customer cases, updating records or triggering automated workflows."
+  }
+ ]
+}

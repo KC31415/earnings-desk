@@ -1,0 +1,1473 @@
+{
+ "ticker": "PLTR",
+ "name": "Palantir Technologies Inc.",
+ "fiscal_label": "FY2026 Q2",
+ "calendar_label": "CY2026 Q2",
+ "period_end": "2026-06-30",
+ "source": {
+  "earnings_8k_accn": "0001321655-26-000039",
+  "earnings_8k_date": "2026-08-03",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/0001321655-26-000039-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000041/pltr-20260630.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm"
+ },
+ "generated_at": "2026-11-04T19:13:14+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 9512,
+   "output_tokens": 120
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 9364,
+   "output_tokens": 2169,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P3",
+  "P5",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P11",
+  "P12",
+  "P13",
+  "P14",
+  "P15",
+  "P16",
+  "P17",
+  "P18",
+  "P19",
+  "P20",
+  "P21",
+  "P22",
+  "P23",
+  "P25",
+  "P27",
+  "P28",
+  "P29",
+  "P30",
+  "P31",
+  "P32",
+  "P33",
+  "P34",
+  "P35",
+  "P67",
+  "P69",
+  "P82",
+  "P84",
+  "P86",
+  "P90"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "Palantir reported FY2026 Q2 revenue of $1.935 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q2",
+     "value": "1.935",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1935464000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "revenue",
+         "value": 1935464000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $912 million.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q2",
+     "value": "912",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 912004000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "operating_income",
+         "value": 912004000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP net income attributable to common stockholders was $1.062 billion.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q2",
+     "value": "1.062",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1061890000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "net_income",
+         "value": 1061890000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Diluted EPS was $0.41.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2026 Q2",
+     "value": "0.41",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 0.41,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "eps_diluted",
+         "value": 0.41,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Free cash flow (operating cash flow less capex) was $1.202 billion.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow",
+     "period": "FY2026 Q2",
+     "value": "1.202",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1201613000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "free_cash_flow",
+         "value": 1201613000.0,
+         "concept": "(derived)",
+         "accn": "0001321655-26-000041",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "U.S. commercial revenue was $764 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q2",
+     "value": "764",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P8"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P8"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue grew 92.8% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q2",
+     "value": "92.8",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 92.8334945705726,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "revenue",
+         "value": 1935464000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q2",
+         "period_end": "2025-06-30",
+         "metric": "revenue",
+         "value": 1003697000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2025 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue rose 18.6% sequentially.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2026 Q2",
+     "value": "18.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 18.552257373744553,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "revenue",
+         "value": 1935464000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-03-31",
+         "metric": "revenue",
+         "value": 1632583000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001321655-26-000028",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating income was up 238.6% year over year.",
+     "claim_type": "numeric",
+     "metric": "operating_income_yoy",
+     "period": "FY2026 Q2",
+     "value": "238.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 238.63588262159462,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "operating_income",
+         "value": 912004000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q2",
+         "period_end": "2025-06-30",
+         "metric": "operating_income",
+         "value": 269317000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2025 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Gross margin was 84.7%.",
+     "claim_type": "numeric",
+     "metric": "gross_margin",
+     "period": "FY2026 Q2",
+     "value": "84.7",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "GrossProfit"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 84.6615591920077,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "gross_profit",
+         "value": 1638594000.0,
+         "concept": "GrossProfit",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "revenue",
+         "value": 1935464000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "gross_profit / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations were up 104.2% year over year.",
+     "claim_type": "numeric",
+     "metric": "rpo_yoy",
+     "period": "FY2026 Q2",
+     "value": "104.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 104.16666666666667,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "rpo",
+         "value": 4900000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001321655-26-000041",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q2",
+         "period_end": "2025-06-30",
+         "metric": "rpo",
+         "value": 2400000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001321655-25-000106",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2025 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Stock-based compensation rose 65.8% year over year.",
+     "claim_type": "numeric",
+     "metric": "sbc_yoy",
+     "period": "FY2026 Q2",
+     "value": "65.8",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "ShareBasedCompensation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 65.78567365334968,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "sbc",
+         "value": 265209000.0,
+         "concept": "ShareBasedCompensation",
+         "accn": "0001321655-26-000041",
+         "derived": true,
+         "derivation": "6M YTD \u2212 3M YTD"
+        },
+        {
+         "period": "FY2025 Q2",
+         "period_end": "2025-06-30",
+         "metric": "sbc",
+         "value": 159971000.0,
+         "concept": "ShareBasedCompensation",
+         "accn": "0001321655-26-000041",
+         "derived": true,
+         "derivation": "6M YTD \u2212 3M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2025 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "Alex Karp described the quarter as \"This quarter was otherworldly\".",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "This quarter was otherworldly",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P5"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P5",
+       "spans": [
+        "This quarter was otherworldly"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Management pointed to demand for sovereign AI as a driver of its optimism.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P5"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P5"
+      }
+     }
+    },
+    {
+     "text": "Palantir guided Q3 2026 revenue to a low end of $2.160 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "2.160",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P28"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P28"
+      }
+     }
+    },
+    {
+     "text": "Palantir raised full-year 2026 revenue guidance to a low end of $8.150 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "8.150",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P31"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P31"
+      }
+     }
+    },
+    {
+     "text": "The company raised its full-year adjusted free cash flow guidance to a range of $4.5 to $4.7 billion.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P34"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P34"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Watch whether U.S. commercial revenue continues toward the full-year guide of more than $3.424 billion.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P32"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P32"
+      }
+     }
+    },
+    {
+     "text": "Q3 adjusted income from operations is guided to a low end of $1.292 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "1.292",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P29"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P29"
+      }
+     }
+    },
+    {
+     "text": "Track U.S. commercial remaining deal value, which was $6.238 billion at quarter end.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q2",
+     "value": "6.238",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P14"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P14"
+      }
+     }
+    },
+    {
+     "text": "Management continues to expect GAAP operating income and net income in each quarter of the year.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P35"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P35"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 21,
+  "by_status": {
+   "verified": 17,
+   "sourced": 4
+  },
+  "numeric": 16,
+  "numeric_verified": 16,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "Palantir reported FY2026 Q2 revenue of $1.935 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q2",
+      "value": "1.935",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP operating income was $912 million.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q2",
+      "value": "912",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP net income attributable to common stockholders was $1.062 billion.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q2",
+      "value": "1.062",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Diluted EPS was $0.41.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2026 Q2",
+      "value": "0.41",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Free cash flow (operating cash flow less capex) was $1.202 billion.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow",
+      "period": "FY2026 Q2",
+      "value": "1.202",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     },
+     {
+      "text": "U.S. commercial revenue was $764 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q2",
+      "value": "764",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P8"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue grew 92.8% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q2",
+      "value": "92.8",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Revenue rose 18.6% sequentially.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2026 Q2",
+      "value": "18.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Operating income was up 238.6% year over year.",
+      "claim_type": "numeric",
+      "metric": "operating_income_yoy",
+      "period": "FY2026 Q2",
+      "value": "238.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Gross margin was 84.7%.",
+      "claim_type": "numeric",
+      "metric": "gross_margin",
+      "period": "FY2026 Q2",
+      "value": "84.7",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "GrossProfit"
+      }
+     },
+     {
+      "text": "Remaining performance obligations were up 104.2% year over year.",
+      "claim_type": "numeric",
+      "metric": "rpo_yoy",
+      "period": "FY2026 Q2",
+      "value": "104.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     },
+     {
+      "text": "Stock-based compensation rose 65.8% year over year.",
+      "claim_type": "numeric",
+      "metric": "sbc_yoy",
+      "period": "FY2026 Q2",
+      "value": "65.8",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "ShareBasedCompensation"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "Alex Karp described the quarter as \"This quarter was otherworldly\".",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "This quarter was otherworldly",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P5"
+      }
+     },
+     {
+      "text": "Management pointed to demand for sovereign AI as a driver of its optimism.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P5"
+      }
+     },
+     {
+      "text": "Palantir guided Q3 2026 revenue to a low end of $2.160 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "2.160",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P28"
+      }
+     },
+     {
+      "text": "Palantir raised full-year 2026 revenue guidance to a low end of $8.150 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "8.150",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P31"
+      }
+     },
+     {
+      "text": "The company raised its full-year adjusted free cash flow guidance to a range of $4.5 to $4.7 billion.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P34"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Watch whether U.S. commercial revenue continues toward the full-year guide of more than $3.424 billion.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P32"
+      }
+     },
+     {
+      "text": "Q3 adjusted income from operations is guided to a low end of $1.292 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "1.292",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P29"
+      }
+     },
+     {
+      "text": "Track U.S. commercial remaining deal value, which was $6.238 billion at quarter end.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q2",
+      "value": "6.238",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P14"
+      }
+     },
+     {
+      "text": "Management continues to expect GAAP operating income and net income in each quarter of the year.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P35"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 a2026q2ex991pressrelease.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Exhibit 99.1"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "Palantir Reports Q2 2026 U.S. Comm Revenue Growth of 149% Y/Y and Revenue Growth of 93% Y/Y; Raises FY 2026 Revenue Guidance to 82% Y/Y Growth and U.S. Comm Revenue Guidance to 134% Y/Y, Crushing Consensus Expectations 8/3/2026"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "MIAMI - (BUSINESS WIRE) - Palantir Technologies Inc. (NASDAQ:PLTR) today announced financial results for the second quarter ended June 30, 2026."
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "\"Demand for AI sovereignty has now been unleashed. And Palantir is the only company that has demonstrated it can transform tokens into actual economic value. Our customers trust us to provide them with maximal control over their operations, data, and decisions. Their competitive advantage should never become the training data for future models. This quarter was otherworldly: our U.S. commercial revenue grew 149% year-over-year, our overall revenue grew 93% year-over-year, and our Rule of 40 score climbed to 155%. The sovereign AI revolution makes us very optimistic about the future,\" said Alex Karp, Co-Founder and Chief Executive Officer of Palantir Technologies."
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "Q2 2026 Highlights"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "\u2022U.S. revenue grew 115% year-over-year and 23% quarter-over-quarter to $1.573 billion"
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "\u25e6U.S. commercial revenue grew 149% year-over-year and 28% quarter-over-quarter to $764 million"
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "\u25e6U.S. government revenue grew 90% year-over-year and 18% quarter-over-quarter to $809 million"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "\u2022Revenue grew 93% year-over-year and 19% quarter-over-quarter to $1.935 billion"
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "\u2022Closed 220 deals of at least $1 million, 98 deals of at least $5 million, and 73 deals of at least $10 million"
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "\u2022Closed total contract value (\"TCV\") of $3.373 billion, up 49% year-over-year"
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "\u25e6Closed a record-setting $2.132 billion of U.S. commercial TCV, up 153% year-over-year"
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "\u2022U.S. commercial remaining deal value (\"RDV\") of $6.238 billion, up 124% year-over-year and 27% quarter-over-quarter"
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "\u2022GAAP income from operations of $912 million, representing a 47% margin"
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "\u2022Adjusted income from operations of $1.194 billion, representing a 62% margin"
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "\u2022Rule of 40 score of 155%"
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "\u2022GAAP net income of $1.062 billion, representing a 55% margin"
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "\u2022Cash from operations of $1.216 billion, representing a 63% margin"
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "\u2022Adjusted free cash flow of $1.220 billion, representing a 63% margin"
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "\u2022GAAP earnings per share (\"EPS\") of $0.41"
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "\u2022Adjusted EPS of $0.41"
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "\u2022Cash, cash equivalents, and short-term U.S. Treasury securities of $9.2 billion"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "Q2 2026 Financial Summary"
+  },
+  {
+   "id": "P25",
+   "kind": "table",
+   "text": "(Unaudited)(Amounts in thousands, except percentages and per share amounts) | Second Quarter\nAmount\nRevenue | $ | 1,935,464\nYear-over-year growth | 93 | %\nAmount | Margin\nIncome from Operations | $ | 912,004 | 47 | %\nAdjusted Income from Operations | $ | 1,194,472 | 62 | %\nCash from Operations | $ | 1,216,167 | 63 | %\nAdjusted Free Cash Flow | $ | 1,220,359 | 63 | %\nNet Income Attributable to Common Stockholders | $ | 1,061,890 | 55 | %\nAdjusted Net Income Attributable to Common Stockholders | $ | 1,047,001\nAdjusted EBITDA | $ | 1,202,692 | 62 | %\nGAAP EPS, Diluted | $ | 0.41\nAdjusted EPS, Diluted | $ | 0.41"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "Outlook"
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "For Q3 2026, we expect:"
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "\u2022Revenue of between $2.160 - $2.164 billion."
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "\u2022Adjusted income from operations of between $1.292 - $1.296 billion."
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "For full year 2026:"
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "\u2022We are raising our revenue guidance to between $8.150 - $8.158 billion."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "\u2022We are raising our U.S. commercial revenue guidance to in excess of $3.424 billion, representing a growth rate of at least 134%."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "\u2022We are raising our adjusted income from operations guidance to between $4.889 - $4.897 billion."
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "\u2022We are raising our adjusted free cash flow guidance to between $4.5 - $4.7 billion."
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "\u2022And we continue to expect GAAP operating income and net income in each quarter of this year."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "CEO Letter"
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "Palantir CEO Alex Karp's quarterly letter is available through Palantir's website at https://www.palantir.com/newsroom/letters."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "Earnings Webcast"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "A live public webcast will be held at 5:00 PM ET today to discuss the results for our second quarter ended June 30, 2026 and financial outlook. The webcast can be accessed by registering online at https://palantir.events/palantirearnings-q22026. A replay of the webcast will be available at https://investors.palantir.com following the event."
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "An investor presentation, including supplemental financial information and reconciliations of certain non-GAAP measures to their nearest comparable GAAP measures, will be available through Palantir's Investor Relations website at https://investors.palantir.com."
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "Forward-Looking Statements"
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "This press release and statements on our earnings webcast contain \"forward-looking statements\" within the meaning of the \"safe harbor\" provisions of the Private Securities Litigation Reform Act of 1995, including, but not limited to, statements regarding our financial outlook, product development and related timing, distribution, and pricing, expected benefits of and applications for our software platforms, business strategy, and plans (including strategy and plans relating to our Artificial Intelligence Platform (\"AIP\"), sales and marketing efforts, sales force, partnerships, and customers), investments in our business, market trends and market size, opportunities (including growth opportunities), our expectations regarding our existing and potential investments in, and commercial contracts with, various entities, and our expectations regarding macroeconomic events. These forward-looking statements are made as of the date they were first issued and were based on current expectations, estimates, forecasts, and projections as well as the beliefs and assumptions of management. Words such as \"guidance,\" \"expect,\" \"anticipate,\" \"should,\" \"believe,\" \"hope,\" \"target,\" \"project,\" \"plan,\" \"goals,\" \"estimate,\" \"potential,\" \"predict,\" \"may,\" \"will,\" \"might,\" \"could,\" \"intend,\" \"shall,\" and variations of these terms or the negative of these terms and similar expressions are intended to identify these forward-looking statements. Forward-looking statements are subject to a number of risks and uncertainties, many of which involve factors or circumstances that are beyond our control. Our actual results could differ materially from those stated or implied in forward-looking statements due to a number of factors, including but not limited to risks detailed in our filings with the Securities and Exchange Commission (the \"SEC\"), including in our Annual Report on Form 10-K for the fiscal year ended December 31, 2025 and other filings and reports that we may file from time to time with the SEC, including our Quarterly Report on Form 10-Q for the quarter ended June 30, 2026. In particular, the following factors, among others, could cause our results to differ materially from those expressed or implied by such forward-looking statements: our ability to successfully execute our business and growth strategy; the sufficiency of our available funds to meet our liquidity needs; the demand for our platforms, product offerings, and services in general; our ability to increase our number of new customers and revenue generated from customers; our ability to realize some or all of the total contract value of customer contracts as revenue, including any contractual options available to customers or contractual periods that are subject to termination for convenience provisions; our long and unpredictable sales cycle; our ability to successfully execute our channel sales and other strategic initiatives with third parties; our ability to retain and expand our customer base; the fluctuation of our results of operations and our key business measures on a quarterly basis in future periods; the seasonality of our business; the implementation process for our platforms, which may be complex and lengthy; our ability to successfully develop and deploy new technologies to address the needs of our existing or prospective customers; our ability to make our platforms and product offerings easier to install, consume, and use; our ability to maintain and enhance our brand and reputation; our ability to maintain and enhance our culture as our business grows and as we pursue our business and financial goals; news or social media coverage about us or our leadership, including but not limited to coverage that presents, or relies on, inaccurate, misleading, incomplete, or otherwise damaging information; the impact of recent, ongoing, or future global macroeconomic and geopolitical events, fluctuating interest rates, monetary policy changes, foreign currency fluctuations, or the potential or actual imposition of tariffs or other impacts on trade relations on the business and operations of our company or of our existing or prospective customers and partners; issues raised by the use of artificial intelligence in our platforms; and any breach or access to our or customer or third-party data."
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "The forward-looking statements included in this press release represent our views as of the date of this press release. We anticipate that subsequent events and developments will cause our views to change. We undertake no intention or obligation to update or revise any forward-looking statements, whether as a result of new information, future events or otherwise. These forward-looking statements should not be relied upon as representing our views as of any date subsequent to the date of this press release. Past performance is not necessarily indicative of future results."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "Additional Definitions"
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "For the purpose of this press release, our earnings webcast, and our CEO's letter:"
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "\u2022Total contract value (\"TCV\") is the total potential lifetime value of contracts entered into with, or awarded by, our customers at the time of contract execution, annual contract value (\"ACV\") is defined as the total value of contracts closed in the period divided by the dollar-weighted average contract duration of those same contracts, and remaining deal value (\"RDV\") is the total remaining value of contracts as of the end of the reporting period. Except as noted below, TCV, ACV, and RDV each presume the exercise of all contract options available to our customers and no termination of contracts. However, the majority of our contracts are subject to termination provisions, including for convenience, and there can be no guarantee that contracts are not terminated or that contract options will be exercised. Further, RDV may exclude all or some portion of the value of certain commercial contracts as a result of our ongoing assessments of customers' financial condition, including the consideration of such customers' ability and intention to pay, and whether such contracts continue to meet the criteria for revenue recognition, among other factors."
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "\u2022Remaining performance obligations (\"RPO\") reflect the total values of contracts that have been entered into with, or awarded by, our customers, and represent non-cancelable contracted revenue that has not yet been recognized, which includes deferred revenue and, in certain instances, amounts that will be invoiced. We have elected the practical expedient, as permitted under Accounting Standards Codification 606-Revenue from Contracts with Customers, to not disclose remaining performance obligations for contracts with original terms of twelve months or less."
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "\u2022The term \"strategic commercial contracts\" is as defined in our Quarterly Report on Form 10-Q for the fiscal quarter ended March 31, 2026."
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "\u2022 \"Dollar-weighted duration basis\" is the total value of contracts closed in the applicable period, divided by the dollar-weighted average contract duration of those same contracts."
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "\u2022The term \"Rule of 40\" refers to the sum of our revenue growth rate year-over-year and our adjusted operating margin for each of the periods presented."
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "Non-GAAP Financial Measures"
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "This press release and the accompanying tables, as well as our earnings webcast, and our CEO's letter, contain the non-GAAP financial measures adjusted income from operations, which excludes stock-based compensation and related employer payroll taxes; adjusted operating margin; adjusted free cash flow; adjusted free cash flow margin; adjusted earnings before interest, taxes, depreciation, and amortization (\"adjusted EBITDA\"); adjusted EBITDA margin; adjusted net income attributable to common stockholders; and adjusted EPS, diluted."
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "We believe these non-GAAP financial measures and other metrics described in this press release help us evaluate our business, identify trends affecting Palantir's business, formulate business plans and financial projections, and make strategic decisions. We exclude stock-based compensation, which is a non-cash expense, from these non-GAAP financial measures because we believe that excluding this item provides meaningful supplemental information regarding operational performance and provides useful information to investors and others in understanding and evaluating our operating results in the same manner as our management team. We exclude employer payroll taxes related to stock-based compensation as it is difficult to predict and outside of Palantir's control."
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "Our definitions may differ from the definitions used by other companies and therefore comparability may be limited. In addition, other companies may not publish these or similar metrics. Further, these metrics have certain limitations as they do not include the impact of certain expenses that are reflected in our consolidated statements of operations. For example, adjusted free cash flow does not reflect our future contractual commitments or the total increase or decrease in our cash balances for a given period. Thus, our non-GAAP financial measures should be considered in addition to, not as a substitute for, or in isolation from, measures prepared in accordance with GAAP."
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "We compensate for these limitations by providing a reconciliation of each of these non-GAAP measures to the most comparable GAAP measure. We encourage investors and others to review our business, results of operations, and financial information in their entirety, not to rely on any single financial measure, and to view these non-GAAP measures in conjunction with the most directly comparable GAAP financial measure."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "A reconciliation table of the most comparable GAAP financial measure to each non-GAAP financial measure used in this press release is included at the end of this release. A reconciliation of non-GAAP guidance measures to corresponding GAAP measures is not available on a forward-looking basis without unreasonable effort due to the uncertainty regarding, and the potential variability of, reconciling items that may be incurred in the future, such as stock-based compensation and related employer payroll taxes, the effect of which may be significant."
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "Available Information"
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "Palantir uses its Investor Relations website at https://investors.palantir.com as a means of disclosing material non-public information and for complying with its disclosure obligations under Regulation FD. Accordingly, investors should monitor Palantir's Investor Relations website, in addition to following our press releases, SEC filings, public conference calls, and webcasts."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "About Palantir Technologies Inc."
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "Foundational software of tomorrow. Delivered today. Additional information is available at https://www.palantir.com."
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "Contacts"
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "Investor Relations investors@palantir.com"
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "Media media@palantir.com"
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "Palantir Technologies Inc."
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Operations (in thousands, except per share amounts)"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P67",
+   "kind": "table",
+   "text": "Three Months Ended June 30, | Six Months Ended June 30,\n2026 | 2025 | 2026 | 2025\nRevenue | $ | 1,935,464 | $ | 1,003,697 | $ | 3,568,047 | $ | 1,887,552\nCost of revenue (1) | 296,870 | 192,934 | 512,668 | 365,904\nGross profit | 1,638,594 | 810,763 | 3,055,379 | 1,521,648\nOperating expenses:\nSales and marketing (1) | 339,500 | 243,788 | 658,720 | 480,097\nResearch and development (1) | 192,513 | 135,043 | 353,494 | 269,932\nGeneral and administrative (1) | 194,577 | 162,615 | 377,163 | 326,254\nTotal operating expenses | 726,590 | 541,446 | 1,389,377 | 1,076,283\nIncome from operations | 912,004 | 269,317 | 1,666,002 | 445,365\nInterest income | 77,505 | 56,255 | 143,899 | 106,696\nOther income (expense), net | 91,836 | 6,596 | 160,045 | 3,423\nIncome before provision for income taxes | 1,081,345 | 332,168 | 1,969,946 | 555,484\nProvision for income taxes | 15,383 | 3,596 | 27,582 | 9,195\nNet income | 1,065,962 | 328,572 | 1,942,364 | 546,289\nLess: Net income attributable to noncontrolling interests | 4,072 | 1,845 | 9,947 | 5,531\nNet income attributable to common stockholders | $ | 1,061,890 | $ | 326,727 | $ | 1,932,417 | $ | 540,758\nEarnings per share attributable to common stockholders, basic | $ | 0.44 | $ | 0.14 | $ | 0.81 | $ | 0.23\nEarnings per share attributable to common stockholders, diluted | $ | 0.41 | $ | 0.13 | $ | 0.75 | $ | 0.21\nWeighted-average shares of common stock outstanding used in computing earnings per share attributable to common stockholders, basic | 2,399,820 | 2,365,196 | 2,396,861 | 2,356,983\nWeighted-average shares of common stock outstanding used in computing earnings per share attributable to common stockholders, diluted | 2,568,694 | 2,562,912 | 2,569,826 | 2,557,911"
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "----- (1) Includes stock-based compensation expense as follows (in thousands):"
+  },
+  {
+   "id": "P69",
+   "kind": "table",
+   "text": "Three Months Ended June 30, | Six Months Ended June 30,\n2026 | 2025 | 2026 | 2025\nCost of revenue | $ | 30,889 | $ | 14,973 | $ | 48,795 | $ | 29,989\nSales and marketing | 106,067 | 56,040 | 182,963 | 108,553\nResearch and development | 58,193 | 32,068 | 94,738 | 63,902\nGeneral and administrative | 70,060 | 56,890 | 140,305 | 112,866\nTotal stock-based compensation | $ | 265,209 | $ | 159,971 | $ | 466,801 | $ | 315,310"
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "Palantir Technologies Inc."
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "Condensed Consolidated Balance Sheets (in thousands)"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P73",
+   "kind": "table",
+   "text": "As of June 30, | As of December 31,\n2026 | 2025\nAssets\nCurrent assets:\nCash and cash equivalents | $ | 2,030,047 | $ | 1,423,796\nMarketable securities | 7,379,052 | 5,753,247\nAccounts receivable, net | 1,485,249 | 1,042,065\nPrepaid expenses and other current assets | 205,165 | 139,066\nTotal current assets | 11,099,513 | 8,358,174\nProperty and equipment, net | 61,403 | 51,960\nOperating lease right-of-use assets | 230,268 | 200,105\nOther assets | 287,380 | 290,153\nTotal assets | $ | 11,678,564 | $ | 8,900,392\nLiabilities and Equity\nCurrent liabilities:\nAccounts payable, accrued liabilities, and other | $ | 504,070 | $ | 409,552\nDeferred revenue | 579,437 | 408,963\nCustomer deposits | 452,075 | 357,066\nTotal current liabilities | 1,535,582 | 1,175,581\nDeferred revenue, noncurrent | 33,722 | 46,216\nCustomer deposits, noncurrent | 537 | 18\nOperating lease liabilities, noncurrent | 211,400 | 183,474\nOther noncurrent liabilities | 12,439 | 7,092\nTotal liabilities | 1,793,680 | 1,412,381\nPalantir's stockholders' equity:\nCommon stock | 2,403 | 2,391\nAdditional paid-in capital | 11,408,867 | 10,933,325\nAccumulated other comprehensive income (loss), net | (7,103) | 13,942\nAccumulated deficit | (1,629,973) | (3,562,390)\nTotal Palantir's stockholders' equity | 9,774,194 | 7,387,268\nNoncontrolling interests | 110,690 | 100,743\nTotal equity | 9,884,884 | 7,488,011\nTotal liabilities and equity | $ | 11,678,564 | $ | 8,900,392"
+  },
+  {
+   "id": "P74",
+   "kind": "text",
+   "text": "Palantir Technologies Inc."
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Cash Flows (in thousands)"
+  },
+  {
+   "id": "P76",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P77",
+   "kind": "table",
+   "text": "Six Months Ended June 30,\n2026 | 2025\nOperating activities\nNet income | $ | 1,942,364 | $ | 546,289\nAdjustments to reconcile net income to net cash provided by operating activities:\nDepreciation and amortization | 14,985 | 13,152\nStock-based compensation | 466,801 | 315,310\nUnrealized and realized (gain) loss from marketable securities, net | (62,242) | (452)\nOther operating activities | (85,582) | 2,092\nChanges in operating assets and liabilities:\nAccounts receivable, net | (433,801) | (163,501)\nPrepaid expenses and other assets | (53,906) | (7,307)\nAccounts payable and accrued liabilities | 88,097 | 48,202\nContract liabilities | 256,528 | 120,666\nOther liabilities | (17,912) | (24,937)\nNet cash provided by operating activities | 2,115,332 | 849,514\nInvesting activities\nPurchases of property and equipment | (21,955) | (13,818)\nPurchases of marketable securities | (3,505,299) | (2,576,231)\nProceeds from sales and redemption of marketable securities | 2,017,589 | 652,762\nOther investing activities | - | (70,000)\nNet cash used in investing activities | (1,509,665) | (2,007,287)\nFinancing activities\nProceeds from the exercise of common stock options | 9,757 | 95,201\nOther financing activities | (1,379) | (117,648)\nNet cash provided by (used in) financing activities | 8,378 | (22,447)\nEffect of foreign exchange on cash, cash equivalents, and restricted cash | (2,112) | 11,518\nNet increase (decrease) in cash, cash equivalents, and restricted cash | 611,933 | (1,168,702)\nCash, cash equivalents, and restricted cash - beginning of period | 1,451,425 | 2,119,936\nCash, cash equivalents, and restricted cash - end of period | $ | 2,063,358 | $ | 951,234"
+  },
+  {
+   "id": "P78",
+   "kind": "text",
+   "text": "Palantir Technologies Inc."
+  },
+  {
+   "id": "P79",
+   "kind": "text",
+   "text": "Reconciliation of GAAP to Non-GAAP Financial Measures (unaudited)"
+  },
+  {
+   "id": "P80",
+   "kind": "text",
+   "text": "Non-GAAP Reconciliations"
+  },
+  {
+   "id": "P81",
+   "kind": "text",
+   "text": "Adjusted Income from Operations and Adjusted Operating Margin (in thousands, except percentages)"
+  },
+  {
+   "id": "P82",
+   "kind": "table",
+   "text": "Three Months Ended June 30, | Six Months Ended June 30,\n2026 | 2025 | 2026 | 2025\nIncome from operations | $ | 912,004 | $ | 269,317 | $ | 1,666,002 | $ | 445,365\nAdd: stock-based compensation | 265,209 | 159,971 | 466,801 | 315,310\nAdd: employer payroll taxes related to stock-based compensation | 17,259 | 35,097 | 45,214 | 94,420\nAdjusted income from operations | $ | 1,194,472 | $ | 464,385 | $ | 2,178,017 | $ | 855,095\nAdjusted operating margin | 62 | % | 46 | % | 61 | % | 45 | %"
+  },
+  {
+   "id": "P83",
+   "kind": "text",
+   "text": "Adjusted Free Cash Flow and Adjusted Free Cash Flow Margin (in thousands, except percentages)"
+  },
+  {
+   "id": "P84",
+   "kind": "table",
+   "text": "Three Months Ended June 30,\n2026 | 2025\nNet cash provided by operating activities | $ | 1,216,167 | $ | 539,251\nAdd: cash paid for employer payroll taxes related to stock-based compensation | 18,746 | 37,152\nLess: purchases of property and equipment | (14,554) | (7,634)\nAdjusted free cash flow | $ | 1,220,359 | $ | 568,769\nAdjusted free cash flow margin | 63 | % | 57 | %"
+  },
+  {
+   "id": "P85",
+   "kind": "text",
+   "text": "Adjusted EBITDA and Adjusted EBITDA Margin (in thousands, except percentages)"
+  },
+  {
+   "id": "P86",
+   "kind": "table",
+   "text": "Three Months Ended June 30,\n2026\nNet income attributable to common stockholders | $ | 1,061,890\nAdd: net income attributable to noncontrolling interests | 4,072\nLess: interest income | (77,505)\nAdd: other (income) expense, net | (91,836)\nAdd: provision for income taxes | 15,383\nAdd: depreciation and amortization | 8,220\nAdd: stock-based compensation | 265,209\nAdd: employer payroll taxes related to stock-based compensation | 17,259\nAdjusted EBITDA | $ | 1,202,692\nAdjusted EBITDA margin | 62 | %"
+  },
+  {
+   "id": "P87",
+   "kind": "text",
+   "text": "Palantir Technologies Inc."
+  },
+  {
+   "id": "P88",
+   "kind": "text",
+   "text": "Reconciliation of GAAP to Non-GAAP Financial Measures (unaudited)"
+  },
+  {
+   "id": "P89",
+   "kind": "text",
+   "text": "Adjusted Net Income Attributable to Common Stockholders and Adjusted Earnings Per Share, Diluted (in thousands, except per share amounts)"
+  },
+  {
+   "id": "P90",
+   "kind": "table",
+   "text": "Three Months Ended June 30,\n2026\nNet income attributable to common stockholders | $ | 1,061,890\nAdd: stock-based compensation | 265,209\nAdd: employer payroll taxes related to stock-based compensation | 17,259\nLess: income tax effects and adjustments (1) | (297,357)\nAdjusted net income attributable to common stockholders | $ | 1,047,001\nWeighted-average shares used in computing adjusted earnings per share, diluted | 2,568,694\nAdjusted earnings per share, diluted | $ | 0.41"
+  },
+  {
+   "id": "P91",
+   "kind": "text",
+   "text": "---- (1) Income tax effect is based on an estimated long-term annual effective tax rate of 23.0% for the period presented."
+  }
+ ]
+}

@@ -1,0 +1,1562 @@
+{
+ "ticker": "NOW",
+ "name": "ServiceNow, Inc.",
+ "fiscal_label": "FY2025 Q4",
+ "calendar_label": "CY2025 Q4",
+ "period_end": "2025-12-31",
+ "source": {
+  "earnings_8k_accn": "0001373715-26-000005",
+  "earnings_8k_date": "2026-01-28",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000005/0001373715-26-000005-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000005/erq4fy25.htm"
+ },
+ "generated_at": "2026-11-04T19:13:12+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 17323,
+   "output_tokens": 114
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 14836,
+   "output_tokens": 1956,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P3",
+  "P4",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P11",
+  "P12",
+  "P13",
+  "P16",
+  "P17",
+  "P26",
+  "P27",
+  "P28",
+  "P30",
+  "P31",
+  "P46",
+  "P54",
+  "P62",
+  "P63",
+  "P64",
+  "P65",
+  "P69",
+  "P70",
+  "P109",
+  "P119",
+  "P123",
+  "P124",
+  "P125",
+  "P131",
+  "P132"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "ServiceNow reported Q4 2025 revenue of $3.568 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2025 Q4",
+     "value": "3.568",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 3568000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "revenue",
+         "value": 3568000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $443 million in the quarter.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2025 Q4",
+     "value": "443",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 443000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "operating_income",
+         "value": 443000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP net income was $401 million.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2025 Q4",
+     "value": "401",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 401000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "net_income",
+         "value": 401000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Operating cash flow reached $2.238 billion.",
+     "claim_type": "numeric",
+     "metric": "operating_cash_flow",
+     "period": "FY2025 Q4",
+     "value": "2.238",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetCashProvidedByUsedInOperatingActivities"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 2238000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "operating_cash_flow",
+         "value": 2238000000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations ended the quarter at $28.2 billion.",
+     "claim_type": "numeric",
+     "metric": "rpo",
+     "period": "FY2025 Q4",
+     "value": "28.2",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 28200000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "rpo",
+         "value": 28200000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001373715-26-000007",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue grew 20.7% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2025 Q4",
+     "value": "20.7",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 20.662833953331077,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "revenue",
+         "value": 3568000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2024 Q4",
+         "period_end": "2024-12-31",
+         "metric": "revenue",
+         "value": 2957000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2025 Q4 / FY2024 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating income rose 18.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "operating_income_yoy",
+     "period": "FY2025 Q4",
+     "value": "18.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 18.449197860962567,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "operating_income",
+         "value": 443000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2024 Q4",
+         "period_end": "2024-12-31",
+         "metric": "operating_income",
+         "value": 374000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2025 Q4 / FY2024 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Net income increased 4.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "net_income_yoy",
+     "period": "FY2025 Q4",
+     "value": "4.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 4.427083333333334,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "net_income",
+         "value": 401000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2024 Q4",
+         "period_end": "2024-12-31",
+         "metric": "net_income",
+         "value": 384000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2025 Q4 / FY2024 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "RPO grew 26.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "rpo_yoy",
+     "period": "FY2025 Q4",
+     "value": "26.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 26.45739910313901,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "rpo",
+         "value": 28200000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001373715-26-000007",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2024 Q4",
+         "period_end": "2024-12-31",
+         "metric": "rpo",
+         "value": 22300000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001373715-25-000010",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2025 Q4 / FY2024 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating income fell 22.6% sequentially.",
+     "claim_type": "numeric",
+     "metric": "operating_income_qoq",
+     "period": "FY2025 Q4",
+     "value": "22.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -22.552447552447553,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-12-31",
+         "metric": "operating_income",
+         "value": 443000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001373715-26-000007",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "operating_income",
+         "value": 572000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001373715-26-000096",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2025 Q4 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "CEO Bill McDermott said ServiceNow \"significantly beat Q4 expectations, accelerated net new business, and issued exceptional guidance for 2026\".",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "significantly beat Q4 expectations, accelerated net new business, and issued exceptional guidance for 2026",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P11"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P11",
+       "spans": [
+        "significantly beat Q4 expectations, accelerated net new business, and issued exceptional guidance for 2026"
+       ]
+      }
+     }
+    },
+    {
+     "text": "The CFO said \"our strategy, complete with a disciplined focus on margin expansion, remains unchanged\".",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "our strategy, complete with a disciplined focus on margin expansion, remains unchanged",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P13"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P13",
+       "spans": [
+        "our strategy, complete with a disciplined focus on margin expansion, remains unchanged"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Q1 2026 subscription revenue guidance includes roughly 100bps of contribution from Moveworks.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P63"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P63"
+      }
+     }
+    },
+    {
+     "text": "Full-year 2026 subscription revenue guidance is $15,530 to $15,570 million at the low end of range, $15,530 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026",
+     "value": "15,530",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P70"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P70"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Q1 2026 subscription revenue growth guidance carries a mix-shift headwind from self-hosted to hosted revenue.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P62"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P62"
+      }
+     }
+    },
+    {
+     "text": "Management guides Q1 2026 cRPO growth of 22.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q1",
+     "value": "22.5",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P65"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P65"
+      }
+     }
+    },
+    {
+     "text": "Integration of the closed Moveworks acquisition is a watch item.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P28"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P28"
+      }
+     }
+    },
+    {
+     "text": "The company plans an imminent accelerated share repurchase, which investors should track.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P31"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P31"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 18,
+  "by_status": {
+   "verified": 14,
+   "sourced": 4
+  },
+  "numeric": 12,
+  "numeric_verified": 12,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "ServiceNow reported Q4 2025 revenue of $3.568 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2025 Q4",
+      "value": "3.568",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP operating income was $443 million in the quarter.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2025 Q4",
+      "value": "443",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP net income was $401 million.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2025 Q4",
+      "value": "401",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Operating cash flow reached $2.238 billion.",
+      "claim_type": "numeric",
+      "metric": "operating_cash_flow",
+      "period": "FY2025 Q4",
+      "value": "2.238",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetCashProvidedByUsedInOperatingActivities"
+      }
+     },
+     {
+      "text": "Remaining performance obligations ended the quarter at $28.2 billion.",
+      "claim_type": "numeric",
+      "metric": "rpo",
+      "period": "FY2025 Q4",
+      "value": "28.2",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue grew 20.7% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2025 Q4",
+      "value": "20.7",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Operating income rose 18.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "operating_income_yoy",
+      "period": "FY2025 Q4",
+      "value": "18.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Net income increased 4.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "net_income_yoy",
+      "period": "FY2025 Q4",
+      "value": "4.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "RPO grew 26.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "rpo_yoy",
+      "period": "FY2025 Q4",
+      "value": "26.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     },
+     {
+      "text": "Operating income fell 22.6% sequentially.",
+      "claim_type": "numeric",
+      "metric": "operating_income_qoq",
+      "period": "FY2025 Q4",
+      "value": "22.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "CEO Bill McDermott said ServiceNow \"significantly beat Q4 expectations, accelerated net new business, and issued exceptional guidance for 2026\".",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "significantly beat Q4 expectations, accelerated net new business, and issued exceptional guidance for 2026",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P11"
+      }
+     },
+     {
+      "text": "The CFO said \"our strategy, complete with a disciplined focus on margin expansion, remains unchanged\".",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "our strategy, complete with a disciplined focus on margin expansion, remains unchanged",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P13"
+      }
+     },
+     {
+      "text": "Q1 2026 subscription revenue guidance includes roughly 100bps of contribution from Moveworks.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P63"
+      }
+     },
+     {
+      "text": "Full-year 2026 subscription revenue guidance is $15,530 to $15,570 million at the low end of range, $15,530 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026",
+      "value": "15,530",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P70"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Q1 2026 subscription revenue growth guidance carries a mix-shift headwind from self-hosted to hosted revenue.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P62"
+      }
+     },
+     {
+      "text": "Management guides Q1 2026 cRPO growth of 22.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q1",
+      "value": "22.5",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P65"
+      }
+     },
+     {
+      "text": "Integration of the closed Moveworks acquisition is a watch item.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P28"
+      }
+     },
+     {
+      "text": "The company plans an imminent accelerated share repurchase, which investors should track.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P31"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 erq4fy25.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "ServiceNow Reports Fourth Quarter and Full-Year 2025 Financial Results; Board of Directors Authorizes Additional $5B for Share Repurchase Program"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "\u2022ServiceNow exceeds guidance across all Q4 2025 topline growth and profitability metrics"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "\u2022Subscription revenues of $3,466 million in Q4 2025, representing 21% year-over-year growth, 19.5% in constant currency"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "\u2022Total revenues of $3,568 million in Q4 2025, representing 20.5% year-over-year growth, 19.5% in constant currency"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "\u2022Current remaining performance obligations of $12.85 billion as of Q4 2025, representing 25% year-over-year growth, 21% in constant currency"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "\u2022Remaining performance obligations of $28.2 billion as of Q4 2025, representing 26.5% year-over-year growth, 22.5% in constant currency"
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "\u2022Now Assist net new ACV in Q4 2025 more than doubled year-over-year"
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "\u2022ServiceNow Board authorizes additional $5 billion under share repurchase program with the primary objective of managing the impact of dilution; ServiceNow plans imminent $2 billion accelerated share repurchase"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "SANTA CLARA, Calif. - January 28, 2026 - ServiceNow (NYSE: NOW), the AI control tower for business reinvention, today announced financial results for its fourth quarter ended December 31, 2025, with subscription revenues of $3,466 million in Q4 2025, representing 21% year-over-year growth and 19.5% in constant currency."
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "\"ServiceNow significantly beat Q4 expectations, accelerated net new business, and issued exceptional guidance for 2026,\" said ServiceNow Chairman and CEO Bill McDermott. \"We had substantial growth in licensed users, workflows, and transactions on our platform. With our consistent Rule of 55+ profile, there is no AI company in the enterprise better positioned for sustainable profitable revenue growth than ServiceNow. We are building the AI control tower for business reinvention so enterprises can operate securely in an agentic AI world.\""
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "As of December 31, 2025, current remaining performance obligations (\"cRPO\"), contract revenue that will be recognized as revenue in the next 12 months, was $12.85 billion, representing 25% year-over-year growth and 21% in constant currency. The company had 244 transactions over $1 million in net new annual contract value (\"ACV\") in Q4 2025, representing nearly 40% year-over-year growth, and ended the quarter with 603 customers with more than $5 million in ACV, representing approximately 20% year-over-year growth."
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "\"Q4 was another strong quarter, concluding a remarkable year of AI innovation, with emerging products like Now Assist, Workflow Data Fabric, Raptor, and CPQ all outperforming,\" said ServiceNow President and CFO Gina Mastantuono. \"Our recent strategic acquisitions create enormous new market opportunities and solidify our ability to put AI to work securely across every corner of the enterprise. Make no mistake, our strategy, complete with a disciplined focus on margin expansion, remains unchanged. But the ambition is higher, and our confidence in sustained high organic growth has never been greater.\""
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "Recent Business Highlights"
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "Partner Updates"
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "\u2022Today, ServiceNow and Anthropic announced an expanded partnership to integrate Claude models more deeply into the ServiceNow AI Platform. Claude helps power ServiceNow's enterprise-grade AI development experience so developers of all skill levels can build and deploy agentic workflows with built-in governance. ServiceNow is also bringing leading Claude models into ServiceNow to support secure, compliant AI use across highly regulated industries."
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "\u2022ServiceNow unveiled a new collaboration with OpenAI in Q1 to drive agentic AI experiences across enterprises. It will enable direct customer access to frontier model capabilities, custom ServiceNow AI solutions, and increased speed and scale with no bespoke development required."
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "\u2022In Q1, ServiceNow announced enhancements to its global Partner Program at its annual Partner Kickoff event to accelerate AI agent innovation. The updates include a simplified pricing model, expanded partner incentives and co-marketing investments, and a reimagined Build Program to strengthen the ServiceNow Store as a marketplace for partner-built AI agents."
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "\u2022ServiceNow and Microsoft introduced an integration with Microsoft Agent 365 and the ServiceNow AI Platform to deliver seamless agentic AI orchestration and governance capabilities for joint customers. By uniting workflow intelligence, trusted cloud, and AI governance, the companies will connect copilots, agents, and data for greater visibility and control over AI agents."
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "\u2022ServiceNow and Figma launched a solution in Q4 that connects the Figma design platform with the ServiceNow AI Platform to accelerate commercial-grade app development. Customers can use Figma designs as direct prompts for ServiceNow's AI-powered Build Agent to create secure, enterprise-ready applications within minutes."
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "\u2022ServiceNow and NTT DATA deepened their partnership in Q4 to accelerate AI-led transformation for global enterprises. Together, the companies will co-develop new AI deployment models through programs such as Now Next AI, and scale NTT DATA's use of ServiceNow agentic AI."
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "Industry Expansion"
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "\u2022Today, ServiceNow and Fiserv announced a strategic commitment to transform commerce and financial services with AI. Fiserv will scale its use of ServiceNow Now Assist for Financial Services Operations (FSO) and Information Technology Service Management (ITSM), embedding AI directly into the operational workflows to improve IT and customer experiences."
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "\u2022Today, ServiceNow and Panasonic Avionics Corporation expanded their partnership to power in-flight engagement across more than 300 airline customers globally. Panasonic Avionics will deploy ServiceNow's AI-driven CRM end-to-end to unify customer operations, billing, service, and support on one platform."
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "Acquisitions"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\u2022ServiceNow announced its intent to acquire Armis to create a unified, end-to-end security exposure and operations stack to help customers defend against AI-powered attacks with greater confidence and speed. The acquisition will accelerate ServiceNow's roadmap to autonomous, proactive cybersecurity, and is expected to more than triple the company's market opportunity for security and risk, which is a top priority for CEOs as they adopt AI. The transaction is expected to close in the second half of 2026."
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "\u2022ServiceNow also announced its intent to acquire Veza to strengthen identity security as organizations adopt autonomous, AI-driven workflows. The acquisition will enhance customers' ability to see and manage access across people, applications, data, cloud environments, and AI agents. The transaction is expected to close in the first half of 2026."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "\u2022ServiceNow closed its acquisition of Moveworks on December 15, 2025. The companies' combined strengths in agentic AI, intelligent workflows, and enterprise search deliver an advanced AI platform for work and create an AI-native front door for employee engagement."
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "Investment"
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "\u2022ServiceNow repurchased approximately 3.6 million shares of its common stock for $597 million in Q4 as part of its share repurchase program1, with the primary objective of managing the impact of dilution. As of the end of the quarter, approximately $1.4 billion remained available for future share repurchases, and in January 2026, ServiceNow Board authorized an additional $5 billion under the share repurchase program."
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "\u2022ServiceNow plans to launch a $2 billion accelerated share repurchase imminently."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "\u2022A 5-for-1 split of the company's common stock became effective on December 17, 2025."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "\u2022ServiceNow announced a CA$110 million multi-year commitment to enable AI adoption at scale for Canada's public sector. The commitment includes building Canadian-hosted, AI-ready infrastructure, increasing in-country expertise through a new Canada Centre of Excellence, and adding approximately 100 new high-skilled, Canada-based jobs."
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "Recognition"
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "\u2022ServiceNow was recognized as a leader in multiple analyst reports, including The Forrester Wave\u2122: Enterprise Service Management Platforms, Q4 20252 and the IDC MarketScape: Worldwide AI-Enabled Asset-Intensive Enterprise Asset Management Applications 2025-2026 Vendor Assessment3."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "\u2022As a testament to its world-class reputation and culture, ServiceNow was named to the Fortune World's Most Admired Companies 2026\u2122 list4. Recently, ServiceNow also earned a spot on Glassdoor's 2026 Best Places to Work list, TIME's inaugural America's Growth Leaders 2026 list, and Fortune World's Best Workplaces 2025\u2122 list5."
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "1 The program does not have a fixed expiration date, may be suspended, or discontinued at any time, and does not obligate ServiceNow to acquire any amount of its common stock. The timing, manner, price, and amount of any repurchases will be determined by ServiceNow at its discretion and will depend on a variety of factors, including business, economic and market conditions, prevailing stock prices, corporate and regulatory requirements, and other considerations."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "2 Source: The Forrester Wave\u2122: Enterprise Service Management Platforms, Q4 2025, Forrester Research, Inc., November 10, 2025"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "Forrester Disclaimer"
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "Forrester does not endorse any company, product, brand, or service included in its research publications and does not advise any person to select the products or services of any company or brand based on the ratings included in such publications. Information is based on the best available resources. Opinions reflect judgment at the time and are subject to change. For more information, read about Forrester's objectivity at https://www.forrester.com/about-us/objectivity/."
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "3 Source: IDC MarketScape: Worldwide AI-Enabled Asset-Intensive Enterprise Asset Management Applications 2025-2026 Vendor Assessment (doc #US52977525, December 2025)"
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "4 From Fortune, \u00a92026 Fortune Media IP Limited. All rights reserved. Used under license."
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "5 From Fortune, \u00a92025 Fortune Media IP Limited. All rights reserved. Used under license."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "Fourth Quarter 2025 GAAP and Non-GAAP Results:"
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "The following table summarizes our financial results for the fourth quarter 2025:"
+  },
+  {
+   "id": "P46",
+   "kind": "table",
+   "text": "Fourth Quarter 2025 GAAP Results | Fourth Quarter 2025 Non-GAAP Results(1)\nAmount ($ millions) | Year/Year Growth (%) | Amount ($ millions)(2) | Year/Year Growth (%)\nSubscription revenues | $3,466 | 21 | % | $3,412 | 19.5 | %\nProfessional services and other revenues | $102 | 13 | % | $101 | 11 | %\nTotal revenues | $3,568 | 20.5 | % | $3,513 | 19.5 | %\nAmount ($ billions) | Year/Year Growth (%)(3) | Amount ($ billions)(2) | Year/Year Growth (%)(3)\ncRPO | $12.85 | 25 | % | $12.44 | 21 | %\nRPO | $28.2 | 26.5 | % | $27.2 | 22.5 | %\nAmount ($ millions) | Margin (%) | Amount ($ millions)(4) | Margin (%)(4)\nSubscription gross profit | $2,749 | 79.5 | % | $2,867 | 82.5 | %\nProfessional services and other gross loss | ($15) | (13.5 | %) | ($2) | (2 | %)\nTotal gross profit | $2,734 | 76.5 | % | $2,865 | 80.5 | %\nIncome from operations | $443 | 12.5 | % | $1,101 | 31 | %\nNet cash provided by operating activities | $2,238 | 62.5 | %\nFree cash flow | $2,032 | 57%\nAmount ($ millions) | Earnings per Basic/Diluted Share ($) | Amount ($ millions)(4) | Earnings per Basic/Diluted Share ($)(4)\nNet income | $401 | $0.39 / $0.38 | $959 | $0.92 / $0.92"
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "(1)We report non-GAAP financial measures in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP. See the section entitled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP measures."
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "(2)Non-GAAP subscription revenues and total revenues are adjusted for constant currency by excluding effects of foreign currency rate fluctuations and any gains or losses from foreign currency hedge contracts. Professional services and other revenues, cRPO, and RPO are adjusted only for constant currency. See the section entitled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP measures."
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "(3)Includes approximately 100bps of contribution from Moveworks."
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "(4)Refer to the table entitled \"GAAP to Non-GAAP Reconciliation\" for a reconciliation of GAAP to non-GAAP measures."
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "Note: Numbers rounded for presentation purposes and may not foot."
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "Full-Year 2025 GAAP and Non-GAAP Results:"
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "The following table summarizes our financial results for the full-year 2025:"
+  },
+  {
+   "id": "P54",
+   "kind": "table",
+   "text": "Full-Year 2025 GAAP Results | Full-Year 2025 Non-GAAP Results(1)\nAmount ($ millions) | Year/Year Growth (%) | Amount ($ millions)(2) | Year/Year Growth (%)\nSubscription revenues | $12,883 | 21 | % | $12,797 | 20.5 | %\nProfessional services and other revenues | $395 | 17 | % | $392 | 16 | %\nTotal revenues | $13,278 | 21 | % | $13,189 | 20 | %\nAmount ($ billions) | Year/Year Growth (%)(3) | Amount ($ billions)(2) | Year/Year Growth (%)(3)\ncRPO | $12.85 | 25 | % | $12.44 | 21 | %\nRPO | $28.2 | 26.5 | % | $27.2 | 22.5 | %\nAmount ($ millions) | Margin (%) | Amount ($ millions)(4) | Margin (%)(4)\nSubscription gross profit | $10,314 | 80 | % | $10,733 | 83.5 | %\nProfessional services and other gross (loss) profit | ($19) | (4.5 | %) | $28 | 7 | %\nTotal gross profit | $10,295 | 77.5 | % | $10,761 | 81 | %\nIncome from operations | $1,824 | 13.5 | % | $4,149 | 31 | %\nNet cash provided by operating activities | $5,444 | 41 | %\nFree cash flow | $4,636 | 35 | %\nAmount ($ millions) | Earnings per Basic/Diluted Share ($) | Amount ($ millions)(4) | Earnings per Basic/Diluted Share ($)(4)\nNet income | $1,748 | $1.69 / $1.67 | $3,669 | $3.54 / $3.51"
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "(1)We report non-GAAP financial measures in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP. See the section entitled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP measures."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "(2)Non-GAAP subscription revenues and total revenues are adjusted for constant currency by excluding effects of foreign currency rate fluctuations and any gains or losses from foreign currency hedge contracts. Professional services and other revenues, cRPO, and RPO are adjusted only for constant currency. See the section entitled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP measures."
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "(3)Includes approximately 100bps of contribution from Moveworks."
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "(4)Refer to the table entitled \"GAAP to Non-GAAP Reconciliation\" for a reconciliation of GAAP to non-GAAP measures."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "Note: Numbers rounded for presentation purposes and may not foot."
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "Financial Outlook"
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "Our guidance includes GAAP and non\u2011GAAP financial measures. The non\u2011GAAP growth rates for subscription revenues are adjusted for constant currency by excluding the effects of foreign currency rate fluctuations and any gains or losses from foreign currency hedge contracts, and the non-GAAP growth rates for cRPO are adjusted only for constant currency to provide better visibility into the underlying business trends."
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "Our Q1 2026 subscription revenue growth guidance includes an approximately 150bps headwind from a mix shift of self\u2011hosted revenue to hosted revenue, partially driven by strong adoption of our hyperscaler offerings."
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "Our Q1 2026 subscription revenue growth, Q1 2026 cRPO growth, and full-year 2026 subscription revenue growth guidance each include approximately 100bps of contribution from Moveworks."
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "The following table summarizes our guidance for the first quarter 2026:"
+  },
+  {
+   "id": "P65",
+   "kind": "table",
+   "text": "First Quarter 2026GAAP Guidance | First Quarter 2026 Non-GAAP Guidance(1)\nAmount ($ millions)(2) | Year/Year Growth (%)(2) | Constant Currency Year/Year Growth (%)\nSubscription revenues | $3,650 - $3,655 | 21.5 | % | 18.5% - 19%\ncRPO | 22.5 | % | 20 | %\nMargin (%)(3)\nIncome from operations | 31.5 | %\nAmount (billions)\nWeighted-average shares used to compute diluted net income per share | 1.05"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "(1)We report non-GAAP financial measures in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP. See the section entitled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP measures."
+  },
+  {
+   "id": "P67",
+   "kind": "text",
+   "text": "(2)Guidance for GAAP subscription revenues and GAAP subscription revenues and cRPO growth rates are based on the 30-day average of foreign exchange rates for December 2025 for entities reporting in currencies other than U.S. Dollars."
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "(3)Refer to the table entitled \"Reconciliation of Non-GAAP Financial Guidance\" for a reconciliation of GAAP to non-GAAP measures."
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "The following table summarizes our guidance for the full-year 2026:"
+  },
+  {
+   "id": "P70",
+   "kind": "table",
+   "text": "Full-Year 2026GAAP Guidance | Full-Year 2026 Non-GAAP Guidance(1)\nAmount ($ millions)(2) | Year/Year Growth (%)(2) | Constant Currency Year/Year Growth (%)\nSubscription revenues | $15,530 - $15,570 | 20.5% - 21% | 19.5% - 20%\nMargin (%)(3)\nSubscription gross profit | 82 | %\nIncome from operations | 32 | %\nFree cash flow | 36 | %\nAmount (billions)\nWeighted-average shares used to compute diluted net income per share | 1.05"
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "(1)We report non-GAAP financial measures in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP. See the section entitled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP measures."
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "(2)GAAP subscription revenues and related growth rate for the future quarter included in our full-year 2026 guidance are based on the 30-day average of foreign exchange rates for December 2025 for entities reporting in currencies other than U.S. Dollars."
+  },
+  {
+   "id": "P73",
+   "kind": "text",
+   "text": "(3)Refer to the table entitled \"Reconciliation of Non-GAAP Financial Guidance\" for a reconciliation of GAAP to non-GAAP measures."
+  },
+  {
+   "id": "P74",
+   "kind": "text",
+   "text": "Note: Numbers are rounded for presentation purposes and may not foot."
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "Conference Call Details"
+  },
+  {
+   "id": "P76",
+   "kind": "text",
+   "text": "The conference call will begin at 2 p.m. Pacific Time (22:00 GMT) on January 28, 2026. Interested parties may listen to the call by dialing (888) 330\u20112455 (Passcode: 8135305), or if outside North America, by dialing (240) 789\u20112717 (Passcode: 8135305). Individuals may access the live teleconference from this webcast."
+  },
+  {
+   "id": "P77",
+   "kind": "text",
+   "text": "https://events.q4inc.com/attendee/220621032"
+  },
+  {
+   "id": "P78",
+   "kind": "text",
+   "text": "An audio replay of the conference call and webcast will be available two hours after its completion and will be accessible for 30 days. To hear the replay, interested parties may go to the investor relations section of the ServiceNow website or dial (800) 770\u20112030 (Passcode: 8135305), or if outside North America, by dialing (647) 362\u20119199 (Passcode: 8135305)."
+  },
+  {
+   "id": "P79",
+   "kind": "text",
+   "text": "Investor Presentation Details"
+  },
+  {
+   "id": "P80",
+   "kind": "text",
+   "text": "An investor presentation providing additional information, including forward-looking guidance, and analysis can be found at https://investors.servicenow.com."
+  },
+  {
+   "id": "P81",
+   "kind": "text",
+   "text": "Upcoming Investor Conferences"
+  },
+  {
+   "id": "P82",
+   "kind": "text",
+   "text": "ServiceNow today announced that it will attend and have executives present at two upcoming investor conferences."
+  },
+  {
+   "id": "P83",
+   "kind": "text",
+   "text": "These include:"
+  },
+  {
+   "id": "P84",
+   "kind": "text",
+   "text": "\u2022ServiceNow Group Vice President and General Manager, Risk & Security Products Lou Fiorello will participate in the Securing AI Panel at the Bernstein TMT Forum on Wednesday, February 25, 2026, at 3:30 p.m. PT."
+  },
+  {
+   "id": "P85",
+   "kind": "text",
+   "text": "\u2022ServiceNow Chairman and Chief Executive Officer Bill McDermott will participate in a fireside chat at the Morgan Stanley TMT Conference on Wednesday, March 4, 2026, at 12:20 p.m. PT."
+  },
+  {
+   "id": "P86",
+   "kind": "text",
+   "text": "The live webcast for each will be accessible on the investor relations section of the ServiceNow website at https://investors.servicenow.com and archived on the ServiceNow site for a period of 30 days."
+  },
+  {
+   "id": "P87",
+   "kind": "text",
+   "text": "Statement Regarding Use of Non-GAAP Financial Measures"
+  },
+  {
+   "id": "P88",
+   "kind": "text",
+   "text": "We use the following non-GAAP financial measures in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP."
+  },
+  {
+   "id": "P89",
+   "kind": "text",
+   "text": "\u2022Revenues. We adjust revenues and related growth rates for constant currency to provide a framework for assessing how our business performed excluding the effect of foreign currency rate fluctuations and any gains or losses from foreign currency hedge contracts that are reported in the current and comparative period. To exclude the effect of foreign currency rate fluctuations, current period results for entities reporting in currencies other than U.S. Dollars (\"USD\") are converted into USD at the average exchange rates in effect during the comparison period (for Q4 2024, the average exchange rates in effect for our major currencies were 1 USD to 0.94 Euros and 1 USD to 0.78 British Pound Sterling (\"GBP\")), rather than the actual average exchange rates in effect during the current period (for Q4 2025, the average exchange rates in effect for our major currencies were 1 USD to 0.86 Euros and 1 USD to 0.75 GBP). Guidance for related growth rates is derived by applying the average exchange rates in effect during the comparison period, rather than the exchange rates for the guidance period, adjusted for any foreign currency hedging effects. We believe the presentation of revenues and related growth rates adjusted for constant currency facilitates the comparison of revenues year-over-year."
+  },
+  {
+   "id": "P90",
+   "kind": "text",
+   "text": "\u2022Remaining performance obligations and current remaining performance obligations. We adjust cRPO and remaining performance obligations (\"RPO\") and related growth rates for constant currency to provide a framework for assessing how our business performed. To present this information, current period results for entities reporting in currencies other than USD are converted into USD at the exchange rates in effect at the end of the comparison period (for Q4 2024, the end of the period exchange rates in effect for our major currencies were 1 USD to 0.96 Euros and 1 USD to 0.80 GBP), rather than the actual end of the period exchange rates in effect during the current period (for Q4 2025, the end of the period exchange rates in effect for our major currencies were 1 USD to 0.85 Euros and 1 USD to 0.74 GBP). Guidance for the related growth rate is derived by applying the end of period exchange rates in effect during the comparison period rather than the exchange rates in effect during the guidance period. We believe the presentation of cRPO and RPO and related growth rates adjusted for constant currency facilitates the comparison of cRPO and RPO year-over-year, respectively."
+  },
+  {
+   "id": "P91",
+   "kind": "text",
+   "text": "\u2022Gross profit, Income from operations, Net income and Net income per share - diluted. Our non-GAAP presentation of gross profit, income from operations, and net income measures exclude certain non-cash or non-recurring items, including stock-based compensation expense, amortization of purchased intangibles, legal settlements, impairment of assets, severance costs, contract termination costs, business combination and other related costs including compensation expense, and income tax 6 effects and adjustments. We believe these adjustments provide useful supplemental information to investors and facilitates the analysis of our operating results and comparison of operating results across reporting periods."
+  },
+  {
+   "id": "P92",
+   "kind": "text",
+   "text": "\u2022Free cash flow. Free cash flow is defined as net cash provided by operating activities plus cash outflows for legal settlements and business combination and other related costs including compensation expense, reduced by purchases of property and equipment. Free cash flow margin is calculated as free cash flow as a percentage of total revenues. We believe information regarding free cash flow and free cash flow margin provides useful information to investors because it is an indicator of the strength and performance of our business operations."
+  },
+  {
+   "id": "P93",
+   "kind": "text",
+   "text": "Our presentation of non-GAAP financial measures may not be comparable to similar measures used by other companies. We encourage investors to carefully consider our results under GAAP, as well as our supplemental non-GAAP information and the reconciliation between these presentations, to more fully understand our business. Please see the tables included at the end of this release for the reconciliation of GAAP and non-GAAP results for gross profit, income from operations, net income, net income per share, and free cash flow."
+  },
+  {
+   "id": "P94",
+   "kind": "text",
+   "text": "Use of Forward-Looking Statements"
+  },
+  {
+   "id": "P95",
+   "kind": "text",
+   "text": "This release contains \"forward-looking statements\" regarding our performance, including but not limited to statements in the section entitled \"Financial Outlook\" and statements regarding the expected benefits of our announced partnerships, and statements concerning the terms and timing of the accelerated share repurchase program. Forward-looking statements are subject to known and unknown risks and uncertainties and are based on potentially inaccurate assumptions that could cause actual results to differ materially from those expected or implied by the forward-looking statements. If any such risks or uncertainties materialize or if any of the assumptions prove incorrect, our results could differ materially from the results expressed or implied by the forward-looking statements we make."
+  },
+  {
+   "id": "P96",
+   "kind": "text",
+   "text": "Factors that may cause actual results to differ materially from those in any forward-looking statements include, among others, experiencing an actual or perceived cyber-security event or weakness; our ability to comply with evolving privacy laws, data transfer restrictions, and other foreign and domestic standards related to data and the Internet; errors, interruptions, delays or security breaches in or of our service or data centers; our ability to maintain and attract key employees and manage workplace culture; alleged violations of laws and regulations, including those relating to anti-bribery and anti-corruption and those relating to public sector contracting requirements; our ability to compete successfully against existing and new competitors; our ability to predict, prepare for and respond promptly to rapidly evolving technological, market and customer developments; our ability to grow our business, including converting remaining performance obligations into revenue, adding and retaining customers, selling additional subscriptions to existing customers, selling to larger enterprises, government and regulated organizations with complex sales cycles and certification processes, and entering new geographies and markets; our ability to develop and gain customer demand for and acceptance of existing, new and improved products and services, including products that incorporate AI technology; our ability to expand and maintain our partnerships and partner programs, including expected market opportunity from such relationships, and realize the anticipated benefits thereof; global macroeconomic and political conditions including tariffs, inflation and armed conflicts; fluctuations in the value of foreign currencies relative to the U.S. Dollar; fluctuations in interest rates; our ability to consummate and realize the benefits of any strategic transactions or acquisitions; our ability to execute share repurchases, including the timing, manner, price, and amount of any repurchase, including the accelerated share repurchase program; and fluctuations and volatility in our stock price."
+  },
+  {
+   "id": "P97",
+   "kind": "text",
+   "text": "Further information on these and other factors that could affect our financial results are included in our Form 10-K for the year ended December 31, 2025, and in other filings we make with the Securities and Exchange Commission from time to time."
+  },
+  {
+   "id": "P98",
+   "kind": "text",
+   "text": "We undertake no obligation, and do not intend, to update these forward-looking statements, to review or confirm analysts' expectations, or to provide interim reports or updates on the progress of the current financial quarter."
+  },
+  {
+   "id": "P99",
+   "kind": "text",
+   "text": "About ServiceNow"
+  },
+  {
+   "id": "P100",
+   "kind": "text",
+   "text": "ServiceNow (NYSE: NOW) is putting AI to work for people. We move with the pace of innovation to help customers transform organizations across every industry while upholding a trustworthy, human centered approach to deploying our products and services at scale. Our AI platform for business transformation connects people, processes, data, and devices to increase productivity and maximize business outcomes. For more information, visit: www.servicenow.com."
+  },
+  {
+   "id": "P101",
+   "kind": "text",
+   "text": "\u00a9 2026 ServiceNow, Inc. All rights reserved. ServiceNow, the ServiceNow logo, Now, and other ServiceNow marks are trademarks and/or registered trademarks of ServiceNow, Inc. in the United States and/or other countries. Other company names, product names, and logos may be trademarks of the respective companies with which they are associated."
+  },
+  {
+   "id": "P102",
+   "kind": "text",
+   "text": "Media Contact:"
+  },
+  {
+   "id": "P103",
+   "kind": "text",
+   "text": "Johnna Hoff (408) 250-8644 press@servicenow.com"
+  },
+  {
+   "id": "P104",
+   "kind": "text",
+   "text": "Investor Contact:"
+  },
+  {
+   "id": "P105",
+   "kind": "text",
+   "text": "Darren Yip (925) 388-7205 ir@servicenow.com 8"
+  },
+  {
+   "id": "P106",
+   "kind": "text",
+   "text": "ServiceNow, Inc."
+  },
+  {
+   "id": "P107",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Operations (in millions, except per share data)"
+  },
+  {
+   "id": "P108",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P109",
+   "kind": "table",
+   "text": "Three Months Ended | Year Ended\nDecember 31, 2025 | December 31, 2024 | December 31, 2025 | December 31, 2024\nRevenues:\nSubscription | $ | 3,466 | $ | 2,866 | $ | 12,883 | $ | 10,646\nProfessional services and other | 102 | 91 | 395 | 338\nTotal revenues | 3,568 | 2,957 | 13,278 | 10,984\nCost of revenues (1):\nSubscription | 717 | 536 | 2,569 | 1,942\nProfessional services and other | 117 | 95 | 414 | 345\nTotal cost of revenues | 834 | 631 | 2,983 | 2,287\nGross profit | 2,734 | 2,326 | 10,295 | 8,697\nOperating expenses (1):\nSales and marketing | 1,150 | 1,027 | 4,388 | 3,854\nResearch and development | 773 | 668 | 2,960 | 2,543\nGeneral and administrative | 368 | 257 | 1,123 | 936\nTotal operating expenses | 2,291 | 1,952 | 8,471 | 7,333\nIncome from operations | 443 | 374 | 1,824 | 1,364\nInterest income | 105 | 106 | 451 | 419\nOther expense, net | (7) | (17) | (14) | (45)\nIncome before income taxes | 541 | 463 | 2,261 | 1,738\nProvision for income taxes | 140 | 79 | 513 | 313\nNet income | $ | 401 | $ | 384 | $ | 1,748 | $ | 1,425\nNet income per share - basic (2) | $ | 0.39 | $ | 0.37 | $ | 1.69 | $ | 1.38\nNet income per share - diluted (2) | $ | 0.38 | $ | 0.37 | $ | 1.67 | $ | 1.37\nWeighted-average shares used to compute net income per share - basic (2) | 1,039 | 1,032 | 1,037 | 1,029\nWeighted-average shares used to compute net income per share - diluted (2) | 1,047 | 1,047 | 1,047 | 1,042"
+  },
+  {
+   "id": "P110",
+   "kind": "text",
+   "text": "(1)Includes stock-based compensation as follows:"
+  },
+  {
+   "id": "P111",
+   "kind": "table",
+   "text": "Three Months Ended | Year Ended\nDecember 31, 2025 | December 31, 2024 | December 31, 2025 | December 31, 2024\nCost of revenues:\nSubscription | $ | 78 | $ | 66 | $ | 300 | $ | 250\nProfessional services and other | 11 | 11 | 44 | 46\nOperating expenses:\nSales and marketing | 142 | 146 | 586 | 565\nResearch and development | 207 | 176 | 791 | 655\nGeneral and administrative | 56 | 55 | 234 | 230"
+  },
+  {
+   "id": "P112",
+   "kind": "text",
+   "text": "(2) Prior period results have been retroactively adjusted to reflect the effects of the five-for-one stock split, which was effective December 17, 2025 9"
+  },
+  {
+   "id": "P113",
+   "kind": "text",
+   "text": "ServiceNow, Inc."
+  },
+  {
+   "id": "P114",
+   "kind": "text",
+   "text": "Condensed Consolidated Balance Sheets (in millions)"
+  },
+  {
+   "id": "P115",
+   "kind": "table",
+   "text": "December 31, 2025 | December 31, 2024\n(unaudited)\nAssets\nCurrent assets:\nCash and cash equivalents | $ | 3,726 | $ | 2,304\nMarketable securities | 2,558 | 3,458\nAccounts receivable, net | 2,627 | 2,240\nCurrent portion of deferred commissions | 590 | 517\nPrepaid expenses and other current assets | 970 | 668\nTotal current assets | 10,471 | 9,187\nDeferred commissions, less current portion | 1,114 | 999\nLong-term marketable securities | 3,771 | 4,111\nStrategic investments | 1,542 | 472\nProperty and equipment, net | 2,289 | 1,763\nOperating lease right-of-use assets | 806 | 693\nIntangible assets, net | 1,121 | 209\nGoodwill | 3,578 | 1,273\nDeferred tax assets | 1,056 | 1,385\nOther assets | 290 | 291\nTotal assets | $ | 26,038 | $ | 20,383\nLiabilities and Stockholders' Equity\nCurrent liabilities:\nAccounts payable | $ | 204 | $ | 68\nAccrued expenses and other current liabilities | 1,813 | 1,369\nCurrent portion of deferred revenue | 8,314 | 6,819\nCurrent portion of operating lease liabilities | 112 | 102\nTotal current liabilities | 10,443 | 8,358\nDeferred revenue, less current portion | 120 | 95\nOperating lease liabilities, less current portion | 800 | 687\nLong-term debt, net | 1,491 | 1,489\nOther long-term liabilities | 220 | 145\nStockholders' equity | 12,964 | 9,609\nTotal liabilities and stockholders' equity | $ | 26,038 | $ | 20,383"
+  },
+  {
+   "id": "P116",
+   "kind": "text",
+   "text": "ServiceNow, Inc."
+  },
+  {
+   "id": "P117",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Cash Flows (in millions)"
+  },
+  {
+   "id": "P118",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P119",
+   "kind": "table",
+   "text": "Three Months Ended | Year Ended\nDecember 31, 2025 | December 31, 2024 | December 31, 2025 | December 31, 2024\nCash flows from operating activities:\nNet income | $ | 401 | $ | 384 | $ | 1,748 | $ | 1,425\nAdjustments to reconcile net income to net cash provided by operating activities:\nDepreciation and amortization | 212 | 154 | 738 | 564\nAmortization of deferred commissions | 167 | 147 | 621 | 550\nStock-based compensation | 494 | 454 | 1,955 | 1,746\nDeferred income taxes | 77 | 51 | 249 | 98\nOther | 61 | (20) | 104 | (51)\nChanges in operating assets and liabilities, net of effect of business combinations:\nAccounts receivable | (1,052) | (981) | (312) | (254)\nDeferred commissions | (296) | (252) | (758) | (713)\nPrepaid expenses and other assets | (185) | (65) | (384) | (332)\nAccounts payable | 7 | (94) | 55 | (52)\nDeferred revenue | 1,892 | 1,534 | 1,179 | 1,179\nAccrued expenses and other liabilities | 460 | 323 | 249 | 107\nNet cash provided by operating activities | $ | 2,238 | $ | 1,635 | $ | 5,444 | $ | 4,267\nCash flows from investing activities:\nPurchases of property and equipment | (238) | (253) | (868) | (852)\nBusiness combinations, net of cash acquired | (869) | (31) | (1,084) | (113)\nPurchases of other intangibles | - | (10) | (43) | (40)\nPurchases of marketable securities | (95) | (1,079) | (2,814) | (5,031)\nPurchases of strategic investments | (36) | (32) | (1,056) | (181)\nSales and maturities of marketable securities | 728 | 728 | 4,138 | 3,752\nOther | 12 | (61) | 38 | (36)\nNet cash used in investing activities | $ | (498) | $ | (738) | $ | (1,689) | $ | (2,501)\nCash flows from financing activities:\nProceeds from employee stock plans | - | - | 270 | 237\nRepurchases of common stock | (597) | (296) | (1,840) | (696)\nTaxes paid related to net share settlement of equity awards | (142) | (175) | (770) | (700)\nBusiness combination | - | - | - | (184)\nNet cash used in financing activities | $ | (739) | $ | (471) | $ | (2,340) | $ | (1,343)\nForeign currency effect on cash, cash equivalents and restricted cash | (3) | (9) | 7 | (17)\nNet change in cash, cash equivalents and restricted cash | 998 | 417 | 1,422 | 406\nCash, cash equivalents and restricted cash at beginning of period | 2,734 | 1,893 | 2,310 | 1,904\nCash, cash equivalents and restricted cash at end of period | $ | 3,732 | $ | 2,310 | $ | 3,732 | $ | 2,310"
+  },
+  {
+   "id": "P120",
+   "kind": "text",
+   "text": "ServiceNow, Inc."
+  },
+  {
+   "id": "P121",
+   "kind": "text",
+   "text": "GAAP to Non-GAAP Reconciliation (in millions, except per share data)"
+  },
+  {
+   "id": "P122",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P123",
+   "kind": "table",
+   "text": "Three Months Ended | Year Ended\nDecember 31, 2025 | December 31, 2024 | December 31, 2025 | December 31, 2024\nGross profit:\nGAAP subscription gross profit | $ | 2,749 | $ | 2,330 | $ | 10,314 | $ | 8,704\nStock-based compensation | 78 | 66 | 300 | 250\nAmortization of purchased intangibles | 39 | 20 | 114 | 84\nSeverance costs | 1 | - | 5 | -\nNon-GAAP subscription gross profit | $ | 2,867 | $ | 2,416 | $ | 10,733 | $ | 9,038\nGAAP professional services and other gross loss | $ | (15) | $ | (4) | $ | (19) | $ | (7)\nStock-based compensation | 11 | 11 | 44 | 46\nSeverance costs | 2 | - | 3 | -\nNon-GAAP professional services and other gross (loss) profit | $ | (2) | $ | 7 | $ | 28 | $ | 39\nGAAP gross profit | $ | 2,734 | $ | 2,326 | $ | 10,295 | $ | 8,697\nStock-based compensation | 89 | 77 | 344 | 296\nAmortization of purchased intangibles | 39 | 20 | 114 | 84\nSeverance costs | 3 | - | 8 | -\nNon-GAAP gross profit | $ | 2,865 | $ | 2,423 | $ | 10,761 | $ | 9,077\nGross margin:\nGAAP subscription gross margin | 79.5 | % | 81.5 | % | 80 | % | 82 | %\nStock-based compensation as % of subscription revenues | 2.5 | % | 2.5 | % | 2.5 | % | 2.5 | %\nAmortization of purchased intangibles as % of subscription revenues | 1 | % | 0.5 | % | 1 | % | 1 | %\nSeverance costs as % of subscription revenues | - | % | - | % | - | % | - | %\nNon-GAAP subscription gross margin | 82.5 | % | 84.5 | % | 83.5 | % | 85 | %\nGAAP professional services and other gross margin | (13.5 | %) | (4 | %) | (4.5 | %) | (2 | %)\nStock-based compensation as % of professional services and other revenues | 11 | % | 12.5 | % | 11 | % | 13.5 | %\nSeverance costs as % of professional services and other revenues | 0.5 | % | - | % | 0.5 | % | - | %\nNon-GAAP professional services and other gross margin | (2 | %) | 8.5 | % | 7 | % | 11.5 | %\nGAAP gross margin | 76.5 | % | 78.5 | % | 77.5 | % | 79 | %\nStock-based compensation as % of total revenues | 2.5 | % | 2.5 | % | 2.5 | % | 2.5 | %\nAmortization of purchased intangibles as % of total revenues | 1 | % | 0.5 | % | 1 | % | 1 | %\nSeverance costs as % of total revenues | - | % | - | % | - | % | - | %\nNon-GAAP gross margin | 80.5 | % | 82 | % | 81 | % | 82.5 | %"
+  },
+  {
+   "id": "P124",
+   "kind": "table",
+   "text": "Income from operations:\nGAAP income from operations | $ | 443 | $ | 374 | $ | 1,824 | $ | 1,364\nStock-based compensation | 494 | 454 | 1,955 | 1,746\nAmortization of purchased intangibles | 41 | 23 | 120 | 94\nBusiness combination and other related costs | 65 | 4 | 109 | 33\nImpairment of assets | - | - | 30 | -\nSeverance costs | 21 | - | 74 | -\nLegal settlements | - | 17 | - | 17\nContract termination costs | 37 | - | 37 | -\nNon-GAAP income from operations | $ | 1,101 | $ | 872 | $ | 4,149 | $ | 3,254\nOperating margin:\nGAAP operating margin | 12.5 | % | 12.5 | % | 13.5 | % | 12.5 | %\nStock-based compensation as % of total revenues | 14 | % | 15.5 | % | 14.5 | % | 16 | %\nAmortization of purchased intangibles as % of total revenues | 1 | % | 1 | % | 1 | % | 1 | %\nBusiness combination and other related costs as % of total revenues | 2 | % | - | % | 1 | % | - | %\nImpairment of assets as % of total revenues | - | % | - | % | - | % | - | %\nSeverance costs as % of total revenues | 0.5 | % | - | % | 0.5 | % | - | %\nLegal settlements as % of total revenues | - | % | 0.5 | % | - | % | - | %\nContract termination costs as % of total revenues | 1 | % | - | % | 0.5 | % | - | %\nNon-GAAP operating margin | 31 | % | 29.5 | % | 31 | % | 29.5 | %\nNet income:\nGAAP net income | $ | 401 | $ | 384 | $ | 1,748 | $ | 1,425\nStock-based compensation | 494 | 454 | 1,955 | 1,746\nAmortization of purchased intangibles | 41 | 23 | 120 | 94\nBusiness combination and other related costs | 65 | 4 | 109 | 33\nImpairment of assets | - | - | 30 | -\nSeverance costs | 21 | - | 74 | -\nLegal settlements | - | 17 | - | 17\nContract termination costs | 37 | - | 37 | -\nIncome tax effects and adjustments(1) | (100) | (113) | (404) | (413)\nNon-GAAP net income | $ | 959 | $ | 769 | $ | 3,669 | $ | 2,902\nNet income per share - basic and diluted:\nGAAP net income per share - basic (2) | $ | 0.39 | $ | 0.37 | $ | 1.69 | $ | 1.38\nGAAP net income per share - diluted (2) | $ | 0.38 | $ | 0.37 | $ | 1.67 | $ | 1.37\nNon-GAAP net income per share - basic (2) | $ | 0.92 | $ | 0.74 | $ | 3.54 | $ | 2.82\nNon-GAAP net income per share - diluted (2) | $ | 0.92 | $ | 0.73 | $ | 3.51 | $ | 2.78\nWeighted-average shares used to compute net income per share - basic (2) | 1,039 | 1,032 | 1,037 | 1,029\nWeighted-average shares used to compute net income per share - diluted (2) | 1,047 | 1,047 | 1,047 | 1,042"
+  },
+  {
+   "id": "P125",
+   "kind": "table",
+   "text": "Free cash flow:\nGAAP net cash provided by operating activities | $ | 2,238 | $ | 1,635 | $ | 5,444 | $ | 4,267\nPurchases of property and equipment | (238) | (253) | (868) | (852)\nBusiness combination and other related costs | 32 | 1 | 60 | 23\nCash paid for legal settlements | - | 17 | - | 17\nNon-GAAP free cash flow | $ | 2,032 | $ | 1,400 | $ | 4,636 | $ | 3,455\nFree cash flow margin:\nGAAP net cash provided by operating activities as % of total revenues | 62.5 | % | 55.5 | % | 41 | % | 39 | %\nPurchases of property and equipment as % of total revenues | (6.5 | %) | (8.5 | %) | (6.5 | %) | (8 | %)\nBusiness combination and other related costs as % of total revenues | 1 | % | - | % | 0.5 | % | - | %\nCash paid for legal settlements as % of total revenues | - | % | 0.5 | % | - | % | - | %\nNon-GAAP free cash flow margin | 57 | % | 47.5 | % | 35 | % | 31.5 | %"
+  },
+  {
+   "id": "P126",
+   "kind": "text",
+   "text": "(1)We use a non-GAAP effective tax rate for evaluating our operating results to provide consistency across reporting periods. Based on our long-term projections, we are using a non-GAAP tax rate of 20% for each of the three and twelve months ended December 31, 2025 and 2024. This non-GAAP tax rate could change for various reasons including significant changes in our geographic earnings mix or fundamental tax law changes in major jurisdictions in which we operate."
+  },
+  {
+   "id": "P127",
+   "kind": "text",
+   "text": "(2)Prior period results have been retroactively adjusted to reflect the effects of the five-for-one stock split, which was effective December 17, 2025."
+  },
+  {
+   "id": "P128",
+   "kind": "text",
+   "text": "Note: Numbers are rounded for presentation purposes and may not foot."
+  },
+  {
+   "id": "P129",
+   "kind": "text",
+   "text": "ServiceNow, Inc."
+  },
+  {
+   "id": "P130",
+   "kind": "text",
+   "text": "Reconciliation of Non-GAAP Financial Guidance"
+  },
+  {
+   "id": "P131",
+   "kind": "table",
+   "text": "Three Months Ending\nMarch 31, 2026\nGAAP operating margin | 14 | %\nStock-based compensation expense as % of total revenues | 15 | %\nAmortization of purchased intangibles as % of total revenues | 2 | %\nBusiness combination and other related costs as % of total revenues | - | %\nSeverance costs as % of total revenues | 1 | %\nNon-GAAP operating margin | 31.5 | %"
+  },
+  {
+   "id": "P132",
+   "kind": "table",
+   "text": "Twelve Months Ending\nDecember 31, 2026\nGAAP subscription gross margin | 78 | %\nStock-based compensation expense as % of subscription revenues | 2 | %\nAmortization of purchased intangibles as % of subscription revenues | 1 | %\nSeverance costs as % of subscription revenues | - | %\nNon-GAAP subscription margin | 82 | %\nGAAP operating margin | 15 | %\nStock-based compensation expense as % of total revenues | 15 | %\nAmortization of purchased intangibles as % of total revenues | 2 | %\nBusiness combination and other related costs as % of total revenues | - | %\nSeverance costs as % of total revenues | - | %\nNon-GAAP operating margin | 32 | %\nGAAP net cash provided by operating activities as % of total revenues | 41 | %\nPurchases of property and equipment as % of total revenues | (6 | %)\nBusiness combination and other related costs as % of total revenues | - | %\nNon-GAAP free cash flow margin | 36 | %"
+  },
+  {
+   "id": "P133",
+   "kind": "text",
+   "text": "Note: Numbers are rounded for presentation purposes and may not foot."
+  }
+ ]
+}

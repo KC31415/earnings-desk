@@ -1,0 +1,1349 @@
+{
+ "ticker": "ADBE",
+ "name": "ADOBE INC.",
+ "fiscal_label": "FY2026 Q1",
+ "calendar_label": "CY2026 Q1",
+ "period_end": "2026-02-27",
+ "source": {
+  "earnings_8k_accn": "0000796343-26-000048",
+  "earnings_8k_date": "2026-03-12",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/0000796343-26-000048-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000056/adbe-20260227.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm"
+ },
+ "generated_at": "2026-11-04T19:13:11+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 7742,
+   "output_tokens": 114
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 10486,
+   "output_tokens": 2172,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P10",
+  "P11",
+  "P12",
+  "P13",
+  "P14",
+  "P15",
+  "P16",
+  "P18",
+  "P19",
+  "P20",
+  "P21",
+  "P22",
+  "P23",
+  "P25",
+  "P26",
+  "P27",
+  "P29",
+  "P30",
+  "P31",
+  "P32",
+  "P33",
+  "P35",
+  "P47",
+  "P48",
+  "P49",
+  "P50",
+  "P51",
+  "P52",
+  "P55",
+  "P57",
+  "P61",
+  "P62",
+  "P63"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "Adobe reported FY2026 Q1 revenue of $6.398 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q1",
+     "value": "6.398",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 6398000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "revenue",
+         "value": 6398000000.0,
+         "concept": "Revenues",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $2.418 billion.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q1",
+     "value": "2.418",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 2418000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "operating_income",
+         "value": 2418000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP net income was $1.889 billion.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q1",
+     "value": "1.889",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1889000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "net_income",
+         "value": 1889000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP diluted EPS was $4.60.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2026 Q1",
+     "value": "4.60",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 4.6,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "eps_diluted",
+         "value": 4.6,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP diluted EPS was $6.06.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q1",
+     "value": "6.06",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "press_release",
+      "ref": "P18"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P18"
+      }
+     }
+    },
+    {
+     "text": "Operating cash flow was $2.958 billion.",
+     "claim_type": "numeric",
+     "metric": "operating_cash_flow",
+     "period": "FY2026 Q1",
+     "value": "2.958",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetCashProvidedByUsedInOperatingActivities"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 2958000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "operating_cash_flow",
+         "value": 2958000000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue grew 12.0% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q1",
+     "value": "12.0",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 11.970598529926496,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "revenue",
+         "value": 6398000000.0,
+         "concept": "Revenues",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q1",
+         "period_end": "2025-02-28",
+         "metric": "revenue",
+         "value": 5714000000.0,
+         "concept": "Revenues",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q1 / FY2025 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Diluted EPS rose 11.1% year over year.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted_yoy",
+     "period": "FY2026 Q1",
+     "value": "11.1",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 11.11111111111111,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "eps_diluted",
+         "value": 4.6,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q1",
+         "period_end": "2025-02-28",
+         "metric": "eps_diluted",
+         "value": 4.14,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q1 / FY2025 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Net income increased only 4.3% year over year.",
+     "claim_type": "numeric",
+     "metric": "net_income_yoy",
+     "period": "FY2026 Q1",
+     "value": "4.3",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 4.307012700165655,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "net_income",
+         "value": 1889000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q1",
+         "period_end": "2025-02-28",
+         "metric": "net_income",
+         "value": 1811000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q1 / FY2025 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Sales and marketing expense rose 14.2% year over year.",
+     "claim_type": "numeric",
+     "metric": "sm_yoy",
+     "period": "FY2026 Q1",
+     "value": "14.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "SellingAndMarketingExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 14.247491638795987,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "sm",
+         "value": 1708000000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q1",
+         "period_end": "2025-02-28",
+         "metric": "sm",
+         "value": 1495000000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q1 / FY2025 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations were up 12.8% year over year.",
+     "claim_type": "numeric",
+     "metric": "rpo_yoy",
+     "period": "FY2026 Q1",
+     "value": "12.8",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 12.849162011173185,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "rpo",
+         "value": 22220000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q1",
+         "period_end": "2025-02-28",
+         "metric": "rpo",
+         "value": 19690000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0000796343-25-000059",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q1 / FY2025 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating cash flow declined 6.4% sequentially.",
+     "claim_type": "numeric",
+     "metric": "operating_cash_flow_qoq",
+     "period": "FY2026 Q1",
+     "value": "6.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetCashProvidedByUsedInOperatingActivities"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -6.392405063291139,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2026-02-27",
+         "metric": "operating_cash_flow",
+         "value": 2958000000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0000796343-26-000056",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q4",
+         "period_end": "2025-11-28",
+         "metric": "operating_cash_flow",
+         "value": 3160000000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0000796343-26-000003",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q1 / FY2025 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "The CEO highlighted AI momentum, saying",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "Adobe delivered record Q1 results with AI-first ARR more than tripling year over year",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P15"
+     },
+     "verification": {
+      "status": "mismatch",
+      "reason": "the sentence paraphrases instead of containing the quoted words",
+      "actual": null,
+      "method": "exact_substring"
+     }
+    },
+    {
+     "text": "The CFO said Adobe is \"well positioned for continued profitable growth\" amid AI investment.",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "well positioned for continued profitable growth",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P16"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P16",
+       "spans": [
+        "well positioned for continued profitable growth"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Management guided Q2 FY2026 GAAP EPS of $4.35 to $4.40 at the low end of the range of $4.35.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q2",
+     "value": "4.35",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "press_release",
+      "ref": "P31"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P31"
+      }
+     }
+    },
+    {
+     "text": "Adobe reaffirmed its previously issued FY2026 targets.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P33"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P33"
+      }
+     }
+    },
+    {
+     "text": "Guidance excludes contributions from the pending Semrush acquisition.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P29"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P29"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Adobe targets Q2 FY2026 revenue of $6.43 billion to $6.48 billion, with the low end at $6.43 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q2",
+     "value": "6.43",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P31"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P31"
+      }
+     }
+    },
+    {
+     "text": "Q2 non-GAAP operating margin is targeted at about 44.5%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q2",
+     "value": "44.5",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P32"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P32"
+      }
+     }
+    },
+    {
+     "text": "Investors will watch the CEO succession process, as Narayen will transition once a successor is appointed.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P35"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P35"
+      }
+     }
+    },
+    {
+     "text": "Watch whether regulatory approvals allow the Semrush acquisition to close.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P29"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P29"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 21,
+  "by_status": {
+   "verified": 16,
+   "mismatch": 1,
+   "sourced": 4
+  },
+  "numeric": 15,
+  "numeric_verified": 15,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "Adobe reported FY2026 Q1 revenue of $6.398 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q1",
+      "value": "6.398",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "GAAP operating income was $2.418 billion.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q1",
+      "value": "2.418",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP net income was $1.889 billion.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q1",
+      "value": "1.889",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP diluted EPS was $4.60.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2026 Q1",
+      "value": "4.60",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Non-GAAP diluted EPS was $6.06.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q1",
+      "value": "6.06",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "press_release",
+       "ref": "P18"
+      }
+     },
+     {
+      "text": "Operating cash flow was $2.958 billion.",
+      "claim_type": "numeric",
+      "metric": "operating_cash_flow",
+      "period": "FY2026 Q1",
+      "value": "2.958",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetCashProvidedByUsedInOperatingActivities"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue grew 12.0% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q1",
+      "value": "12.0",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "Diluted EPS rose 11.1% year over year.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted_yoy",
+      "period": "FY2026 Q1",
+      "value": "11.1",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Net income increased only 4.3% year over year.",
+      "claim_type": "numeric",
+      "metric": "net_income_yoy",
+      "period": "FY2026 Q1",
+      "value": "4.3",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Sales and marketing expense rose 14.2% year over year.",
+      "claim_type": "numeric",
+      "metric": "sm_yoy",
+      "period": "FY2026 Q1",
+      "value": "14.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "SellingAndMarketingExpense"
+      }
+     },
+     {
+      "text": "Remaining performance obligations were up 12.8% year over year.",
+      "claim_type": "numeric",
+      "metric": "rpo_yoy",
+      "period": "FY2026 Q1",
+      "value": "12.8",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     },
+     {
+      "text": "Operating cash flow declined 6.4% sequentially.",
+      "claim_type": "numeric",
+      "metric": "operating_cash_flow_qoq",
+      "period": "FY2026 Q1",
+      "value": "6.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetCashProvidedByUsedInOperatingActivities"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "The CEO highlighted AI momentum, saying",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "Adobe delivered record Q1 results with AI-first ARR more than tripling year over year",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P15"
+      }
+     },
+     {
+      "text": "The CFO said Adobe is \"well positioned for continued profitable growth\" amid AI investment.",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "well positioned for continued profitable growth",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P16"
+      }
+     },
+     {
+      "text": "Management guided Q2 FY2026 GAAP EPS of $4.35 to $4.40 at the low end of the range of $4.35.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q2",
+      "value": "4.35",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "press_release",
+       "ref": "P31"
+      }
+     },
+     {
+      "text": "Adobe reaffirmed its previously issued FY2026 targets.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P33"
+      }
+     },
+     {
+      "text": "Guidance excludes contributions from the pending Semrush acquisition.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P29"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Adobe targets Q2 FY2026 revenue of $6.43 billion to $6.48 billion, with the low end at $6.43 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q2",
+      "value": "6.43",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P31"
+      }
+     },
+     {
+      "text": "Q2 non-GAAP operating margin is targeted at about 44.5%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q2",
+      "value": "44.5",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P32"
+      }
+     },
+     {
+      "text": "Investors will watch the CEO succession process, as Narayen will transition once a successor is appointed.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P35"
+      }
+     },
+     {
+      "text": "Watch whether regulatory approvals allow the Semrush acquisition to close.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P29"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 adbeex991q126.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Exhibit 99.1"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "Investor Relations Contact"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "Doug Clark"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "Adobe ir@adobe.com"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "Public Relations Contact"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "Ashley Levine"
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "Adobe adobepr@adobe.com"
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "FOR IMMEDIATE RELEASE"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "Adobe Delivers Record Q1 Results"
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "\u2022AI-first ARR more than triples year over year"
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "\u2022Total subscription revenue and RPO increases 13% year over year"
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "\u2022Record Q1 operating cash flows of $2.96 billion"
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "SAN JOSE, Calif. - March 12, 2026 - Adobe (Nasdaq:ADBE), the global technology leader that unleashes creativity and productivity for individuals and businesses through innovative platforms and tools, today reported financial results for its first quarter FY2026 ended Feb. 27, 2026."
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "\"Adobe delivered record Q1 results with AI-first ARR more than tripling year over year and subscription revenue growing 13 percent,\" said Shantanu Narayen, chair and CEO, Adobe. \"Our mission to empower everyone to create represents an even larger opportunity as content powers all experiences in the AI era.\""
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "\"Adobe delivered 13 percent subscription revenue growth and record Q1 cash flow of $2.96 billion,\" said Dan Durn, executive vice president and CFO, Adobe. \"As we accelerate AI-powered capabilities across creativity, productivity and customer experience orchestration, Adobe is well positioned for continued profitable growth.\""
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "First Quarter FY2026 Financial Highlights"
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "\u2022Adobe achieved record revenue of $6.40 billion in its first quarter of FY2026, which represents 12% year-over-year growth, or 11% in constant currency. Diluted earnings per share was $4.60 on a GAAP basis and $6.06 on a non-GAAP basis."
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "\u2022Total Adobe Annualized Recurring Revenue (\"ARR\") exiting the quarter was $26.06 billion."
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "\u2022GAAP operating income in the first quarter was $2.42 billion and non-GAAP operating income was $3.04 billion. GAAP net income was $1.89 billion and non-GAAP net income was $2.49 billion."
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "\u2022Record Q1 cash flows from operations were $2.96 billion."
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "\u2022Exiting the quarter, Remaining Performance Obligations (\"RPO\") were $22.22 billion, and Current Remaining Performance Obligations (\"cRPO\") were 67%."
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "\u2022Adobe repurchased approximately 8.1 million shares during the quarter."
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "First Quarter FY2026 Customer Group Highlights"
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "\u2022Total Customer Group subscription revenue was $6.17 billion, which represents 13% year-over-year growth, or 12% in constant currency."
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\u2022Business Professionals & Consumers subscription revenue was $1.78 billion, which represents 16% year-over-year growth, or 15% in constant currency."
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "\u2022Creative & Marketing Professionals subscription revenue was $4.39 billion, which represents 12% year-over-year growth, or 11% in constant currency."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "Financial Targets"
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "These targets factor in expectation for current macroeconomic conditions and do not include contributions from our pending acquisition of Semrush Holdings, Inc., subject to regulatory approvals and other customary closing conditions."
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "The following table summarizes Adobe's second quarter FY2026 targets:"
+  },
+  {
+   "id": "P31",
+   "kind": "table",
+   "text": "Total revenue | $6.43 billion to $6.48 billion\nBusiness Professionals & Consumers subscription revenue | $1.80 billion to $1.82 billion\nCreative & Marketing Professionals subscription revenue | $4.41 billion to $4.44 billion\nEarnings per share1 | GAAP: $4.35 to $4.40 | Non-GAAP: $5.80 to $5.85"
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "1Targets assume non-GAAP operating margin of ~44.5%, GAAP tax rate of ~22.5%, non-GAAP tax rate of ~18.0% and diluted share count of ~402 million for second quarter FY2026."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "In addition, Adobe is reaffirming previously issued FY2026 targets."
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "Adobe CEO Announces Decision to Transition"
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "Shantanu Narayen, who has served as CEO of Adobe for eighteen years, has decided to transition from his position as CEO after a successor has been appointed. Narayen will remain as Chair of the Board. The Board of Directors has appointed Frank Calderoni, Lead Independent Director of Adobe, as Chair to the special committee to direct the process that will consider both internal and external candidates."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "Adobe to Host Conference Call"
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "Adobe will webcast its first quarter fiscal year 2026 earnings conference call today at 2:00 p.m. Pacific Time from its investor relations website: http://www.adobe.com/ADBE. Earnings documents, including Adobe management's prepared conference call remarks with slides and an investor datasheet are posted to Adobe's Investor Relations Website in advance of the conference call for reference."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "Forward-Looking Statements, Non-GAAP and Other Disclosures"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "In addition to historical information, this press release contains \"forward-looking statements\" within the meaning of applicable securities laws, including statements related to our product development plans and new or enhanced offerings; our business, strategy, artificial intelligence (\"AI\") and innovation momentum; our market and AI opportunity and future growth; market and AI trends; macroeconomic conditions; fluctuations in foreign currency exchange rates; strategic investments; customer success and groups; industry positioning; expectations regarding acquisitions and other business transactions; and our financial targets and assumptions related thereto, including revenue, operating margin, operating efficiencies, annualized recurring revenue, tax rate, earnings per share and share count. Each of the forward-looking statements we make in this press release involves risks, uncertainties and assumptions based on information available to us as of the date of this press release. Such risks and uncertainties, many of which relate to matters beyond our control, could cause actual results to differ materially from these forward-looking statements. Factors that might cause or contribute to such differences include, but are not limited to: failure to innovate effectively and meet customer needs; failure to compete effectively; issues relating to development and use of AI; damage to our reputation or brands; failure to realize the anticipated benefits of acquisitions, investments or other strategic transactions; failure to recruit and retain key personnel; service interruptions or failures in information technology systems by us or third parties; security incidents; failure to effectively develop, manage and maintain our sales channels or critical third-party business relationships; risks associated with being a multinational corporation and adverse macroeconomic and geopolitical conditions; complex sales cycles; litigation, regulatory inquiries, investigations and other actions; changes in, and compliance with, global laws and regulations, including those related to information security and privacy; failure to protect our intellectual property; changes in tax regulations; complex government procurement processes; risks related to fluctuations in or the timing of revenue recognition from our subscription offerings; fluctuations in foreign currency exchange rates; impairment charges; our existing and future debt obligations; catastrophic events; and fluctuations in our stock price. Further information on these and other factors are discussed in the section titled \"Risk Factors\" in Adobe's most recently filed Annual Report on Form 10-K and Adobe's most recently filed Quarterly Reports on Form 10-Q. The risks described in this press release and in Adobe's filings with the U.S. Securities and Exchange Commission should be carefully reviewed."
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "Undue reliance should not be placed on the financial information set forth in this press release, which reflects estimates based on information available at this time. These amounts could differ from actual reported amounts stated in Adobe's Quarterly Report on Form 10-Q for our fiscal quarter ended Feb. 27, 2026, which Adobe expects to file in March 2026."
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "Adobe assumes no obligation to, and does not currently intend to, update these forward-looking statements."
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "A reconciliation between GAAP and non-GAAP earnings results and financial targets and a statement regarding use of non-GAAP financial information are provided at the end of this press release and on Adobe's investor relations website. Definitions of our non-GAAP financial measures are provided in the Current Report on Form 8-K relating to this press release."
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "About Adobe"
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "Adobe (Nasdaq: ADBE) empowers everyone to create through industry-leading platforms and tools that unleash creativity, productivity and personalized customer experiences. For more information, visit www.adobe.com."
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "###"
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "\u00a92026 Adobe. All rights reserved. Adobe and the Adobe logo are either registered trademarks or trademarks of Adobe (or one of its subsidiaries) in the United States and/or other countries. All other trademarks are the property of their respective owners."
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Income (In millions, except per share data; unaudited)"
+  },
+  {
+   "id": "P48",
+   "kind": "table",
+   "text": "Three Months Ended\nFebruary 27, 2026 | February 28, 2025\nRevenue:\nSubscription | $ | 6,198 | $ | 5,483\nProduct | 90 | 95\nServices and other | 110 | 136\nTotal revenue | 6,398 | 5,714\nCost of revenue:\nSubscription | 540 | 490\nProduct | 6 | 6\nServices and other | 118 | 126\nTotal cost of revenue | 664 | 622\nGross profit | 5,734 | 5,092\nOperating expenses:\nResearch and development | 1,110 | 1,026\nSales and marketing | 1,708 | 1,495\nGeneral and administrative | 463 | 367\nAmortization of intangibles | 35 | 41\nTotal operating expenses | 3,316 | 2,929\nOperating income | 2,418 | 2,163\nNon-operating income (expense):\nInterest expense | (63) | (62)\nInvestment gains (losses), net | 5 | 6\nOther income (expense), net | 62 | 75\nTotal non-operating income (expense), net | 4 | 19\nIncome before income taxes | 2,422 | 2,182\nProvision for income taxes | 533 | 371\nNet income | $ | 1,889 | $ | 1,811\nBasic net income per share | $ | 4.60 | $ | 4.15\nShares used to compute basic net income per share | 410 | 436\nDiluted net income per share | $ | 4.60 | $ | 4.14\nShares used to compute diluted net income per share | 411 | 438"
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "Condensed Consolidated Balance Sheets (In millions; unaudited)"
+  },
+  {
+   "id": "P50",
+   "kind": "table",
+   "text": "February 27, 2026 | November 28, 2025\nASSETS\nCurrent assets:\nCash and cash equivalents | $ | 6,332 | $ | 5,431\nShort-term investments | 558 | 1,164\nTrade receivables, net of allowances for doubtful accounts of $12 and $13, respectively | 2,092 | 2,344\nPrepaid expenses and other current assets | 1,404 | 1,224\nTotal current assets | 10,386 | 10,163\nProperty and equipment, net | 1,852 | 1,873\nOperating lease right-of-use assets, net | 305 | 312\nGoodwill | 12,869 | 12,857\nOther intangibles, net | 454 | 495\nDeferred income taxes | 2,138 | 2,186\nOther assets | 1,700 | 1,610\nTotal assets | $ | 29,704 | $ | 29,496\nLIABILITIES AND STOCKHOLDERS' EQUITY\nCurrent liabilities:\nTrade payables | $ | 419 | $ | 417\nAccrued expenses and other current liabilities | 2,257 | 2,648\nDebt | 849 | -\nDeferred revenue | 7,275 | 6,905\nIncome taxes payable | 506 | 153\nOperating lease liabilities | 84 | 77\nTotal current liabilities | 11,390 | 10,200\nLong-term liabilities:\nDebt | 5,379 | 6,210\nDeferred revenue | 95 | 125\nIncome taxes payable | 487 | 469\nOperating lease liabilities | 344 | 361\nOther liabilities | 576 | 508\nTotal liabilities | 18,271 | 17,873\nStockholders' equity:\nPreferred stock | - | -\nCommon stock | - | -\nAdditional paid-in capital | 15,870 | 15,361\nRetained earnings | 47,170 | 45,354\nAccumulated other comprehensive income (loss) | (295) | (245)\nTreasury stock, at cost | (51,312) | (48,847)\nTotal stockholders' equity | 11,433 | 11,623\nTotal liabilities and stockholders' equity | $ | 29,704 | $ | 29,496"
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Cash Flows (In millions; unaudited)"
+  },
+  {
+   "id": "P52",
+   "kind": "table",
+   "text": "Three Months Ended\nFebruary 27, 2026 | February 28, 2025\nCash flows from operating activities:\nNet income | $ | 1,889 | $ | 1,811\nAdjustments to reconcile net income to net cash provided by operating activities:\nDepreciation, amortization and accretion | 174 | 217\nStock-based compensation | 509 | 475\nOther non-cash adjustments | 110 | (152)\nChanges in deferred revenue | 340 | 231\nChanges in other operating assets and liabilities | (64) | (100)\nNet cash provided by operating activities | 2,958 | 2,482\nCash flows from investing activities:\nPurchases, sales and maturities of short-term investments, net | 614 | (401)\nPurchases of property and equipment | (37) | (26)\nPurchases and sales of long-term investments, intangibles and other assets, net | (103) | (57)\nNet cash provided by (used for) investing activities | 474 | (484)\nCash flows from financing activities:\nRepurchases of common stock | (2,478) | (3,250)\nTaxes paid related to net share settlement of equity awards, net of proceeds from treasury stock re-issuances | (39) | (63)\nProceeds from issuance of debt | - | 1,997\nRepayment of debt | - | (1,500)\nOther financing activities, net | (27) | (25)\nNet cash used for financing activities | (2,544) | (2,841)\nEffect of exchange rate changes on cash and cash equivalents | 13 | (12)\nNet change in cash and cash equivalents | 901 | (855)\nCash and cash equivalents at beginning of period | 5,431 | 7,613\nCash and cash equivalents at end of period | $ | 6,332 | $ | 6,758"
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "Non-GAAP Results"
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "The following table shows Adobe's GAAP results reconciled to non-GAAP results included in this release."
+  },
+  {
+   "id": "P55",
+   "kind": "table",
+   "text": "(In millions, except per share data) | Three Months Ended\nFebruary 27,2026 | February 28,2025 | November 28,2025\nOperating income:\nGAAP operating income | $ | 2,418 | $ | 2,163 | $ | 2,261\nStock-based and deferred compensation expense | 514 | 469 | 501\nAmortization of intangibles | 39 | 83 | 61\nAcquisition-related expenses | 2 | - | 1\nLoss contingency (*) | 62 | - | -\nNon-GAAP operating income | $ | 3,035 | $ | 2,715 | $ | 2,824\nNet income:\nGAAP net income | $ | 1,889 | $ | 1,811 | $ | 1,856\nStock-based and deferred compensation expense | 514 | 469 | 501\nAmortization of intangibles | 39 | 83 | 61\nAcquisition-related expenses | 2 | - | 1\nLoss contingency (*) | 62 | - | -\nInvestment (gains) losses, net | (5) | (6) | (12)\nIncome tax adjustments | (13) | (133) | (113)\nNon-GAAP net income | $ | 2,488 | $ | 2,224 | $ | 2,294\nDiluted net income per share:\nGAAP diluted net income per share | $ | 4.60 | $ | 4.14 | $ | 4.45\nStock-based and deferred compensation expense | 1.25 | 1.07 | 1.20\nAmortization of intangibles | 0.10 | 0.19 | 0.15\nLoss contingency (*) | 0.15 | - | -\nInvestment (gains) losses, net | (0.01) | (0.01) | (0.03)\nIncome tax adjustments | (0.03) | (0.31) | (0.27)\nNon-GAAP diluted net income per share | $ | 6.06 | $ | 5.08 | $ | 5.50\nShares used to compute diluted net income per share | 411 | 438 | 417"
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "The following table shows Adobe's first quarter fiscal year 2026 GAAP tax rate reconciled to the non-GAAP tax rate included in this release."
+  },
+  {
+   "id": "P57",
+   "kind": "table",
+   "text": "First QuarterFiscal 2026\nEffective income tax rate:\nGAAP effective income tax rate | 22.0 | %\nIncome tax adjustments | (0.7)\nStock-based and deferred compensation expense | (3.0)\nLoss contingency (*) | (0.3)\nNon-GAAP effective income tax rate (**) | 18.0 | %"
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "(*) Associated with the settlement of an outstanding litigation matter which reflects ongoing negotiations (**) Represents Adobe's fixed long-term non-GAAP tax rate based on projections and currently available information for fiscal 2026 through fiscal 2028 7"
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "Reconciliation of GAAP to Non-GAAP Financial Targets and Assumptions"
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "The following tables show Adobe's second quarter fiscal year 2026 financial targets and assumptions reconciled to non-GAAP financial targets and assumptions included in this release."
+  },
+  {
+   "id": "P61",
+   "kind": "table",
+   "text": "(Shares in millions) | Second Quarter Fiscal 2026\nLow | High\nDiluted net income per share:\nGAAP diluted net income per share | $ | 4.35 | $ | 4.40\nStock-based and deferred compensation expense | 1.33 | 1.33\nAmortization of intangibles | 0.10 | 0.10\nAcquisition-related expenses | 0.03 | 0.03\nIncome tax adjustments | (0.01) | (0.01)\nNon-GAAP diluted net income per share | $ | 5.80 | $ | 5.85\nShares used to compute diluted net income per share | 402 | 402"
+  },
+  {
+   "id": "P62",
+   "kind": "table",
+   "text": "Second QuarterFiscal 2026\nOperating margin:\nGAAP operating margin | 35.0 | %\nStock-based and deferred compensation expense | 8.7\nAmortization of intangibles | 0.6\nAcquisition-related expenses | 0.2\nNon-GAAP operating margin | 44.5 | %"
+  },
+  {
+   "id": "P63",
+   "kind": "table",
+   "text": "Second QuarterFiscal 2026\nEffective income tax rate:\nGAAP effective income tax rate | 22.5 | %\nStock-based and deferred compensation expense | (3.0)\nIncome tax adjustments | (1.5)\nNon-GAAP effective income tax rate (**) | 18.0 | %"
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "(**) Represents Adobe's fixed long-term non-GAAP tax rate based on projections and currently available information for fiscal 2026 through fiscal 2028"
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "Use of Non-GAAP Financial Information"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "Adobe continues to provide all information required in accordance with GAAP, but believes evaluating its ongoing operating results may not be as useful if an investor is limited to reviewing only GAAP financial measures. Adobe uses non-GAAP financial information to evaluate its ongoing operations and for internal planning and forecasting purposes. Adobe's management does not itself, nor does it suggest that investors should, consider such non-GAAP financial measures in isolation from, or as a substitute for, financial information prepared in accordance with GAAP. Adobe presents such non-GAAP financial measures in reporting its financial results to provide investors with an additional tool to evaluate Adobe's operating results. Adobe believes these non-GAAP financial measures are useful because they allow for greater transparency with respect to key metrics used by management in its financial and operational decision-making. This allows institutional investors, the analyst community and others to better understand and evaluate Adobe's operating results and future prospects in the same manner as management."
+  },
+  {
+   "id": "P67",
+   "kind": "text",
+   "text": "Adobe's management believes it is useful for itself and investors to review, as applicable, both GAAP information as well as non-GAAP measures, which may exclude items such as stock-based and deferred compensation expenses, amortization of intangibles, investment gains and losses, income tax adjustments and other items that are not considered part of Adobe's ongoing operations, and the income tax effect of the non-GAAP pre-tax adjustments from the provision for income taxes. Adobe uses these non-GAAP measures in order to assess the performance of Adobe's business and for planning and forecasting in subsequent periods. Whenever such a non-GAAP measure is used, Adobe provides a reconciliation of the non-GAAP financial measure to the most closely applicable GAAP financial measure. Investors are encouraged to review the related GAAP financial measures and the reconciliation of these non-GAAP financial measures to their most directly comparable GAAP financial measure as detailed above."
+  }
+ ]
+}

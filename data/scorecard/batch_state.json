@@ -1,5 +1,5 @@
 {
- "status": "submitted",
+ "status": "collected",
  "batch_id": "msgbatch_01SEXo9Jh5kokeNB498PuHNG",
  "pending": {
   "CRM-0001108524-26-000125": {
@@ -1849,5 +1849,8 @@
     }
    ]
   }
- }
+ },
+ "saved": 40,
+ "failed": [],
+ "note_cost_usd": 0.891
 }

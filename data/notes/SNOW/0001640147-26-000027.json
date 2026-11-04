@@ -1,0 +1,1424 @@
+{
+ "ticker": "SNOW",
+ "name": "Snowflake Inc.",
+ "fiscal_label": "FY2027 Q1",
+ "calendar_label": "CY2026 Q1",
+ "period_end": "2026-04-30",
+ "source": {
+  "earnings_8k_accn": "0001640147-26-000027",
+  "earnings_8k_date": "2026-05-27",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000027/0001640147-26-000027-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000030/snow-20260430.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000027/fy2027q1earnings.htm"
+ },
+ "generated_at": "2026-11-04T19:13:14+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 17253,
+   "output_tokens": 111
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 14839,
+   "output_tokens": 2120,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P2",
+  "P3",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P11",
+  "P12",
+  "P14",
+  "P15",
+  "P16",
+  "P17",
+  "P18",
+  "P23",
+  "P24",
+  "P25",
+  "P26",
+  "P27",
+  "P28",
+  "P29",
+  "P30",
+  "P31",
+  "P32",
+  "P38",
+  "P39",
+  "P74",
+  "P76",
+  "P80",
+  "P84",
+  "P88"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "Snowflake reported FY2027 Q1 revenue of $1.39 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2027 Q1",
+     "value": "1.39",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1390951000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 1390951000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Product revenue was $1.33 billion in the quarter.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "1.33",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P3"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P3"
+      }
+     }
+    },
+    {
+     "text": "GAAP operating loss was $326.2 million.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2027 Q1",
+     "value": "326.2",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -326154000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "operating_income",
+         "value": -326154000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Diluted EPS was a loss of $0.86.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2027 Q1",
+     "value": "0.86",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -0.86,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "eps_diluted",
+         "value": -0.86,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Free cash flow was $232.8 million.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow",
+     "period": "FY2027 Q1",
+     "value": "232.8",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 232772000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "free_cash_flow",
+         "value": 232772000.0,
+         "concept": "(derived)",
+         "accn": "0001640147-26-000030",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations were $9.21 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "9.21",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P9"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P9"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue grew 33.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2027 Q1",
+     "value": "33.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 33.47910033260594,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 1390951000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-04-30",
+         "metric": "revenue",
+         "value": 1042074000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue rose 8.3% sequentially.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2027 Q1",
+     "value": "8.3",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 8.330023349018765,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 1390951000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-01-31",
+         "metric": "revenue",
+         "value": 1283994000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001640147-26-000008",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Free cash flow was up 26.9% year over year.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow_yoy",
+     "period": "FY2027 Q1",
+     "value": "26.9",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 26.93146621297387,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "free_cash_flow",
+         "value": 232772000.0,
+         "concept": "(derived)",
+         "accn": "0001640147-26-000030",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-04-30",
+         "metric": "free_cash_flow",
+         "value": 183384000.0,
+         "concept": "(derived)",
+         "accn": "0001640147-26-000030",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Sales and marketing expense increased 28.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "sm_yoy",
+     "period": "FY2027 Q1",
+     "value": "28.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "SellingAndMarketingExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 28.436781709460607,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "sm",
+         "value": 588952000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-04-30",
+         "metric": "sm",
+         "value": 458554000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "GAAP gross margin was 66.6%.",
+     "claim_type": "numeric",
+     "metric": "gross_margin",
+     "period": "FY2027 Q1",
+     "value": "66.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "GrossProfit"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 66.60558136124133,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "gross_profit",
+         "value": 926451000.0,
+         "concept": "GrossProfit",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 1390951000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001640147-26-000030",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "gross_profit / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Net revenue retention rate was 126%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "126",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P6"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P6"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "The CEO called the period a \"milestone quarter\" for the company.",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "Snowflake delivered a milestone quarter",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P11"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P11",
+       "spans": [
+        "milestone quarter"
+       ]
+      }
+     }
+    },
+    {
+     "text": "The CFO said \"AI continues to accelerate our core data platform business\".",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "AI continues to accelerate our core data platform business",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P12"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P12",
+       "spans": [
+        "AI continues to accelerate our core data platform business"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Management raised full-year product revenue guidance on strength in both core platform and AI businesses.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P12"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P12"
+      }
+     }
+    },
+    {
+     "text": "Full-year FY2027 product revenue is now expected at $5,840 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "5,840",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P28"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P28"
+      }
+     }
+    },
+    {
+     "text": "Full-year non-GAAP operating margin guidance was raised to 13.5%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "13.5",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P30"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P30"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Q2 product revenue is guided to $1,415 million at the low end of the range.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q2",
+     "value": "1,415",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P24"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P24"
+      }
+     }
+    },
+    {
+     "text": "Q2 non-GAAP operating margin is guided to 12.5%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q2",
+     "value": "12.5",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P25"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P25"
+      }
+     }
+    },
+    {
+     "text": "Watch adoption of Snowflake Intelligence and Cortex Code, which management ties to record sequential product revenue growth.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P14"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P14"
+      }
+     }
+    },
+    {
+     "text": "Investors should track integration of the pending Natoma acquisition and the expanded AWS agreement.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P18"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P18"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 21,
+  "by_status": {
+   "verified": 18,
+   "sourced": 3
+  },
+  "numeric": 16,
+  "numeric_verified": 16,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "Snowflake reported FY2027 Q1 revenue of $1.39 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2027 Q1",
+      "value": "1.39",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Product revenue was $1.33 billion in the quarter.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "1.33",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P3"
+      }
+     },
+     {
+      "text": "GAAP operating loss was $326.2 million.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2027 Q1",
+      "value": "326.2",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Diluted EPS was a loss of $0.86.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2027 Q1",
+      "value": "0.86",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Free cash flow was $232.8 million.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow",
+      "period": "FY2027 Q1",
+      "value": "232.8",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     },
+     {
+      "text": "Remaining performance obligations were $9.21 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "9.21",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P9"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue grew 33.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2027 Q1",
+      "value": "33.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Revenue rose 8.3% sequentially.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2027 Q1",
+      "value": "8.3",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Free cash flow was up 26.9% year over year.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow_yoy",
+      "period": "FY2027 Q1",
+      "value": "26.9",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     },
+     {
+      "text": "Sales and marketing expense increased 28.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "sm_yoy",
+      "period": "FY2027 Q1",
+      "value": "28.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "SellingAndMarketingExpense"
+      }
+     },
+     {
+      "text": "GAAP gross margin was 66.6%.",
+      "claim_type": "numeric",
+      "metric": "gross_margin",
+      "period": "FY2027 Q1",
+      "value": "66.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "GrossProfit"
+      }
+     },
+     {
+      "text": "Net revenue retention rate was 126%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "126",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P6"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "The CEO called the period a \"milestone quarter\" for the company.",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "Snowflake delivered a milestone quarter",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P11"
+      }
+     },
+     {
+      "text": "The CFO said \"AI continues to accelerate our core data platform business\".",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "AI continues to accelerate our core data platform business",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P12"
+      }
+     },
+     {
+      "text": "Management raised full-year product revenue guidance on strength in both core platform and AI businesses.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P12"
+      }
+     },
+     {
+      "text": "Full-year FY2027 product revenue is now expected at $5,840 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "5,840",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P28"
+      }
+     },
+     {
+      "text": "Full-year non-GAAP operating margin guidance was raised to 13.5%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "13.5",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P30"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Q2 product revenue is guided to $1,415 million at the low end of the range.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q2",
+      "value": "1,415",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P24"
+      }
+     },
+     {
+      "text": "Q2 non-GAAP operating margin is guided to 12.5%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q2",
+      "value": "12.5",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P25"
+      }
+     },
+     {
+      "text": "Watch adoption of Snowflake Intelligence and Cortex Code, which management ties to record sequential product revenue growth.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P14"
+      }
+     },
+     {
+      "text": "Investors should track integration of the pending Natoma acquisition and the expanded AWS agreement.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P18"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 fy2027q1earnings.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Snowflake Reports Financial Results for the First Quarter of Fiscal 2027"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "Product revenue of $1.33 billion in the first quarter, representing 34% year-over-year growth"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "Financial Highlights:"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "\u2022Revenue of $1.39 billion in the first quarter, representing 33% year-over-year growth"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "\u2022Net revenue retention rate of 126%"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "\u2022779 customers with trailing 12-month product revenue greater than $1 million, representing 29% year-over-year growth"
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "\u2022813 Forbes Global 2000 customers"
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "\u2022Remaining performance obligations of $9.21 billion, representing 38% year-over-year growth"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "MENLO PARK, Calif. - May 27, 2026 - Snowflake (NYSE: SNOW), the AI Data Cloud company, today announced financial results for its first quarter of fiscal 2027, ended April 30, 2026."
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "\"Snowflake delivered a milestone quarter, with product revenue of $1.33 billion, up 34% year-over-year, marking the strongest sequential dollar growth in our history,\" said Sridhar Ramaswamy, CEO of Snowflake. \"AI continues to be a powerful tailwind for Snowflake, and Q1 marks a clear inflection point in that journey. With Cortex Code and Snowflake Intelligence, we are extending from the trusted foundation for enterprise data and context to become the control plane for the Agentic Enterprise. We are seeing strong momentum from both AI-driven acceleration of our core platform and growing adoption of our first-party AI products, positioning Snowflake to lead in this new era.\""
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "\"AI continues to accelerate our core data platform business as customers move to Snowflake with increasing urgency,\" said Brian Robins, CFO of Snowflake. \"We now have 779 customers spending more than $1 million on a trailing 12-month basis, 46 of which crossed the threshold in Q1, compared to 26 a year ago. Given the strong momentum across both our core platform business and AI business, we are raising our full-year product revenue guidance.\""
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "Snowflake Business Highlights:"
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "\u2022AI Momentum: New customers like Holiday Inn Club Vacations and Houzz chose Snowflake as the cornerstone of their data and AI transformation, and more than 13,600 accounts1 are now using Snowflake AI capabilities. Accounts using Snowflake Intelligence1 more than doubled quarter-over-quarter, while Cortex Code is already in use across over 7,100 accounts1. These innovations contributed to the strongest sequential product revenue dollar growth in company history."
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "\u2022Customer Growth and Expansion: Added 616 net new customers in the quarter, up 38% year-over-year, including 13 new Forbes Global 2000 customers."
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "\u2022Accelerated Product Velocity: Delivered over 20% more product capabilities than a year ago, including new features across Cortex Code and Snowflake Intelligence, underscoring the pace of innovation and continued expansion of the platform."
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "\u2022Expanded Partnerships: Expanded collaboration with AWS through a new $6 billion multi-year agreement designed to accelerate enterprise AI adoption globally. The company also deepened its partnership with OpenAI to deliver advanced AI capabilities through co-innovation and joint go-to-market efforts, and brought capabilities from its landmark SAP partnership to general availability."
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "\u2022AI Acquisition: Signed a definitive agreement in May 2026 to acquire Natoma, an enterprise Model Context Protocol platform for AI agents, to make it easier for users to securely connect AI to the tools they use every day, directly within and beyond Snowflake. By extending governance to AI-driven workflows, Snowflake makes it easier for companies to safely manage not just their data, but also the actions AI agents take across business workflows."
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "See the section titled \"Key Business Metrics\" for definitions of product revenue, net revenue retention rate, customers with trailing 12-month product revenue greater than $1 million, Forbes Global 2000 customers, and remaining performance obligations."
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "1 The average of the last 4 weeks of the quarter ended April 30, 2026, counted based on capacity and on-demand accounts using the respective features on a weekly basis via our internal classification."
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "Financial Outlook:"
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "Our guidance includes GAAP and non-GAAP financial measures."
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "For the second quarter of fiscal 2027, the company expects:"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "\u2022Product revenue of $1,415 million to $1,420 million, representing 30% year-over-year growth"
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "\u2022Non-GAAP operating margin2 of 12.5%"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\u2022Non-GAAP weighted-average shares used in computing net income per share attributable to common stockholders-diluted2,3,4 of 375 million"
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "For the full-year of fiscal 2027, the company expects:"
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "\u2022Product revenue of $5,840 million, representing 31% year-over-year growth, up from previous guidance of $5,660 million, or 27% year-over-year growth"
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "\u2022Non-GAAP product gross margin2 of 75.0%"
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "\u2022Non-GAAP operating margin2 of 13.5%, up from previous guidance of 12.5%"
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "\u2022Non-GAAP adjusted free cash flow margin2 of 23.0%"
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "\u2022Non-GAAP weighted-average shares used in computing net income per share attributable to common stockholders-diluted2,3,4 of 376 million"
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "A reconciliation of GAAP guidance measures to corresponding non-GAAP guidance measures is not available on a forward-looking basis without unreasonable effort due to the uncertainty regarding, and the potential variability of, expenses that may be incurred in the future. Stock-based compensation-related charges, including employer payroll tax-related items on employee stock transactions, are impacted by the timing of employee stock transactions, the future fair market value of our common stock, and our future hiring and retention needs, all of which are difficult to predict and subject to constant change. These factors could be material to our results computed in accordance with GAAP. Our fiscal year ends January 31, and numbers are rounded for presentation purposes."
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "2 We report non-GAAP financial measures in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP. See the section titled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP financial measures."
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "3 The potential impact of future repurchases under our stock repurchase program is not reflected in our guidance for weighted-average shares used in computing net income per share attributable to common stockholders-diluted due to the uncertainty regarding, and the potential variability of, the timing and amount of repurchases. Additionally, the dilutive effect of the shares issuable upon conversion of our 0% convertible senior notes due 2027 and 0% convertible senior notes due 2029 (the Notes) using the if-converted method, estimated at approximately 15 million shares for each of the second quarter and full-year of fiscal 2027 based on the current conversion price and net of the potential antidilutive impact of the capped call transactions entered into in connection with the Notes (the Capped Calls), is reflected in our guidance for weighted-average shares used in computing net income per share attributable to common stockholders-diluted. Upon conversion of the Notes, we may choose to satisfy our conversion obligations by paying or delivering, as the case may be, cash, shares of our common stock, or a combination of both. The Capped Calls will have an antidilutive impact when the average stock price of our common stock in a given period is higher than their exercise price. The estimated antidilutive impact of the Capped Calls reflected in our guidance is based on the market price of our common stock as of April 30, 2026, and is subject to change with future stock price movements."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "4 Beginning with the fourth quarter of fiscal 2026, we no longer attribute a portion of our non-GAAP net income to noncontrolling interest. See section titled \"Statement Regarding Use of Non-GAAP Financial Measures\" for further information."
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "First Quarter Fiscal 2027 GAAP and Non-GAAP Results:"
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "The following table summarizes our financial results for the first quarter of fiscal 2027:"
+  },
+  {
+   "id": "P39",
+   "kind": "table",
+   "text": "First Quarter Fiscal 2027GAAP Results | First Quarter Fiscal 2027Non-GAAP Results(1)\nAmount (millions) | Year/Year Growth\nProduct revenue | $1,334.3 | 34 | %\nAmount (millions) | Margin | Amount (millions) | Margin\nProduct gross profit | $947.5 | 71.0 | % | $1,002.7 | 75.1 | %\nOperating income (loss) | ($326.2) | (23.4 | %) | $165.8 | 11.9 | %\nNet cash provided by operating activities | $243.2 | 17.5 | % | (2)\nFree cash flow | $232.8 | 16.7 | %\nAdjusted free cash flow | $265.5 | 19.1 | %\n(1) We report non-GAAP financial measures in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP. See the section titled \"Statement Regarding Use of Non-GAAP Financial Measures\" for an explanation of non-GAAP financial measures, and the table titled \"GAAP to Non-GAAP Reconciliations\" for a reconciliation of GAAP to non-GAAP financial measures.(2) Calculated as net cash provided by operating activities as a percentage of revenue.Note: Fiscal year ends January 31. Numbers are rounded for presentation purposes."
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "Conference Call Details"
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "The conference call will begin at 2 p.m. Pacific Time on May 27, 2026. Investors and participants may attend the call by dialing 1-800-330-6730 for domestic callers and 1-646-769-9500 for international callers (Access code: 222481)."
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "The call will also be webcast live on the Snowflake Investor Relations website at https://investors.snowflake.com."
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "An audio replay of the conference call and webcast will be available two hours after its completion and will be accessible for 30 days on the Snowflake Investor Relations website."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "Investor Presentation Details"
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "An investor presentation providing additional information and analysis can be found at https://investors.snowflake.com."
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "Statement Regarding Use of Non\u2011GAAP Financial Measures"
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "We report the following non-GAAP financial measures, which have not been prepared in accordance with generally accepted accounting principles in the United States (GAAP), in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP."
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "\u2022Non-GAAP Product gross profit, Operating income, Net income, Net income attributable to Snowflake Inc., and Net income per share attributable to Snowflake Inc. common stockholders-basic and diluted. Non-GAAP product gross profit, operating income, net income, and net income attributable to Snowflake Inc. are each defined as the respective GAAP measure, excluding, as applicable, the effect of (i) stock-based compensation-related charges, including employer payroll tax-related items on employee stock transactions, (ii) amortization of acquired intangibles, (iii) expenses associated with acquisitions and strategic investments, (iv) amortization of debt issuance costs, (v) restructuring charges, net of associated income and recoveries, (vi) asset impairment related to office facility exits, net of associated sublease income, if any, (vii) adjustments attributable to noncontrolling interest, if any, and (viii) the related income tax effect of these adjustments as well as the non-recurring income tax expense or benefit associated with acquisitions. Non-GAAP product gross margin is calculated as non-GAAP product gross profit as a percentage of product revenue. Non-GAAP operating margin is calculated as non-GAAP operating income as a percentage of revenue. Our non-GAAP net income per share attributable to Snowflake Inc. common stockholders-basic is calculated by dividing non-GAAP net income attributable to Snowflake Inc. by the weighted-average number of shares of common stock outstanding during the period. Our non-GAAP net income per share attributable to Snowflake Inc. common stockholders-diluted is calculated by dividing non-GAAP net income attributable to Snowflake Inc. by the non-GAAP weighted-average number of diluted shares outstanding, which includes (a) the effect of all potentially dilutive common stock equivalents (stock options, restricted stock units, employee stock purchase rights under our 2020 Employee Stock Purchase Plan), (b) the potential dilutive effect of the shares issuable upon conversion of the Notes using the if-converted method, and (c) the antidilutive impact, if any, of the Capped Calls entered into in connection with the Notes. The Capped Calls are expected to reduce the potential dilution to our common stock upon any conversion of the Notes under certain circumstances. Under GAAP, the antidilutive impact of the Capped Calls is not reflected in diluted shares outstanding until exercised. The potential dilutive effect of outstanding restricted stock units with performance conditions not yet satisfied is included in the non-GAAP weighted-average number of diluted shares at forecasted attainment levels to the extent we believe it is probable that the performance conditions will be met. Amounts attributable to noncontrolling interest were not material for all periods presented. Beginning with the fourth quarter of fiscal 2026, the Company no longer attributes a portion of non-GAAP net income to noncontrolling interest as it no longer controls a majority-owned subsidiary. The calculation of non-GAAP basic and diluted net income per share attributable to common stockholders for the fourth quarter of fiscal 2026 and subsequent periods aligns with the methodology used to calculate non-GAAP basic and diluted net income per share attributable to Snowflake Inc. common stockholders as described above. We believe the presentation of operating results that exclude these items that are (i) non-cash items, (ii) non-recurring items, or (iii) items that have highly variable amounts due to factors beyond our control and are unrelated to our core operations such that management does not consider them in evaluating the business performance or making operating plans, provides useful supplemental information to investors and facilitates the analysis of our operating results and comparison of operating results across reporting periods."
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "\u2022Free cash flow. Free cash flow is defined as net cash provided by operating activities reduced by purchases of property and equipment and any capitalized software development costs. Cash outflows for employee payroll tax items related to the net share settlement of equity awards are included in cash flow for financing activities and, as a result, do not have an effect on the calculation of free cash flow. Free cash flow margin is calculated as free cash flow as a percentage of revenue. We believe these measures provide useful supplemental information to investors because they are indicators of the strength and performance of our core business operations."
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "\u2022Adjusted free cash flow. Adjusted free cash flow is defined as free cash flow plus (minus) net cash paid (received) on employer and employee payroll tax-related items on employee stock transactions. Employee payroll tax-related items on employee stock transactions are generally pass-through transactions that are expected to have a net zero impact on free cash flow over time, but that may impact free cash flow in any given fiscal quarter due to differences between the time that we receive funds from our employees and the time we remit those funds to applicable tax authorities. We believe that excluding the effects of these payroll tax-related items will enhance investors' ability to evaluate our free cash flow performance, including on a quarter-over-quarter basis. Adjusted free cash flow margin is calculated as adjusted free cash flow as a percentage of revenue. We believe these measures provide useful supplemental information to investors because they are indicators of the strength and performance of our core business operations."
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "We use these non-GAAP financial measures internally for financial and operational decision-making purposes and as a means to evaluate period-to-period comparisons. Non-GAAP financial measures are not meant to be considered in isolation or as a substitute for comparable GAAP financial measures and should be read only in conjunction with our condensed consolidated financial statements prepared in accordance with GAAP. Our presentation of non-GAAP financial measures may not be comparable to similar measures used by other companies. We encourage investors to carefully consider our results under GAAP, as well as our supplemental non-GAAP information and the reconciliation between these presentations, to more fully understand our business. Please see the tables included at the end of this release for the reconciliation of GAAP to non-GAAP results."
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "Key Business Metrics"
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "We monitor our key business metrics, including (i) free cash flow and (ii) the other metrics set forth below to help us evaluate our business and growth trends, establish budgets, measure the effectiveness of our sales and marketing efforts, and assess operational efficiencies. See the section titled \"Statement Regarding Use of Non-GAAP Financial Measures\" for the definition of free cash flow. The calculation of our key business metrics may differ from other similarly titled metrics used by other companies, securities analysts, or investors."
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "\u2022Product Revenue. Product revenue is a key metric for us because we recognize revenue based on platform consumption, which is inherently variable at our customers' discretion, and not based on the amount and duration of contract terms. Product revenue is primarily derived from the consumption of compute, storage, and data transfer resources by customers on our platform. Customers have the flexibility to consume more than their contracted capacity during the contract term and may have the ability to roll over unused capacity to future periods, generally upon the purchase of additional capacity at renewal. Our consumption-based business model distinguishes us from subscription-based software companies that generally recognize revenue ratably over the contract term and may not permit rollover. Because customers have flexibility in the timing of their consumption, which can exceed their contracted capacity or extend beyond the original contract term in many cases, the amount of product revenue recognized in a given period is an important indicator of customer satisfaction and the value derived from our platform. While customer use of our platform in any period is not necessarily indicative of future use, we estimate future revenue using predictive models based on customers' historical usage to plan and determine financial forecasts. Product revenue excludes our professional services and other revenue."
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "\u2022Net Revenue Retention Rate. To calculate net revenue retention rate, we first specify a measurement period consisting of the trailing two years from our current period end. Next, we define as our measurement cohort the population of customers under capacity contracts that used our platform at any point in the first month of the first year of the measurement period. The cohorts used to calculate net revenue retention rate include end-customers under a reseller arrangement. We then calculate our net revenue retention rate as the quotient obtained by dividing our product revenue from this cohort in the second year of the measurement period by our product revenue from this cohort in the first year of the measurement period. Any customer in the cohort that did not use our platform in the second year remains in the calculation and contributes zero product revenue in the second year. Our net revenue retention rate is subject to adjustments for acquisitions, consolidations, spin-offs, and other market activity, and we present our net revenue retention rate for historical periods reflecting these adjustments. Since we will continue to attribute the historical product revenue to the consolidated contract, consolidation of capacity contracts within a customer's organization typically will not impact our net revenue retention rate unless one of those customers was not a customer at any point in the first month of the first year of the measurement period."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "\u2022Customers with Trailing 12-Month Product Revenue Greater than $1 Million. To calculate the number of customers with trailing 12-month product revenue greater than $1 million, we count the number of customers under capacity arrangements that contributed more than $1 million in product revenue in the trailing 12 months. For purposes of determining our customer count, we treat each customer account, including accounts for end-customers under a reseller arrangement, that has at least one corresponding capacity contract as a unique customer, and a single organization with multiple divisions, segments, or subsidiaries may be counted as multiple customers. We do not include customers that consume our platform only under on-demand arrangements for purposes of determining our customer count. Our customer count is subject to adjustments for acquisitions, consolidations, spin-offs, and other market activity, and we present our customer count for historical periods reflecting these adjustments."
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "\u2022Forbes Global 2000 Customers. Our Forbes Global 2000 customer count is a subset of our customer count based on the 2025 Forbes Global 2000 list. Our Forbes Global 2000 customer count is subject to adjustments for annual updates to the list by Forbes, as well as acquisitions, consolidations, spin-offs, and other market activity with respect to such customers, and we present our Forbes Global 2000 customer count for historical periods reflecting these adjustments."
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "\u2022Remaining Performance Obligations. Remaining performance obligations (RPO) represent the amount of contracted future revenue that has not yet been recognized, including (i) deferred revenue and (ii) non-cancelable contracted amounts that will be invoiced and recognized as revenue in future periods. RPO excludes performance obligations from on-demand arrangements and certain time and materials contracts that are billed in arrears. Portions of RPO that are not yet invoiced and are denominated in foreign currencies are revalued into U.S. dollars each period based on the applicable period-end exchange rates. RPO is not necessarily indicative of future product revenue growth because it does not account for the timing of customers' consumption or their consumption of more than their contracted capacity. Moreover, RPO is influenced by a number of factors, including the timing and size of renewals, the timing and size of purchases of additional capacity, average contract terms, seasonality, changes in foreign currency exchange rates, and the extent to which customers are permitted to roll over unused capacity to future periods, generally upon the purchase of additional capacity at renewal. Due to these factors, it is important to review RPO in conjunction with product revenue and other financial metrics disclosed elsewhere herein."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "Use of Forward\u2011Looking Statements"
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "This release and the accompanying oral presentation contain forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities Exchange Act of 1934, as amended, regarding our performance, including but not limited to statements in the section titled \"Financial Outlook.\" Words such as \"guidance,\" \"outlook,\" \"expect,\" \"anticipate,\" \"should,\" \"believe,\" \"hope,\" \"target,\" \"project,\" \"plan,\" \"goals,\" \"estimate,\" \"potential,\" \"predict,\" \"forecast,\" \"may,\" \"will,\" \"might,\" \"could,\" \"intend,\" \"shall,\" \"future,\" and variations of these terms or the negative of these terms and similar expressions are intended to identify these forward-looking statements. Other than statements of historical fact, all statements contained in this release and accompanying oral presentation are forward-looking statements, including statements regarding (i) our future operating results, targets, or financial position; (ii) our business strategy, plans, opportunities, or priorities, including with respect to strategic transactions; (iii) the release, adoption, and use of our new or enhanced products, services, and technology offerings, including those that are under development or not generally available; (iv) market size and growth, trends, and competitive considerations; (v) our vision, strategy and expected benefits relating to artificial intelligence (AI), the enterprise AI revolution, Snowflake Cortex AI, Snowpark, Snowflake Marketplace, the AI Data Cloud, and AI Data Clouds for specific industries or product categories, including the expected benefits and network effects of the AI Data Cloud; and (vi) the integration, interoperability, and availability of our products, services, and technology offerings with and on third-party products and platforms, including public cloud platforms and AI models."
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "The forward-looking statements contained in this release and the accompanying oral presentation are subject to known and unknown risks, uncertainties, assumptions, and other factors that may cause actual results or outcomes to be materially different from any future results or outcomes expressed or implied by the forward-looking statements. These risks, uncertainties, assumptions, and other factors include, but are not limited to, those related to our business and financial performance; general market and business conditions, downturns, or uncertainty, including higher inflation, tariffs and trade wars, extended federal government shutdowns, higher interest rates, fluctuations or volatility in capital markets, energy markets, or foreign currency exchange rates, and geopolitical instability; our ability to attract and retain customers that use our platform to support their end-to-end data lifecycle; our ability to execute on our business strategy, including our strategy across our product categories and an effective AI strategy; our ability to respond rapidly and effectively to emerging technology trends, including the adoption and use of AI, and the extent to which our investments in new technologies are successful; the extent to which customers continue to optimize consumption; our ability to compete effectively in a continually evolving market in which enterprises are increasingly adopting AI to perform core functions and significant disruption is being driven by AI; our ability to attract, recruit, and retain qualified personnel to support our operations and growth; the impact of new or optimized product features and pricing strategies on consumption, including AI credit pricing, Iceberg tables, tiered storage pricing, and adaptive warehouses; our ability to consummate and realize the anticipated benefits of any acquisitions, strategic investments, partnerships, or alliances; unforeseen technical, operational, or business challenges impacting the timing, scope, or success of strategic partnerships; the extent to which customers continue to rationalize budgets and prioritize cash flow management, including through shortened contract durations; our ability to develop new products and services and enhance existing products and services; the extent to which customer adoption of new product capabilities results in durable consumption; the growth of successful native applications on the Snowflake Marketplace; our ability to increase and predict customer consumption of our platform, particularly in light of the impact of holidays on customer consumption patterns; our ability to increase our penetration into existing markets and enter and grow new markets, including highly-regulated markets such as financial services, healthcare, and the public sector; the effectiveness of our security measures designed to protect against security incidents and the impact of cybersecurity threat activity directed at us or our customers and any resulting reputational or financial damage; success of our sales and marketing efforts and our ability to promote our brand; our ability to protect our intellectual property rights and the extent to which they provide us with a competitive advantage; our ability to manage growth; our ability to sublease or terminate certain of our office facility commitments and the impact of related asset impairment; the impact and timing of stock repurchases under our stock repurchase program; and our ability to meet the requirements of the Notes and the settlement timing and method for the Notes and the Capped Calls."
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "Further information on these and additional risks, uncertainties, assumptions, and other factors that could cause actual outcomes and results to differ materially from those included in or contemplated by the forward-looking statements contained in this release are included under the caption \"Risk Factors\" and elsewhere in our Form 10-K for the fiscal year ended January 31, 2026 and other filings and reports we make with the Securities and Exchange Commission from time to time, including our Form 10-Q that will be filed for the fiscal quarter ended April 30, 2026."
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "Moreover, we operate in a very competitive and rapidly changing environment, and new risks may emerge from time to time. It is not possible to predict all risks, nor can we assess the impact of all factors on our business or the extent to which any factor(s) may cause actual results or outcomes to differ materially from those contained in any forward-looking statements we may make. As a result of these risks, uncertainties, assumptions, and other factors, you should not rely on any forward-looking statements as predictions of future events. Forward-looking statements speak only as of the date the statements are made and are based on information available to us at the time those statements are made and/or management's good faith belief as of that time with respect to future events. Except as required by law, we undertake no obligation, and do not intend, to update these forward-looking statements, to review or confirm analysts' expectations, or to provide interim reports or updates on the progress of the current financial quarter."
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "About Snowflake"
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "Snowflake is the platform for the AI era, making it easy for enterprises to innovate faster and get more value from data. More than 13,900 customers around the globe, including hundreds of the world's largest companies, use Snowflake's AI Data Cloud to build, use and share data, applications and AI. With Snowflake, data and AI are transformative for everyone. Learn more at snowflake.com (NYSE: SNOW)."
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "Investor Contact"
+  },
+  {
+   "id": "P67",
+   "kind": "text",
+   "text": "Katherine McCracken"
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "IR@snowflake.com"
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "Press Contact"
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "Eszter Szikora"
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "Press@snowflake.com"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "Source: Snowflake Inc."
+  },
+  {
+   "id": "P73",
+   "kind": "text",
+   "text": "Snowflake Inc."
+  },
+  {
+   "id": "P74",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Operations (in thousands, except per share data)"
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P76",
+   "kind": "table",
+   "text": "Three Months Ended April 30,\n2026 | 2025\nRevenue | $ | 1,390,951 | $ | 1,042,074\nCost of revenue | 464,500 | 348,786\nGross profit | 926,451 | 693,288\nOperating expenses:\nSales and marketing | 588,952 | 458,554\nResearch and development | 534,937 | 472,404\nGeneral and administrative | 128,716 | 209,587\nTotal operating expenses | 1,252,605 | 1,140,545\nOperating loss | (326,154) | (447,257)\nInterest income | 41,145 | 53,163\nInterest expense | (2,080) | (2,071)\nOther expense, net | (9,571) | (28,058)\nLoss before income taxes | (296,660) | (424,223)\nProvision for (benefit from) income taxes | (1,089) | 5,729\nNet loss | (295,571) | (429,952)\nLess: net income attributable to noncontrolling interest | - | 140\nNet loss attributable to Snowflake Inc. | $ | (295,571) | $ | (430,092)\nNet loss per share attributable to Snowflake Inc. common stockholders-basic and diluted | $ | (0.86) | $ | (1.29)\nWeighted-average shares used in computing net loss per share attributable to Snowflake Inc. common stockholders-basic and diluted | 345,391 | 332,657"
+  },
+  {
+   "id": "P77",
+   "kind": "text",
+   "text": "Snowflake Inc."
+  },
+  {
+   "id": "P78",
+   "kind": "text",
+   "text": "Condensed Consolidated Balance Sheets (in thousands)"
+  },
+  {
+   "id": "P79",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P80",
+   "kind": "table",
+   "text": "April 30, 2026 | January 31, 2026\nAssets\nCurrent assets:\nCash and cash equivalents | $ | 2,084,715 | $ | 2,828,163\nShort-term investments | 870,283 | 1,201,523\nAccounts receivable, net | 579,719 | 1,303,740\nDeferred commissions, current | 212,886 | 214,058\nPrepaid expenses and other current assets | 229,504 | 195,128\nTotal current assets | 3,977,107 | 5,742,612\nLong-term investments | 1,432,494 | 755,013\nProperty and equipment, net | 227,207 | 248,611\nOperating lease right-of-use assets | 294,863 | 274,897\nGoodwill | 1,537,185 | 1,194,367\nIntangible assets, net | 451,357 | 246,916\nDeferred commissions, non-current | 222,000 | 241,759\nOther assets | 412,043 | 428,320\nTotal assets | $ | 8,554,256 | $ | 9,132,495\nLiabilities and Stockholders' Equity\nCurrent liabilities:\nAccounts payable | $ | 55,062 | $ | 145,559\nAccrued expenses and other current liabilities | 814,634 | 879,537\nOperating lease liabilities, current | 55,783 | 49,598\nDeferred revenue, current | 2,851,812 | 3,346,997\nTotal current liabilities | 3,777,291 | 4,421,691\nConvertible senior notes, net | 2,281,903 | 2,279,827\nOperating lease liabilities, non-current | 434,409 | 411,689\nDeferred revenue, non-current | 25,663 | 14,440\nOther liabilities | 95,268 | 80,746\nStockholders' equity | 1,939,722 | 1,924,102\nTotal liabilities and stockholders' equity | $ | 8,554,256 | $ | 9,132,495"
+  },
+  {
+   "id": "P81",
+   "kind": "text",
+   "text": "Snowflake Inc."
+  },
+  {
+   "id": "P82",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Cash Flows (in thousands)"
+  },
+  {
+   "id": "P83",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P84",
+   "kind": "table",
+   "text": "Three Months Ended April 30,\n2026 | 2025\nCash flows from operating activities:\nNet loss | $ | (295,571) | $ | (429,952)\nAdjustments to reconcile net loss to net cash provided by operating activities:\nDepreciation and amortization | 67,605 | 48,804\nNon-cash operating lease costs | 17,882 | 17,842\nAmortization of deferred commissions | 57,730 | 25,796\nStock-based compensation, net of any amounts capitalized | 402,470 | 379,460\nNet accretion of discounts on investments | (2,205) | (7,652)\nNet realized and unrealized losses on strategic investments | 9,498 | 29,685\nAmortization of debt issuance costs | 2,080 | 2,071\nAsset impairment related to office facility exits | 17,724 | 106,488\nDeferred income tax | (6,562) | -\nOther | 2,821 | (5,174)\nChanges in operating assets and liabilities, net of effects of a business combination:\nAccounts receivable | 747,217 | 393,657\nDeferred commissions | (36,799) | (31,114)\nPrepaid expenses and other assets | (22,455) | (17,852)\nAccounts payable | (89,673) | (4,423)\nAccrued expenses and other liabilities | (80,791) | 3,935\nOperating lease liabilities | (19,207) | (11,838)\nDeferred revenue | (528,541) | (271,360)\nNet cash provided by operating activities | 243,223 | 228,373\nCash flows from investing activities:\nPurchases of property and equipment | (10,451) | (44,989)\nCash paid for a business combination, net of cash, cash equivalents and restricted cash acquired | (252,457) | -\nPurchases of investments | (896,447) | (1,012,575)\nSales of investments | 109,694 | 17,399\nMaturities and redemptions of investments | 445,170 | 984,182\nNet cash used in investing activities | (604,491) | (55,983)\nCash flows from financing activities:\nProceeds from exercise of stock options | 6,579 | 6,260\nProceeds from issuance of common stock under employee stock purchase plan | 66,987 | 53,193\nTaxes paid related to net share settlement of equity awards | (142,846) | (132,498)\nRepurchases of common stock | (300,003) | (490,638)\nPayments of deferred purchase consideration for business combinations | (2,250) | (374)\nNet cash used in financing activities | (371,533) | (564,057)\nEffect of exchange rate changes on cash, cash equivalents, and restricted cash | (2,824) | 12,397\nNet decrease in cash, cash equivalents, and restricted cash | (735,625) | (379,270)\nCash, cash equivalents, and restricted cash-beginning of period | 2,864,303 | 2,698,678\nCash, cash equivalents, and restricted cash-end of period | $ | 2,128,678 | $ | 2,319,408"
+  },
+  {
+   "id": "P85",
+   "kind": "text",
+   "text": "Snowflake Inc."
+  },
+  {
+   "id": "P86",
+   "kind": "text",
+   "text": "GAAP to Non-GAAP Reconciliations (in thousands, except per share data and percentages)"
+  },
+  {
+   "id": "P87",
+   "kind": "text",
+   "text": "(unaudited)"
+  },
+  {
+   "id": "P88",
+   "kind": "table",
+   "text": "Three Months Ended April 30,\n2026 | 2025\nAmount | Amount as a % of Revenue | Amount | Amount as a % of Revenue\nRevenue:\nProduct revenue | $ | 1,334,329 | 96% | $ | 996,813 | 96%\nProfessional services and other revenue | 56,622 | 4% | 45,261 | 4%\nRevenue | $ | 1,390,951 | 100% | $ | 1,042,074 | 100%\nYear-over-year growth | 33% | 26%\nCost of revenue:\nGAAP cost of product revenue | $ | 386,874 | $ | 285,276\nAdjustments:\nStock-based compensation-related charges | (31,646) | (30,852)\nAmortization of acquired intangibles | (23,594) | (11,735)\nNon-GAAP cost of product revenue | $ | 331,634 | $ | 242,689\nGAAP cost of professional services and other revenue | $ | 77,626 | $ | 63,510\nAdjustments:\nStock-based compensation-related charges | (14,596) | (14,641)\nAmortization of acquired intangibles | (1,764) | (1,608)\nNon-GAAP cost of professional services and other revenue | $ | 61,266 | $ | 47,261\nGAAP cost of revenue | $ | 464,500 | 33% | $ | 348,786 | 33%\nAdjustments:\nStock-based compensation-related charges | (46,242) | (45,493)\nAmortization of acquired intangibles | (25,358) | (13,343)\nNon-GAAP cost of revenue | $ | 392,900 | 28% | $ | 289,950 | 28%\nGross profit (loss):\nGAAP product gross profit | $ | 947,455 | $ | 711,537\nAdjustments:\nStock-based compensation-related charges | 31,646 | 30,852\nAmortization of acquired intangibles | 23,594 | 11,735\nNon-GAAP product gross profit | $ | 1,002,695 | $ | 754,124\nGAAP professional services and other revenue gross loss | $ | (21,004) | $ | (18,249)\nAdjustments:\nStock-based compensation-related charges | 14,596 | 14,641\nAmortization of acquired intangibles | 1,764 | 1,608\nNon-GAAP professional services and other revenue gross loss | $ | (4,644) | $ | (2,000)\nGAAP gross profit | $ | 926,451 | 67% | $ | 693,288 | 67%\nAdjustments:\nStock-based compensation-related charges | 46,242 | 45,493\nAmortization of acquired intangibles | 25,358 | 13,343\nNon-GAAP gross profit | $ | 998,051 | 72% | $ | 752,124 | 72%\nGross margin:\nGAAP product gross margin | 71% | 71%\nAdjustments:\nStock-based compensation-related charges as a % of product revenue | 2% | 4%\nAmortization of acquired intangibles as a % of product revenue | 2% | 1%\nNon-GAAP product gross margin | 75% | 76%\nGAAP professional services and other revenue gross margin | (37%) | (40%)\nAdjustments:\nStock-based compensation-related charges as a % of professional services and other revenue | 26% | 32%\nAmortization of acquired intangibles as a % of professional services and other revenue | 3% | 4%\nNon-GAAP professional services and other revenue gross margin | (8%) | (4%)\nGAAP gross margin | 67% | 67%\nAdjustments:\nStock-based compensation-related charges as a % of revenue | 3% | 4%\nAmortization of acquired intangibles as a % of revenue | 2% | 1%\nNon-GAAP gross margin | 72% | 72%\nOperating expenses:\nGAAP sales and marketing expense | $ | 588,952 | 42% | $ | 458,554 | 44%\nAdjustments:\nStock-based compensation-related charges | (103,898) | (92,911)\nAmortization of acquired intangibles | (13,208) | (7,760)\nNon-GAAP sales and marketing expense | $ | 471,846 | 34% | $ | 357,883 | 34%\nGAAP research and development expense | $ | 534,937 | 39% | $ | 472,404 | 46%\nAdjustments:\nStock-based compensation-related charges | (248,629) | (230,945)\nAmortization of acquired intangibles | (1,960) | (2,645)\nRestructuring recoveries, net(1) | - | 8\nNon-GAAP research and development expense | $ | 284,348 | 20% | $ | 238,822 | 23%\nGAAP general and administrative expense | $ | 128,716 | 9% | $ | 209,587 | 20%\nAdjustments:\nStock-based compensation-related charges | (34,888) | (39,373)\nAmortization of acquired intangibles | (32) | (337)\nExpenses associated with acquisitions and strategic investments | (62) | (378)\nRestructuring recoveries, net(1) | 20 | 750\nAsset impairment related to office facility exits, net of sublease income(2) | (17,650) | (106,488)\nNon-GAAP general and administrative expense | $ | 76,104 | 6% | $ | 63,761 | 6%\nGAAP total operating expenses | $ | 1,252,605 | 90% | $ | 1,140,545 | 110%\nAdjustments:\nStock-based compensation-related charges | (387,415) | (363,229)\nAmortization of acquired intangibles | (15,200) | (10,742)\nExpenses associated with acquisitions and strategic investments | (62) | (378)\nRestructuring recoveries, net(1) | 20 | 758\nAsset impairment related to office facility exits, net of sublease income(2) | (17,650) | (106,488)\nNon-GAAP total operating expenses | $ | 832,298 | 60% | $ | 660,466 | 63%\nOperating income (loss):\nGAAP operating loss | $ | (326,154) | (23%) | $ | (447,257) | (43%)\nAdjustments:\nStock-based compensation-related charges(3) | 433,657 | 408,722\nAmortization of acquired intangibles | 40,558 | 24,085\nExpenses associated with acquisitions and strategic investments | 62 | 378\nRestructuring recoveries, net(1) | (20) | (758)\nAsset impairment related to office facility exits, net of sublease income(2) | 17,650 | 106,488\nNon-GAAP operating income | $ | 165,753 | 12% | $ | 91,658 | 9%\nOperating margin:\nGAAP operating margin | (23%) | (43%)\nAdjustments:\nStock-based compensation-related charges as a % of revenue | 31% | 40%\nAmortization of acquired intangibles as a % of revenue | 3% | 2%\nExpenses associated with acquisitions and strategic investments as a % of revenue | -% | -%\nRestructuring recoveries, net as a % of revenue | -% | -%\nAsset impairment related to office facility exits, net of sublease income as a % of revenue | 1% | 10%\nNon-GAAP operating margin | 12% | 9%\nNet income (loss):\nGAAP net loss | $ | (295,571) | (21%) | $ | (429,952) | (41%)\nAdjustments:\nStock-based compensation-related charges(3) | 433,657 | 408,722\nAmortization of acquired intangibles | 40,558 | 24,085\nExpenses associated with acquisitions and strategic investments | 62 | 378\nRestructuring recoveries, net(1) | (20) | (758)\nAsset impairment related to office facility exits, net of sublease income(2) | 17,650 | 106,488\nAmortization of debt issuance costs | 2,080 | 2,071\nIncome tax effect related to the above adjustments and acquisitions | (50,421) | (23,462)\nNon-GAAP net income | $ | 147,995 | 11% | $ | 87,572 | 8%\nNet income (loss) attributable to Snowflake Inc.(4):\nGAAP net loss attributable to Snowflake Inc. | $ | (295,571) | (21%) | $ | (430,092) | (41%)\nAdjustments:\nStock-based compensation-related charges(3) | 433,657 | 408,722\nAmortization of acquired intangibles | 40,558 | 24,085\nExpenses associated with acquisitions and strategic investments | 62 | 378\nRestructuring recoveries, net(1) | (20) | (758)\nAsset impairment related to office facility exits, net of sublease income(2) | 17,650 | 106,488\nAmortization of debt issuance costs | 2,080 | 2,071\nIncome tax effect related to the above adjustments and acquisitions | (50,421) | (23,462)\nAdjustments attributable to noncontrolling interest, net of tax | - | (147)\nNon-GAAP net income attributable to Snowflake Inc. | $ | 147,995 | 11% | $ | 87,285 | 8%\nNet income (loss) per share attributable to Snowflake Inc. common stockholders-basic and diluted(4):\nGAAP net loss per share attributable to Snowflake Inc. common stockholders-basic and diluted | $ | (0.86) | $ | (1.29)\nWeighted-average shares used in computing GAAP net loss per share attributable to Snowflake Inc. common stockholders-basic and diluted | 345,391 | 332,657\nNon-GAAP net income per share attributable to Snowflake Inc. common stockholders-basic | $ | 0.43 | $ | 0.26\nWeighted-average shares used in computing non-GAAP net income per share attributable to Snowflake Inc. common stockholders-basic | 345,391 | 332,657\nNon-GAAP net income per share attributable to Snowflake Inc. common stockholders-diluted | $ | 0.39 | $ | 0.24\nGAAP weighted-average shares used in computing GAAP net loss per share attributable to Snowflake Inc. common stockholders-basic and diluted | 345,391 | 332,657\nAdd: Effect of potentially dilutive common stock equivalents | 15,444 | 24,033\nAdd: Effect of convertible senior notes | 14,603 | 14,603\nLess: Effect of antidilutive impact of capped call transactions | (393) | (373)\nNon-GAAP weighted-average shares used in computing non-GAAP net income per share attributable to Snowflake Inc. common stockholders-diluted(5) | 375,045 | 370,920\nFree cash flow and adjusted free cash flow:\nGAAP net cash provided by operating activities | $ | 243,223 | 17% | $ | 228,373 | 22%\nAdjustments:\nPurchases of property and equipment | (10,451) | (44,989)\nNon-GAAP free cash flow | 232,772 | 17% | 183,384 | 18%\nAdjustments:\nNet cash paid on payroll tax-related items on employee stock transactions(6) | 32,742 | 22,885\nNon-GAAP adjusted free cash flow | $ | 265,514 | 19% | $ | 206,269 | 20%\nNon-GAAP free cash flow margin | 17% | 18%\nNon-GAAP adjusted free cash flow margin | 19% | 20%\nGAAP net cash used in investing activities | $ | (604,491) | $ | (55,983)\nGAAP net cash used in financing activities | $ | (371,533) | $ | (564,057)\n(1) Restructuring recoveries, net represent recoveries on certain costs incurred by us in connection with a restructuring plan for a majority-owned subsidiary.(2) Asset impairment related to office facility exits, net of sublease income for the three months ended April 30, 2025 primarily relates to our San Mateo office facility. (3) Stock-based compensation-related charges included employer payroll tax-related expenses on employee stock transactions of approximately $21.4 million and $19.5 million for the three months ended April 30, 2026 and 2025, respectively. (4) Beginning with the fourth quarter of fiscal 2026, the Company no longer attributes a portion of GAAP and non-GAAP net income (loss) to noncontrolling interest as it no longer controls a majority-owned subsidiary. As such, for the three months ended April 30, 2026, the calculations of GAAP and non-GAAP basic and diluted net income (loss) per share attributable to common stockholders align with the methodologies used to calculate the corresponding metrics for Snowflake Inc. common stockholders.(5) The non-GAAP weighted-average shares used in computing non-GAAP net income per share attributable to Snowflake Inc. common stockholders-diluted included (a) the effect of all potentially dilutive common stock equivalents (stock options, restricted stock units, and employee stock purchase rights under our 2020 Employee Stock Purchase Plan) and (b) the potential dilutive effect of shares issuable upon conversion of the Notes using the if-converted method, starting from the beginning of the period or the issuance date of the Notes, if later. The potential dilutive effect of outstanding restricted stock units with performance conditions not yet satisfied is included in the non-GAAP weighted-average number of diluted shares at forecasted attainment levels to the extent we believe it is probable that the performance conditions will be met.(6) The amounts for the three months ended April 30, 2026 and 2025 do not include employee payroll taxes of $142.8 million and $132.5 million, respectively, related to net share settlement of employee equity awards, which were reflected as cash outflows for financing activities."
+  }
+ ]
+}

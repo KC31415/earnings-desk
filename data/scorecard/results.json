@@ -1,5 +1,5 @@
 {
- "company_quarters": 10,
+ "company_quarters": 50,
  "tickers": [
   "ADBE",
   "AI",
@@ -12,47 +12,47 @@
   "PLTR",
   "SNOW"
  ],
- "claims": 202,
+ "claims": 1001,
  "status_counts": {
-  "verified": 158,
-  "sourced": 37,
-  "mismatch": 6,
-  "unsupported": 1
+  "verified": 788,
+  "sourced": 193,
+  "mismatch": 16,
+  "unsupported": 4
  },
  "numeric": {
-  "claims": 149,
-  "verified_pct": 98.0,
-  "mismatch_pct": 2.0
+  "claims": 734,
+  "verified_pct": 99.2,
+  "mismatch_pct": 0.8
  },
  "quote": {
-  "claims": 15,
-  "match_pct": 80.0
+  "claims": 70,
+  "match_pct": 85.7
  },
  "numeric_by_metric_type": [
   {
    "metric_type": "amount (XBRL)",
-   "claims": 42,
-   "verified_pct": 100.0,
-   "mismatch_pct": 0.0,
+   "claims": 225,
+   "verified_pct": 98.7,
+   "mismatch_pct": 1.3,
    "unsupported_pct": 0.0
   },
   {
    "metric_type": "growth (QoQ/YoY)",
-   "claims": 50,
-   "verified_pct": 94.0,
-   "mismatch_pct": 6.0,
+   "claims": 237,
+   "verified_pct": 98.7,
+   "mismatch_pct": 1.3,
    "unsupported_pct": 0.0
   },
   {
    "metric_type": "margin",
-   "claims": 10,
+   "claims": 35,
    "verified_pct": 100.0,
    "mismatch_pct": 0.0,
    "unsupported_pct": 0.0
   },
   {
    "metric_type": "press-release number",
-   "claims": 47,
+   "claims": 237,
    "verified_pct": 100.0,
    "mismatch_pct": 0.0,
    "unsupported_pct": 0.0
@@ -61,35 +61,35 @@
  "numeric_by_calendar": [
   {
    "fye_group": "Calendar year (Dec)",
-   "claims": 59,
-   "verified_pct": 96.6,
-   "mismatch_pct": 3.4,
+   "claims": 291,
+   "verified_pct": 99.3,
+   "mismatch_pct": 0.7,
    "unsupported_pct": 0.0
   },
   {
    "fye_group": "Non-calendar (Apr FYE)",
-   "claims": 16,
-   "verified_pct": 100.0,
-   "mismatch_pct": 0.0,
+   "claims": 69,
+   "verified_pct": 95.7,
+   "mismatch_pct": 4.3,
    "unsupported_pct": 0.0
   },
   {
    "fye_group": "Non-calendar (Jan FYE)",
-   "claims": 45,
-   "verified_pct": 97.8,
-   "mismatch_pct": 2.2,
+   "claims": 234,
+   "verified_pct": 99.6,
+   "mismatch_pct": 0.4,
    "unsupported_pct": 0.0
   },
   {
    "fye_group": "Non-calendar (Jun FYE)",
-   "claims": 14,
+   "claims": 69,
    "verified_pct": 100.0,
    "mismatch_pct": 0.0,
    "unsupported_pct": 0.0
   },
   {
    "fye_group": "Non-calendar (Nov FYE)",
-   "claims": 15,
+   "claims": 71,
    "verified_pct": 100.0,
    "mismatch_pct": 0.0,
    "unsupported_pct": 0.0
@@ -98,42 +98,70 @@
  "numeric_q4_vs_other": [
   {
    "q": "Q1-Q3",
-   "claims": 149,
-   "verified_pct": 98.0,
-   "mismatch_pct": 2.0,
+   "claims": 593,
+   "verified_pct": 99.0,
+   "mismatch_pct": 1.0,
+   "unsupported_pct": 0.0
+  },
+  {
+   "q": "Q4 (derived from 10-K)",
+   "claims": 141,
+   "verified_pct": 100.0,
+   "mismatch_pct": 0.0,
    "unsupported_pct": 0.0
   }
  ],
  "all_by_claim_type": [
   {
    "claim_type": "numeric",
-   "claims": 149,
-   "verified_pct": 98.0,
-   "mismatch_pct": 2.0,
+   "claims": 734,
+   "verified_pct": 99.2,
+   "mismatch_pct": 0.8,
    "unsupported_pct": 0.0
   },
   {
    "claim_type": "qualitative",
-   "claims": 38,
+   "claims": 197,
    "verified_pct": 0.0,
    "mismatch_pct": 0.0,
-   "unsupported_pct": 2.6
+   "unsupported_pct": 2.0
   },
   {
    "claim_type": "quote",
-   "claims": 15,
-   "verified_pct": 80.0,
-   "mismatch_pct": 20.0,
+   "claims": 70,
+   "verified_pct": 85.7,
+   "mismatch_pct": 14.3,
    "unsupported_pct": 0.0
   }
  ],
  "failures": {
-  "quote paraphrased, not quoted": 3,
-  "rounding at the boundary": 3,
-  "number not in cited paragraph": 1
+  "quote paraphrased, not quoted": 10,
+  "rounding at the boundary": 6,
+  "number not in cited paragraph": 2,
+  "nothing checkable (bad metric, period or citation)": 2
  },
  "failure_examples": {
+  "nothing checkable (bad metric, period or citation)": [
+   {
+    "ticker": "MSFT",
+    "quarter": "FY2026 Q4",
+    "text": "Watch whether surging capital spending continues to pressure free cash flow.",
+    "reason": "cited paragraph 'PaymentsToAcquirePropertyPlantAndEquipment' does not exist"
+   },
+   {
+    "ticker": "MSFT",
+    "quarter": "FY2026 Q3",
+    "text": "Watch whether capital spending, which is far above last year, continues to weigh on free cash flow.",
+    "reason": "cited paragraph 'PaymentsToAcquirePropertyPlantAndEquipment' does not exist"
+   }
+  ],
   "number not in cited paragraph": [
+   {
+    "ticker": "DDOG",
+    "quarter": "FY2025 Q3",
+    "text": "Track growth in larger customers with ARR above $100,000.",
+    "reason": "numbers [100000.0] in a qualitative claim are not in P6"
+   },
    {
     "ticker": "PLTR",
     "quarter": "FY2026 Q3",
@@ -149,15 +177,15 @@
     "reason": "the sentence paraphrases instead of containing the quoted words"
    },
    {
-    "ticker": "DDOG",
-    "quarter": "FY2026 Q2",
-    "text": "The CEO described the quarter as strong.",
+    "ticker": "ADBE",
+    "quarter": "FY2026 Q1",
+    "text": "The CEO highlighted AI momentum, saying",
     "reason": "the sentence paraphrases instead of containing the quoted words"
    },
    {
-    "ticker": "PLTR",
-    "quarter": "FY2026 Q3",
-    "text": "The CEO highlighted that U.S. commercial revenue passed U.S. government revenue for the first time.",
+    "ticker": "ADBE",
+    "quarter": "FY2025 Q3",
+    "text": "The CEO highlighted AI momentum, noting that Adobe is the leader in its category.",
     "reason": "the sentence paraphrases instead of containing the quoted words"
    }
   ],
@@ -175,53 +203,53 @@
     "reason": "stated 15.3 percent, XBRL gives -15.247%"
    },
    {
-    "ticker": "NDAQ",
+    "ticker": "AI",
     "quarter": "FY2026 Q3",
-    "text": "Operating cash flow was up 135.8% year over year.",
-    "reason": "stated 135.8 percent, XBRL gives 135.747%"
+    "text": "Free cash flow was an outflow of $56.2 million.",
+    "reason": "sign/direction is wrong"
    }
   ]
  },
  "injection": [
   {
    "error_type": "value +5%",
-   "injected": 98,
-   "caught": 98,
+   "injected": 488,
+   "caught": 488,
    "catch_rate_pct": 100.0
   },
   {
    "error_type": "value \u22125%",
-   "injected": 98,
-   "caught": 98,
+   "injected": 488,
+   "caught": 488,
    "catch_rate_pct": 100.0
   },
   {
    "error_type": "wrong unit",
-   "injected": 32,
-   "caught": 32,
+   "injected": 185,
+   "caught": 185,
    "catch_rate_pct": 100.0
   },
   {
    "error_type": "wrong period",
-   "injected": 99,
-   "caught": 99,
+   "injected": 490,
+   "caught": 490,
    "catch_rate_pct": 100.0
   },
   {
    "error_type": "QoQ/YoY swapped",
-   "injected": 47,
-   "caught": 47,
+   "injected": 234,
+   "caught": 234,
    "catch_rate_pct": 100.0
   },
   {
    "error_type": "quote word changed",
-   "injected": 12,
-   "caught": 12,
+   "injected": 60,
+   "caught": 60,
    "catch_rate_pct": 100.0
   }
  ],
  "tokens": {
-  "input": 254127,
-  "output": 22135
+  "input": 1256710,
+  "output": 109766
  }
 }

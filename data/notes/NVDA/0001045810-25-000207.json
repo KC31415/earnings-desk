@@ -1,0 +1,1378 @@
+{
+ "ticker": "NVDA",
+ "name": "NVIDIA CORP",
+ "fiscal_label": "FY2026 Q2",
+ "calendar_label": "CY2025 Q2",
+ "period_end": "2025-07-27",
+ "source": {
+  "earnings_8k_accn": "0001045810-25-000207",
+  "earnings_8k_date": "2025-08-27",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/0001045810-25-000207-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/nvda-20250727.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26pr.htm"
+ },
+ "generated_at": "2026-11-04T19:13:14+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 11787,
+   "output_tokens": 108
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 10381,
+   "output_tokens": 2009,
+   "batch": true
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P2",
+  "P3",
+  "P4",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P11",
+  "P14",
+  "P15",
+  "P17",
+  "P18",
+  "P19",
+  "P20",
+  "P21",
+  "P22",
+  "P26",
+  "P27",
+  "P28",
+  "P29",
+  "P33",
+  "P39",
+  "P40",
+  "P45",
+  "P50",
+  "P53",
+  "P54",
+  "P73",
+  "P77"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "NVIDIA reported second-quarter fiscal 2026 revenue of $46.7 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q2",
+     "value": "46.7",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 46743000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "revenue",
+         "value": 46743000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP gross margin was 72.4%.",
+     "claim_type": "numeric",
+     "metric": "gross_margin",
+     "period": "FY2026 Q2",
+     "value": "72.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "GrossProfit"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 72.4236784117408,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "gross_profit",
+         "value": 33853000000.0,
+         "concept": "GrossProfit",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "revenue",
+         "value": 46743000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "gross_profit / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $28.4 billion.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q2",
+     "value": "28.4",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 28440000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "operating_income",
+         "value": 28440000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP net income was $26.4 billion.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q2",
+     "value": "26.4",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 26422000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "net_income",
+         "value": 26422000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP diluted EPS was $1.08.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2026 Q2",
+     "value": "1.08",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1.08,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "eps_diluted",
+         "value": 1.08,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Data Center revenue was $41.1 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q2",
+     "value": "41.1",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P4"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P4"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue rose 55.6% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q2",
+     "value": "55.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 55.60252996005326,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "revenue",
+         "value": 46743000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q2",
+         "period_end": "2024-07-28",
+         "metric": "revenue",
+         "value": 30040000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-25-000209",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2025 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue increased 6.1% from the prior quarter.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2026 Q2",
+     "value": "6.1",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "Revenues"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 6.084608052289956,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "revenue",
+         "value": 46743000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-04-27",
+         "metric": "revenue",
+         "value": 44062000000.0,
+         "concept": "Revenues",
+         "accn": "0001045810-26-000052",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Net income rose 59.2% year over year.",
+     "claim_type": "numeric",
+     "metric": "net_income_yoy",
+     "period": "FY2026 Q2",
+     "value": "59.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 59.178263750828364,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "net_income",
+         "value": 26422000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001045810-26-000075",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q2",
+         "period_end": "2024-07-28",
+         "metric": "net_income",
+         "value": 16599000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001045810-25-000209",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2025 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Free cash flow was roughly flat year over year, down 0.3%.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow_yoy",
+     "period": "FY2026 Q2",
+     "value": "0.3",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -0.3034564428983791,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2025-07-27",
+         "metric": "free_cash_flow",
+         "value": 13470000000.0,
+         "concept": "(derived)",
+         "accn": "0001045810-26-000075",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        },
+        {
+         "period": "FY2025 Q2",
+         "period_end": "2024-07-28",
+         "metric": "free_cash_flow",
+         "value": 13511000000.0,
+         "concept": "(derived)",
+         "accn": "0001045810-25-000209",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ],
+       "formula": "(FY2026 Q2 / FY2025 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Blackwell Data Center revenue grew 17% sequentially.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q2",
+     "value": "17",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P5"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P5"
+      }
+     }
+    },
+    {
+     "text": "GAAP gross margin was down from 75.1% a year earlier.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2025 Q2",
+     "value": "75.1",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P14"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P14"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "The CEO said that \"demand is extraordinary\" for Blackwell.",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "demand is extraordinary",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P10"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P10",
+       "spans": [
+        "demand is extraordinary"
+       ]
+      }
+     }
+    },
+    {
+     "text": "There were no H20 sales to China-based customers in the quarter.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P7"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P7"
+      }
+     }
+    },
+    {
+     "text": "Third-quarter revenue is guided to $54.0 billion, plus or minus 2%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "54.0",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P18"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P18"
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP gross margin is guided to 73.5% for the third quarter.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "73.5",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    },
+    {
+     "text": "The outlook assumes no H20 shipments to China.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P18"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P18"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Watch the ramp of Blackwell Ultra production.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P10"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P10"
+      }
+     }
+    },
+    {
+     "text": "Watch whether H20 shipments to China resume, as the outlook excludes them.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P18"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P18"
+      }
+     }
+    },
+    {
+     "text": "Management expects to exit the year with non-GAAP gross margins in the mid-70% range.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP operating expenses are guided to about $4.2 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "4.2",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P20"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P20"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 21,
+  "by_status": {
+   "verified": 16,
+   "sourced": 5
+  },
+  "numeric": 15,
+  "numeric_verified": 15,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "NVIDIA reported second-quarter fiscal 2026 revenue of $46.7 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q2",
+      "value": "46.7",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "GAAP gross margin was 72.4%.",
+      "claim_type": "numeric",
+      "metric": "gross_margin",
+      "period": "FY2026 Q2",
+      "value": "72.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "GrossProfit"
+      }
+     },
+     {
+      "text": "GAAP operating income was $28.4 billion.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q2",
+      "value": "28.4",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP net income was $26.4 billion.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q2",
+      "value": "26.4",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP diluted EPS was $1.08.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2026 Q2",
+      "value": "1.08",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Data Center revenue was $41.1 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q2",
+      "value": "41.1",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P4"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue rose 55.6% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q2",
+      "value": "55.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "Revenue increased 6.1% from the prior quarter.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2026 Q2",
+      "value": "6.1",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "Revenues"
+      }
+     },
+     {
+      "text": "Net income rose 59.2% year over year.",
+      "claim_type": "numeric",
+      "metric": "net_income_yoy",
+      "period": "FY2026 Q2",
+      "value": "59.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Free cash flow was roughly flat year over year, down 0.3%.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow_yoy",
+      "period": "FY2026 Q2",
+      "value": "0.3",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     },
+     {
+      "text": "Blackwell Data Center revenue grew 17% sequentially.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q2",
+      "value": "17",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P5"
+      }
+     },
+     {
+      "text": "GAAP gross margin was down from 75.1% a year earlier.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2025 Q2",
+      "value": "75.1",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P14"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "The CEO said that \"demand is extraordinary\" for Blackwell.",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "demand is extraordinary",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P10"
+      }
+     },
+     {
+      "text": "There were no H20 sales to China-based customers in the quarter.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P7"
+      }
+     },
+     {
+      "text": "Third-quarter revenue is guided to $54.0 billion, plus or minus 2%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "54.0",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P18"
+      }
+     },
+     {
+      "text": "Non-GAAP gross margin is guided to 73.5% for the third quarter.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "73.5",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     },
+     {
+      "text": "The outlook assumes no H20 shipments to China.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P18"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Watch the ramp of Blackwell Ultra production.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P10"
+      }
+     },
+     {
+      "text": "Watch whether H20 shipments to China resume, as the outlook excludes them.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P18"
+      }
+     },
+     {
+      "text": "Management expects to exit the year with non-GAAP gross margins in the mid-70% range.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     },
+     {
+      "text": "Non-GAAP operating expenses are guided to about $4.2 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "4.2",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P20"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 q2fy26pr.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2026"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "\u2022Revenue of $46.7 billion, up 6% from Q1 and up 56% from a year ago"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "\u2022Data Center revenue of $41.1 billion, up 5% from Q1 and up 56% from a year ago"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "\u2022Blackwell Data Center revenue grew 17% sequentially"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "SANTA CLARA, Calif.-Aug. 27, 2025\u2015NVIDIA (NASDAQ: NVDA) today reported revenue for the second quarter ended July 27, 2025, of $46.7 billion, up 6% from the previous quarter and up 56% from a year ago. NVIDIA's Blackwell Data Center revenue grew 17% sequentially."
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "There were no H20 sales to China-based customers in the second quarter. NVIDIA benefited from a $180 million release of previously reserved H20 inventory, from approximately $650 million in unrestricted H20 sales to a customer outside of China."
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "For the quarter, GAAP and non-GAAP gross margins were 72.4% and 72.7%, respectively. Excluding the $180 million release, non-GAAP gross margin for the quarter would have been 72.3%."
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "For the quarter, GAAP and non-GAAP earnings per diluted share were $1.08 and $1.05, respectively. Excluding the $180 million release and related tax impact, non-GAAP diluted earnings per share for the quarter would have been $1.04."
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "\"Blackwell is the AI platform the world has been waiting for, delivering an exceptional generational leap - production of Blackwell Ultra is ramping at full speed, and demand is extraordinary,\" said Jensen Huang, founder and CEO of NVIDIA. \"NVIDIA NVLink rack-scale computing is revolutionary, arriving just in time as reasoning AI models drive orders-of-magnitude increases in training and inference performance. The AI race is on, and Blackwell is the platform at its center.\""
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "During the first half of fiscal 2026, NVIDIA returned $24.3 billion to shareholders in the form of shares repurchased and cash dividends. As of the end of the second quarter, the company had $14.7 billion remaining under its share repurchase authorization. On August 26, 2025, the Board of Directors approved an additional $60.0 billion to the Company's share repurchase authorization, without expiration."
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "NVIDIA will pay its next quarterly cash dividend of $0.01 per share on October 2, 2025, to all shareholders of record on September 11, 2025."
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "Q2 Fiscal 2026 Summary"
+  },
+  {
+   "id": "P14",
+   "kind": "table",
+   "text": "GAAP\n($ in millions, except earnings per share) | Q2 FY26 | Q1 FY26 | Q2 FY25 | Q/Q | Y/Y\nRevenue | $46,743 | $44,062 | $30,040 | 6 | % | 56 | %\nGross margin | 72.4 | % | 60.5 | % | 75.1 | % | 11.9 pts | (2.7) pts\nOperating expenses | $5,413 | $5,030 | $3,932 | 8 | % | 38 | %\nOperating income | $28,440 | $21,638 | $18,642 | 31 | % | 53 | %\nNet income | $26,422 | $18,775 | $16,599 | 41 | % | 59 | %\nDiluted earnings per share | $1.08 | $0.76 | $0.67 | 42 | % | 61 | %"
+  },
+  {
+   "id": "P15",
+   "kind": "table",
+   "text": "Non-GAAP\n($ in millions, except earnings per share) | Q2 FY26 | Q1 FY26 | Q2 FY25 | Q/Q | Y/Y\nRevenue | $46,743 | $44,062 | $30,040 | 6 | % | 56 | %\nGross margin | 72.7 | % | 61.0 | % | 75.7 | % | 11.7 pts | (3.0) pts\nGross margin excluding H20 related charges/releases, net | 72.3 | % | 71.3 | % | 1.0 | pt\nOperating expenses | $3,795 | $3,583 | $2,792 | 6 | % | 36 | %\nOperating income | $30,165 | $23,275 | $19,937 | 30 | % | 51 | %\nNet income | $25,783 | $19,894 | $16,952 | 30 | % | 52 | %\nDiluted earnings per share | $1.05 | $0.81 | $0.68 | 30 | % | 54 | %\nDiluted earnings per share excluding H20 related charges/releases, net and related tax impact | $1.04 | $0.96 | 8 | %"
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "Outlook"
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "NVIDIA's outlook for the third quarter of fiscal 2026 is as follows:"
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "\u2022Revenue is expected to be $54.0 billion, plus or minus 2%. The company has not assumed any H20 shipments to China in the outlook."
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "\u2022GAAP and non-GAAP gross margins are expected to be 73.3% and 73.5%, respectively, plus or minus 50 basis points. The company continues to expect to exit the year with non-GAAP gross margins in the mid-70% range."
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "\u2022GAAP and non-GAAP operating expenses are expected to be approximately $5.9 billion and $4.2 billion, respectively. Full year fiscal 2026 operating expense growth is expected to be in the high-30% range."
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "\u2022GAAP and non-GAAP other income and expense are expected to be an income of approximately $500 million, excluding gains and losses from non-marketable and publicly-held equity securities."
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "\u2022GAAP and non-GAAP tax rates are expected to be 16.5%, plus or minus 1%, excluding any discrete items."
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "Highlights"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "NVIDIA achieved progress since its first quarter earnings announcement in these areas:"
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "Data Center"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\u2022Second-quarter revenue was $41.1 billion, up 5% from the previous quarter and up 56% from a year ago."
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "\u2022Announced that the NVIDIA RTX PRO\u2122 6000 Blackwell Server Edition GPU is coming to the world's most popular enterprise servers; Disney, Foxconn, Hitachi Ltd., Hyundai Motor Group, Lilly, SAP and TSMC are among the first to adopt the servers."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "\u2022Introduced NVIDIA\u00ae Spectrum-XGS Ethernet to connect distributed data centers for giga-scale AI."
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "\u2022Revealed that NVIDIA is working with European nations, including France, Germany, Italy, Spain and the U.K., as well as technology industry leaders to build NVIDIA Blackwell AI infrastructure, including the world's first industrial AI cloud for European manufacturers, to fuel region's next industrial transformation."
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "\u2022Announced the expansion of NVIDIA DGX Cloud Lepton\u2122 to connect Europe's developers to NVIDIA's global compute ecosystem."
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "\u2022Collaborated with partners globally to build and accelerate advanced AI supercomputers, including Doudna (U.S.), JUPITER (Germany), Blue Lion (Germany), Isambard (U.K.) and FugakuNEXT (Japan)."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "\u2022Revealed that model builders across Europe and the Middle East are optimizing their sovereign large language models with NVIDIA Nemotron\u2122, which will be available on Perplexity."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "\u2022Supported the launch of OpenAI's open gpt-oss models, delivering industry-leading gpt-oss-120b performance of 1.5 million tokens per second on a single NVIDIA Blackwell GB200 NVL72 rack-scale system."
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "\u2022Announced a collaboration with Novo Nordisk and DCAI to advance drug discovery."
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "\u2022Revealed that the NVIDIA Blackwell platform delivered the highest performance at scale on every MLPerf Training benchmark."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "\u2022Teamed with Ansys and DCAI to advance quantum algorithms for fluid dynamics using the NVIDIA CUDA-Q\u2122 platform on Denmark's Gefion supercomputer."
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "\u2022Introduced NVFP4, a 4-bit format purpose-built to deliver exceptional inference latency, for pretraining next-generation large language models."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "Gaming and AI PC"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "\u2022Second-quarter Gaming revenue was $4.3 billion, up 14% from the previous quarter and up 49% from a year ago."
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "\u2022Launched the Blackwell-powered NVIDIA GeForce RTX\u2122 5060, which quickly became NVIDIA's fastest-ramping x60-class GPU ever."
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "\u2022Made industry-leading NVIDIA DLSS 4 technology available in over 175 games and apps, and coming next to top games such as Borderlands 4, Resident Evil Requiem and Phantom Blade Zero."
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "\u2022Announced Blackwell coming to GeForce NOW\u2122 with the new Install-to-Play feature, doubling the game library to over 4,500 titles."
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "\u2022Partnered with OpenAI on the launch of its newest open-weight models optimized for RTX GPUs for fast, local inference in popular tools like Ollama, llama.cpp and Microsoft AI Foundry Local."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "Professional Visualization"
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "\u2022Second-quarter revenue was $601 million, up 18% from the previous quarter and up 32% from a year ago."
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "\u2022Announced NVIDIA RTX PRO 4000 SFF Edition and RTX PRO 2000 Blackwell GPUs."
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "\u2022Expanded partnership with Siemens to digitalize and enable the manufacturing factory of the future."
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "\u2022Announced new NVIDIA Omniverse\u2122 libraries and software development kits to accelerate physical AI development."
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "Automotive and Robotics"
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "\u2022Second-quarter Automotive revenue was $586 million, up 3% from the previous quarter and up 69% from a year ago."
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "\u2022Announced that the full-stack NVIDIA DRIVE\u2122 AV software platform is now in full production to accelerate the large-scale deployment of safe, intelligent transportation."
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "\u2022Achieved second consecutive win in the End-to-End Driving at Scale category of the Autonomous Grand Challenge at the Computer Vision and Pattern Recognition conference."
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "\u2022Commenced initial shipments of the NVIDIA DRIVE AGX Thor\u2122 system-on-a-chip."
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "\u2022Announced the general availability of NVIDIA Jetson AGX Thor\u2122 developer kit and production modules, powerful new AI supercomputers designed to power millions of robots across industries."
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "\u2022Released the NVIDIA Halos full-stack safety platform for robotic development."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "\u2022Announced new NVIDIA Cosmos\u2122 world foundation models that accelerate the development and deployment of robotics solutions."
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "CFO Commentary"
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "Commentary on the quarter by Colette Kress, NVIDIA's executive vice president and chief financial officer, is available at https://investor.nvidia.com."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "Conference Call and Webcast Information"
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "NVIDIA will conduct a conference call with analysts and investors to discuss its second quarter fiscal 2026 financial results and current financial prospects today at 2 p.m. Pacific time (5 p.m. Eastern time). A live webcast (listen-only mode) of the conference call will be accessible at NVIDIA's investor relations website, https://investor.nvidia.com. The webcast will be recorded and available for replay until NVIDIA's conference call to discuss its financial results for its third quarter of fiscal 2026."
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "Non-GAAP Measures"
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "To supplement NVIDIA's condensed consolidated financial statements presented in accordance with GAAP, the company uses non-GAAP measures of certain components of financial performance. These non-GAAP measures include non-GAAP gross profit, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP operating income, non-GAAP other income (expense), net, non-GAAP net income, non-GAAP net income, or earnings, per diluted share, and free cash flow. For NVIDIA's investors to be better able to compare its current results with those of previous periods, the company has shown a reconciliation of GAAP to non-GAAP financial measures. These reconciliations adjust the related GAAP financial measures to exclude stock-based compensation expense, acquisition-related and other costs, other, gains/losses from non-marketable and publicly-held equity securities, net, interest expense related to amortization of debt discount, H20 related charges/releases, net and the associated tax impact of these items where applicable. The inclusion of H20 related charges/releases, net in the reconciliations to adjust the related GAAP financial measures was a result of the U.S. government informing NVIDIA in April 2025 that it requires a license for export to China of H20 product. The H20 product was designed primarily for the China market. Free cash flow is calculated as GAAP net cash provided by operating activities less both purchases related to property and equipment and intangible assets and principal payments on property and equipment and intangible assets. NVIDIA believes the presentation of its non-GAAP financial measures enhances the user's overall understanding of the company's historical financial performance. The presentation of the company's non-GAAP financial measures is not meant to be considered in isolation or as a substitute for the company's financial results prepared in accordance with GAAP, and the company's non-GAAP measures may be different from non-GAAP measures used by other companies."
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "About NVIDIA"
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "NVIDIA (NASDAQ: NVDA) is the world leader in accelerated computing."
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "###"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "For further information, contact:"
+  },
+  {
+   "id": "P67",
+   "kind": "table",
+   "text": "Toshiya Hari | Mylene Mangalindan\nInvestor Relations | Corporate Communications\nNVIDIA Corporation | NVIDIA Corporation\ntoshiyah@nvidia.com | mmangalindan@nvidia.com"
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "Certain statements in this press release including, but not limited to, statements as to: Blackwell as the AI platform the world has been waiting for and being at the center of the AI race; ramping of and demand for Blackwell Ultra; reasoning AI models driving orders-of-magnitude increases in training and inference performance; expectations with respect to growth, performance and benefits of NVIDIA's products, services and technologies, including Blackwell, and related trends and drivers; expectations with respect to supply and demand for NVIDIA's products, services and technologies, including Blackwell, and related matters including inventory, production and distribution; expectations with respect to NVIDIA's third party arrangements, including with its collaborators and partners; expectations with respect to technology developments, including Rubin, and related trends and drivers; future NVIDIA cash dividends or other returns to stockholders; NVIDIA's financial and business outlook for the third quarter of fiscal 2026 and beyond; projected market growth and trends; expectations with respect to AI and related industries; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities Exchange Act of 1934, as amended, which are subject to the \"safe harbor\" created by those sections based on management's beliefs and assumptions and on information currently available to management and are subject to risks and uncertainties that could cause results to be materially different than expectations. Important factors that could cause actual results to differ materially include: global economic and political conditions; NVIDIA's reliance on third parties to manufacture, assemble, package and test NVIDIA's products; the impact of technological development and competition; development of new products and technologies or enhancements to NVIDIA's existing product and technologies; market acceptance of NVIDIA's products or NVIDIA's partners' products; design, manufacturing or software defects; changes in consumer preferences or demands; changes in industry standards and interfaces; unexpected loss of performance of NVIDIA's products or technologies when integrated into systems; and changes in applicable laws and regulations, as well as other factors detailed from time to time in the most recent reports NVIDIA files with the Securities and Exchange Commission, or SEC, including, but not limited to, its annual report on Form 10-K and quarterly reports on Form 10-Q. Copies of reports filed with the SEC are posted on the company's website and are available from NVIDIA without charge. These forward-looking statements are not guarantees of future performance and speak only as of the date hereof, and, except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances."
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "\u00a9 2025 NVIDIA Corporation. All rights reserved. NVIDIA, the NVIDIA logo, GeForce, GeForce NOW, NVIDIA Cosmos, NVIDIA CUDA-Q, NVIDIA DGX Cloud Lepton, NVIDIA DRIVE, NVIDIA DRIVE AGX Thor, NVIDIA GeForce RTX, NVIDIA Jetson AGX Thor, NVIDIA Nemotron, NVIDIA Omniverse, and NVIDIA RTX PRO are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and/or other countries. Other company and product names may be trademarks of the respective companies with which they are associated. Features, pricing, availability and specifications are subject to change without notice."
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "NVIDIA CORPORATION"
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME (In millions, except per share data)"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P73",
+   "kind": "table",
+   "text": "Three Months Ended | Six Months Ended\nJuly 27, | July 28, | July 27, | July 28,\n2025 | 2024 | 2025 | 2024\nRevenue | $ | 46,743 | $ | 30,040 | $ | 90,805 | $ | 56,084\nCost of revenue | 12,890 | 7,466 | 30,284 | 13,105\nGross profit | 33,853 | 22,574 | 60,521 | 42,979\nOperating expenses\nResearch and development | 4,291 | 3,090 | 8,280 | 5,810\nSales, general and administrative | 1,122 | 842 | 2,163 | 1,618\nTotal operating expenses | 5,413 | 3,932 | 10,443 | 7,428\nOperating income | 28,440 | 18,642 | 50,078 | 35,551\nInterest income | 592 | 444 | 1,108 | 803\nInterest expense | (62) | (61) | (124) | (125)\nOther income (expense), net | 2,236 | 189 | 2,055 | 264\nTotal other income (expense), net | 2,766 | 572 | 3,039 | 942\nIncome before income tax | 31,206 | 19,214 | 53,117 | 36,493\nIncome tax expense | 4,784 | 2,615 | 7,920 | 5,013\nNet income | $ | 26,422 | $ | 16,599 | $ | 45,197 | $ | 31,480\nNet income per share:\nBasic | $ | 1.08 | $ | 0.68 | $ | 1.85 | $ | 1.28\nDiluted | $ | 1.08 | $ | 0.67 | $ | 1.84 | $ | 1.27\nWeighted average shares used in per share computation:\nBasic | 24,366 | 24,578 | 24,404 | 24,599\nDiluted | 24,532 | 24,848 | 24,571 | 24,869"
+  },
+  {
+   "id": "P74",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nCONDENSED CONSOLIDATED BALANCE SHEETS\n(In millions)\n(Unaudited)\nJuly 27, | January 26,\n2025 | 2025\nASSETS\nCurrent assets:\nCash, cash equivalents and marketable securities | $ | 56,791 | $ | 43,210\nAccounts receivable, net | 27,808 | 23,065\nInventories | 14,962 | 10,080\nPrepaid expenses and other current assets | 2,658 | 3,771\nTotal current assets | 102,219 | 80,126\nProperty and equipment, net | 9,141 | 6,283\nOperating lease assets | 2,084 | 1,793\nGoodwill | 5,755 | 5,188\nIntangible assets, net | 755 | 807\nDeferred income tax assets | 13,570 | 10,979\nOther assets | 7,216 | 6,425\nTotal assets | $ | 140,740 | $ | 111,601\nLIABILITIES AND SHAREHOLDERS' EQUITY\nCurrent liabilities:\nAccounts payable | $ | 9,064 | $ | 6,310\nAccrued and other current liabilities | 15,193 | 11,737\nTotal current liabilities | 24,257 | 18,047\nLong-term debt | 8,466 | 8,463\nLong-term operating lease liabilities | 1,831 | 1,519\nOther long-term liabilities | 6,055 | 4,245\nTotal liabilities | 40,609 | 32,274\nShareholders' equity | 100,131 | 79,327\nTotal liabilities and shareholders' equity | $ | 140,740 | $ | 111,601"
+  },
+  {
+   "id": "P75",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nCONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS\n(In millions)\n(Unaudited)\nThree Months Ended | Six Months Ended\nJuly 27, | July 28, | July 27, | July 28,\n2025 | 2024 | 2025 | 2024\nCash flows from operating activities:\nNet income | $ | 26,422 | $ | 16,599 | $ | 45,197 | $ | 31,480\nAdjustments to reconcile net income to net cash\nprovided by operating activities:\nStock-based compensation expense | 1,624 | 1,154 | 3,099 | 2,164\nDepreciation and amortization | 668 | 433 | 1,280 | 843\nDeferred income taxes | 18 | (1,699) | (2,160) | (3,276)\nGains on non-marketable equity securities and publicly-held equity securities, net | (2,247) | (193) | (2,073) | (264)\nOther | (100) | (144) | (196) | (288)\nChanges in operating assets and liabilities, net of acquisitions:\nAccounts receivable | (5,675) | (1,767) | (4,743) | (4,133)\nInventories | (3,622) | (803) | (4,880) | (1,380)\nPrepaid expenses and other assets | 387 | 714 | 946 | (12)\nAccounts payable | 1,314 | 823 | 2,255 | 801\nAccrued and other current liabilities | (4,053) | (888) | 3,075 | 3,314\nOther long-term liabilities | 629 | 260 | 979 | 584\nNet cash provided by operating activities | 15,365 | 14,489 | 42,779 | 29,833\nCash flows from investing activities:\nProceeds from maturities of marketable securities | 3,130 | 4,094 | 6,252 | 8,098\nProceeds from sales of marketable securities | 20 | 15 | 487 | 164\nProceeds from sales of non-marketable equity securities | 70 | 50 | 70 | 105\nPurchases of marketable securities | (7,812) | (5,744) | (14,358) | (15,047)\nPurchase related to property and equipment and intangible assets | (1,894) | (977) | (3,122) | (1,346)\nPurchases of non-marketable equity securities | (346) | (344) | (995) | (534)\nAcquisitions, net of cash acquired | (294) | (279) | (677) | (317)\nNet cash used in investing activities | (7,126) | (3,185) | (12,343) | (8,877)"
+  },
+  {
+   "id": "P76",
+   "kind": "table",
+   "text": "Cash flows from financing activities:\nProceeds related to employee stock plans | - | - | 370 | 285\nPayments related to repurchases of common stock | (9,721) | (7,158) | (23,815) | (14,898)\nPayments related to employee stock plan taxes | (1,848) | (1,637) | (3,380) | (3,389)\nDividends paid | (244) | (246) | (488) | (344)\nPrincipal payments on property and equipment and intangible assets | (21) | (29) | (73) | (69)\nRepayment of debt | - | (1,250) | - | (1,250)\nNet cash used in financing activities | (11,834) | (10,320) | (27,386) | (19,665)\nChange in cash and cash equivalents | (3,595) | 984 | 3,050 | 1,291\nCash and cash equivalents at beginning of period | 15,234 | 7,587 | 8,589 | 7,280\nCash and cash equivalents at end of period | $ | 11,639 | $ | 8,571 | $ | 11,639 | $ | 8,571\nSupplemental disclosures of cash flow information:\nCash paid for income taxes, net | $ | 8,094 | $ | 7,208 | $ | 8,451 | $ | 7,449"
+  },
+  {
+   "id": "P77",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nRECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES\n(In millions, except per share data)\n(Unaudited)\nThree Months Ended | Six Months Ended\nJuly 27, | April 27, | July 28, | July 27, | July 28,\n2025 | 2025 | 2024 | 2025 | 2024\nGAAP cost of revenue | $ | 12,890 | $ | 17,394 | $ | 7,466 | $ | 30,284 | $ | 13,105\nGAAP gross profit | $ | 33,853 | $ | 26,668 | $ | 22,574 | $ | 60,521 | $ | 42,979\nGAAP gross margin | 72.4 | % | 60.5 | % | 75.1 | % | 66.6 | % | 76.6 | %\nAcquisition-related and other costs (A) | 49 | 123 | 118 | 170 | 238\nStock-based compensation expense (B) | 58 | 64 | 40 | 123 | 75\nOther | - | 3 | (3) | 4 | (4)\nNon-GAAP cost of revenue | $ | 12,783 | $ | 17,204 | $ | 7,311 | $ | 29,987 | $ | 12,796\nNon-GAAP gross profit | $ | 33,960 | $ | 26,858 | $ | 22,729 | $ | 60,818 | $ | 43,288\nNon-GAAP gross margin | 72.7 | % | 61.0 | % | 75.7 | % | 67.0 | % | 77.2 | %\nH20 related charges/(releases), net | (180) | 4,538 | 4,358\nNon-GAAP gross profit, as adjusted to exclude H20 related charges/releases, net | $ | 33,780 | $ | 31,396 | $ | 65,176\nNon-GAAP gross margin, as adjusted to exclude H20 related charges/releases, net | 72.3 | % | 71.3 | % | 71.8 | %\nGAAP operating expenses | $ | 5,413 | $ | 5,030 | $ | 3,932 | $ | 10,443 | $ | 7,428\nStock-based compensation expense (B) | (1,566) | (1,410) | (1,114) | (2,976) | (2,089)\nAcquisition-related and other costs (A) | (37) | (37) | (26) | (74) | (48)\nOther | (15) | - | - | (15) | -\nNon-GAAP operating expenses | $ | 3,795 | $ | 3,583 | $ | 2,792 | $ | 7,378 | $ | 5,291\nGAAP operating income | $ | 28,440 | $ | 21,638 | $ | 18,642 | $ | 50,078 | $ | 35,551\nTotal impact of non-GAAP adjustments to operating income | 1,725 | 1,637 | 1,295 | 3,362 | 2,446\nNon-GAAP operating income | $ | 30,165 | $ | 23,275 | $ | 19,937 | $ | 53,440 | $ | 37,997\nGAAP total other income (expense), net | $ | 2,766 | $ | 272 | $ | 572 | $ | 3,039 | $ | 942\n(Gains) losses from non-marketable equity securities and publicly-held equity securities, net | (2,247) | 175 | (193) | (2,073) | (264)\nInterest expense related to amortization of debt discount | 1 | 1 | 1 | 2 | 2\nNon-GAAP total other income (expense), net | $ | 520 | $ | 448 | $ | 380 | $ | 968 | $ | 680\nGAAP net income | $ | 26,422 | $ | 18,775 | $ | 16,599 | $ | 45,197 | $ | 31,480\nTotal pre-tax impact of non-GAAP adjustments | (521) | 1,813 | 1,103 | 1,291 | 2,184\nIncome tax impact of non-GAAP adjustments (C) | (166) | (694) | (750) | (859) | (1,475)\nTax expense from OBBBA* | 48 | - | - | 48 | -\nNon-GAAP net income | $ | 25,783 | $ | 19,894 | $ | 16,952 | $ | 45,677 | $ | 32,189\nTotal pre-tax impact of H20 related charges/(releases), net | (180) | 4,538 | 4,358"
+  },
+  {
+   "id": "P78",
+   "kind": "table",
+   "text": "Income tax impact of H20 related charges/releases, net | (8) | (797) | (805)\nNon-GAAP net income, as adjusted to exclude H20 related charges/releases, net | $ | 25,595 | $ | 23,635 | $ | 49,230\nDiluted net income per share\nGAAP | $ | 1.08 | $ | 0.76 | $ | 0.67 | $ | 1.84 | $ | 1.27\nNon-GAAP | $ | 1.05 | $ | 0.81 | $ | 0.68 | $ | 1.86 | $ | 1.29\nNon-GAAP, as adjusted to exclude H20 related charges/releases, net | $ | 1.04 | $ | 0.96 | $ | 2.00\nWeighted average shares used in diluted net income per share computation | 24,532 | 24,611 | 24,848 | 24,571 | 24,869\nGAAP net cash provided by operating activities | $ | 15,365 | $ | 27,414 | $ | 14,489 | $ | 42,779 | $ | 29,833\nPurchases related to property and equipment and intangible assets | (1,894) | (1,227) | (977) | (3,122) | (1,346)\nPrincipal payments on property and equipment and intangible assets | (21) | (52) | (29) | (73) | (69)\nFree cash flow | $ | 13,450 | $ | 26,135 | $ | 13,483 | $ | 39,584 | $ | 28,418\n*Tax expense included represents impact from OBBBA (One Big Beautiful Bill Act)"
+  },
+  {
+   "id": "P79",
+   "kind": "table",
+   "text": "(A) Acquisition-related and other costs are comprised of amortization of intangible assets, transaction costs, and certain compensation charges and are included in the following line items:\nThree Months Ended | Six Months Ended\nJuly 27, | April 27, | July 28, | July 27, | July 28,\n2025 | 2025 | 2024 | 2025 | 2024\nCost of revenue | $ | 49 | $ | 123 | $ | 118 | $ | 170 | $ | 238\nResearch and development | $ | 29 | $ | 28 | $ | 17 | $ | 57 | $ | 30\nSales, general and administrative | $ | 8 | $ | 9 | $ | 9 | $ | 17 | $ | 18\n(B) Stock-based compensation consists of the following:\nThree Months Ended | Six Months Ended\nJuly 27, | April 27, | July 28, | July 27, | July 28,\n2025 | 2025 | 2024 | 2025 | 2024\nCost of revenue | $ | 58 | $ | 64 | $ | 40 | $ | 123 | $ | 75\nResearch and development | $ | 1,191 | $ | 1,063 | $ | 832 | $ | 2,254 | $ | 1,559\nSales, general and administrative | $ | 375 | $ | 347 | $ | 282 | $ | 722 | $ | 530\n(C) Income tax impact of non-GAAP adjustments, including the recognition of excess tax benefits or deficiencies related to stock-based compensation under GAAP accounting standard (ASU 2016-09)."
+  },
+  {
+   "id": "P80",
+   "kind": "table",
+   "text": "NVIDIA CORPORATION\nRECONCILIATION OF GAAP TO NON-GAAP OUTLOOK\nQ3 FY2026 Outlook\n($ in millions)\nGAAP gross margin | 73.3 | %\nImpact of stock-based compensation expense, acquisition-related costs, and other costs | 0.2 | %\nNon-GAAP gross margin | 73.5 | %\nGAAP operating expenses | $ | 5,900\nStock-based compensation expense, acquisition-related costs, and other costs | (1,700)\nNon-GAAP operating expenses | $ | 4,200"
+  }
+ ]
+}
