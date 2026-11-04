@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Accuracy scorecard</h1>
+<p class="lede">How often the AI note is right, measured by code against SEC filings, and how often the verifier catches
+deliberately injected errors. Computed offline by <code>scripts/scorecard.py</code>; no AI is used to grade.</p>
+<div class="grid4">
+  <div class="card tile"><div class="label">Company-quarters</div><div class="value">{{ r.company_quarters }}</div><div class="sub">{{ r.tickers|length }} tickers × last 5 quarters</div></div>
+  <div class="card tile"><div class="label">Numeric claims verified</div><div class="value">{{ r.numeric.verified_pct }}%</div><div class="sub">of {{ r.numeric.claims }} numeric claims</div></div>
+  <div class="card tile"><div class="label">Quotes matched verbatim</div><div class="value">{{ r.quote.match_pct }}%</div><div class="sub">of {{ r.quote.claims }} quotes</div></div>
+  <div class="card tile"><div class="label">Injected errors caught</div><div class="value">{{ catch_pct }}</div><div class="sub">of {{ injected }} injected errors</div></div>
+</div>
+<p class="small muted">{{ r.claims }} claims in total: {% for k, v in r.status_counts.items() %}{{ v }} {{ k }}{{ ", " if not loop.last }}{% endfor %}.</p>
+
+<h2>Numeric accuracy</h2>
+<div class="grid2"><div class="chart">{{ charts.metric }}</div><div class="chart">{{ charts.calendar }}</div></div>
+<div class="tablewrap"><table><thead><tr><th>Quarter type</th><th>Claims</th><th>Verified %</th><th>Mismatch %</th></tr></thead>
+<tbody>{% for q in r.numeric_q4_vs_other %}<tr><td>{{ q.q }}</td><td>{{ q.claims }}</td><td>{{ q.verified_pct }}</td><td>{{ q.mismatch_pct }}</td></tr>{% endfor %}</tbody></table></div>
+<p class="small muted">Q4 figures are derived (full year − 9-month YTD from the 10-K), so they are the riskiest numbers in the data layer.</p>
+
+<h2>Does the verifier catch errors?</h2>
+<p>Each verified claim is corrupted in a known way and re-checked. Injections that happen to produce a true statement
+(e.g. the same value in both periods) are skipped.</p>
+<div class="tablewrap"><table><thead><tr><th>Injected error</th><th>Injected</th><th>Caught</th><th>Caught %</th></tr></thead>
+<tbody>{% for i in r.injection %}<tr><td>{{ i.error_type }}</td><td>{{ i.injected }}</td><td>{{ i.caught }}</td><td>{{ i.catch_rate_pct }}</td></tr>{% endfor %}</tbody></table></div>
+<p class="small muted">Caveat: injection tests check the verifier's own logic (units, periods, rounding, quote matching) against the same
+XBRL data it uses. They cannot reveal a wrong number in the SEC data itself, or a misleading qualitative claim. That is what the
+hand-graded sample is for.</p>
+
+<h2>Hand-graded sample</h2>
+{% if hg and hg.graded %}
+<div class="grid4">
+  <div class="card tile"><div class="label">Claims graded by hand</div><div class="value">{{ hg.graded }}</div></div>
+  <div class="card tile"><div class="label">Correct per human grader</div><div class="value">{{ hg.human_correct_pct }}%</div></div>
+  <div class="card tile"><div class="label">Verifier agrees with human</div><div class="value">{{ hg.agreement_pct }}%</div></div>
+  <div class="card tile"><div class="label">Verifier passed, human found wrong</div><div class="value">{{ hg.verifier_passed_but_human_wrong }}</div></div>
+</div>
+{% else %}
+<div class="notice info">Not graded yet. A random sample of 20 claims is in <a href="{{ root }}data/hand_grade.csv">hand_grade.csv</a>;
+each is being checked by hand against the filing (correct / incorrect / unsure).</div>
+{% endif %}
+
+<h2>Where it fails and why</h2>
+{% for f in failures %}<h3>{{ f.cat }} ({{ f.n }})</h3><p>{{ f.explain }}</p>
+<ul>{% for e in f.examples %}<li class="small">{{ e.ticker }} {{ e.quarter }}: “{{ e.text }}” · <i>{{ e.reason }}</i></li>{% endfor %}</ul>{% endfor %}
+<p><b>Verifier bugs found by reading the results.</b> Reviewing every flagged claim turned up false alarms that were the verifier's
+fault, not the model's, and were fixed: sentences split across HTML blocks; quotes checked against the value field instead of the
+words in quotation marks; and cash <i>outflows</i> read as a sign error (which alone made April fiscal-year companies look worse).
+Each fix has a test, and the injected-error catch rate is re-checked after every fix so the verifier isn't loosened.</p>
+<p><b>What the verifier can't check.</b> Whether a qualitative claim (◦) is a fair reading of its paragraph, and whether the note
+leaves out something important. Those still need a human reader.</p>
+<p><a href="{{ root }}research.html">Read the research note →</a></p>
+{% endblock %}

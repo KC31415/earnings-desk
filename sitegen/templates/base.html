@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} · earnings-desk</title>
+<meta name="description" content="{{ description }}">
+<link rel="stylesheet" href="{{ root }}assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📑</text></svg>">
+{% if charts %}<script src="{{ root }}assets/plotly.min.js"></script>{% endif %}
+</head>
+<body>
+<header class="site"><div class="inner">
+  <a class="brand" href="{{ root }}index.html">earnings-desk</a>
+  <nav>
+    <a href="{{ root }}index.html" class="{{ 'active' if active == 'home' }}">Is AI eating software?</a>
+    <a href="{{ root }}notes/index.html" class="{{ 'active' if active == 'notes' }}">Verified notes</a>
+    <a href="{{ root }}scorecard.html" class="{{ 'active' if active == 'scorecard' }}">Scorecard</a>
+    <a href="{{ root }}research.html" class="{{ 'active' if active == 'research' }}">Research note</a>
+  </nav>
+  <span class="spacer"></span>
+  <a href="{{ portfolio }}" class="small">← Kechun Wu's portfolio</a>
+</div></header>
+<main>
+{% block content %}{% endblock %}
+</main>
+<footer><div class="inner">
+  Every number comes from SEC EDGAR filings (XBRL company facts, 10-Q/10-K, 8-K Exhibit 99.1). Earnings-call transcripts are not used.
+  Not investment advice: no ratings, price targets or valuations.<br>
+  Built {{ built }} · <a href="{{ repo }}">Source on GitHub</a> · <a href="{{ portfolio }}">kc31415.github.io</a>
+</div></footer>
+</body>
+</html>

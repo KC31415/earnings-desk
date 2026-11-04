@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="prose">
+<p class="small muted">Research note · Kechun Wu · {{ built }}</p>
+<h1>Can you trust an AI earnings note? Checking {{ "{:,}".format(r.claims) }} claims against SEC filings</h1>
+<p class="lede">An AI model wrote {{ r.company_quarters }} earnings notes for {{ r.tickers|length }} companies. Plain code then checked every
+claim against the SEC's structured data and the companies' own press releases. Numbers turned out to be the easy part. Quotes and
+citations are where AI notes go wrong.</p>
+
+<h2>The question</h2>
+<p>AI research tools can summarize a filing in seconds, but analysts still re-check every number before using it, because language
+models misstate figures, confuse periods and invent quotes. If a machine could check the note instead, review time could go where it
+matters. This project measures how far that gets you.</p>
+
+<h2>How it works</h2>
+<ol>
+  <li><b>Inputs.</b> Quarterly figures from the SEC's XBRL company facts (with Q4 derived as full year minus nine months) and the
+  earnings press release (8-K Exhibit 99.1), split into numbered paragraphs.</li>
+  <li><b>Writing.</b> A model ({{ note_model }}) writes a four-section note as structured JSON. Every sentence is a claim with a type
+  (numeric, quote or qualitative), a metric, a period, a value and a source.</li>
+  <li><b>Checking.</b> Deterministic code recomputes each number from XBRL (within the rounding the sentence uses), requires each
+  quote to appear word for word in the cited paragraph, and requires qualitative claims to cite a real paragraph. Nothing is sent
+  back to the model to fix.</li>
+</ol>
+
+<h2>Result 1: the numbers are almost always right</h2>
+<p><b>{{ r.numeric.verified_pct }}%</b> of {{ r.numeric.claims }} numeric claims matched the filings. That held across fiscal calendars
+(January, April, June and November year-ends as well as December) and for derived fourth quarters
+({{ q4.verified_pct }}% of {{ q4.claims }}), the numbers most likely to be wrong in the data layer. The
+{{ r.failures.get("rounding at the boundary", 0) }} misses are rounding at the edge, such as "21.9%" for a true 21.846%.</p>
+<div class="chart">{{ charts.types }}</div>
+
+<h2>Result 2: quotes are the weak spot</h2>
+<p>Only <b>{{ r.quote.match_pct }}%</b> of {{ r.quote.claims }} quotes matched the press release word for word. The typical failure is not
+an invented quote but a paraphrase dressed up as one ("The CEO described the quarter as strong") or a sentence that stops at
+"…saying" with the quote left out. Nothing false is stated, but a reader can't see management's actual words, which is the point of
+a quote. A smaller group of claims cited a paragraph that doesn't contain the number they state.</p>
+<div class="chart">{{ charts.failures }}</div>
+
+<h2>Result 3: the checker catches errors, but grade it honestly</h2>
+<p>Corrupting correct claims in known ways (value ±5%, wrong unit, wrong period, swapped QoQ/YoY, one word changed in a quote) and
+re-checking them caught <b>{{ catch_pct }}</b> of {{ "{:,}".format(injected) }} injected errors. That number is close to tautological: it tests
+the checker's own logic against the same data. The more useful lesson came from reading every flagged claim by hand. Several "errors"
+were the checker's fault. Sentences were split across HTML blocks, quotes were matched against the wrong field, and cash
+<i>outflows</i> were read as sign errors, which alone made April fiscal-year companies look worse until it was fixed.</p>
+<div class="chart">{{ charts.injection }}</div>
+
+<h2>What this means for an analyst</h2>
+<ul>
+  <li><b>Trust checked numbers, then spend review time elsewhere.</b> With XBRL as ground truth, numeric accuracy is measurable and high.</li>
+  <li><b>Read quotes and explanations yourself.</b> About {{ qual_share }}% of claims are qualitative and only "sourced", and
+  quotes fail far more often than numbers.</li>
+  <li><b>Audit the auditor.</b> A checker that is too strict produces false alarms that look like model errors. Its failures need
+  the same scrutiny as the model's.</li>
+</ul>
+
+<h2>Limits</h2>
+<p>Ten companies and five quarters each is a small sample. The checker treats XBRL as truth, so a company's own tagging error would
+pass. Whether a qualitative claim is a fair reading of its paragraph is not machine-checkable. {% if hg and hg.graded %}A hand-graded sample of
+{{ hg.graded }} claims found {{ hg.human_correct_pct }}% correct, with the verifier agreeing {{ hg.agreement_pct }}% of the time.{% else %}A
+hand-graded sample of 20 claims is in progress as an independent check.{% endif %} No earnings-call transcripts were used.</p>
+<p class="small muted">Data: SEC EDGAR. Code and full results: <a href="{{ repo }}">GitHub</a>. Details by metric and calendar:
+<a href="{{ root }}scorecard.html">scorecard</a>.</p>
+</article>
+{% endblock %}

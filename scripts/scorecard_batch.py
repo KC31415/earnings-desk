@@ -26,7 +26,7 @@ BATCH_PRICE = {"claude-sonnet-5-5": (1.0, 5.0)}
 
 
 def missing() -> list[tuple[dict, int]]:
-    store = NoteStore(use_redis=False)
+    store = NoteStore()
     out = []
     for t in config.SHOWCASE_TICKERS:
         raw = load_raw(t)
@@ -87,7 +87,7 @@ def collect() -> None:
     if batch.processing_status != "ended":
         print(f"Batch {batch.id} still {batch.processing_status}: {batch.request_counts}")
         return
-    store = NoteStore(use_redis=False)
+    store = NoteStore()
     companies: dict[str, dict] = {}
     saved, failed, cost = 0, [], 0.0
     for r in client.messages.batches.results(batch.id):
@@ -111,7 +111,7 @@ def collect() -> None:
         selected = [p for p in paras if p["id"] in set(info["selected"])]
         note = finish_note(company, i, paras, meta, raw, selected, usage, config.NOTE_MODEL)
         note["paragraphs"] = paras
-        store.put(t, meta["earnings_8k_accn"], note, repo=True)
+        store.put(t, meta["earnings_8k_accn"], note)
         saved += 1
     state.update(status="collected", saved=saved, failed=failed, note_cost_usd=round(cost, 3))
     STATE.write_text(json.dumps(state, indent=1))

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="small"><a href="{{ root }}notes/index.html">Verified notes</a> / {{ ticker }}</p>
+<h1>{{ name }} ({{ ticker }}): verified earnings note</h1>
+<p class="muted">Written by an AI model from SEC filings, then every claim is checked by plain code: numbers against XBRL data,
+quotes against the press-release text. Failed claims are shown, never hidden or fixed.
+<a href="{{ root }}company/{{ ticker }}.html">See the numbers →</a></p>
+<p class="legend small"><span><span class="tag verified">✓</span> verified</span><span><span class="tag mismatch">⚠</span> mismatch (real value shown)</span>
+<span><span class="tag sourced">◦</span> sourced, not machine-verifiable</span><span><span class="tag unsupported">✗</span> nothing checkable</span></p>
+
+{% if take %}<div class="take"><div class="who"><b>Analyst's take</b> · Kechun Wu · not investment advice</div>{{ take | safe }}</div>{% endif %}
+
+<div class="qtabs" id="qtabs">{% for n in notes %}
+  <button data-q="{{ loop.index0 }}" class="{{ 'on' if loop.first }}">{{ n.fiscal_label }} <span class="small">({{ n.calendar_label }})</span></button>{% endfor %}
+</div>
+
+{% for n in notes %}
+<section class="qnote" data-q="{{ loop.index0 }}" {% if not loop.first %}hidden{% endif %}>
+  <div class="grid4">
+    <div class="card tile"><div class="label">Numeric claims verified</div><div class="value">{{ n.summary.numeric_verified }}/{{ n.summary.numeric }}</div></div>
+    <div class="card tile"><div class="label">⚠ Mismatches</div><div class="value">{{ n.summary.by_status.get("mismatch", 0) }}</div></div>
+    <div class="card tile"><div class="label">◦ Sourced (qualitative)</div><div class="value">{{ n.summary.by_status.get("sourced", 0) }}</div></div>
+    <div class="card tile"><div class="label">✗ Unsupported</div><div class="value">{{ n.summary.by_status.get("unsupported", 0) }}</div></div>
+  </div>
+  <p class="small muted">{{ n.fiscal_label }} ({{ n.calendar_label }}, ended {{ n.period_end }}) · press release:
+  <a href="{{ n.press_url }}">8-K {{ n.accn }}</a>{% if n.filing_url %} · <a href="{{ n.filing_url }}">10-Q/10-K</a>{% endif %} ·
+  models: {{ n.models }} · generated {{ n.generated }}</p>
+  {% for sec in n.sections %}
+  <h2>{{ sec.title }}</h2>
+  {% for cl in sec.claims %}
+  <div class="claim"><span class="tag {{ cl.status }}" title="{{ cl.status_label }}">{{ cl.icon }}</span>{{ cl.text }}
+    {% if cl.real %}<span class="real">Source says {{ cl.real }}</span>{% endif %}</div>
+  <details class="src"><summary>{{ cl.status_label }} · source</summary><div class="body">
+    {% if cl.reason %}<div><b>Why:</b> {{ cl.reason }}</div>{% endif %}
+    {% for e in cl.inputs %}<div>XBRL <code>{{ e.concept }}</code> · {{ e.period }} (ended {{ e.end }}) = <b>{{ e.value }}</b>{% if e.derivation %} · derived: {{ e.derivation }}{% endif %} · <a href="{{ e.url }}">filing {{ e.accn }}</a></div>{% endfor %}
+    {% if cl.formula %}<div class="muted">Recomputed as {{ cl.formula }} = {{ cl.actual }}</div>{% endif %}
+    {% if cl.para %}<div>Press release <a href="{{ n.press_url }}">{{ cl.para_id }}</a>:</div><blockquote>{{ cl.para }}</blockquote>{% endif %}
+    <div class="muted small">Structured claim: metric <code>{{ cl.metric or "—" }}</code>, period <code>{{ cl.period or "—" }}</code>,
+    value <code>{{ cl.value or "—" }}</code> {{ cl.unit }}, cites {{ cl.cites }}</div>
+  </div></details>
+  {% endfor %}
+  {% endfor %}
+</section>
+{% endfor %}
+<script>
+document.querySelectorAll("#qtabs button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll("#qtabs button").forEach(x => x.classList.toggle("on", x === b));
+  document.querySelectorAll(".qnote").forEach(s => s.hidden = s.dataset.q !== b.dataset.q);
+}));
+</script>
+{% endblock %}

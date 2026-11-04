@@ -52,21 +52,12 @@ def get_note(company: dict, quarter_idx: int, store: NoteStore | None = None) ->
     return note
 
 
-def create_note(company: dict, quarter_idx: int, store: NoteStore | None = None, llm: LLM = anthropic_llm,
-                to_repo: bool = False, enforce_cap: bool = True) -> dict:
-    """Generate, verify and store a note. Raises CapReached when today's on-demand cap is used up."""
+def create_note(company: dict, quarter_idx: int, store: NoteStore | None = None, llm: LLM = anthropic_llm) -> dict:
+    """Generate, verify and store a note in data/notes/ (showcase tickers, GitHub Actions only)."""
     store = store or NoteStore()
-    if enforce_cap and not store.take_slot():
-        raise CapReached()
     html, meta = press_release(company, quarter_idx)
     paras = paragraphs(html)
-    on_demand = not to_repo and company["ticker"] not in config.SHOWCASE_TICKERS
-    note_model = config.ON_DEMAND_NOTE_MODEL if on_demand else config.NOTE_MODEL
-    note = generate_note(company, quarter_idx, paras, meta, llm=llm, note_model=note_model)
+    note = generate_note(company, quarter_idx, paras, meta, llm=llm, note_model=config.NOTE_MODEL)
     note["paragraphs"] = paras  # stored so the note can show sources without refetching
-    store.put(company["ticker"], meta["earnings_8k_accn"], note, repo=to_repo)
+    store.put(company["ticker"], meta["earnings_8k_accn"], note)
     return note
-
-
-class CapReached(Exception):
-    pass

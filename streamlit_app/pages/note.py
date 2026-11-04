@@ -9,12 +9,11 @@ from earnings_desk import config
 from earnings_desk.analytics import fmt_money
 from earnings_desk.data import load_company
 from earnings_desk.note import SECTION_TITLES
-from earnings_desk.notes_service import CapReached, create_note, get_note, note_quarters
+from earnings_desk.notes_service import get_note, note_quarters
 from earnings_desk.sec import SECError
 from earnings_desk.sec import filing_url
 from earnings_desk.takes import load_take
 from earnings_desk.ui import ticker_picker
-from earnings_desk.store import NoteStore, daily_cap
 
 ICON = {"verified": "✓", "mismatch": "⚠", "sourced": "◦", "unsupported": "✗"}
 LABEL = {"verified": "verified", "mismatch": "mismatch", "sourced": "sourced, not machine-verifiable",
@@ -87,23 +86,10 @@ if not qidx:
 choice = st.selectbox("Quarter", qidx, format_func=lambda i: f"{company['quarters'][i]['fiscal_label']} "
                       f"({company['quarters'][i]['calendar_label']}, ended {company['quarters'][i]['period_end']})")
 
-store = NoteStore()
-note = get_note(company, choice, store)
+note = get_note(company, choice)
 if not note:
-    st.info("No note for this quarter yet.")
-    left = max(0, daily_cap() - store.used_today())
-    if st.button(f"Generate verified note ({left} of {daily_cap()} left today)", disabled=left == 0, type="primary"):
-        with st.spinner("Writing and verifying (about a minute)…"):
-            try:
-                note = create_note(company, choice, store)
-            except CapReached:
-                st.warning("Today's limit on new notes has been reached. Please try again tomorrow.")
-            except Exception as e:  # show the error; nothing is cached on failure
-                st.error(f"Could not generate the note: {e}")
-    if left == 0:
-        st.warning("Today's limit on new notes has been reached. Please try again tomorrow.")
-    if not note:
-        st.stop()
+    st.info("Verified notes are generated for the showcase tickers only. See Company numbers for this ticker.")
+    st.stop()
 
 take = load_take(company["ticker"])
 if take:
