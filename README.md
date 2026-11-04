@@ -92,6 +92,10 @@ flowchart LR
 - **Restatements.** The most recently filed value is used and the original is kept (ʳ).
 - **Limited coverage.** Banks, lenders, insurers, 20-F/40-F and IFRS filers get an honest "limited coverage for this filer type" message instead of numbers. Recent IPOs get a warning.
 
+## How this was built
+
+The code was written with Claude Code, Anthropic's AI coding assistant, one commit at a time; the `Co-Authored-By` lines in the commit history show which. The AI earnings notes themselves are written by Claude models through the API, which is the thing this project measures. Verifier bugs found by reading the results, and how each was fixed, are described on the Scorecard page.
+
 ## Limitations
 
 - **No earnings-call transcripts.** They aren't freely available, so management commentary comes only from the press release.
