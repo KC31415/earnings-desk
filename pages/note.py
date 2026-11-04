@@ -13,6 +13,7 @@ from earnings_desk.notes_service import CapReached, create_note, get_note, note_
 from earnings_desk.sec import SECError
 from earnings_desk.sec import filing_url
 from earnings_desk.takes import load_take
+from earnings_desk.ui import ticker_picker
 from earnings_desk.store import NoteStore, daily_cap
 
 ICON = {"verified": "✓", "mismatch": "⚠", "sourced": "◦", "unsupported": "✗"}
@@ -66,14 +67,9 @@ st.title("Verified earnings note")
 st.caption("Written by an AI model from SEC filings, then every claim is checked by plain code: numbers against "
            "XBRL data, quotes against the press release text. Failed claims are shown, never hidden or fixed.")
 
-c1, c2 = st.columns([1, 3])
-ticker = c1.text_input("Ticker", value=st.query_params.get("ticker", "CRM")).strip().upper()
-pick = c2.pills("Showcase", config.SHOWCASE_TICKERS, selection_mode="single", key="note_pills")
-if pick:
-    ticker = pick
+ticker = ticker_picker("note")
 if not ticker:
     st.stop()
-st.query_params["ticker"] = ticker
 
 try:
     company, _ = get_company(ticker)

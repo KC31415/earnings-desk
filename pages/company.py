@@ -12,6 +12,7 @@ from earnings_desk.concepts import METRIC_ORDER, METRICS, label
 from earnings_desk.data import load_company
 from earnings_desk.sec import SECError
 from earnings_desk.takes import load_take
+from earnings_desk.ui import ticker_picker
 
 N = config.QUARTERS_SHOWN
 
@@ -32,14 +33,9 @@ def col_name(q: dict) -> str:
 st.title("Company numbers")
 st.caption("Quarterly figures straight from the SEC's structured XBRL data. No AI on this page.")
 
-c1, c2 = st.columns([1, 3])
-ticker = c1.text_input("Ticker", value=st.query_params.get("ticker", "CRM")).strip().upper()
-pick = c2.pills("Showcase", config.SHOWCASE_TICKERS, selection_mode="single")
-if pick:
-    ticker = pick
+ticker = ticker_picker("company")
 if not ticker:
     st.stop()
-st.query_params["ticker"] = ticker
 
 try:
     company, source = get_company(ticker)
