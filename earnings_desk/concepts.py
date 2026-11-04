@@ -63,7 +63,8 @@ METRICS: dict[str, Metric] = {
         Metric(
             "rnd",
             "R&D expense",
-            ("ResearchAndDevelopmentExpense", "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost"),
+            ("ResearchAndDevelopmentExpense", "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+             "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost"),
         ),
         Metric("sm", "Sales & marketing expense", ("SellingAndMarketingExpense",)),
         Metric("sbc", "Stock-based compensation", ("ShareBasedCompensation", "AllocatedShareBasedCompensationExpense")),
