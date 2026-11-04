@@ -173,14 +173,11 @@ def test_metrics_block_has_three_periods(crm):
     assert "revenue_yoy" in mb["computed_percent_for_current_quarter"]
 
 
-def test_store_and_daily_cap(tmp_path, monkeypatch):
-    monkeypatch.setenv("NOTE_DAILY_CAP", "2")
-    s = NoteStore(repo_dir=tmp_path / "repo", local_dir=tmp_path / "cache", use_redis=False)
+def test_store_roundtrip(tmp_path):
+    s = NoteStore(repo_dir=tmp_path / "repo")
     assert s.get("ABC", "1") is None
     s.put("ABC", "1", {"x": 1})
     assert s.get("ABC", "1") == {"x": 1}
-    assert s.take_slot() and s.take_slot() and not s.take_slot()
-
 
 def test_period_label_variants(crm):
     c, _ = crm

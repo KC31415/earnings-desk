@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="small"><a href="{{ root }}index.html">Home</a> / Company numbers</p>
+<h1>{{ c.name }} ({{ c.ticker }})</h1>
+<p class="muted small">CIK {{ c.cik }} · fiscal year ends {{ c.fye }} · SIC {{ c.sic or "—" }} {{ c.sic_description or "" }}
+{% if c.sector %} · {{ c.sector }}{% endif %} · numbers from SEC XBRL, no AI on this page</p>
+
+{% if note_link %}<div class="notice info">✓ A <a href="{{ root }}notes/{{ c.ticker }}.html">verified AI earnings note</a> is available for {{ c.ticker }}.</div>{% endif %}
+{% if take %}<div class="take"><div class="who"><b>Analyst's take</b> · Kechun Wu · not investment advice</div>{{ take | safe }}</div>{% endif %}
+
+{% for r in coverage.reasons %}<div class="notice {{ 'bad' if coverage.blocked else 'warn' }}">
+  <b>{{ "Limited coverage for this filer type." if coverage.blocked else "Limited data." }}</b> {{ r }}</div>{% endfor %}
+
+{% if not coverage.blocked %}
+<h2>Key metrics</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Metric</th>{% for col in cols %}<th>{{ col[0] }}<br><span class="muted small">{{ col[1] }}</span></th>{% endfor %}</tr></thead>
+<tbody>{% for row in metric_rows %}<tr><td>{{ row.label }}</td>{% for cell in row.cells %}
+  <td title="{{ cell.title }}">{{ cell.text }}{% if cell.flags %}<span class="flag">{{ cell.flags }}</span>{% endif %}</td>{% endfor %}</tr>{% endfor %}</tbody>
+</table></div>
+<p class="small muted">ᵈ derived (Q4 = full year − 9-month YTD; cash-flow quarters from year-to-date totals) · ʳ restated: latest
+filed value shown · ᵖ current portion only. Hover a number for its XBRL concept.</p>
+
+<div class="grid2">
+  <div>
+    <h3>Growth</h3>
+    <div class="tablewrap"><table>
+    <thead><tr><th>Metric</th>{% for col in cols %}<th>{{ col[0] }}</th>{% endfor %}</tr></thead>
+    <tbody>{% for row in growth_rows %}<tr><td>{{ row[0] }}</td>{% for v in row[1] %}<td>{{ v }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table></div>
+  </div>
+  <div>
+    <h3>Margins</h3>
+    <div class="tablewrap"><table>
+    <thead><tr><th>Margin</th>{% for col in cols %}<th>{{ col[0] }}</th>{% endfor %}</tr></thead>
+    <tbody>{% for row in margin_rows %}<tr><td>{{ row[0] }}</td>{% for v in row[1] %}<td>{{ v }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+    </table></div>
+  </div>
+</div>
+
+<div class="grid2">
+  <div class="chart">{{ charts.revenue }}</div>
+  <div class="chart">{{ charts.margins }}</div>
+</div>
+{% if charts.backlog %}<div class="chart">{{ charts.backlog }}</div>{% endif %}
+
+<h2>Source filings</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>Quarter</th><th class="left">Calendar</th><th>Period end</th><th>Form</th><th>Filed</th><th>Filing</th><th>Earnings 8-K</th></tr></thead>
+<tbody>{% for s in sources %}<tr><td>{{ s.quarter }}</td><td class="left">{{ s.calendar }}</td><td>{{ s.end }}</td><td>{{ s.form }}</td><td>{{ s.filed }}</td>
+<td>{% if s.url %}<a href="{{ s.url }}">open</a>{% else %}—{% endif %}</td><td>{% if s.k8 %}<a href="{{ s.k8 }}">open</a>{% else %}—{% endif %}</td></tr>{% endfor %}</tbody>
+</table></div>
+{% endif %}
+{% endblock %}

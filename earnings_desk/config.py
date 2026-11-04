@@ -14,8 +14,6 @@ SHOWCASE_TICKERS = ["CRM", "NOW", "ADBE", "SNOW", "DDOG", "NVDA", "MSFT", "PLTR"
 # Models (used from Milestone 2 on).
 EXTRACTION_MODEL = os.environ.get("EXTRACTION_MODEL", "claude-haiku-5-5")
 NOTE_MODEL = os.environ.get("NOTE_MODEL", "claude-sonnet-5-5")  # showcase + scorecard notes
-# On-demand notes for non-showcase tickers use the cheaper model to protect the API budget.
-ON_DEMAND_NOTE_MODEL = os.environ.get("ON_DEMAND_NOTE_MODEL", "claude-haiku-5-5")
 
 # SEC access
 SEC_MIN_INTERVAL_S = 0.12  # ~8 requests/second, under the SEC's 10/s limit

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Is AI eating software? What the filings say.</h1>
+<p class="lede">In 2026 software stocks sold off on fears that AI would replace SaaS (the "SaaSpocalypse"), even as earnings
+estimates rose. This site lines up ten companies' own SEC filings by calendar quarter so anyone can check the story against
+reported numbers, and writes AI earnings notes in which every number is checked by code against the SEC's structured data.</p>
+
+<div class="search" id="search" data-root="{{ root }}">
+  <input type="search" placeholder="Search any S&amp;P 500 company or showcase ticker (e.g. CRM, Apple)…" aria-label="Search ticker" autocomplete="off">
+  <ul></ul>
+</div>
+<p class="small muted">{{ n_companies }} companies: numbers-only pages for the S&amp;P 500 (rebuilt weekly, no AI), plus verified AI notes for the 10 showcase tickers.</p>
+
+<h2>What the filings say</h2>
+<ul>{% for f in findings %}<li>{{ f | safe }}</li>{% endfor %}</ul>
+<p class="small muted">Calendar quarters {{ quarters[0] }} to {{ quarters[-1] }} (the latest quarter at least 8 of 10 companies have reported).
+Fiscal quarters are mapped to calendar time by their midpoint, so a February-to-April quarter counts as calendar Q1.
+Groups follow how the selloff framed each company, not this site's view.</p>
+
+<div class="grid2">
+  <div class="chart">{{ charts.growth }}</div>
+  <div class="chart">{{ charts.margin }}</div>
+  <div class="chart">{{ charts.scatter }}</div>
+  <div class="chart">{{ charts.rpo }}</div>
+</div>
+
+<h2>Latest quarter, side by side</h2>
+<div class="tablewrap"><table>
+<thead><tr>{% for h in snap_head %}<th class="{{ 'left' if loop.index <= 3 }}">{{ h }}</th>{% endfor %}</tr></thead>
+<tbody>{% for r in snap_rows %}<tr>
+  <td><a href="company/{{ r[0] }}.html">{{ r[0] }}</a></td>{% for c in r[1:] %}<td class="{{ 'left' if loop.index <= 2 }}">{{ c }}</td>{% endfor %}
+</tr>{% endfor %}</tbody></table></div>
+<p class="small muted">ᵖ current portion of deferred revenue only. NDAQ revenue is total revenue as tagged, before transaction-based
+expenses, so its margins aren't comparable to the software companies.</p>
+
+<h2>Verified AI earnings notes</h2>
+<p>Each note is written by an AI model from the 10-Q/10-K and the earnings press release, then every claim is checked by plain code:
+<span class="tag verified">✓</span> verified against XBRL or the exact press-release text,
+<span class="tag mismatch">⚠</span> mismatch (the real value is shown), <span class="tag sourced">◦</span> sourced but not
+machine-verifiable. Across {{ sc.company_quarters }} company-quarters, <b>{{ sc.numeric.verified_pct }}%</b> of numeric claims verified
+(<a href="scorecard.html">scorecard</a>, <a href="research.html">research note</a>).</p>
+<div class="cards">{% for c in cards %}
+  <a class="card" href="notes/{{ c.ticker }}.html"><div class="t">{{ c.ticker }}</div>
+  <div class="small muted">{{ c.name }}</div>
+  <div class="small">{{ c.quarter }} · {{ c.verified }}/{{ c.numeric }} numbers ✓</div></a>
+{% endfor %}</div>
+<script src="{{ root }}assets/search.js"></script>
+{% endblock %}

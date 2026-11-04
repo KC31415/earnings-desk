@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Verified AI earnings notes</h1>
+<p class="lede">Notes for the 10 showcase companies, refreshed after each new earnings release. Each covers the latest
+quarter and up to four earlier ones. Every number is recomputed from the SEC's XBRL data; every quote is matched word for word.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Ticker</th><th class="left">Company</th><th class="left">Latest note</th><th>Notes</th><th>Numbers verified</th><th>Quotes matched</th><th>Mismatches</th></tr></thead>
+<tbody>{% for r in rows %}<tr><td><a href="{{ r.ticker }}.html">{{ r.ticker }}</a></td><td class="left">{{ r.name }}</td><td class="left">{{ r.latest }}</td>
+<td>{{ r.n }}</td><td>{{ r.numeric }}</td><td>{{ r.quotes }}</td><td>{{ r.mismatch }}</td></tr>{% endfor %}</tbody>
+</table></div>
+<p class="small muted">Counts are across all notes for that company. See the <a href="{{ root }}scorecard.html">scorecard</a> for method and failure analysis.</p>
+{% endblock %}

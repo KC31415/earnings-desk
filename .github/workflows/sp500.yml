@@ -1,0 +1,47 @@
+name: S&P 500 numbers
+
+# Weekly numbers-only refresh for every S&P 500 company (no AI). Incremental: only companies
+# with a new 10-Q/10-K are re-downloaded. The site rebuild runs afterwards (pages.yml).
+on:
+  schedule:
+    - cron: "17 9 * * 6"   # Saturdays 09:17 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Only the first N constituents (0 = all)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sp500
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch S&P 500 numbers
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python -m scripts.fetch_sp500 --limit ${{ github.event.inputs.limit || '0' }}
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sp500
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "data: S&P 500 numbers $(date -u +%Y-%m-%d)"
+            git push origin HEAD:${{ github.ref_name }}
+          fi

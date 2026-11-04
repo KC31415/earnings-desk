@@ -23,7 +23,7 @@ def main() -> int:
     ap.add_argument("tickers", nargs="*")
     ap.add_argument("--max", type=int, default=10, help="max notes to generate in this run")
     args = ap.parse_args()
-    store = NoteStore(use_redis=False)
+    store = NoteStore()
     made, cost, failures = 0, 0.0, 0
     for t in [x.upper() for x in args.tickers] or config.SHOWCASE_TICKERS:
         raw = load_raw(t)
@@ -42,7 +42,7 @@ def main() -> int:
             print(f"{t}: skipped (--max {args.max} reached)")
             continue
         try:
-            note = create_note(company, i, store=store, to_repo=True, enforce_cap=False)
+            note = create_note(company, i, store=store)
         except Exception as e:
             failures += 1
             print(f"{t}: FAILED {type(e).__name__}: {e}", file=sys.stderr)

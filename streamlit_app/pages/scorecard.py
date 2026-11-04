@@ -7,28 +7,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from earnings_desk.scorecard import HAND_GRADE_CSV, OUT_DIR, hand_grade_summary, read_hand_grades
+from earnings_desk.scorecard import FAILURE_EXPLAIN as EXPLAIN, HAND_GRADE_CSV, OUT_DIR, hand_grade_summary, read_hand_grades
 
-EXPLAIN = {
-    "rounding at the boundary": (
-        "The model rounded a number the wrong way at the edge, e.g. writing 21.9% when the true value is 21.846%. "
-        "The error is tiny, but the verifier is strict on purpose: a stated number must be a correct rounding of "
-        "the filed value. Early notes were partly caused by our own inputs (growth rates sent to the model at 2 "
-        "decimals, which it then rounded again); inputs now carry 4 decimals."),
-    "quote paraphrased, not quoted": (
-        "The model was asked for a direct quote but wrote a paraphrase (\"the CEO described the quarter as strong\"). "
-        "Nothing false is said, but a reader can't see management's actual words, so it doesn't count as a verified quote."),
-    "quote not in cited paragraph": "The quoted words don't appear in the paragraph the model cited.",
-    "sentence and structured value disagree": (
-        "The sentence shows a different number from the structured value the model attached to it, so the reader "
-        "would see an unchecked number."),
-    "number not in cited paragraph": (
-        "A number (often in a qualitative sentence, e.g. \"RPO was flat at $4.9 billion\") doesn't appear in the "
-        "paragraph the model cited. The number may even be right, but the citation doesn't support it."),
-    "wrong value / unit / period": "The number disagrees with the SEC's XBRL data by more than rounding.",
-    "sign / direction wrong": "The magnitude is right but the sentence says growth where the filing shows a decline (or vice versa).",
-    "nothing checkable (bad metric, period or citation)": "The claim cites something that doesn't exist, so it can't be checked.",
-}
 
 st.title("Accuracy scorecard")
 st.caption("How often the AI note is right, measured by code against SEC filings, and how often the verifier "

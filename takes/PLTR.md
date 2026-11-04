@@ -1,5 +1,4 @@
 <!--
 Analyst's take for PLTR. Write your own view below in Markdown (a few sentences).
-While this file has nothing outside this comment, the box is hidden in the app.
+While this file has nothing outside this comment, the box is hidden on the site.
 -->
-Palantir has the most striking numbers in this set: growth accelerated from 62.8% to 95.9% in five quarters while GAAP operating margin climbed from 33% to 47% and free cash flow margin sits above 50%. The caution is in the leading indicators. RPO growth halved from 141% to 89%, and total contract value closed grew only 6% year over year, far below revenue growth. If bookings don't catch up, current revenue growth would be hard to sustain.

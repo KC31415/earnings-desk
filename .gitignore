@@ -5,3 +5,5 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 cache/
+_site/
+streamlit_app/.streamlit/secrets.toml
