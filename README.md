@@ -2,6 +2,8 @@
 
 **AI earnings notes on any US-listed company, where every number is checked by code against the SEC's own structured data.**
 
+**Live app: https://earnings-desk.streamlit.app/**
+
 Commercial tools (Hebbia, AlphaSense, Fiscal.ai) already summarize filings. The open problem is trust: language models misstate numbers, mix up periods and invent quotes, so analysts re-check everything by hand. This project writes a structured earnings note from SEC filings, then a deterministic verifier (plain code, no AI) checks every claim. It also measures how often a note can be trusted, and shows where it fails.
 
 Theme of the landing page: **"Is AI eating software? What the filings say."** In 2026 software stocks sold off on fears that AI would replace SaaS, even as earnings estimates rose. The app lines up ten companies' own filings so anyone can check the story against reported numbers.
