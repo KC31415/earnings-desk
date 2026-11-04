@@ -30,7 +30,7 @@ BASE_METRICS = list(METRICS) + ["free_cash_flow"]
 GROWTH_METRICS = [f"{k}_{g}" for k in BASE_METRICS for g in ("yoy", "qoq")]
 METRIC_VOCAB = BASE_METRICS + GROWTH_METRICS + list(MARGIN_METRICS) + ["other"]
 
-NEG_WORDS = re.compile(r"\b(down|declin\w*|decreas\w*|fell|fall\w*|lower|drop\w*|contract\w*|negative|loss\w*|shrank|shrink\w*)\b", re.I)
+NEG_WORDS = re.compile(r"\b(down|declin\w*|decreas\w*|fell|fall\w*|lower|drop\w*|contract\w*|negative|loss\w*|shrank|shrink\w*|outflow\w*|burn\w*|deficit\w*|used)\b", re.I)
 _NUM_RE = re.compile(r"(?<![\w.])-?\d[\d,]*(?:\.\d+)?")
 # Numbers that are labels, not values: FY2026, Q3, 2026, 10-Q, 8-K, 99.1
 _LABEL_RE = re.compile(r"\b(?:FY|CY|Q)\s?\d{1,4}\b|\b(?:19|20)\d{2}\b|\b\d{1,2}-[A-Z]\b|\b99\.\d\b", re.I)

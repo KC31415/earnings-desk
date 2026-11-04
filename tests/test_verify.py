@@ -199,3 +199,11 @@ def test_quote_must_appear_in_sentence(crm):
              "value": quote, "unit": "", "source": {"type": "press_release", "ref": p["id"]}}
     v = status(claim, crm)
     assert v["status"] == "mismatch" and "paraphrases" in v["reason"]
+
+
+def test_outflow_counts_as_negative(crm):
+    c, _ = crm
+    label = c["quarters"][-1]["fiscal_label"]
+    from earnings_desk.verify import NEG_WORDS
+    assert NEG_WORDS.search("Free cash flow was an outflow of $5 million.")
+    assert NEG_WORDS.search("The company burned $5 million.")

@@ -57,6 +57,8 @@ def failure_category(claim: dict) -> str:
         return "sentence and structured value disagree"
     if "does not appear in" in r or "qualitative claim are not in" in r:
         return "number not in cited paragraph"
+    if "sign/direction" in r:
+        return "sign / direction wrong"
     if v.get("method") == "xbrl" and v.get("actual") is not None:
         shown = v.get("checked_as_written") or str(claim.get("value", ""))
         try:

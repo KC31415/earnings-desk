@@ -26,6 +26,7 @@ EXPLAIN = {
         "A number (often in a qualitative sentence, e.g. \"RPO was flat at $4.9 billion\") doesn't appear in the "
         "paragraph the model cited. The number may even be right, but the citation doesn't support it."),
     "wrong value / unit / period": "The number disagrees with the SEC's XBRL data by more than rounding.",
+    "sign / direction wrong": "The magnitude is right but the sentence says growth where the filing shows a decline (or vice versa).",
     "nothing checkable (bad metric, period or citation)": "The claim cites something that doesn't exist, so it can't be checked.",
 }
 
@@ -98,5 +99,10 @@ for cat, n in sorted(r["failures"].items(), key=lambda x: -x[1]):
     st.markdown(f"**{cat}** ({n})  \n{EXPLAIN.get(cat, '')}")
     for ex in r["failure_examples"].get(cat, []):
         st.markdown(f"- {ex['ticker']} {ex['quarter']}: “{ex['text']}” · _{ex['reason']}_")
+st.markdown("**Verifier bugs found by reading the results.** Reviewing every flagged claim turned up false alarms "
+            "that were the verifier's fault, not the model's, and were fixed: sentences split across HTML blocks; "
+            "quotes checked against the value field instead of the words in quotation marks; and cash *outflows* "
+            "read as a sign error (which alone made April fiscal-year companies look worse). Each fix comes with a "
+            "test, and the injected-error catch rate is re-checked after every fix so the verifier isn't loosened.")
 st.markdown("**What the verifier can't check.** Whether a qualitative claim (◦) is a fair reading of its paragraph, "
             "and whether the note leaves out something important. Those still need a human reader.")
