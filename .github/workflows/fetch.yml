@@ -1,0 +1,46 @@
+name: Fetch SEC data
+
+on:
+  schedule:
+    # Weekdays 22:41 UTC (after US after-close earnings releases). Schedules run on the default branch only.
+    - cron: "41 22 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Space-separated tickers (blank = all showcase tickers)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-sec-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Fetch and normalize
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python -m scripts.fetch_showcase ${{ github.event.inputs.tickers }}
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: SEC refresh $(date -u +%Y-%m-%d)"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
