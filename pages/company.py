@@ -11,6 +11,7 @@ from earnings_desk.analytics import (GROWTH_METRICS, MARGINS, fmt_money, fmt_pct
 from earnings_desk.concepts import METRIC_ORDER, METRICS, label
 from earnings_desk.data import load_company
 from earnings_desk.sec import SECError
+from earnings_desk.takes import load_take
 
 N = config.QUARTERS_SHOWN
 
@@ -58,6 +59,12 @@ if cov["reasons"]:
     (st.error if cov["blocked"] else st.warning)(msg)
 if cov["blocked"]:
     st.stop()
+
+take = load_take(company["ticker"])
+if take:
+    with st.container(border=True):
+        st.markdown("**Analyst's take** (Kechun Wu's own view, not AI-generated, not investment advice)")
+        st.markdown(take)
 
 quarters = company["quarters"][-N:]
 cols = [col_name(q) for q in quarters]

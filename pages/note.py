@@ -10,7 +10,9 @@ from earnings_desk.analytics import fmt_money
 from earnings_desk.data import load_company
 from earnings_desk.note import SECTION_TITLES
 from earnings_desk.notes_service import CapReached, create_note, get_note, note_quarters
-from earnings_desk.sec import SECError, filing_url
+from earnings_desk.sec import SECError
+from earnings_desk.sec import filing_url
+from earnings_desk.takes import load_take
 from earnings_desk.store import NoteStore, daily_cap
 
 ICON = {"verified": "✓", "mismatch": "⚠", "sourced": "◦", "unsupported": "✗"}
@@ -106,6 +108,12 @@ if not note:
         st.warning("Today's limit on new notes has been reached. Please try again tomorrow.")
     if not note:
         st.stop()
+
+take = load_take(company["ticker"])
+if take:
+    with st.container(border=True):
+        st.markdown("**Analyst's take** (Kechun Wu's own view, not AI-generated, not investment advice)")
+        st.markdown(take)
 
 s = note["summary"]
 bs = s["by_status"]
