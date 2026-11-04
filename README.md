@@ -2,7 +2,7 @@
 
 **AI earnings notes where every number is checked by code against the SEC's own structured data, plus a numbers-only page for every S&P 500 company.**
 
-**Live site: https://kc31415.github.io/earnings-desk** · Portfolio: https://kc31415.github.io
+**Live site: https://kechunwu.github.io/earnings-desk** · Portfolio: https://kechunwu.github.io
 
 Commercial tools (Hebbia, AlphaSense, Fiscal.ai) already summarize filings. The open problem is trust: language models misstate numbers, mix up periods and invent quotes, so analysts re-check everything by hand. This project writes a structured earnings note from SEC filings, then a deterministic verifier (plain code, no AI) checks every claim. It also measures how often a note can be trusted, and shows where it fails.
 

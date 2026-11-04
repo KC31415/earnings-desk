@@ -30,8 +30,8 @@ from earnings_desk.sec import filing_url, load_raw
 from earnings_desk.takes import load_take
 
 HERE = Path(__file__).parent
-PORTFOLIO = "https://kc31415.github.io"
-REPO = "https://github.com/KC31415/earnings-desk"
+PORTFOLIO = "https://kechunwu.github.io"
+REPO = "https://github.com/kechunwu/earnings-desk"
 COLORS = dict(zip(GROUP_ORDER, ["#E45756", "#F58518", "#4C78A8", "#B279A2", "#9D9D9D"]))
 ICON = {"verified": "✓", "mismatch": "⚠", "sourced": "◦", "unsupported": "✗"}
 STATUS_LABEL = {"verified": "verified", "mismatch": "mismatch", "sourced": "sourced, not machine-verifiable",
