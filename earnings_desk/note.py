@@ -202,12 +202,11 @@ def _api_key() -> str | None:
 
 # ---------------------------------------------------------------- pipeline
 
-def generate_note(company: dict, quarter_idx: int, paragraphs: list[dict], source_meta: dict,
-                  llm: LLM = anthropic_llm) -> dict:
-    """Write and verify a note. `llm` is injectable so tests never call the API."""
+def prepare_note(company: dict, quarter_idx: int, paragraphs: list[dict], llm: LLM = anthropic_llm
+                 ) -> tuple[str, list[dict], list[dict]]:
+    """Select paragraphs (cheap model) and build the note prompt. Returns (user prompt, selected, usage)."""
     q = company["quarters"][quarter_idx]
     inputs = metrics_block(company, quarter_idx)
-
     usage = []
     selected = paragraphs
     if len(paragraphs) > 60:
@@ -217,19 +216,28 @@ def generate_note(company: dict, quarter_idx: int, paragraphs: list[dict], sourc
         ids = {s.strip().upper() for s in sel.get("paragraph_ids", [])}
         picked = [p for p in paragraphs if p["id"].upper() in ids]
         selected = picked if len(picked) >= 5 else paragraphs
-
     user = (f"Company: {company['name']} ({company['ticker']}). Quarter: {q['fiscal_label']} "
             f"(calendar {q['calendar_label']}, period ended {q['period_end']}).\n\n"
             f"<metrics_table>\n{json.dumps(inputs, indent=1)}\n</metrics_table>\n\n"
             f"<press_release>\n{_para_text(selected)}\n</press_release>")
-    raw, u = llm(config.NOTE_MODEL, NOTE_SYSTEM, user, NOTE_SCHEMA, "medium")
-    usage.append(u)
+    return user, selected, usage
 
+
+def note_request_params(user: str, note_model: str) -> dict:
+    """Messages API params for the note call (also used for Batch API requests)."""
+    return dict(model=note_model, max_tokens=16000, system=NOTE_SYSTEM, messages=[{"role": "user", "content": user}],
+                output_config={"effort": "medium", "format": {"type": "json_schema", "schema": NOTE_SCHEMA}})
+
+
+def finish_note(company: dict, quarter_idx: int, paragraphs: list[dict], source_meta: dict, raw: dict,
+                selected: list[dict], usage: list[dict], note_model: str) -> dict:
+    """Assemble the note record from the model's JSON and run the verifier."""
+    q = company["quarters"][quarter_idx]
     note = {
         "ticker": company["ticker"], "name": company["name"], "fiscal_label": q["fiscal_label"],
         "calendar_label": q["calendar_label"], "period_end": q["period_end"],
         "source": source_meta, "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "models": {"extraction": config.EXTRACTION_MODEL, "note": config.NOTE_MODEL}, "usage": usage,
+        "models": {"extraction": config.EXTRACTION_MODEL, "note": note_model}, "usage": usage,
         "prompt_version": PROMPT_VERSION,
         "paragraphs_sent": [p["id"] for p in selected],
         "sections": raw.get("sections", []),
@@ -237,3 +245,13 @@ def generate_note(company: dict, quarter_idx: int, paragraphs: list[dict], sourc
     verified = verify_note(note, company, paragraphs)
     verified["raw_model_output"] = raw  # kept verbatim for auditing
     return verified
+
+
+def generate_note(company: dict, quarter_idx: int, paragraphs: list[dict], source_meta: dict,
+                  llm: LLM = anthropic_llm, note_model: str | None = None) -> dict:
+    """Write and verify a note. `llm` is injectable so tests never call the API."""
+    note_model = note_model or config.NOTE_MODEL
+    user, selected, usage = prepare_note(company, quarter_idx, paragraphs, llm)
+    raw, u = llm(note_model, NOTE_SYSTEM, user, NOTE_SCHEMA, "medium")
+    usage.append(u)
+    return finish_note(company, quarter_idx, paragraphs, source_meta, raw, selected, usage, note_model)

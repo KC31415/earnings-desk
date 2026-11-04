@@ -15,6 +15,11 @@ def note_quarters(company: dict, n: int = 5) -> list[int]:
     return list(reversed(idx[-n:]))
 
 
+def load_paragraphs(company: dict, quarter_idx: int) -> tuple[list[dict], dict]:
+    html, meta = press_release(company, quarter_idx)
+    return paragraphs(html), meta
+
+
 def press_release(company: dict, quarter_idx: int, client: SECClient | None = None) -> tuple[str, dict]:
     """Return (html, meta) for the quarter's Exhibit 99.1. Repo copy first, SEC otherwise."""
     q = company["quarters"][quarter_idx]
@@ -55,7 +60,9 @@ def create_note(company: dict, quarter_idx: int, store: NoteStore | None = None,
         raise CapReached()
     html, meta = press_release(company, quarter_idx)
     paras = paragraphs(html)
-    note = generate_note(company, quarter_idx, paras, meta, llm=llm)
+    on_demand = not to_repo and company["ticker"] not in config.SHOWCASE_TICKERS
+    note_model = config.ON_DEMAND_NOTE_MODEL if on_demand else config.NOTE_MODEL
+    note = generate_note(company, quarter_idx, paras, meta, llm=llm, note_model=note_model)
     note["paragraphs"] = paras  # stored so the note can show sources without refetching
     store.put(company["ticker"], meta["earnings_8k_accn"], note, repo=to_repo)
     return note

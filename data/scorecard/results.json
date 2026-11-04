@@ -1,0 +1,227 @@
+{
+ "company_quarters": 10,
+ "tickers": [
+  "ADBE",
+  "AI",
+  "CRM",
+  "DDOG",
+  "MSFT",
+  "NDAQ",
+  "NOW",
+  "NVDA",
+  "PLTR",
+  "SNOW"
+ ],
+ "claims": 202,
+ "status_counts": {
+  "verified": 158,
+  "sourced": 37,
+  "mismatch": 6,
+  "unsupported": 1
+ },
+ "numeric": {
+  "claims": 149,
+  "verified_pct": 98.0,
+  "mismatch_pct": 2.0
+ },
+ "quote": {
+  "claims": 15,
+  "match_pct": 80.0
+ },
+ "numeric_by_metric_type": [
+  {
+   "metric_type": "amount (XBRL)",
+   "claims": 42,
+   "verified_pct": 100.0,
+   "mismatch_pct": 0.0,
+   "unsupported_pct": 0.0
+  },
+  {
+   "metric_type": "growth (QoQ/YoY)",
+   "claims": 50,
+   "verified_pct": 94.0,
+   "mismatch_pct": 6.0,
+   "unsupported_pct": 0.0
+  },
+  {
+   "metric_type": "margin",
+   "claims": 10,
+   "verified_pct": 100.0,
+   "mismatch_pct": 0.0,
+   "unsupported_pct": 0.0
+  },
+  {
+   "metric_type": "press-release number",
+   "claims": 47,
+   "verified_pct": 100.0,
+   "mismatch_pct": 0.0,
+   "unsupported_pct": 0.0
+  }
+ ],
+ "numeric_by_calendar": [
+  {
+   "fye_group": "Calendar year (Dec)",
+   "claims": 59,
+   "verified_pct": 96.6,
+   "mismatch_pct": 3.4,
+   "unsupported_pct": 0.0
+  },
+  {
+   "fye_group": "Non-calendar (Apr FYE)",
+   "claims": 16,
+   "verified_pct": 100.0,
+   "mismatch_pct": 0.0,
+   "unsupported_pct": 0.0
+  },
+  {
+   "fye_group": "Non-calendar (Jan FYE)",
+   "claims": 45,
+   "verified_pct": 97.8,
+   "mismatch_pct": 2.2,
+   "unsupported_pct": 0.0
+  },
+  {
+   "fye_group": "Non-calendar (Jun FYE)",
+   "claims": 14,
+   "verified_pct": 100.0,
+   "mismatch_pct": 0.0,
+   "unsupported_pct": 0.0
+  },
+  {
+   "fye_group": "Non-calendar (Nov FYE)",
+   "claims": 15,
+   "verified_pct": 100.0,
+   "mismatch_pct": 0.0,
+   "unsupported_pct": 0.0
+  }
+ ],
+ "numeric_q4_vs_other": [
+  {
+   "q": "Q1-Q3",
+   "claims": 149,
+   "verified_pct": 98.0,
+   "mismatch_pct": 2.0,
+   "unsupported_pct": 0.0
+  }
+ ],
+ "all_by_claim_type": [
+  {
+   "claim_type": "numeric",
+   "claims": 149,
+   "verified_pct": 98.0,
+   "mismatch_pct": 2.0,
+   "unsupported_pct": 0.0
+  },
+  {
+   "claim_type": "qualitative",
+   "claims": 38,
+   "verified_pct": 0.0,
+   "mismatch_pct": 0.0,
+   "unsupported_pct": 2.6
+  },
+  {
+   "claim_type": "quote",
+   "claims": 15,
+   "verified_pct": 80.0,
+   "mismatch_pct": 20.0,
+   "unsupported_pct": 0.0
+  }
+ ],
+ "failures": {
+  "quote paraphrased, not quoted": 3,
+  "rounding at the boundary": 3,
+  "number not in cited paragraph": 1
+ },
+ "failure_examples": {
+  "number not in cited paragraph": [
+   {
+    "ticker": "PLTR",
+    "quarter": "FY2026 Q3",
+    "text": "Remaining performance obligations were flat sequentially at $4.9 billion, so backlog conversion is a watch item.",
+    "reason": "numbers [4.9] in a qualitative claim are not in P19"
+   }
+  ],
+  "quote paraphrased, not quoted": [
+   {
+    "ticker": "NOW",
+    "quarter": "FY2026 Q3",
+    "text": "The CEO called the quarter an inflection point, saying",
+    "reason": "the sentence paraphrases instead of containing the quoted words"
+   },
+   {
+    "ticker": "DDOG",
+    "quarter": "FY2026 Q2",
+    "text": "The CEO described the quarter as strong.",
+    "reason": "the sentence paraphrases instead of containing the quoted words"
+   },
+   {
+    "ticker": "PLTR",
+    "quarter": "FY2026 Q3",
+    "text": "The CEO highlighted that U.S. commercial revenue passed U.S. government revenue for the first time.",
+    "reason": "the sentence paraphrases instead of containing the quoted words"
+   }
+  ],
+  "rounding at the boundary": [
+   {
+    "ticker": "SNOW",
+    "quarter": "FY2027 Q2",
+    "text": "Sales and marketing expense rose 21.9% year over year.",
+    "reason": "stated 21.9 percent, XBRL gives 21.846%"
+   },
+   {
+    "ticker": "DDOG",
+    "quarter": "FY2026 Q2",
+    "text": "Net income declined 15.3% from the prior quarter.",
+    "reason": "stated 15.3 percent, XBRL gives -15.247%"
+   },
+   {
+    "ticker": "NDAQ",
+    "quarter": "FY2026 Q3",
+    "text": "Operating cash flow was up 135.8% year over year.",
+    "reason": "stated 135.8 percent, XBRL gives 135.747%"
+   }
+  ]
+ },
+ "injection": [
+  {
+   "error_type": "value +5%",
+   "injected": 98,
+   "caught": 98,
+   "catch_rate_pct": 100.0
+  },
+  {
+   "error_type": "value \u22125%",
+   "injected": 98,
+   "caught": 98,
+   "catch_rate_pct": 100.0
+  },
+  {
+   "error_type": "wrong unit",
+   "injected": 32,
+   "caught": 32,
+   "catch_rate_pct": 100.0
+  },
+  {
+   "error_type": "wrong period",
+   "injected": 99,
+   "caught": 99,
+   "catch_rate_pct": 100.0
+  },
+  {
+   "error_type": "QoQ/YoY swapped",
+   "injected": 47,
+   "caught": 47,
+   "catch_rate_pct": 100.0
+  },
+  {
+   "error_type": "quote word changed",
+   "injected": 12,
+   "caught": 12,
+   "catch_rate_pct": 100.0
+  }
+ ],
+ "tokens": {
+  "input": 254127,
+  "output": 22135
+ }
+}

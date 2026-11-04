@@ -1,0 +1,48 @@
+name: Scorecard notes (batch)
+
+on:
+  workflow_dispatch:
+    inputs:
+      step:
+        description: "plan (free) | submit (spends ~$1) | collect (free)"
+        required: true
+        default: plan
+        type: choice
+        options: [plan, submit, collect]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scorecard-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run step
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: |
+          python -m scripts.scorecard_batch ${{ github.event.inputs.step }}
+          if [ "${{ github.event.inputs.step }}" = "collect" ]; then python -m scripts.scorecard; fi
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "scorecard: ${{ github.event.inputs.step }} $(date -u +%Y-%m-%d)"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
