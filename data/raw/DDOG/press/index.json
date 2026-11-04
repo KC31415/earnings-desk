@@ -1,0 +1,50 @@
+{
+ "0001628280-26-069792": {
+  "accn": "0001628280-26-069792",
+  "filing_date": "2026-11-04",
+  "report_date": "2026-11-04",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/0001628280-26-069792-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/ex-991x20260930x8k.htm"
+ },
+ "0001628280-26-053829": {
+  "accn": "0001628280-26-053829",
+  "filing_date": "2026-08-06",
+  "report_date": "2026-08-06",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026053829/0001628280-26-053829-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026053829/ex-991x20260630x8k.htm"
+ },
+ "0001628280-26-031677": {
+  "accn": "0001628280-26-031677",
+  "filing_date": "2026-05-07",
+  "report_date": "2026-05-07",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026031677/0001628280-26-031677-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026031677/ex-991x20260331x8k.htm"
+ },
+ "0001628280-26-006645": {
+  "accn": "0001628280-26-006645",
+  "filing_date": "2026-02-10",
+  "report_date": "2026-02-10",
+  "items": "2.02",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026006645/0001628280-26-006645-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026006645/ex-991x20251231x8k.htm"
+ },
+ "0001561550-25-000310": {
+  "accn": "0001561550-25-000310",
+  "filing_date": "2025-11-06",
+  "report_date": "2025-11-06",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1561550/000156155025000310/0001561550-25-000310-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155025000310/ex-991x20250930x8k.htm"
+ },
+ "0001561550-25-000216": {
+  "accn": "0001561550-25-000216",
+  "filing_date": "2025-08-07",
+  "report_date": "2025-08-07",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1561550/000156155025000216/0001561550-25-000216-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155025000216/ex-991x20250630x8k.htm"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "0001108524-26-000187": {
+  "accn": "0001108524-26-000187",
+  "filing_date": "2026-08-26",
+  "report_date": "2026-08-26",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000187/0001108524-26-000187-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000187/crm-q2fy27xexhibit991.htm"
+ },
+ "0001108524-26-000125": {
+  "accn": "0001108524-26-000125",
+  "filing_date": "2026-05-27",
+  "report_date": "2026-05-27",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000125/0001108524-26-000125-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000125/crm-q1fy27xexhibit991.htm"
+ },
+ "0001108524-26-000056": {
+  "accn": "0001108524-26-000056",
+  "filing_date": "2026-02-25",
+  "report_date": "2026-02-25",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/0001108524-26-000056-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000056/crm-q4fy26xexhibit991.htm"
+ },
+ "0001108524-25-000234": {
+  "accn": "0001108524-25-000234",
+  "filing_date": "2025-12-03",
+  "report_date": "2025-12-03",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/0001108524-25-000234-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000234/crm-q3fy26xexhibit991.htm"
+ },
+ "0001108524-25-000083": {
+  "accn": "0001108524-25-000083",
+  "filing_date": "2025-09-03",
+  "report_date": "2025-09-03",
+  "items": "2.02,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000083/0001108524-25-000083-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000083/crm-q2fy26xexhibit991.htm"
+ },
+ "0001108524-25-000027": {
+  "accn": "0001108524-25-000027",
+  "filing_date": "2025-05-28",
+  "report_date": "2025-05-28",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/0001108524-25-000027-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852425000027/crm-q1fy26xexhibit991.htm"
+ }
+}

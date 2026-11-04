@@ -1,0 +1,50 @@
+{
+ "0001045810-26-000073": {
+  "accn": "0001045810-26-000073",
+  "filing_date": "2026-08-26",
+  "report_date": "2026-08-26",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/0001045810-26-000073-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm"
+ },
+ "0001045810-26-000051": {
+  "accn": "0001045810-26-000051",
+  "filing_date": "2026-05-20",
+  "report_date": "2026-05-20",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/0001045810-26-000051-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000051/q1fy27pr.htm"
+ },
+ "0001045810-26-000019": {
+  "accn": "0001045810-26-000019",
+  "filing_date": "2026-02-25",
+  "report_date": "2026-02-25",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/0001045810-26-000019-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000019/q4fy26pr.htm"
+ },
+ "0001045810-25-000228": {
+  "accn": "0001045810-25-000228",
+  "filing_date": "2025-11-19",
+  "report_date": "2025-11-19",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/0001045810-25-000228-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000228/q3fy26pr.htm"
+ },
+ "0001045810-25-000207": {
+  "accn": "0001045810-25-000207",
+  "filing_date": "2025-08-27",
+  "report_date": "2025-08-27",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/0001045810-25-000207-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26pr.htm"
+ },
+ "0001045810-25-000115": {
+  "accn": "0001045810-25-000115",
+  "filing_date": "2025-05-28",
+  "report_date": "2025-05-28",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000115/0001045810-25-000115-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000115/q1fy26pr.htm"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "0001373715-26-000095": {
+  "accn": "0001373715-26-000095",
+  "filing_date": "2026-10-28",
+  "report_date": "2026-10-28",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000095/0001373715-26-000095-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000095/erq3fy262.htm"
+ },
+ "0001373715-26-000092": {
+  "accn": "0001373715-26-000092",
+  "filing_date": "2026-10-28",
+  "report_date": "2026-10-28",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000092/0001373715-26-000092-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000092/erq3fy26.htm"
+ },
+ "0001373715-26-000072": {
+  "accn": "0001373715-26-000072",
+  "filing_date": "2026-07-22",
+  "report_date": "2026-07-22",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000072/0001373715-26-000072-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000072/erq2fy26.htm"
+ },
+ "0001373715-26-000054": {
+  "accn": "0001373715-26-000054",
+  "filing_date": "2026-04-22",
+  "report_date": "2026-04-17",
+  "items": "1.01,2.02,2.03,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000054/0001373715-26-000054-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000054/erq1fy26.htm"
+ },
+ "0001373715-26-000005": {
+  "accn": "0001373715-26-000005",
+  "filing_date": "2026-01-28",
+  "report_date": "2026-01-28",
+  "items": "2.02,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000005/0001373715-26-000005-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000005/erq4fy25.htm"
+ },
+ "0001373715-25-000305": {
+  "accn": "0001373715-25-000305",
+  "filing_date": "2025-10-29",
+  "report_date": "2025-10-29",
+  "items": "2.02,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1373715/000137371525000305/0001373715-25-000305-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371525000305/erq3fy25.htm"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "0001193125-26-436122": {
+  "accn": "0001193125-26-436122",
+  "filing_date": "2026-10-28",
+  "report_date": "2026-10-28",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/0001193125-26-436122-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm"
+ },
+ "0001193125-26-323632": {
+  "accn": "0001193125-26-323632",
+  "filing_date": "2026-07-29",
+  "report_date": "2026-07-29",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/0001193125-26-323632-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-ex99_1.htm"
+ },
+ "0001193125-26-191457": {
+  "accn": "0001193125-26-191457",
+  "filing_date": "2026-04-29",
+  "report_date": "2026-04-29",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/0001193125-26-191457-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191457/msft-ex99_1.htm"
+ },
+ "0001193125-26-027198": {
+  "accn": "0001193125-26-027198",
+  "filing_date": "2026-01-28",
+  "report_date": "2026-01-28",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/0001193125-26-027198-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027198/msft-ex99_1.htm"
+ },
+ "0001193125-25-256310": {
+  "accn": "0001193125-25-256310",
+  "filing_date": "2025-10-29",
+  "report_date": "2025-10-28",
+  "items": "2.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256310/0001193125-25-256310-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256310/msft-ex99_1.htm"
+ },
+ "0000950170-25-100226": {
+  "accn": "0000950170-25-100226",
+  "filing_date": "2025-07-30",
+  "report_date": "2025-07-30",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100226/0000950170-25-100226-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100226/msft-ex99_1.htm"
+ }
+}

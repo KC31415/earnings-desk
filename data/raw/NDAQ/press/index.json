@@ -1,0 +1,50 @@
+{
+ "0001193125-26-171829": {
+  "accn": "0001193125-26-171829",
+  "filing_date": "2026-04-23",
+  "report_date": "2026-04-23",
+  "items": "2.02,7.01,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1120193/000119312526171829/0001193125-26-171829-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000119312526171829/d148002dex991.htm"
+ },
+ "0001193125-26-028185": {
+  "accn": "0001193125-26-028185",
+  "filing_date": "2026-01-29",
+  "report_date": "2026-01-29",
+  "items": "2.02,7.01,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1120193/000119312526028185/0001193125-26-028185-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000119312526028185/d103698dex991.htm"
+ },
+ "0001193125-25-244271": {
+  "accn": "0001193125-25-244271",
+  "filing_date": "2025-10-21",
+  "report_date": "2025-10-21",
+  "items": "2.02,7.01,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525244271/0001193125-25-244271-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525244271/d46597dex991.htm"
+ },
+ "0001193125-25-163817": {
+  "accn": "0001193125-25-163817",
+  "filing_date": "2025-07-24",
+  "report_date": "2025-07-24",
+  "items": "2.02,7.01,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525163817/0001193125-25-163817-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000119312525163817/d56011dex991.htm"
+ },
+ "0001120193-26-000017": {
+  "accn": "0001120193-26-000017",
+  "filing_date": "2026-10-22",
+  "report_date": "2026-10-22",
+  "items": "2.02,7.01,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000017/0001120193-26-000017-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000017/earningsrelease3q26ex-991.htm"
+ },
+ "0001120193-26-000011": {
+  "accn": "0001120193-26-000011",
+  "filing_date": "2026-07-23",
+  "report_date": "2026-07-23",
+  "items": "2.02,7.01,8.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000011/0001120193-26-000011-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000011/earningsrelease2q26ex-991.htm"
+ }
+}

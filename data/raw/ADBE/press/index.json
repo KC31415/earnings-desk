@@ -1,0 +1,50 @@
+{
+ "0000796343-26-000147": {
+  "accn": "0000796343-26-000147",
+  "filing_date": "2026-09-10",
+  "report_date": "2026-09-10",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/0000796343-26-000147-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000147/adbeex991q326.htm"
+ },
+ "0000796343-26-000109": {
+  "accn": "0000796343-26-000109",
+  "filing_date": "2026-06-11",
+  "report_date": "2026-06-08",
+  "items": "2.02,5.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/0000796343-26-000109-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000109/adbeex991q226.htm"
+ },
+ "0000796343-26-000048": {
+  "accn": "0000796343-26-000048",
+  "filing_date": "2026-03-12",
+  "report_date": "2026-03-09",
+  "items": "2.02,5.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/0000796343-26-000048-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000048/adbeex991q126.htm"
+ },
+ "0000796343-25-000135": {
+  "accn": "0000796343-25-000135",
+  "filing_date": "2025-12-10",
+  "report_date": "2025-12-10",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/0000796343-25-000135-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000135/adbeex991q425.htm"
+ },
+ "0000796343-25-000102": {
+  "accn": "0000796343-25-000102",
+  "filing_date": "2025-09-11",
+  "report_date": "2025-09-11",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000102/0000796343-25-000102-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000102/adbeex991q325.htm"
+ },
+ "0000796343-25-000064": {
+  "accn": "0000796343-25-000064",
+  "filing_date": "2025-06-12",
+  "report_date": "2025-06-12",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000064/0000796343-25-000064-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634325000064/adbeex991q225.htm"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "0001321655-26-000045": {
+  "accn": "0001321655-26-000045",
+  "filing_date": "2026-11-02",
+  "report_date": "2026-11-02",
+  "items": "2.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/0001321655-26-000045-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm"
+ },
+ "0001321655-26-000039": {
+  "accn": "0001321655-26-000039",
+  "filing_date": "2026-08-03",
+  "report_date": "2026-08-03",
+  "items": "2.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/0001321655-26-000039-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm"
+ },
+ "0001321655-26-000026": {
+  "accn": "0001321655-26-000026",
+  "filing_date": "2026-05-04",
+  "report_date": "2026-05-04",
+  "items": "2.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000026/0001321655-26-000026-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000026/a2026q1ex991pressrelease.htm"
+ },
+ "0001321655-26-000004": {
+  "accn": "0001321655-26-000004",
+  "filing_date": "2026-02-02",
+  "report_date": "2026-02-02",
+  "items": "2.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/0001321655-26-000004-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/a2025q4ex991earningsrelease.htm"
+ },
+ "0001321655-25-000130": {
+  "accn": "0001321655-25-000130",
+  "filing_date": "2025-11-03",
+  "report_date": "2025-11-03",
+  "items": "2.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000130/0001321655-25-000130-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000130/a2025q3ex991earningsrelease.htm"
+ },
+ "0001321655-25-000105": {
+  "accn": "0001321655-25-000105",
+  "filing_date": "2025-08-04",
+  "report_date": "2025-08-04",
+  "items": "2.02,7.01,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000105/0001321655-25-000105-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165525000105/a2025q2ex991pressrelease.htm"
+ }
+}

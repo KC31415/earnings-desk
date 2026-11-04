@@ -1,0 +1,50 @@
+{
+ "0001640147-26-000033": {
+  "accn": "0001640147-26-000033",
+  "filing_date": "2026-09-02",
+  "report_date": "2026-09-02",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/0001640147-26-000033-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000033/fy2027q2earnings.htm"
+ },
+ "0001640147-26-000027": {
+  "accn": "0001640147-26-000027",
+  "filing_date": "2026-05-27",
+  "report_date": "2026-05-27",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000027/0001640147-26-000027-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000027/fy2027q1earnings.htm"
+ },
+ "0001640147-25-000207": {
+  "accn": "0001640147-25-000207",
+  "filing_date": "2025-12-03",
+  "report_date": "2025-12-03",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1640147/000164014725000207/0001640147-25-000207-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014725000207/fy2026q3earnings.htm"
+ },
+ "0001640147-25-000177": {
+  "accn": "0001640147-25-000177",
+  "filing_date": "2025-08-27",
+  "report_date": "2025-08-27",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1640147/000164014725000177/0001640147-25-000177-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014725000177/fy2026q2earnings.htm"
+ },
+ "0001640147-25-000094": {
+  "accn": "0001640147-25-000094",
+  "filing_date": "2025-05-21",
+  "report_date": "2025-05-21",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1640147/000164014725000094/0001640147-25-000094-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1640147/000164014725000094/fy2026q1earnings.htm"
+ },
+ "0001628280-26-011631": {
+  "accn": "0001628280-26-011631",
+  "filing_date": "2026-02-25",
+  "report_date": "2026-02-25",
+  "items": "2.02,9.01",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1640147/000162828026011631/0001628280-26-011631-index.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1640147/000162828026011631/fy2026q4earnings.htm"
+ }
+}
