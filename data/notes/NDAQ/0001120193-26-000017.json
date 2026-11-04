@@ -1,0 +1,2014 @@
+{
+ "ticker": "NDAQ",
+ "name": "NASDAQ, INC.",
+ "fiscal_label": "FY2026 Q3",
+ "calendar_label": "CY2026 Q3",
+ "period_end": "2026-09-30",
+ "source": {
+  "earnings_8k_accn": "0001120193-26-000017",
+  "earnings_8k_date": "2026-10-22",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000017/0001120193-26-000017-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000020/ndaq-20260930.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000017/earningsrelease3q26ex-991.htm"
+ },
+ "generated_at": "2026-11-04T18:50:52+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 17463,
+   "output_tokens": 198
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 14021,
+   "output_tokens": 1995
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P3",
+  "P4",
+  "P6",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P11",
+  "P12",
+  "P13",
+  "P14",
+  "P15",
+  "P16",
+  "P17",
+  "P18",
+  "P19",
+  "P20",
+  "P21",
+  "P22",
+  "P23",
+  "P24",
+  "P25",
+  "P26",
+  "P27",
+  "P28",
+  "P29",
+  "P30",
+  "P31",
+  "P33",
+  "P34",
+  "P35",
+  "P37",
+  "P38",
+  "P39",
+  "P40",
+  "P41",
+  "P42",
+  "P70",
+  "P71",
+  "P72",
+  "P73",
+  "P74",
+  "P77",
+  "P78",
+  "P79",
+  "P80",
+  "P81",
+  "P82",
+  "P96",
+  "P97",
+  "P98",
+  "P99",
+  "P100",
+  "P101",
+  "P204",
+  "P205",
+  "P207",
+  "P208",
+  "P209",
+  "P211",
+  "P212"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "Nasdaq reported FY2026 Q3 total revenue of $2.393 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q3",
+     "value": "2.393",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 2393000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 2393000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $732 million.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q3",
+     "value": "732",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 732000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "operating_income",
+         "value": 732000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Net income attributable to Nasdaq was $540 million.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q3",
+     "value": "540",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 540000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "net_income",
+         "value": 540000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Diluted EPS came in at $0.96.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2026 Q3",
+     "value": "0.96",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 0.96,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "eps_diluted",
+         "value": 0.96,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP diluted EPS was $1.04.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "1.04",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "press_release",
+      "ref": "P4"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P4"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Total revenue rose 20.9% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q3",
+     "value": "20.9",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 20.91965639211723,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 2393000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "revenue",
+         "value": 1979000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue fell 5.5% sequentially.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2026 Q3",
+     "value": "5.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -5.489731437598736,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 2393000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "revenue",
+         "value": 2532000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001120193-26-000013",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2026 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Diluted EPS grew 31.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted_yoy",
+     "period": "FY2026 Q3",
+     "value": "31.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 31.506849315068493,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "eps_diluted",
+         "value": 0.96,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "eps_diluted",
+         "value": 0.73,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating cash flow was up 135.8% year over year.",
+     "claim_type": "numeric",
+     "metric": "operating_cash_flow_yoy",
+     "period": "FY2026 Q3",
+     "value": "135.8",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetCashProvidedByUsedInOperatingActivities"
+     },
+     "verification": {
+      "status": "mismatch",
+      "reason": "stated 135.8 percent, XBRL gives 135.75%",
+      "actual": 135.74660633484163,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "operating_cash_flow",
+         "value": 521000000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0001120193-26-000020",
+         "derived": true,
+         "derivation": "9M YTD \u2212 6M YTD"
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "operating_cash_flow",
+         "value": 221000000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0001120193-26-000020",
+         "derived": true,
+         "derivation": "9M YTD \u2212 6M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Index revenue grew 39% year over year.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "39",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P3"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P3"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "Management attributed higher non-GAAP expenses to compensation costs and technology investment.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P22"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P22"
+      }
+     }
+    },
+    {
+     "text": "GAAP expenses were partly offset by a favorable legal settlement and lower restructuring charges.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P25"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P25"
+      }
+     }
+    },
+    {
+     "text": "The CFO said Nasdaq delivered \"outstanding Solutions revenue growth, continued operating leverage, and strong EPS growth\".",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "outstanding Solutions revenue growth, continued operating leverage, and strong EPS growth",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P4"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P4"
+      }
+     }
+    },
+    {
+     "text": "Nasdaq updated its 2026 non-GAAP operating expense guidance to a high end of $2.580 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "2.580",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P33"
+     },
+     "verification": {
+      "status": "mismatch",
+      "reason": "2.580 does not appear in P33",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P33"
+      }
+     }
+    },
+    {
+     "text": "Market Services benefited from higher U.S. options and European equities volumes.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P98"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P98"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Nasdaq plans to launch 23/5 trading on its stock market on December 6, 2026.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P100"
+     },
+     "verification": {
+      "status": "unsupported",
+      "reason": "numbers [23.0, 5.0, 6.0] in a qualitative claim are not in P100",
+      "actual": null
+     }
+    },
+    {
+     "text": "Watch whether Index net inflows and ETP AUM records persist.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P72"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P72"
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations were $3.631 billion at quarter end.",
+     "claim_type": "numeric",
+     "metric": "rpo",
+     "period": "FY2026 Q3",
+     "value": "3.631",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 3631000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "rpo",
+         "value": 3631000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001120193-26-000020",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Free cash flow was down 27.6% sequentially.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow_qoq",
+     "period": "FY2026 Q3",
+     "value": "27.6",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -27.602523659305994,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "free_cash_flow",
+         "value": 459000000.0,
+         "concept": "(derived)",
+         "accn": "0001120193-26-000020",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        },
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "free_cash_flow",
+         "value": 634000000.0,
+         "concept": "(derived)",
+         "accn": "0001120193-26-000013",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2026 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 19,
+  "by_status": {
+   "verified": 12,
+   "mismatch": 2,
+   "sourced": 4,
+   "unsupported": 1
+  },
+  "numeric": 13,
+  "numeric_verified": 11,
+  "numeric_verified_pct": 0.8461538461538461
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "Nasdaq reported FY2026 Q3 total revenue of $2.393 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q3",
+      "value": "2.393",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP operating income was $732 million.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q3",
+      "value": "732",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Net income attributable to Nasdaq was $540 million.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q3",
+      "value": "540",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Diluted EPS came in at $0.96.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2026 Q3",
+      "value": "0.96",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Non-GAAP diluted EPS was $1.04.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "1.04",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "press_release",
+       "ref": "P4"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Total revenue rose 20.9% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q3",
+      "value": "20.9",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Revenue fell 5.5% sequentially.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2026 Q3",
+      "value": "5.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Diluted EPS grew 31.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted_yoy",
+      "period": "FY2026 Q3",
+      "value": "31.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Operating cash flow was up 135.8% year over year.",
+      "claim_type": "numeric",
+      "metric": "operating_cash_flow_yoy",
+      "period": "FY2026 Q3",
+      "value": "135.8",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetCashProvidedByUsedInOperatingActivities"
+      }
+     },
+     {
+      "text": "Index revenue grew 39% year over year.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "39",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P3"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "Management attributed higher non-GAAP expenses to compensation costs and technology investment.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P22"
+      }
+     },
+     {
+      "text": "GAAP expenses were partly offset by a favorable legal settlement and lower restructuring charges.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P25"
+      }
+     },
+     {
+      "text": "The CFO said Nasdaq delivered \"outstanding Solutions revenue growth, continued operating leverage, and strong EPS growth\".",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "outstanding Solutions revenue growth, continued operating leverage, and strong EPS growth",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P4"
+      }
+     },
+     {
+      "text": "Nasdaq updated its 2026 non-GAAP operating expense guidance to a high end of $2.580 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "2.580",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P33"
+      }
+     },
+     {
+      "text": "Market Services benefited from higher U.S. options and European equities volumes.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P98"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Nasdaq plans to launch 23/5 trading on its stock market on December 6, 2026.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P100"
+      }
+     },
+     {
+      "text": "Watch whether Index net inflows and ETP AUM records persist.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P72"
+      }
+     },
+     {
+      "text": "Remaining performance obligations were $3.631 billion at quarter end.",
+      "claim_type": "numeric",
+      "metric": "rpo",
+      "period": "FY2026 Q3",
+      "value": "3.631",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     },
+     {
+      "text": "Free cash flow was down 27.6% sequentially.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow_qoq",
+      "period": "FY2026 Q3",
+      "value": "27.6",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 earningsrelease3q26ex-991.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Exhibit 99.1"
+  },
+  {
+   "id": "P3",
+   "kind": "table",
+   "text": "NEW YORK, October 22, 2026 - Nasdaq, Inc. (Nasdaq: NDAQ) today reported financial results for the third quarter of 2026. | Adena Friedman, Chair and CEO said, \"Nasdaq's third quarter performance demonstrates the strength and momentum of our business, with new milestones achieved across all three divisions, including record Index net inflows, record FinTech ARR growth, and the establishment of Nasdaq Digital Liquidity Networks within Market Services.Markets are evolving towards an AI-driven, Always-On future that is increasingly integrated across asset classes and geographies. Nasdaq is shaping the next generation of market infrastructure while expanding our growth opportunities and enhancing the value we deliver to our clients and shareholders.\"\n\u2022Third quarter 2026 net revenue1 was $1.5 billion, an increase of 13% over the third quarter of 2025, or 14% on an organic2 basis. Solutions revenue3 increased 17%, or 18% on an organic basis.\n\u2022Annualized Recurring Revenue (ARR)3,4 of $3.4 billion increased 12% on a reported basis over the third quarter of 2025, or 14% on an organic basis. Annualized SaaS revenue increased 12%, or 16% on an organic basis, and represented 38% of ARR.\n\u2022Financial Technology revenue was $529 million, an increase of 16% on both a reported and organic basis over the third quarter of 2025.\n\u2022Index revenue of $286 million grew 39% on both a reported and organic basis over the third quarter of 2025, with $141 billion of net inflows over the trailing twelve months, including $49 billion in the third quarter of 2026.\n\u2022GAAP diluted earnings per share in the third quarter of 2026 was $0.96, an increase of 31% over the third quarter of 2025. Non-GAAP5 diluted earnings per share in the third quarter of 2026 was $1.04, an increase of 18% on a reported basis over the third quarter of 2025, or 19% on an organic basis.\n\u2022In the third quarter of 2026, the company returned $173 million to shareholders through dividends and $323 million through repurchases of common stock."
+  },
+  {
+   "id": "P4",
+   "kind": "table",
+   "text": "Third Quarter 2026 Highlights | Sarah Youngwood, Executive Vice President and CFO said, \"Nasdaq delivered excellent third quarter results, headlined by outstanding Solutions revenue growth, continued operating leverage, and strong EPS growth. Our durable business model and disciplined execution underpin our capital allocation strategy that prioritizes funding investments in long-term growth while returning more than $1.7 billion to shareholders year to date through share repurchases and dividends.\"\n(US$ millions, except per share) | 3Q26 | YoY change % | Organic2 YoY change % | Adjusted2 YoY change %\nSolutions revenue | $1,172 | 17% | 18% | 18%\nMarket Services net revenue | $309 | 2% | 2% | 2%\nNet revenue | $1,481 | 13% | 14% | 14%\nGAAP operating income | $732 | 25%\nNon-GAAP operating income | $843 | 15% | 16% | 16%\nARR | $3,365 | 12% | 14% | 14%\nGAAP diluted EPS | $0.96 | 31%\nNon-GAAP diluted EPS | $1.04 | 18% | 19% | 19%"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "FINANCIAL REVIEW"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "\u2022Third quarter 2026 net revenue was $1.5 billion, reflecting 13% growth on a reported basis"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "versus the prior year period, or 14% growth on an organic basis."
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "\u2022Solutions revenue was $1.2 billion in the third quarter of 2026, an increase of 17% versus the"
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "prior year period, or 18% on an organic basis. Performance in the quarter reflected strong"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "growth across Capital Access Platforms and Financial Technology. Capital Access Platforms"
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "revenue growth was 20% year-over-year on both a reported and organic basis. Financial"
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "Technology revenue growth was 16%, on both a reported and organic basis."
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "\u2022ARR was $3.4 billion as of the third quarter of 2026, growing 12% year-over-year on a"
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "reported basis, or 14% on an organic basis. The difference between total reported and organic"
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "ARR growth results from the impact of divestitures, which were excluded from ARR in the prior"
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "year period. Financial Technology ARR growth was 18% on both a reported and organic basis,"
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "and Capital Access Platforms ARR growth was 8% on both a reported and organic basis."
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "\u2022Market Services net revenue was $309 million in the third quarter of 2026, up 2% on both a"
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "reported and organic basis versus the prior year period."
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "\u2022Third quarter 2026 GAAP operating expenses were $749 million, an increase of 3% versus"
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "the prior year quarter. Non-GAAP operating expenses were $638 million, up 9% versus the"
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "prior year quarter, or 12% on an organic basis. The increases were primarily driven by higher"
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "compensation and benefits costs from our strong revenue execution and increased"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "investments in technology to drive long-term growth. On a GAAP basis, the increase was"
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "partially offset by lower general and administrative expenses, primarily due to a favorable legal"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "settlement, and lower restructuring charges."
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "\u2022Cash flow from operations was $521 million in the third quarter, enabling the return of capital"
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "through Nasdaq's efficient capital allocation framework. In the third quarter of 2026, the"
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "company returned $173 million to shareholders through dividends and $323 million through"
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "repurchases of common stock. As of September 30, 2026, there was $2.2 billion remaining"
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "under the board authorized share repurchase program."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "2026 EXPENSE AND TAX GUIDANCE UPDATE6"
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "\u2022The company is updating its 2026 non-GAAP operating expense guidance to a range of"
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "$2.550 billion to $2.580 billion. The company is maintaining its 2026 non-GAAP tax rate"
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "guidance in the range of 22.5% to 24.5%."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "STRATEGIC AND BUSINESS UPDATES"
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "\u2022Financial Technology delivered record 18% organic ARR growth and double-digit"
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "revenue growth in each subdivision for the third consecutive quarter. FinTech signed 54"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "new clients and 135 upsells in the quarter with cloud-based solutions accounting for 85% of"
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "ACV bookings. FinTech performance reflected continued execution on the One Nasdaq"
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "strategy with 5 cross-sells signed in the quarter and cross-sells accounting for over 15% of the"
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "sales pipeline. Nasdaq achieved a second-place ranking on the Chartis RiskTech100, up from"
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "fifth place in the prior year."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "\u25e6Financial Crime Management Technology revenue and ARR growth accelerated"
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "with momentum across SMBs and enterprise clients. Nasdaq Verafin signed 45"
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "new small-and-medium bank (SMB) clients and 3 enterprise deals in the third quarter,"
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "bringing year-to-date enterprise signings to 12, surpassing the 9 enterprise deals"
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "signed in all of 2025. Nasdaq Verafin announced the general availability of two new AI"
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "workers, the Agentic AML Analyst and the Agentic Fraud Analyst, and now has more"
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "than 850 clients using its Agentic AI Workforce."
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "\u25e6Regulatory Technology achieved the fifth straight quarter of accelerating ARR"
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "growth led by strong performance across Surveillance and AxiomSL. The"
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "subdivision added 10 new clients, including 2 cross-sells, and 86 upsells in the third"
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "quarter, driven by demand for cloud infrastructure, AI, digital assets, and regulatory"
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "requirements. Surveillance signed 9 new clients, including 2 cross-sells and strategic"
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "wins with Kalshi and Kraken, while also achieving 51 upsells. AxiomSL added 1 new"
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "client and 35 upsells in the third quarter, including an expansion with a Global"
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "Systemically Important Bank (G-SIB) for a Basel III implementation."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "\u25e6Capital Markets Technology delivered robust organic ARR growth with broad-"
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "based strength across the subdivision. The subdivision signed 2 new clients,"
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "including 1 cross-sell, and 48 upsells in the third quarter. Calypso added 2 new clients,"
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "including 1 cross-sell, and 23 upsells. Nasdaq partnered with HSBC to co-develop"
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "comprehensive exchange-traded derivatives (ETD) clearing capabilities in Calypso,"
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "creating a unified platform HSBC has selected for clearing across OTC, ETD, and"
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "repos. Nasdaq also launched a new operating environment which enables clients to"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "connect their own AI infrastructure and serve as an access point for Calypso's agentic"
+  },
+  {
+   "id": "P67",
+   "kind": "text",
+   "text": "capabilities. Market Technology signed 25 upsells in the quarter and continued to"
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "shape Always-On markets, signing a deal with Bruce Markets to power the first 24/7"
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "continuous trading in U.S. equities."
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "\u2022Index set new ETP assets under management (AUM) and net inflow records while"
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "executing on its growth pillars of product innovation, international expansion, and"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "institutional adoption. Index had a record $141 billion in net inflows over the trailing twelve"
+  },
+  {
+   "id": "P73",
+   "kind": "text",
+   "text": "months, including $49 billion in the third quarter. End-of-period ETP AUM was $1.160 trillion"
+  },
+  {
+   "id": "P74",
+   "kind": "text",
+   "text": "and average ETP AUM over the third quarter was $1.108 trillion, both new records. Nasdaq"
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "launched 32 new Index products in the third quarter, including 10 in the institutional annuity"
+  },
+  {
+   "id": "P76",
+   "kind": "text",
+   "text": "space. Half of the new products launched in the third quarter were outside the U.S."
+  },
+  {
+   "id": "P77",
+   "kind": "text",
+   "text": "\u2022Nasdaq extended its listings leadership with 8 of the 10 largest operating company"
+  },
+  {
+   "id": "P78",
+   "kind": "text",
+   "text": "IPOs in the third quarter. Nasdaq welcomed 15 new operating companies that raised $32"
+  },
+  {
+   "id": "P79",
+   "kind": "text",
+   "text": "billion in capital7, reflecting a 79% win rate8 of new operating company listings. The quarter's"
+  },
+  {
+   "id": "P80",
+   "kind": "text",
+   "text": "strong performance contributed to a 74% year-to-date new listings win rate. Year-to-date"
+  },
+  {
+   "id": "P81",
+   "kind": "text",
+   "text": "through the third quarter, new operating company listings raised $144 billion in proceeds,"
+  },
+  {
+   "id": "P82",
+   "kind": "text",
+   "text": "reflecting 89% of total proceeds raised."
+  },
+  {
+   "id": "P83",
+   "kind": "text",
+   "text": "\u2022Nasdaq expanded its distribution of private markets data through a partnership with"
+  },
+  {
+   "id": "P84",
+   "kind": "text",
+   "text": "Juniper Square. The partnership embeds eVestment's private markets data directly into"
+  },
+  {
+   "id": "P85",
+   "kind": "text",
+   "text": "Juniper Square's client workflows, strengthening Nasdaq's position as a trusted provider of"
+  },
+  {
+   "id": "P86",
+   "kind": "text",
+   "text": "institutional investment intelligence. eVestment also expanded its coverage of private funds to"
+  },
+  {
+   "id": "P87",
+   "kind": "text",
+   "text": "more than 95,000, a 19% increase from the end of 2025."
+  },
+  {
+   "id": "P88",
+   "kind": "text",
+   "text": "\u2022Nasdaq executed several strategic actions to advance the evolution of capital markets."
+  },
+  {
+   "id": "P89",
+   "kind": "text",
+   "text": "Nasdaq formed Digital Liquidity Networks (DLN), a new organization within Nasdaq Market"
+  },
+  {
+   "id": "P90",
+   "kind": "text",
+   "text": "Services focused on advancing the company's leadership in digital assets and market"
+  },
+  {
+   "id": "P91",
+   "kind": "text",
+   "text": "modernization. Within DLN, Nasdaq completed the acquisition of LeveL Markets, the third-"
+  },
+  {
+   "id": "P92",
+   "kind": "text",
+   "text": "largest Alternative Trading System (ATS) in the U.S. by trading volume with more than 2,500"
+  },
+  {
+   "id": "P93",
+   "kind": "text",
+   "text": "buy-side and sell-side clients. The acquisition, which closed early in the fourth quarter,"
+  },
+  {
+   "id": "P94",
+   "kind": "text",
+   "text": "enhances Nasdaq's ability to serve a wider liquidity pool across off-exchange venues and"
+  },
+  {
+   "id": "P95",
+   "kind": "text",
+   "text": "deliver institutional-grade liquidity and execution solutions to clients."
+  },
+  {
+   "id": "P96",
+   "kind": "text",
+   "text": "\u2022Market Services set a new record in third quarter net revenue and continued to lead the"
+  },
+  {
+   "id": "P97",
+   "kind": "text",
+   "text": "evolution of markets including the transition to Always-On markets. Third quarter Market"
+  },
+  {
+   "id": "P98",
+   "kind": "text",
+   "text": "Services net revenue benefitted from higher industry volumes across U.S. options and"
+  },
+  {
+   "id": "P99",
+   "kind": "text",
+   "text": "European equities with robust performance in U.S. cash equities, which achieved higher"
+  },
+  {
+   "id": "P100",
+   "kind": "text",
+   "text": "market share and near record capture. The Nasdaq Stock Market remains on track to go live"
+  },
+  {
+   "id": "P101",
+   "kind": "text",
+   "text": "with 23/5 trading on December 6, 2026, expanding global access to U.S.-listed equities."
+  },
+  {
+   "id": "P102",
+   "kind": "text",
+   "text": "____________"
+  },
+  {
+   "id": "P103",
+   "kind": "text",
+   "text": "1 Represents revenue less transaction-based expenses."
+  },
+  {
+   "id": "P104",
+   "kind": "text",
+   "text": "2 Organic change is generally calculated by removing the impacts of changes in foreign exchange rates, and"
+  },
+  {
+   "id": "P105",
+   "kind": "text",
+   "text": "acquisitions and divestitures during the one-year period post transaction. Adjusted and organic change for 3Q26 as"
+  },
+  {
+   "id": "P106",
+   "kind": "text",
+   "text": "compared to 3Q25 are equivalent as they include the same period over period adjustments."
+  },
+  {
+   "id": "P107",
+   "kind": "text",
+   "text": "3 Solutions revenue constitutes revenue from our Capital Access Platforms and Financial Technology segments as well"
+  },
+  {
+   "id": "P108",
+   "kind": "text",
+   "text": "as certain Other revenues. These Other revenues of $2 million and $4 million in 3Q26 and 3Q25, respectively, relates"
+  },
+  {
+   "id": "P109",
+   "kind": "text",
+   "text": "to the sale of our Nasdaq Fund Secondaries business and the sale of the Nasdaq Metrio platform and related"
+  },
+  {
+   "id": "P110",
+   "kind": "text",
+   "text": "customer contracts, which were both sold in 3Q26. Other revenues in 3Q25 also included $8 million related to the sale"
+  },
+  {
+   "id": "P111",
+   "kind": "text",
+   "text": "of the Solovis business, which was sold in 4Q25. These revenues were previously included in our Capital Access"
+  },
+  {
+   "id": "P112",
+   "kind": "text",
+   "text": "Platforms Segment. ARR and Annualized SaaS revenues for 3Q25 includes $42 million and $40 million, respectively,"
+  },
+  {
+   "id": "P113",
+   "kind": "text",
+   "text": "related to these businesses."
+  },
+  {
+   "id": "P114",
+   "kind": "text",
+   "text": "4 ARR for a given period is the current annualized value derived from subscription contracts with a defined contract"
+  },
+  {
+   "id": "P115",
+   "kind": "text",
+   "text": "value. This excludes contracts that are not recurring, are one-time in nature or where the contract value fluctuates"
+  },
+  {
+   "id": "P116",
+   "kind": "text",
+   "text": "based on defined metrics. For AxiomSL and Calypso recurring revenue contracts, the amount included in ARR is"
+  },
+  {
+   "id": "P117",
+   "kind": "text",
+   "text": "consistent with the amount that we invoice the customer during the current period. Additionally, for AxiomSL and"
+  },
+  {
+   "id": "P118",
+   "kind": "text",
+   "text": "Calypso recurring revenue contracts that include annual values that increase over time, we include in ARR only the"
+  },
+  {
+   "id": "P119",
+   "kind": "text",
+   "text": "annualized value of components of the contract that are considered active as of the date of the ARR calculation. We"
+  },
+  {
+   "id": "P120",
+   "kind": "text",
+   "text": "do not include the future committed increases in the contract value as of the date of the ARR calculation. ACV"
+  },
+  {
+   "id": "P121",
+   "kind": "text",
+   "text": "Bookings for our Financial Technology segment excluding Financial Crime Management Technology refers to the"
+  },
+  {
+   "id": "P122",
+   "kind": "text",
+   "text": "maximum annualized committed contract value at the time of signature, excluding one-time fees and not accounting"
+  },
+  {
+   "id": "P123",
+   "kind": "text",
+   "text": "for initial discounts. For Financial Crime Management Technology, ACV bookings is calculated by averaging the total"
+  },
+  {
+   "id": "P124",
+   "kind": "text",
+   "text": "contract value over the contract term, including fixed increases. ARR and ACV are supplemental metrics to help"
+  },
+  {
+   "id": "P125",
+   "kind": "text",
+   "text": "evaluate the performance of the business. These measures are not a replacement for, and should be viewed"
+  },
+  {
+   "id": "P126",
+   "kind": "text",
+   "text": "independently of, U.S. GAAP revenue and deferred revenue as they are performance metrics, and are not intended to"
+  },
+  {
+   "id": "P127",
+   "kind": "text",
+   "text": "be combined with any of these items. ARR and ACV are not a forecast, and the active contracts at the end of a"
+  },
+  {
+   "id": "P128",
+   "kind": "text",
+   "text": "reporting period used in calculating these measures may or may not be extended or renewed by our customers. There"
+  },
+  {
+   "id": "P129",
+   "kind": "text",
+   "text": "is no U.S. GAAP measure comparable to ARR or ACV. As these metrics do not have any standardized definition they"
+  },
+  {
+   "id": "P130",
+   "kind": "text",
+   "text": "may not be comparable to similarly titled measures presented by other companies and should be viewed"
+  },
+  {
+   "id": "P131",
+   "kind": "text",
+   "text": "independently of revenue and deferred revenue and are not intended to be combined with or to replace either of those"
+  },
+  {
+   "id": "P132",
+   "kind": "text",
+   "text": "items."
+  },
+  {
+   "id": "P133",
+   "kind": "text",
+   "text": "5 Refer to our reconciliations of U.S. GAAP to non-GAAP metrics and organic and adjusted impacts, included in the"
+  },
+  {
+   "id": "P134",
+   "kind": "text",
+   "text": "attached schedules."
+  },
+  {
+   "id": "P135",
+   "kind": "text",
+   "text": "6 U.S. GAAP operating expense and tax rate guidance are not provided due to the inherent difficulty in quantifying"
+  },
+  {
+   "id": "P136",
+   "kind": "text",
+   "text": "certain amounts due to a variety of factors including the unpredictability in the movement in foreign currency rates, as"
+  },
+  {
+   "id": "P137",
+   "kind": "text",
+   "text": "well as future charges or reversals outside of the normal course of business."
+  },
+  {
+   "id": "P138",
+   "kind": "text",
+   "text": "7 Listings proceeds for the quarter reflect current quarter IPO activity only and YTD proceeds reflect greenshoe shares"
+  },
+  {
+   "id": "P139",
+   "kind": "text",
+   "text": "exercised after the quarter in which the IPO occurred."
+  },
+  {
+   "id": "P140",
+   "kind": "text",
+   "text": "8 Listings win rate includes eligible U.S. operating companies, direct listings, and SPAC business combinations."
+  },
+  {
+   "id": "P141",
+   "kind": "text",
+   "text": "ABOUT NASDAQ"
+  },
+  {
+   "id": "P142",
+   "kind": "text",
+   "text": "Nasdaq (Nasdaq: NDAQ) is a leading technology platform that powers the world's economies. We"
+  },
+  {
+   "id": "P143",
+   "kind": "text",
+   "text": "architect the infrastructure of the world's most modern markets, power the innovation economy, and build"
+  },
+  {
+   "id": "P144",
+   "kind": "text",
+   "text": "trust in the financial system. We empower economic opportunity by designing and deploying advanced"
+  },
+  {
+   "id": "P145",
+   "kind": "text",
+   "text": "technology, data, and intelligence solutions that enable our clients to capture opportunities, navigate risk,"
+  },
+  {
+   "id": "P146",
+   "kind": "text",
+   "text": "and strengthen resilience. To learn more about the company, technology solutions and career"
+  },
+  {
+   "id": "P147",
+   "kind": "text",
+   "text": "opportunities, visit us on LinkedIn, on X @Nasdaq, or at www.nasdaq.com."
+  },
+  {
+   "id": "P148",
+   "kind": "text",
+   "text": "NON-GAAP INFORMATION"
+  },
+  {
+   "id": "P149",
+   "kind": "text",
+   "text": "In addition to disclosing results determined in accordance with U.S. GAAP, Nasdaq also discloses certain"
+  },
+  {
+   "id": "P150",
+   "kind": "text",
+   "text": "non-GAAP results of operations, including, but not limited to, non-GAAP net income, non-GAAP diluted"
+  },
+  {
+   "id": "P151",
+   "kind": "text",
+   "text": "earnings per share, non-GAAP operating income, and non-GAAP operating expenses, that include certain"
+  },
+  {
+   "id": "P152",
+   "kind": "text",
+   "text": "adjustments or exclude certain charges and gains that are described in the reconciliation tables of U.S."
+  },
+  {
+   "id": "P153",
+   "kind": "text",
+   "text": "GAAP to non-GAAP information provided at the end of this release. Management uses this non-GAAP"
+  },
+  {
+   "id": "P154",
+   "kind": "text",
+   "text": "information internally, along with U.S. GAAP information, in evaluating our performance and in making"
+  },
+  {
+   "id": "P155",
+   "kind": "text",
+   "text": "financial and operational decisions. We believe our presentation of these measures provides investors"
+  },
+  {
+   "id": "P156",
+   "kind": "text",
+   "text": "with greater transparency and supplemental data relating to our financial condition and results of"
+  },
+  {
+   "id": "P157",
+   "kind": "text",
+   "text": "operations. In addition, we believe the presentation of these measures is useful to investors for period-to-"
+  },
+  {
+   "id": "P158",
+   "kind": "text",
+   "text": "period comparisons of results as the items described below in the reconciliation tables do not reflect"
+  },
+  {
+   "id": "P159",
+   "kind": "text",
+   "text": "ongoing operating performance."
+  },
+  {
+   "id": "P160",
+   "kind": "text",
+   "text": "These measures are not in accordance with, or an alternative to, U.S. GAAP, and may be different from"
+  },
+  {
+   "id": "P161",
+   "kind": "text",
+   "text": "non-GAAP measures used by other companies. In addition, other companies, including companies in our"
+  },
+  {
+   "id": "P162",
+   "kind": "text",
+   "text": "industry, may calculate such measures differently, which reduces their usefulness as a comparative"
+  },
+  {
+   "id": "P163",
+   "kind": "text",
+   "text": "measure. Investors should not rely on any single financial measure when evaluating our business. This"
+  },
+  {
+   "id": "P164",
+   "kind": "text",
+   "text": "information should be considered as supplemental in nature and is not meant as a substitute for our"
+  },
+  {
+   "id": "P165",
+   "kind": "text",
+   "text": "operating results in accordance with U.S. GAAP. We recommend investors review the U.S. GAAP"
+  },
+  {
+   "id": "P166",
+   "kind": "text",
+   "text": "financial measures included in this earnings release. When viewed in conjunction with our U.S. GAAP"
+  },
+  {
+   "id": "P167",
+   "kind": "text",
+   "text": "results and the accompanying reconciliations, we believe these non-GAAP measures provide greater"
+  },
+  {
+   "id": "P168",
+   "kind": "text",
+   "text": "transparency and a more complete understanding of factors affecting our business than U.S. GAAP"
+  },
+  {
+   "id": "P169",
+   "kind": "text",
+   "text": "measures alone."
+  },
+  {
+   "id": "P170",
+   "kind": "text",
+   "text": "We understand that analysts and investors regularly rely on non-GAAP financial measures, such as those"
+  },
+  {
+   "id": "P171",
+   "kind": "text",
+   "text": "noted above, to assess operating performance. We use these measures because they highlight trends"
+  },
+  {
+   "id": "P172",
+   "kind": "text",
+   "text": "more clearly in our business that may not otherwise be apparent when relying solely on U.S. GAAP"
+  },
+  {
+   "id": "P173",
+   "kind": "text",
+   "text": "financial measures, since these measures eliminate from our results specific financial items that have less"
+  },
+  {
+   "id": "P174",
+   "kind": "text",
+   "text": "bearing on our ongoing operating performance."
+  },
+  {
+   "id": "P175",
+   "kind": "text",
+   "text": "Foreign exchange impact: In countries with currencies other than the U.S. dollar, revenue and expenses"
+  },
+  {
+   "id": "P176",
+   "kind": "text",
+   "text": "are translated using monthly average exchange rates. Certain discussions in this release isolate the"
+  },
+  {
+   "id": "P177",
+   "kind": "text",
+   "text": "impact of year-over-year foreign currency fluctuations to better measure the comparability of operating"
+  },
+  {
+   "id": "P178",
+   "kind": "text",
+   "text": "results between periods. Operating results excluding the impact of foreign currency fluctuations are"
+  },
+  {
+   "id": "P179",
+   "kind": "text",
+   "text": "calculated by translating the current period's results by the prior period's exchange rates."
+  },
+  {
+   "id": "P180",
+   "kind": "text",
+   "text": "CAUTIONARY NOTE REGARDING FORWARD-LOOKING STATEMENTS"
+  },
+  {
+   "id": "P181",
+   "kind": "text",
+   "text": "Information set forth in this communication contains forward-looking statements that involve a number of"
+  },
+  {
+   "id": "P182",
+   "kind": "text",
+   "text": "risks and uncertainties. Nasdaq cautions readers that any forward-looking information is not a guarantee"
+  },
+  {
+   "id": "P183",
+   "kind": "text",
+   "text": "of future performance and that actual results could differ materially from those contained in the forward-"
+  },
+  {
+   "id": "P184",
+   "kind": "text",
+   "text": "looking information. Such forward-looking statements include, but are not limited to (i) projections relating"
+  },
+  {
+   "id": "P185",
+   "kind": "text",
+   "text": "to our future financial results, total shareholder returns, growth, dividend program, trading volumes,"
+  },
+  {
+   "id": "P186",
+   "kind": "text",
+   "text": "products and services, ability to transition to new business models, taxes and achievement of synergy"
+  },
+  {
+   "id": "P187",
+   "kind": "text",
+   "text": "targets, (ii) statements about the closing or implementation dates and benefits of certain acquisitions,"
+  },
+  {
+   "id": "P188",
+   "kind": "text",
+   "text": "divestitures and other strategic, restructuring, technology, de-leveraging and capital allocation initiatives,"
+  },
+  {
+   "id": "P189",
+   "kind": "text",
+   "text": "(iii) statements about our integrations of our recent acquisitions, (iv) statements relating to any litigation or"
+  },
+  {
+   "id": "P190",
+   "kind": "text",
+   "text": "regulatory or government investigation or action to which we are or could become a party, and (v) other"
+  },
+  {
+   "id": "P191",
+   "kind": "text",
+   "text": "statements that are not historical facts. Forward-looking statements involve a number of risks,"
+  },
+  {
+   "id": "P192",
+   "kind": "text",
+   "text": "uncertainties or other factors beyond Nasdaq's control. These factors include, but are not limited to,"
+  },
+  {
+   "id": "P193",
+   "kind": "text",
+   "text": "Nasdaq's ability to implement its strategic initiatives, economic, political and market conditions and"
+  },
+  {
+   "id": "P194",
+   "kind": "text",
+   "text": "fluctuations, geopolitical instability, government and industry regulation, interest rate risk, and U.S. and"
+  },
+  {
+   "id": "P195",
+   "kind": "text",
+   "text": "global competition. Further information on these and other factors are detailed in Nasdaq's filings with the"
+  },
+  {
+   "id": "P196",
+   "kind": "text",
+   "text": "U.S. Securities and Exchange Commission, including its annual reports on Form 10-K and quarterly"
+  },
+  {
+   "id": "P197",
+   "kind": "text",
+   "text": "reports on Form 10-Q, which are available on Nasdaq's investor relations website at http://ir.nasdaq.com"
+  },
+  {
+   "id": "P198",
+   "kind": "text",
+   "text": "and the SEC's website at www.sec.gov. Nasdaq undertakes no obligation to publicly update any forward-"
+  },
+  {
+   "id": "P199",
+   "kind": "text",
+   "text": "looking statement, whether as a result of new information, future events or otherwise."
+  },
+  {
+   "id": "P200",
+   "kind": "text",
+   "text": "WEBSITE DISCLOSURE"
+  },
+  {
+   "id": "P201",
+   "kind": "text",
+   "text": "Nasdaq intends to use its website, ir.nasdaq.com, as a means for disclosing material non-public"
+  },
+  {
+   "id": "P202",
+   "kind": "text",
+   "text": "information and for complying with SEC Regulation FD and other disclosure obligations."
+  },
+  {
+   "id": "P203",
+   "kind": "table",
+   "text": "Media Relations Contact | Investor Relations Contact\nDavid Lurie | Ato Garrett\n914.538.0533 | 212.401.8737\nDavid.Lurie@nasdaq.com | Ato.Garrett@nasdaq.com"
+  },
+  {
+   "id": "P204",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nCondensed Consolidated Statements of Income\n(in millions, except per share amounts)\n(unaudited)\nThree Months Ended September 30, | Nine Months Ended September 30,\n2026 | 2025 | 2026 | 2025\nRevenues:\nCapital Access Platforms | $641 | $534 | $1,820 | $1,552\nFinancial Technology | 529 | 457 | 1,585 | 1,352\nMarket Services | 1,221 | 967 | 3,640 | 3,208\nOther Revenues | 2 | 21 | 18 | 63\nTotal revenues | 2,393 | 1,979 | 7,063 | 6,175\nTransaction-based expenses:\nTransaction rebates | (623) | (658) | (2,059) | (1,882)\nBrokerage, clearance and exchange fees | (289) | (6) | (616) | (436)\nRevenues less transaction-based expenses | 1,481 | 1,315 | 4,388 | 3,857\nOperating Expenses:\nCompensation and benefits | 379 | 353 | 1,118 | 1,033\nProfessional and contract services | 42 | 38 | 124 | 112\nTechnology and communication infrastructure | 93 | 80 | 264 | 236\nOccupancy | 34 | 32 | 103 | 90\nGeneral, administrative and other | 2 | 22 | 54 | 51\nMarketing and advertising | 17 | 13 | 61 | 41\nDepreciation and amortization | 165 | 158 | 496 | 471\nRegulatory | 11 | 12 | 29 | 41\nMerger and strategic initiatives | 6 | 9 | 14 | 53\nRestructuring charges | - | 12 | 24 | 27\nTotal operating expenses | 749 | 729 | 2,287 | 2,155\nOperating income | 732 | 586 | 2,101 | 1,702\nInterest income | 10 | 8 | 23 | 32\nInterest expense | (86) | (87) | (259) | (279)\nNet gain (loss) on divestitures | (4) | (2) | 84 | 37\nOther income (loss) | 11 | - | (4) | -\nNet income from unconsolidated investees | 38 | 24 | 86 | 73\nIncome before income taxes | 701 | 529 | 2,031 | 1,565\nIncome tax provision | 162 | 106 | 466 | 296\nNet income | $539 | $423 | $1,565 | $1,269\nNet loss attributable to noncontrolling interests | 1 | - | 1 | 1\nNet income attributable to Nasdaq | $540 | $423 | $1,566 | $1,270\nPer share information:\nBasic earnings per share | $0.97 | $0.74 | $2.78 | $2.21\nDiluted earnings per share | $0.96 | $0.73 | $2.76 | $2.19\nCash dividends declared per common share | $0.31 | $0.27 | $0.89 | $0.78\nWeighted-average common shares outstanding\nfor earnings per share:\nBasic | 558.9 | 573.3 | 563.3 | 574.1\nDiluted | 563.3 | 579.0 | 567.6 | 579.3"
+  },
+  {
+   "id": "P205",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nRevenue Detail\n(in millions)\n(unaudited)\nThree Months Ended September 30, | Nine Months Ended September 30,\n2026 | 2025 | 2026 | 2025\nCAPITAL ACCESS PLATFORMS\nData and Listing Services | $224 | $204 | $655 | $594\nIndex | 286 | 206 | 778 | 595\nWorkflow and Insights | 131 | 124 | 387 | 363\nTotal Capital Access Platforms revenues | 641 | 534 | 1,820 | 1,552\nFINANCIAL TECHNOLOGY\nFinancial Crime Management Technology | 103 | 84 | 294 | 241\nRegulatory Technology | 123 | 109 | 361 | 315\nCapital Markets Technology | 303 | 264 | 930 | 796\nTotal Financial Technology revenues | 529 | 457 | 1,585 | 1,352\nMARKET SERVICES\nMarket Services | 1,221 | 967 | 3,640 | 3,208\nTransaction-based expenses:\nTransaction rebates | (623) | (658) | (2,059) | (1,882)\nBrokerage, clearance and exchange fees | (289) | (6) | (616) | (436)\nTotal Market Services revenues, net | 309 | 303 | 965 | 890\nOTHER REVENUES | 2 | 21 | 18 | 63\nREVENUES LESS TRANSACTION-BASED EXPENSES | $1,481 | $1,315 | $4,388 | $3,857"
+  },
+  {
+   "id": "P206",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nCondensed Consolidated Balance Sheets\n(in millions)\nSeptember 30, | December 31,\n2026 | 2025\nAssets | (unaudited)\nCurrent assets:\nCash and cash equivalents | $365 | $604\nRestricted cash and cash equivalents | 28 | 210\nDefault funds and margin deposits | 2,530 | 5,842\nShort-term investments | 151 | 28\nReceivables, net | 1,171 | 943\nOther current assets | 287 | 376\nTotal current assets | 4,532 | 8,003\nProperty and equipment, net | 767 | 728\nGoodwill | 14,247 | 14,371\nIntangible assets, net | 6,106 | 6,511\nOperating lease assets | 481 | 447\nOther non-current assets | 1,250 | 993\nTotal assets | $27,383 | $31,053\nLiabilities\nCurrent liabilities:\nAccounts payable and accrued expenses | $252 | $280\nSection 31 fees payable to SEC | 90 | -\nAccrued personnel costs | 320 | 364\nDeferred revenue | 819 | 785\nOther current liabilities | 237 | 259\nDefault funds and margin deposits | 2,530 | 5,842\nShort-term debt | 269 | 431\nTotal current liabilities | 4,517 | 7,961\nLong-term debt | 8,471 | 8,573\nDeferred tax liabilities, net | 1,654 | 1,584\nOperating lease liabilities | 476 | 462\nOther non-current liabilities | 262 | 241\nTotal liabilities | 15,380 | 18,821\nCommitments and contingencies\nEquity\nNasdaq stockholders' equity:\nCommon stock | 6 | 6\nAdditional paid-in capital | 4,067 | 5,122\nCommon stock in treasury, at cost | (784) | (716)\nAccumulated other comprehensive loss | (1,944) | (1,773)\nRetained earnings | 10,654 | 9,588\nTotal Nasdaq stockholders' equity | 11,999 | 12,227\nNoncontrolling interests | 4 | 5\nTotal equity | 12,003 | 12,232\nTotal liabilities and equity | $27,383 | $31,053"
+  },
+  {
+   "id": "P207",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nReconciliation of U.S. GAAP to Non-GAAP Net Income Attributable to Nasdaq and Diluted Earnings Per Share\n(in millions, except per share amounts)\n(unaudited)\nThree Months Ended September 30, | Nine Months Ended September 30,\n2026 | 2025 | 2026 | 2025\nU.S. GAAP net income attributable to Nasdaq | $540 | $423 | $1,566 | $1,270\nNon-GAAP adjustments:\nAmortization expense of acquired intangible assets 1 | 121 | 122 | 364 | 365\nMerger and strategic initiatives expense 2 | 6 | 9 | 14 | 53\nRestructuring charges 3 | - | 12 | 24 | 27\nGain from extinguishment of debt 4 | - | - | - | (19)\nLegal and regulatory matters 5 | (16) | 1 | (3) | 3\nNet (gain) loss on divestitures 6 | 4 | 2 | (84) | (37)\nNet income from unconsolidated investees 7 | (38) | (24) | (86) | (73)\nOther (income) loss 8 | (11) | 4 | 9 | 6\nTotal non-GAAP adjustments | 66 | 126 | 238 | 325\nNon-GAAP adjustment to the income tax provision 9 | (14) | (32) | (58) | (84)\nOther tax adjustments 10 | (4) | (6) | (4) | (51)\nTotal non-GAAP adjustments, net of tax | 48 | 88 | 176 | 190\nNon-GAAP net income attributable to Nasdaq | $588 | $511 | $1,742 | $1,460\nU.S. GAAP diluted earnings per share | $0.96 | $0.73 | $2.76 | $2.19\nTotal impact from NonGAAP adjustments above | 0.08 | 0.15 | 0.31 | 0.33\nNon-GAAP diluted earnings per share | $1.04 | $0.88 | $3.07 | $2.52\nWeighted-average diluted common shares outstanding for earnings per share: | 563.3 | 579.0 | 567.6 | 579.3"
+  },
+  {
+   "id": "P208",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nReconciliation of U.S. GAAP to Non-GAAP Operating Income and Operating Margin\n(in millions)\n(unaudited)\nThree Months Ended September 30, | Nine Months Ended September 30,\n2026 | 2025 | 2026 | 2025\nU.S. GAAP operating income | $732 | $586 | $2,101 | $1,702\nNon-GAAP adjustments:\nAmortization expense of acquired intangible assets 1 | 121 | 122 | 364 | 365\nMerger and strategic initiatives expense 2 | 6 | 9 | 14 | 53\nRestructuring charges 3 | - | 12 | 24 | 27\nGain from extinguishment of debt 4 | - | - | - | (19)\nLegal and regulatory matters 5 | (16) | 1 | (3) | 3\nOther loss | - | 2 | 1 | 4\nTotal non-GAAP adjustments | 111 | 146 | 400 | 433\nNon-GAAP operating income | $843 | $732 | $2,501 | $2,135\nRevenues less transaction-based expenses | $1,481 | $1,315 | $4,388 | $3,857\nU.S. GAAP operating margin 11 | 49% | 45% | 48% | 44%\nNon-GAAP operating margin 12 | 57% | 56% | 57% | 55%\nNote: The percentages are calculated based on exact dollars, and therefore may not recalculate exactly using rounded numbers as presented in US$ millions."
+  },
+  {
+   "id": "P209",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nReconciliation of U.S. GAAP to Non-GAAP Operating Expenses\n(in millions)\n(unaudited)\nThree Months Ended September 30, | Nine Months Ended September 30,\n2026 | 2025 | 2026 | 2025\nU.S. GAAP operating expenses | $749 | $729 | $2,287 | $2,155\nNon-GAAP adjustments:\nAmortization expense of acquired intangible assets 1 | (121) | (122) | (364) | (365)\nMerger and strategic initiatives expense 2 | (6) | (9) | (14) | (53)\nRestructuring charges 3 | - | (12) | (24) | (27)\nGain on extinguishment of debt 4 | - | - | - | 19\nLegal and regulatory matters 5 | 16 | (1) | 3 | (3)\nOther loss | - | (2) | (1) | (4)\nTotal non-GAAP adjustments | (111) | (146) | (400) | (433)\nNon-GAAP operating expenses | $638 | $583 | $1,887 | $1,722"
+  },
+  {
+   "id": "P210",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nFootnotes to Press Release\nFinancial Tables\n1 | We amortize intangible assets acquired in connection with various acquisitions. Intangible asset amortization expense can vary from period to period due to episodic acquisitions completed, rather than from our ongoing business operations.\n2 | We have pursued various strategic initiatives and completed acquisitions and divestitures in recent years that have resulted in expenses which would not have otherwise been incurred. These expenses generally include integration costs, as well as legal, due diligence and other third-party transaction costs. The frequency and the amount of such expenses vary significantly based on the size, timing and complexity of the transaction. For the three and nine months ended September 30, 2026, these costs included amounts associated with various strategic initiative costs. For the three and nine months ended September 30, 2025, these costs primarily included amounts associated with the transfer of open positions in our Nordic power futures business, Adenza integration costs and other strategic initiative costs.\n3 | In the fourth quarter of 2023, following the closing of the Adenza acquisition, our management approved, committed to and initiated a restructuring program, \"Adenza Restructuring\" to optimize our efficiencies as a combined organization. We initiated the program upon the acquisition of Adenza and further expanded the program in the fourth quarter of 2024 following the achievement of our initial targets. We have incurred costs principally related to employee-related costs, contract terminations, asset impairments and other related cost. Actions taken as part of this program were completed as of December 31, 2025, and all costs were incurred as of June 30, 2026.\n4 | For the nine months ended September 30, 2025, we recorded a gain on the extinguishment of debt. This gain is recorded in general, administrative and other expense in our Condensed Consolidated Statements of Income.\n5 | For the three and nine months ended September 30, 2026, this includes a favorable legal settlement, recorded in general, administrative and other expense in the Condensed Consolidated Statements of Income. For the three and nine months ended September 30, 2026 and 2025, this also includes accruals relating to certain legal matters, which are recorded in professional and contract services in the Condensed Consolidated Statements of Income.\n6 | Net loss on divestitures for the three months ended September 30, 2026 relates to the net impact of the sale of the Nasdaq Metrio platform and related customer contracts, and the sale of Nasdaq Fund Secondaries. Net gain on divestitures for the nine months ended September 30, 2026 and September 30, 2025 primarily relates to the divestiture of our Nordic power futures business, net of costs to sell, partially offset by the net loss described above for the nine months ended September 30, 2026. For the nine months ended September 30, 2025, this also includes a gain on sale of our Nasdaq Risk Modelling for Catastrophes business, net of costs to sell.\n7 | We exclude our share of the earnings and losses of our equity method investments. This provides a more meaningful analysis of Nasdaq's ongoing operating performance or comparisons in Nasdaq's performance between periods.\n8 | For the three and nine months ended September 30, 2026 and 2025, other items primarily include net gains and losses from strategic investments entered into through our corporate venture program. For the nine months ended September 30, 2026, this also includes intangible asset impairments of customer relationships and licenses relating to the wind-down of our Nordic power futures business. The net effect of these items is included in other income (loss) in our Condensed Consolidated Statements of Income.\n9 | For the three and nine months ended September 30, 2026 and 2025, the non-GAAP adjustment to the income tax provision includes the tax impact of each non-GAAP adjustment.\n10 | For the nine months ended September 30, 2025, other tax adjustments primarily reflect a tax benefit related to payments made to certain former Adenza employees and the release of the prior years' reserves following a favorable audit settlement.\n11 | U.S. GAAP operating margin equals U.S. GAAP operating income divided by revenues less transaction-based expenses.\n12 | Non-GAAP operating margin equals non-GAAP operating income divided by revenues less transaction-based expenses."
+  },
+  {
+   "id": "P211",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nReconciliation of Organic Impacts\n(in millions, except per share amounts)\n(unaudited)\nThree Months Ended September 30, | Total Variance | FX/Divestitures/Acquisitions impact | Organic Variance1\n2026 | 2025 | $ | % | $ | % | $ | %\nCapital Access Platforms\nData and Listing Services | $224 | $204 | $20 | 10% | $(1) | -% | $21 | 10%\nIndex | 286 | 206 | 80 | 39% | - | -% | 80 | 39%\nWorkflow and Insights | 131 | 124 | 7 | 6% | 1 | -% | 6 | 5%\nTotal Capital Access Platforms revenues | 641 | 534 | 107 | 20% | - | -% | 107 | 20%\nFinancial Technology\nFinancial Crime Management Technology | 103 | 84 | 19 | 23% | - | -% | 19 | 23%\nRegulatory Technology | 123 | 109 | 14 | 13% | - | -% | 14 | 13%\nCapital Markets Technology | 303 | 264 | 39 | 15% | 1 | -% | 38 | 14%\nTotal Financial Technology revenues | 529 | 457 | 72 | 16% | 1 | -% | 71 | 16%\nMarket Services net revenues | 309 | 303 | 6 | 2% | - | -% | 6 | 2%\nOther revenues | 2 | 21 | (19) | (91)% | (19) | (88)% | - | -%\nRevenues less transaction-based expenses | $1,481 | $1,315 | $166 | 13% | $(18) | (1)% | $184 | 14%\nSolutions revenue 2 | $1,172 | $1,003 | $169 | 17% | $(9) | (1)% | $178 | 18%\nNon-GAAP Operating Expenses | $638 | $583 | $55 | 9% | $(15) | (3)% | $70 | 12%\nNon-GAAP Operating Income | $843 | $732 | $111 | 15% | $(3) | -% | $114 | 16%\nNon-GAAP diluted earnings per share | $1.04 | $0.88 | $0.16 | 18% | $- | -% | $0.16 | 19%\nNote: The percentages are calculated based on exact dollars, and therefore may not recalculate exactly using rounded numbers as presented in US$ millions. The sum of the percentage changes may not tie to the percentage change in total variance due to rounding.\n1 Organic variance is calculated by removing the impacts of changes in foreign exchange rates, acquisitions, and divestitures.\n2 Total Solutions revenues includes Capital Access Platforms and Financial Technology revenues as well as $2 million and $4 million of Other revenue in the third quarter of 2026 and the third quarter of 2025, respectively, related to the sale of our Nasdaq Fund Secondaries business and the sale of the Nasdaq Metrio platform and related customer contracts, which were both sold in the third quarter of 2026. The third quarter of 2025 also includes $8 million of Other revenue, related to the sale of the Solovis business, which was sold in the fourth quarter of 2025."
+  },
+  {
+   "id": "P212",
+   "kind": "table",
+   "text": "Nasdaq, Inc.\nKey Drivers Detail\n(unaudited)\nThree Months Ended September 30, | Nine Months Ended September 30,\n2026 | 2025 | 2026 | 2025\nCapital Access Platforms\nAnnualized recurring revenues (in millions) 1 | $1,411 | $1,303 | $1,411 | $1,303\nInitial public offerings\nThe Nasdaq Stock Market | 46 | 76 | 177 | 218\nNasdaq operating company IPOs | 15 | 46 | 56 | 129\nSPACs | 31 | 30 | 121 | 89\nExchanges that comprise Nasdaq Nordic and Nasdaq Baltic | 7 | 2 | 20 | 12\nTotal new listings\nThe Nasdaq Stock Market | 167 | 205 | 531 | 569\nExchanges that comprise Nasdaq Nordic and Nasdaq Baltic 2 | 8 | 4 | 28 | 19\nNumber of listed companies\nThe Nasdaq Stock Market 3 | 4,726 | 4,359 | 4,726 | 4,359\nExchanges that comprise Nasdaq Nordic and Nasdaq Baltic 4 | 1,103 | 1,133 | 1,103 | 1,133\nIndex\nNumber of licensed exchange traded products | 487 | 439 | 487 | 439\nPeriod end ETP assets under management (AUM) tracking Nasdaq indexes (in billions) | $1,160 | $829 | $1,160 | $829\nTotal average ETP AUM tracking Nasdaq indexes (in billions) | $1,108 | $777 | $1,000 | $701\nTTM 5 net inflows ETP AUM tracking Nasdaq indexes (in billions) | $141 | $91 | $141 | $91\nTTM 5 net appreciation ETP AUM tracking Nasdaq indexes (in billions) | $190 | $138 | $190 | $138\nFinancial Technology\nAnnualized recurring revenues (in millions) 1\nFinancial Crime Management Technology | $375 | $316 | $375 | $316\nRegulatory Technology | 443 | 389 | 443 | 389\nCapital Markets Technology | 1,136 | 957 | 1,136 | 957\nTotal Financial Technology | $1,954 | $1,662 | $1,954 | $1,662\nMarket Services\nEquity Derivative Trading and Clearing\nU.S. equity options\nTotal industry average daily volume (in millions) | 63.8 | 55.8 | 64.3 | 54.0\nNasdaq PHLX matched market share | 10.4% | 10.4% | 11.4% | 9.7%\nThe Nasdaq Options Market matched market share | 3.2% | 2.5% | 2.8% | 3.9%\nNasdaq Texas Options matched market share (formerly Nasdaq BX) | 1.2% | 1.6% | 1.3% | 1.7%\nNasdaq ISE Options matched market share | 6.6% | 7.0% | 6.4% | 6.8%\nNasdaq GEMX Options matched market share | 3.2% | 3.5% | 3.3% | 3.9%\nNasdaq MRX Options matched market share | 3.5% | 3.5% | 3.9% | 3.0%\nTotal matched market share executed on Nasdaq's exchanges | 28.1% | 28.5% | 29.1% | 29.0%\nNasdaq Nordic and Nasdaq Baltic options and futures\nTotal average daily volume of options and futures contracts | 193,881 | 184,267 | 221,178 | 220,416"
+  },
+  {
+   "id": "P213",
+   "kind": "table",
+   "text": "Cash Equity Trading\nTotal U.S.-listed securities\nTotal industry average daily share volume (in billions) | 16.9 | 17.6 | 19.0 | 17.2\nMatched share volume (in billions) | 157.5 | 158.6 | 525.7 | 454.4\nThe Nasdaq Stock Market matched market share | 14.1% | 13.7% | 14.4% | 13.8%\nNasdaq Texas matched market share (formerly Nasdaq BX) | 0.3% | 0.3% | 0.3% | 0.3%\nNasdaq PSX matched market share | 0.1% | 0.1% | 0.1% | 0.1%\nTotal matched market share executed on Nasdaq's exchanges | 14.5% | 14.1% | 14.8% | 14.2%\nMarket share reported to the FINRA/Nasdaq Trade Reporting Facility | 47.7% | 47.6% | 46.5% | 47.7%\nTotal market share 6 | 62.2% | 61.7% | 61.3% | 61.9%\nNasdaq Nordic and Nasdaq Baltic securities\nAverage daily number of equity trades executed on Nasdaq's exchanges | 653,117 | 627,568 | 730,953 | 736,829\nTotal average daily value of shares traded (in billions) | $5.3 | $4.5 | $6.0 | $5.2\nTotal market share executed on Nasdaq's exchanges 7 | 75.0% | 72.8% | 74.6% | 71.8%\n1 | Annualized Recurring Revenue (ARR) for a given period is the current annualized value derived from subscription contracts with a defined contract value. This excludes contracts that are not recurring, are one-time in nature, or where the contract value fluctuates based on defined metrics. ARR is currently one of our key performance metrics to assess the health and trajectory of our recurring business. ARR does not have any standardized definition and is therefore unlikely to be comparable to similarly titled measures presented by other companies. ARR should be viewed independently of revenue and deferred revenue and is not intended to be combined with or to replace either of those items. For AxiomSL and Calypso recurring revenue contracts, the amount included in ARR is consistent with the amount that we invoice the customer during the current period. Additionally, for AxiomSL and Calypso recurring revenue contracts that include annual values that increase over time, we include in ARR only the annualized value of components of the contract that are considered active as of the date of the ARR calculation. We do not include the future committed increases in the contract value as of the date of the ARR calculation. ARR is not a forecast and the active contracts at the end of a reporting period used in calculating ARR may or may not be extended or renewed by our customers.\n2 | New listings include IPOs and represent companies listed on the Nasdaq Nordic and Nasdaq Baltic exchanges and companies on the alternative markets of Nasdaq First North.\n3 | Number of total listings on The Nasdaq Stock Market for the three and nine months ended September 30, 2026 and 2025 included 1,292 and 1,000 ETPs, respectively.\n4 | Represents companies listed on the Nasdaq Nordic and Nasdaq Baltic exchanges and companies on the alternative markets of Nasdaq First North.\n5 | Trailing twelve months.\n6 | Includes transactions executed on The Nasdaq Stock Market's, Nasdaq Texas's (formerly Nasdaq BX) and Nasdaq PSX's systems plus trades reported through the Financial Industry Regulatory Authority/Nasdaq Trade Reporting Facility.\n7 | European cash equities markets include cash equities exchanges of Sweden, Denmark, Finland, and Iceland. Minor adjustments to prior periods reflect data from a new consolidated data provider that accurately captures all primary trading venues and Multilateral Trading Facilities."
+  }
+ ]
+}

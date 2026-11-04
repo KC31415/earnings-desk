@@ -95,6 +95,21 @@
      "partial": false,
      "components": []
     },
+    "rnd": {
+     "value": 170300000.0,
+     "end": "2008-05-30",
+     "start": "2008-02-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-09-000026",
+     "filed": "2009-06-26",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 170300000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 279365000.0,
      "end": "2008-05-30",
@@ -192,6 +207,21 @@
      "derived": false,
      "derivation": null,
      "original_value": 0.35,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "rnd": {
+     "value": 170124000.0,
+     "end": "2008-08-29",
+     "start": "2008-05-31",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-09-000032",
+     "filed": "2009-10-01",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 170124000.0,
      "restated": false,
      "partial": false,
      "components": []
@@ -430,6 +460,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 153148000.0,
+     "end": "2008-11-28",
+     "start": "2008-08-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-11-000003",
+     "filed": "2011-01-27",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 153148000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2007-12-01",
+       "end": "2008-11-28",
+       "value": 662057000.0,
+       "accn": "0000796343-11-000003",
+       "sign": "+"
+      },
+      {
+       "start": "2007-12-01",
+       "end": "2008-08-29",
+       "value": 508909000.0,
+       "accn": "0000796343-09-000032",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 275942000.0,
      "end": "2008-11-28",
@@ -649,6 +709,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 149917000.0,
+     "end": "2009-02-27",
+     "start": "2008-11-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-10-000007",
+     "filed": "2010-04-09",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 149917000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 249491000.0,
      "end": "2009-02-27",
@@ -852,6 +927,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 138470000.0,
+     "end": "2009-05-29",
+     "start": "2009-02-28",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-10-000011",
+     "filed": "2010-07-02",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 138470000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 243209000.0,
@@ -1086,6 +1176,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 138902000.0,
+     "end": "2009-08-28",
+     "start": "2009-05-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-10-000014",
+     "filed": "2010-10-08",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 138902000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 231320000.0,
@@ -1336,6 +1441,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 137852000.0,
+     "end": "2009-11-27",
+     "start": "2009-08-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-12-000003",
+     "filed": "2012-01-26",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 137852000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2008-11-29",
+       "end": "2009-11-27",
+       "value": 565141000.0,
+       "accn": "0000796343-12-000003",
+       "sign": "+"
+      },
+      {
+       "start": "2008-11-29",
+       "end": "2009-08-28",
+       "value": 427289000.0,
+       "accn": "0000796343-10-000014",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 257883000.0,
      "end": "2009-11-27",
@@ -1555,6 +1690,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 174340000.0,
+     "end": "2010-03-05",
+     "start": "2009-11-28",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-11-000006",
+     "filed": "2011-04-08",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 174340000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 297294000.0,
      "end": "2010-03-05",
@@ -1773,6 +1923,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 167318000.0,
+     "end": "2010-06-04",
+     "start": "2010-03-06",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-11-000010",
+     "filed": "2011-06-29",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 167318000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 320976000.0,
@@ -2007,6 +2172,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 168296000.0,
+     "end": "2010-09-03",
+     "start": "2010-06-05",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-11-000015",
+     "filed": "2011-10-07",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 168296000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 303219000.0,
@@ -2257,6 +2437,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 170378000.0,
+     "end": "2010-12-03",
+     "start": "2010-09-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-13-000008",
+     "filed": "2013-01-22",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 170378000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2009-11-28",
+       "end": "2010-12-03",
+       "value": 680332000.0,
+       "accn": "0000796343-13-000008",
+       "sign": "+"
+      },
+      {
+       "start": "2009-11-28",
+       "end": "2010-09-03",
+       "value": 509954000.0,
+       "accn": "0000796343-11-000015",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 322708000.0,
      "end": "2010-12-03",
@@ -2476,6 +2686,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 178400000.0,
+     "end": "2011-03-04",
+     "start": "2010-12-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-12-000013",
+     "filed": "2012-03-30",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 178400000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 328078000.0,
      "end": "2011-03-04",
@@ -2694,6 +2919,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 183211000.0,
+     "end": "2011-06-03",
+     "start": "2011-03-05",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-12-000022",
+     "filed": "2012-06-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 183211000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 348690000.0,
@@ -2928,6 +3168,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 181039000.0,
+     "end": "2011-09-02",
+     "start": "2011-06-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-12-000029",
+     "filed": "2012-09-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 181039000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 340724000.0,
@@ -3178,6 +3433,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 195403000.0,
+     "end": "2011-12-02",
+     "start": "2011-09-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-14-000004",
+     "filed": "2014-01-21",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 195403000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2010-12-04",
+       "end": "2011-12-02",
+       "value": 738053000.0,
+       "accn": "0000796343-14-000004",
+       "sign": "+"
+      },
+      {
+       "start": "2010-12-04",
+       "end": "2011-09-02",
+       "value": 542650000.0,
+       "accn": "0000796343-12-000029",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 368330000.0,
      "end": "2011-12-02",
@@ -3397,6 +3682,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 177728000.0,
+     "end": "2012-03-02",
+     "start": "2011-12-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-13-000033",
+     "filed": "2013-03-28",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 177728000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 358963000.0,
      "end": "2012-03-02",
@@ -3615,6 +3915,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 180903000.0,
+     "end": "2012-06-01",
+     "start": "2012-03-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-13-000044",
+     "filed": "2013-06-28",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 180903000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 386459000.0,
@@ -3849,6 +4164,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 189145000.0,
+     "end": "2012-08-31",
+     "start": "2012-06-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-13-000058",
+     "filed": "2013-10-03",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 189145000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 368556000.0,
@@ -4099,6 +4429,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 195047000.0,
+     "end": "2012-11-30",
+     "start": "2012-09-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-15-000022",
+     "filed": "2015-01-20",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 195047000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2011-12-03",
+       "end": "2012-11-30",
+       "value": 742823000.0,
+       "accn": "0000796343-15-000022",
+       "sign": "+"
+      },
+      {
+       "start": "2011-12-03",
+       "end": "2012-08-31",
+       "value": 547776000.0,
+       "accn": "0000796343-13-000058",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 402181000.0,
      "end": "2012-11-30",
@@ -4318,6 +4678,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 209638000.0,
+     "end": "2013-03-01",
+     "start": "2012-12-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-14-000023",
+     "filed": "2014-03-28",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 209638000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 398033000.0,
      "end": "2013-03-01",
@@ -4536,6 +4911,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 203097000.0,
+     "end": "2013-05-31",
+     "start": "2013-03-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-14-000046",
+     "filed": "2014-06-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 203097000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 402208000.0,
@@ -4770,6 +5160,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 208700000.0,
+     "end": "2013-08-30",
+     "start": "2013-06-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-14-000092",
+     "filed": "2014-09-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 208700000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 388673000.0,
@@ -5020,6 +5425,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 205196000.0,
+     "end": "2013-11-29",
+     "start": "2013-08-31",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-16-000224",
+     "filed": "2016-01-19",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 205196000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2012-12-01",
+       "end": "2013-11-29",
+       "value": 826631000.0,
+       "accn": "0000796343-16-000224",
+       "sign": "+"
+      },
+      {
+       "start": "2012-12-01",
+       "end": "2013-08-30",
+       "value": 621435000.0,
+       "accn": "0000796343-14-000092",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 431540000.0,
      "end": "2013-11-29",
@@ -5239,6 +5674,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 209525000.0,
+     "end": "2014-02-28",
+     "start": "2013-11-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-15-000084",
+     "filed": "2015-03-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 209525000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 410141000.0,
      "end": "2014-02-28",
@@ -5457,6 +5907,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 209092000.0,
+     "end": "2014-05-30",
+     "start": "2014-03-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-15-000151",
+     "filed": "2015-06-24",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 209092000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 426830000.0,
@@ -5691,6 +6156,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 212049000.0,
+     "end": "2014-08-29",
+     "start": "2014-05-31",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-15-000188",
+     "filed": "2015-09-23",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 212049000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 406475000.0,
@@ -5941,6 +6421,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 213687000.0,
+     "end": "2014-11-28",
+     "start": "2014-08-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-17-000031",
+     "filed": "2017-01-20",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 213687000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2013-11-30",
+       "end": "2014-11-28",
+       "value": 844353000.0,
+       "accn": "0000796343-17-000031",
+       "sign": "+"
+      },
+      {
+       "start": "2013-11-30",
+       "end": "2014-08-29",
+       "value": 630666000.0,
+       "accn": "0000796343-15-000188",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 408862000.0,
      "end": "2014-11-28",
@@ -6160,6 +6670,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 215509000.0,
+     "end": "2015-02-27",
+     "start": "2014-11-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-16-000290",
+     "filed": "2016-03-30",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 215509000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 392741000.0,
      "end": "2015-02-27",
@@ -6378,6 +6903,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 208047000.0,
+     "end": "2015-05-29",
+     "start": "2015-02-28",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-16-000352",
+     "filed": "2016-06-29",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 208047000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 426998000.0,
@@ -6612,6 +7152,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 218660000.0,
+     "end": "2015-08-28",
+     "start": "2015-05-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-16-000395",
+     "filed": "2016-09-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 218660000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 422031000.0,
@@ -6862,6 +7417,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 220514000.0,
+     "end": "2015-11-27",
+     "start": "2015-08-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-18-000015",
+     "filed": "2018-01-22",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 220514000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2014-11-29",
+       "end": "2015-11-27",
+       "value": 862730000.0,
+       "accn": "0000796343-18-000015",
+       "sign": "+"
+      },
+      {
+       "start": "2014-11-29",
+       "end": "2015-08-28",
+       "value": 642216000.0,
+       "accn": "0000796343-16-000395",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 441472000.0,
      "end": "2015-11-27",
@@ -7081,6 +7666,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 237204000.0,
+     "end": "2016-03-04",
+     "start": "2015-11-28",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-17-000088",
+     "filed": "2017-03-29",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 237204000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 474891000.0,
      "end": "2016-03-04",
@@ -7299,6 +7899,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 232484000.0,
+     "end": "2016-06-03",
+     "start": "2016-03-05",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-17-000130",
+     "filed": "2017-06-28",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 232484000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 462789000.0,
@@ -7533,6 +8148,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 248450000.0,
+     "end": "2016-09-02",
+     "start": "2016-06-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-17-000157",
+     "filed": "2017-09-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 248450000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 477475000.0,
@@ -7783,6 +8413,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 257849000.0,
+     "end": "2016-12-02",
+     "start": "2016-09-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-19-000019",
+     "filed": "2019-01-25",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 257849000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2015-11-28",
+       "end": "2016-12-02",
+       "value": 975987000.0,
+       "accn": "0000796343-19-000019",
+       "sign": "+"
+      },
+      {
+       "start": "2015-11-28",
+       "end": "2016-09-02",
+       "value": 718138000.0,
+       "accn": "0000796343-17-000157",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 495042000.0,
      "end": "2016-12-02",
@@ -8002,6 +8662,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 285077000.0,
+     "end": "2017-03-03",
+     "start": "2016-12-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-18-000065",
+     "filed": "2018-03-28",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 285077000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 520297000.0,
      "end": "2017-03-03",
@@ -8220,6 +8895,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 299401000.0,
+     "end": "2017-06-02",
+     "start": "2017-03-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-18-000134",
+     "filed": "2018-06-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 299401000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 553098000.0,
@@ -8454,6 +9144,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 315555000.0,
+     "end": "2017-09-01",
+     "start": "2017-06-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-18-000160",
+     "filed": "2018-09-26",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 315555000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 550093000.0,
@@ -8704,6 +9409,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 324026000.0,
+     "end": "2017-12-01",
+     "start": "2017-09-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-20-000013",
+     "filed": "2020-01-21",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 324026000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2016-12-03",
+       "end": "2017-12-01",
+       "value": 1224059000.0,
+       "accn": "0000796343-20-000013",
+       "sign": "+"
+      },
+      {
+       "start": "2016-12-03",
+       "end": "2017-09-01",
+       "value": 900033000.0,
+       "accn": "0000796343-18-000160",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 574104000.0,
      "end": "2017-12-01",
@@ -8922,6 +9657,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 348769000.0,
+     "end": "2018-03-02",
+     "start": "2017-12-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-19-000079",
+     "filed": "2019-03-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 348769000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 580957000.0,
@@ -9149,6 +9899,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 374128000.0,
+     "end": "2018-06-01",
+     "start": "2018-03-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-19-000142",
+     "filed": "2019-06-26",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 374128000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 646215000.0,
@@ -9391,6 +10156,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 398957000.0,
+     "end": "2018-08-31",
+     "start": "2018-06-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-19-000165",
+     "filed": "2019-09-26",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 398957000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 670084000.0,
@@ -9649,6 +10429,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 416146000.0,
+     "end": "2018-11-30",
+     "start": "2018-09-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-21-000004",
+     "filed": "2021-01-15",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 415958000.0,
+     "restated": true,
+     "partial": false,
+     "components": [
+      {
+       "start": "2017-12-02",
+       "end": "2018-11-30",
+       "value": 1538000000.0,
+       "accn": "0000796343-21-000004",
+       "sign": "+"
+      },
+      {
+       "start": "2017-12-02",
+       "end": "2018-08-31",
+       "value": 1121854000.0,
+       "accn": "0000796343-19-000165",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 723744000.0,
      "end": "2018-11-30",
@@ -9875,6 +10685,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 465000000.0,
+     "end": "2019-03-01",
+     "start": "2018-12-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-20-000064",
+     "filed": "2020-03-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 464637000.0,
+     "restated": true,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 781000000.0,
@@ -10117,6 +10942,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 476000000.0,
+     "end": "2019-05-31",
+     "start": "2019-03-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-20-000143",
+     "filed": "2020-06-24",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 475958000.0,
+     "restated": true,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 849000000.0,
@@ -10374,6 +11214,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 490000000.0,
+     "end": "2019-08-30",
+     "start": "2019-06-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-20-000201",
+     "filed": "2020-09-23",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 489827000.0,
+     "restated": true,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 812000000.0,
@@ -10647,6 +11502,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 500000000.0,
+     "end": "2019-11-29",
+     "start": "2019-08-31",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-22-000032",
+     "filed": "2022-01-21",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 499806000.0,
+     "restated": true,
+     "partial": false,
+     "components": [
+      {
+       "start": "2018-12-01",
+       "end": "2019-11-29",
+       "value": 1930000000.0,
+       "accn": "0000796343-22-000032",
+       "sign": "+"
+      },
+      {
+       "start": "2018-12-01",
+       "end": "2019-08-30",
+       "value": 1430000000.0,
+       "accn": "0000796343-20-000201",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 801000000.0,
      "end": "2019-11-29",
@@ -10889,6 +11774,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 532000000.0,
+     "end": "2020-02-28",
+     "start": "2019-11-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-21-000069",
+     "filed": "2021-03-31",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 532000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 857000000.0,
      "end": "2020-02-28",
@@ -11130,6 +12030,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 532000000.0,
+     "end": "2020-05-29",
+     "start": "2020-02-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-21-000159",
+     "filed": "2021-06-30",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 532000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 901000000.0,
@@ -11387,6 +12302,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 566000000.0,
+     "end": "2020-08-28",
+     "start": "2020-05-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-21-000210",
+     "filed": "2021-09-29",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 566000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 892000000.0,
@@ -11660,6 +12590,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 558000000.0,
+     "end": "2020-11-27",
+     "start": "2020-08-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-23-000007",
+     "filed": "2023-01-17",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 558000000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2019-11-30",
+       "end": "2020-11-27",
+       "value": 2188000000.0,
+       "accn": "0000796343-23-000007",
+       "sign": "+"
+      },
+      {
+       "start": "2019-11-30",
+       "end": "2020-08-28",
+       "value": 1630000000.0,
+       "accn": "0000796343-21-000210",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 941000000.0,
      "end": "2020-11-27",
@@ -11902,6 +12862,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 620000000.0,
+     "end": "2021-03-05",
+     "start": "2020-11-28",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-22-000099",
+     "filed": "2022-03-30",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 620000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 1049000000.0,
      "end": "2021-03-05",
@@ -12143,6 +13118,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 612000000.0,
+     "end": "2021-06-04",
+     "start": "2021-03-06",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-22-000157",
+     "filed": "2022-06-29",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 612000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1073000000.0,
@@ -12400,6 +13390,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 651000000.0,
+     "end": "2021-09-03",
+     "start": "2021-06-05",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-22-000196",
+     "filed": "2022-09-28",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 651000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1068000000.0,
@@ -12703,6 +13708,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 657000000.0,
+     "end": "2021-12-03",
+     "start": "2021-09-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-24-000006",
+     "filed": "2024-01-17",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 657000000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2020-11-28",
+       "end": "2021-12-03",
+       "value": 2540000000.0,
+       "accn": "0000796343-24-000006",
+       "sign": "+"
+      },
+      {
+       "start": "2020-11-28",
+       "end": "2021-09-03",
+       "value": 1883000000.0,
+       "accn": "0000796343-22-000196",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 1131000000.0,
      "end": "2021-12-03",
@@ -12945,6 +13980,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 701000000.0,
+     "end": "2022-03-04",
+     "start": "2021-12-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-23-000055",
+     "filed": "2023-03-29",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 701000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 1158000000.0,
      "end": "2022-03-04",
@@ -13186,6 +14236,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 738000000.0,
+     "end": "2022-06-03",
+     "start": "2022-03-05",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-23-000153",
+     "filed": "2023-06-28",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 738000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1247000000.0,
@@ -13443,6 +14508,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 775000000.0,
+     "end": "2022-09-02",
+     "start": "2022-06-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-23-000205",
+     "filed": "2023-09-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 775000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1266000000.0,
@@ -13746,6 +14826,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 773000000.0,
+     "end": "2022-12-02",
+     "start": "2022-09-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-25-000004",
+     "filed": "2025-01-13",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 773000000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2021-12-04",
+       "end": "2022-12-02",
+       "value": 2987000000.0,
+       "accn": "0000796343-25-000004",
+       "sign": "+"
+      },
+      {
+       "start": "2021-12-04",
+       "end": "2022-09-02",
+       "value": 2214000000.0,
+       "accn": "0000796343-23-000205",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 1297000000.0,
      "end": "2022-12-02",
@@ -13988,6 +15098,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 827000000.0,
+     "end": "2023-03-03",
+     "start": "2022-12-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-24-000065",
+     "filed": "2024-03-27",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 827000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 1301000000.0,
      "end": "2023-03-03",
@@ -14229,6 +15354,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 876000000.0,
+     "end": "2023-06-02",
+     "start": "2023-03-04",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-24-000150",
+     "filed": "2024-06-26",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 876000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1345000000.0,
@@ -14486,6 +15626,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 881000000.0,
+     "end": "2023-09-01",
+     "start": "2023-06-03",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-24-000208",
+     "filed": "2024-09-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 881000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1337000000.0,
@@ -14789,6 +15944,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 889000000.0,
+     "end": "2023-12-01",
+     "start": "2023-09-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000003",
+     "filed": "2026-01-15",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 889000000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2022-12-03",
+       "end": "2023-12-01",
+       "value": 3473000000.0,
+       "accn": "0000796343-26-000003",
+       "sign": "+"
+      },
+      {
+       "start": "2022-12-03",
+       "end": "2023-09-01",
+       "value": 2584000000.0,
+       "accn": "0000796343-24-000208",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 1368000000.0,
      "end": "2023-12-01",
@@ -15031,6 +16216,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 939000000.0,
+     "end": "2024-03-01",
+     "start": "2023-12-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-25-000059",
+     "filed": "2025-03-26",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 939000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 1352000000.0,
      "end": "2024-03-01",
@@ -15272,6 +16472,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 984000000.0,
+     "end": "2024-05-31",
+     "start": "2024-03-02",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-25-000073",
+     "filed": "2025-06-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 984000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1445000000.0,
@@ -15529,6 +16744,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 1022000000.0,
+     "end": "2024-08-30",
+     "start": "2024-06-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-25-000107",
+     "filed": "2025-09-24",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1022000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1431000000.0,
@@ -15832,6 +17062,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 999000000.0,
+     "end": "2024-11-29",
+     "start": "2024-08-31",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000003",
+     "filed": "2026-01-15",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 999000000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2023-12-02",
+       "end": "2024-11-29",
+       "value": 3944000000.0,
+       "accn": "0000796343-26-000003",
+       "sign": "+"
+      },
+      {
+       "start": "2023-12-02",
+       "end": "2024-08-30",
+       "value": 2945000000.0,
+       "accn": "0000796343-25-000107",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 1536000000.0,
      "end": "2024-11-29",
@@ -16074,6 +17334,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 1026000000.0,
+     "end": "2025-02-28",
+     "start": "2024-11-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000056",
+     "filed": "2026-03-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1026000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 1495000000.0,
      "end": "2025-02-28",
@@ -16315,6 +17590,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 1082000000.0,
+     "end": "2025-05-30",
+     "start": "2025-03-01",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000112",
+     "filed": "2026-06-15",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1082000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1626000000.0,
@@ -16572,6 +17862,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 1088000000.0,
+     "end": "2025-08-29",
+     "start": "2025-05-31",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000156",
+     "filed": "2026-09-22",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1088000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1639000000.0,
@@ -16875,6 +18180,36 @@
       }
      ]
     },
+    "rnd": {
+     "value": 1098000000.0,
+     "end": "2025-11-28",
+     "start": "2025-08-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000003",
+     "filed": "2026-01-15",
+     "form": "10-K",
+     "derived": true,
+     "derivation": "full year \u2212 9M YTD",
+     "original_value": 1098000000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2024-11-30",
+       "end": "2025-11-28",
+       "value": 4294000000.0,
+       "accn": "0000796343-26-000003",
+       "sign": "+"
+      },
+      {
+       "start": "2024-11-30",
+       "end": "2025-08-29",
+       "value": 3196000000.0,
+       "accn": "0000796343-26-000156",
+       "sign": "-"
+      }
+     ]
+    },
     "sm": {
      "value": 1728000000.0,
      "end": "2025-11-28",
@@ -17117,6 +18452,21 @@
       }
      ]
     },
+    "rnd": {
+     "value": 1110000000.0,
+     "end": "2026-02-27",
+     "start": "2025-11-29",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000056",
+     "filed": "2026-03-25",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1110000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
     "sm": {
      "value": 1708000000.0,
      "end": "2026-02-27",
@@ -17358,6 +18708,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 1198000000.0,
+     "end": "2026-05-29",
+     "start": "2026-02-28",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000112",
+     "filed": "2026-06-15",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1198000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1884000000.0,
@@ -17615,6 +18980,21 @@
        "sign": "-"
       }
      ]
+    },
+    "rnd": {
+     "value": 1288000000.0,
+     "end": "2026-08-28",
+     "start": "2026-05-30",
+     "concept": "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost",
+     "accn": "0000796343-26-000156",
+     "filed": "2026-09-22",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1288000000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
     },
     "sm": {
      "value": 1827000000.0,

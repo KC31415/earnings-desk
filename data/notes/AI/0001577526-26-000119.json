@@ -1,0 +1,1369 @@
+{
+ "ticker": "AI",
+ "name": "C3.ai, Inc.",
+ "fiscal_label": "FY2027 Q1",
+ "calendar_label": "CY2026 Q2",
+ "period_end": "2026-07-31",
+ "source": {
+  "earnings_8k_accn": "0001577526-26-000119",
+  "earnings_8k_date": "2026-09-02",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1577526/000157752626000119/0001577526-26-000119-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1577526/000157752626000126/ai-20260731.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1577526/000157752626000119/ex991-fy27xq1earnings.htm"
+ },
+ "generated_at": "2026-11-04T18:50:39+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 8681,
+   "output_tokens": 90
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 10471,
+   "output_tokens": 2149
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P3",
+  "P4",
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P9",
+  "P10",
+  "P11",
+  "P12",
+  "P13",
+  "P14",
+  "P15",
+  "P16",
+  "P17",
+  "P18",
+  "P19",
+  "P20",
+  "P33",
+  "P49",
+  "P54",
+  "P59",
+  "P64",
+  "P65",
+  "P73"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "C3.ai reported FY2027 Q1 revenue of $52.4 million.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2027 Q1",
+     "value": "52.4",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 52375000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "revenue",
+         "value": 52375000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP gross profit was $16.7 million.",
+     "claim_type": "numeric",
+     "metric": "gross_profit",
+     "period": "FY2027 Q1",
+     "value": "16.7",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "GrossProfit"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 16669000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "gross_profit",
+         "value": 16669000.0,
+         "concept": "GrossProfit",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating loss was $98.3 million.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2027 Q1",
+     "value": "98.3",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -98268000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "operating_income",
+         "value": -98268000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Diluted EPS was a loss of $0.60.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2027 Q1",
+     "value": "0.60",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -0.6,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "eps_diluted",
+         "value": -0.6,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Operating cash flow turned positive at $2.1 million.",
+     "claim_type": "numeric",
+     "metric": "operating_cash_flow",
+     "period": "FY2027 Q1",
+     "value": "2.1",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetCashProvidedByUsedInOperatingActivities"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 2072000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "operating_cash_flow",
+         "value": 2072000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP operating loss was $36.2 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "36.2",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P6"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P6"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue declined 25.5% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2027 Q1",
+     "value": "25.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -25.45651214756408,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "revenue",
+         "value": 52375000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-07-31",
+         "metric": "revenue",
+         "value": 70261000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue rose 1.5% sequentially.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2027 Q1",
+     "value": "1.5",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1.501937984496124,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "revenue",
+         "value": 52375000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q4",
+         "period_end": "2026-04-30",
+         "metric": "revenue",
+         "value": 51600000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000078",
+         "derived": true,
+         "derivation": "full year \u2212 9M YTD"
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q4 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "GAAP gross margin was 31.8%.",
+     "claim_type": "numeric",
+     "metric": "gross_margin",
+     "period": "FY2027 Q1",
+     "value": "31.8",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "GrossProfit"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 31.826252983293557,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "gross_profit",
+         "value": 16669000.0,
+         "concept": "GrossProfit",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "revenue",
+         "value": 52375000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "gross_profit / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Sales and marketing expense fell 33.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "sm_yoy",
+     "period": "FY2027 Q1",
+     "value": "33.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "SellingAndMarketingExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -33.436245260985714,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "sm",
+         "value": 41611000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-07-31",
+         "metric": "sm",
+         "value": 62513000.0,
+         "concept": "SellingAndMarketingExpense",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "R&D expense was down 28% year over year.",
+     "claim_type": "numeric",
+     "metric": "rnd_yoy",
+     "period": "FY2027 Q1",
+     "value": "28",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "ResearchAndDevelopmentExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -27.99956690538429,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "rnd",
+         "value": 46549000.0,
+         "concept": "ResearchAndDevelopmentExpense",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-07-31",
+         "metric": "rnd",
+         "value": 64651000.0,
+         "concept": "ResearchAndDevelopmentExpense",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations declined 10.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "rpo_yoy",
+     "period": "FY2027 Q1",
+     "value": "10.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -10.39426523297491,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-07-31",
+         "metric": "rpo",
+         "value": 200000000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001577526-26-000126",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-07-31",
+         "metric": "rpo",
+         "value": 223200000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001577526-25-000033",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "The CEO said the turnaround is progressing, stating \"The plan is working\".",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "The plan is working",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P7"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P7"
+      }
+     }
+    },
+    {
+     "text": "Management cited a restructured sales organization and expense control as turnaround actions.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P6"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P6"
+      }
+     }
+    },
+    {
+     "text": "Management reported bookings growth of 73% quarter over quarter.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "73",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P4"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P4"
+      }
+     }
+    },
+    {
+     "text": "Cash, equivalents and marketable securities totaled $651.1 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "651.1",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P15"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P15"
+      }
+     }
+    },
+    {
+     "text": "Full-year FY2027 revenue guidance is a range of $210.0 million to $240.0 million.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Q2 revenue guidance has a high end of $55.0 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q2",
+     "value": "55.0",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    },
+    {
+     "text": "Watch whether revenue stabilization holds after the steep year-over-year decline.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P7"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P7"
+      }
+     }
+    },
+    {
+     "text": "Investors should monitor whether positive free cash flow persists, given the large deferred revenue inflow this quarter.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P59"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P59"
+      }
+     }
+    },
+    {
+     "text": "Q2 non-GAAP operating loss guidance has a low end of $42.5 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q2",
+     "value": "42.5",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 21,
+  "by_status": {
+   "verified": 17,
+   "sourced": 4
+  },
+  "numeric": 16,
+  "numeric_verified": 16,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "C3.ai reported FY2027 Q1 revenue of $52.4 million.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2027 Q1",
+      "value": "52.4",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP gross profit was $16.7 million.",
+      "claim_type": "numeric",
+      "metric": "gross_profit",
+      "period": "FY2027 Q1",
+      "value": "16.7",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "GrossProfit"
+      }
+     },
+     {
+      "text": "GAAP operating loss was $98.3 million.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2027 Q1",
+      "value": "98.3",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Diluted EPS was a loss of $0.60.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2027 Q1",
+      "value": "0.60",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Operating cash flow turned positive at $2.1 million.",
+      "claim_type": "numeric",
+      "metric": "operating_cash_flow",
+      "period": "FY2027 Q1",
+      "value": "2.1",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetCashProvidedByUsedInOperatingActivities"
+      }
+     },
+     {
+      "text": "Non-GAAP operating loss was $36.2 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "36.2",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P6"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue declined 25.5% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2027 Q1",
+      "value": "25.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Revenue rose 1.5% sequentially.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2027 Q1",
+      "value": "1.5",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP gross margin was 31.8%.",
+      "claim_type": "numeric",
+      "metric": "gross_margin",
+      "period": "FY2027 Q1",
+      "value": "31.8",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "GrossProfit"
+      }
+     },
+     {
+      "text": "Sales and marketing expense fell 33.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "sm_yoy",
+      "period": "FY2027 Q1",
+      "value": "33.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "SellingAndMarketingExpense"
+      }
+     },
+     {
+      "text": "R&D expense was down 28% year over year.",
+      "claim_type": "numeric",
+      "metric": "rnd_yoy",
+      "period": "FY2027 Q1",
+      "value": "28",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "ResearchAndDevelopmentExpense"
+      }
+     },
+     {
+      "text": "Remaining performance obligations declined 10.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "rpo_yoy",
+      "period": "FY2027 Q1",
+      "value": "10.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "The CEO said the turnaround is progressing, stating \"The plan is working\".",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "The plan is working",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P7"
+      }
+     },
+     {
+      "text": "Management cited a restructured sales organization and expense control as turnaround actions.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P6"
+      }
+     },
+     {
+      "text": "Management reported bookings growth of 73% quarter over quarter.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "73",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P4"
+      }
+     },
+     {
+      "text": "Cash, equivalents and marketable securities totaled $651.1 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "651.1",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P15"
+      }
+     },
+     {
+      "text": "Full-year FY2027 revenue guidance is a range of $210.0 million to $240.0 million.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Q2 revenue guidance has a high end of $55.0 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q2",
+      "value": "55.0",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     },
+     {
+      "text": "Watch whether revenue stabilization holds after the steep year-over-year decline.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P7"
+      }
+     },
+     {
+      "text": "Investors should monitor whether positive free cash flow persists, given the large deferred revenue inflow this quarter.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P59"
+      }
+     },
+     {
+      "text": "Q2 non-GAAP operating loss guidance has a low end of $42.5 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q2",
+      "value": "42.5",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 ex991-fy27xq1earnings.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "C3 AI Announces Fiscal First Quarter 2027 Results"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "Turnaround on track"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "Bookings increase 73% quarter over quarter"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "REDWOOD CITY, Calif. - September 2, 2026 - C3.ai, Inc. (\"C3 AI,\" \"C3,\" or the \"Company\") (NYSE: AI), the Enterprise AI application software company, today announced financial results for its fiscal first quarter ended July 31, 2026."
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "\"Revenue was $52.4 million, on plan. Free cash flow was positive $2.1 million. Non-GAAP operating loss was $36.2 million, a 33% improvement QoQ. Bookings increased 73% QoQ. Cash balance was $651.1 million, up $76 million QoQ. The Company has done exactly what a disciplined, focused turnaround should do. We restructured Sales. We aligned cash outflows with cash inflows. We instituted rigorous expense control. We installed experienced leadership across the board, and we implemented rigorous management discipline across every line of business."
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "Revenue has stabilized, free cash flow is positive, operating loss has narrowed, and Forrester Research named C3 AI a leader in Enterprise AI. The plan is working, we are on track with laser-like management discipline to grow revenue, generate cash, attain non-GAAP profitability, maintain technology leadership, and increase customer satisfaction,\" said Thomas M. Siebel, Chairman and Chief Executive Officer, C3 AI."
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "The Company closed 22 agreements including with Heidelberg Materials, Ford Motor Company, Johnson & Johnson, Holcim, Seaspan, the U.S. Department of Agriculture, the Defense Logistics Agency, the U.S. Department of War and the U.S. Marine Corps, among others."
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "Fiscal First Quarter 2027 Financial Highlights:"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "\u2022Total Revenue was $52.4 million."
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "\u2022Subscription Revenue was $49.2 million. Subscription revenue constituted 94% of total revenue."
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "\u2022GAAP gross profit was $16.7 million, representing a 32% gross margin. Non-GAAP gross profit was $26.1 million, representing a 50% non-GAAP gross margin."
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "\u2022GAAP net loss per share was $(0.60). Non-GAAP net loss per share was $(0.20)."
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "\u2022Net cash provided by operating activities was $2.1 million. Free Cash Flow was $2.1 million."
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "\u2022Cash, cash equivalents, and marketable securities was $651.1 million."
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "Financial Outlook:"
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "The Company's guidance includes GAAP and non-GAAP financial measures."
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "The following table summarizes C3 AI's guidance for the second quarter of fiscal 2027 and full-year fiscal 2027:"
+  },
+  {
+   "id": "P19",
+   "kind": "table",
+   "text": "(in millions) | Second Quarter Fiscal 2027Guidance | Full Year Fiscal 2027 Guidance\nTotal revenue | $51.0 - $55.0 | $210.0 - $240.0\nNon-GAAP loss from operations | $(34.5) - $(42.5) | $(123.0) - $(155.0)"
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "A reconciliation of non-GAAP guidance measures to corresponding GAAP measures is not available on a forward-looking basis without unreasonable effort due to the uncertainty regarding, and the potential variability of, expenses that may be incurred in the future. Stock-based compensation expense-related charges, including employer payroll tax-related items on employee stock transactions, are impacted by the timing of employee stock transactions, the future fair market value of our common stock, and our future hiring and retention needs, all of which are difficult to predict and subject to constant change. We have provided a reconciliation of GAAP to non-GAAP financial measures in the financial statement tables for our historical non-GAAP results included in this press release. Our fiscal year ends April 30, and numbers are rounded for presentation purposes."
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "Conference Call Details"
+  },
+  {
+   "id": "P22",
+   "kind": "table",
+   "text": "What: | C3 AI Fiscal First Quarter Earnings Call\nWhen: | Wednesday, September 2, 2026\nTime: | 2:00 p.m. PT / 5:00 p.m. ET\nParticipant Registration: | https://register-conf.media-server.com/register/BI959e755eb0fa492089431eec477ad911 (live)\nWebcast: | https://edge.media-server.com/mmc/p/5jt6k675/ (live and replay)"
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "Statement Regarding Use of Non-GAAP Financial Measures"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "The Company reports the following non-GAAP financial measures, which have not been prepared in accordance with generally accepted accounting principles in the United States (\"GAAP\"), in addition to, and not as a substitute for, or superior to, financial measures calculated in accordance with GAAP."
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "\u2022Non-GAAP gross profit, non-GAAP gross margin, non-GAAP loss from operations, non-GAAP net loss, non-GAAP net loss per share and non-GAAP expenses. Our non-GAAP gross profit, non-GAAP gross margin, non-GAAP loss from operations, non-GAAP net loss, non-GAAP net loss per share and non-GAAP expenses excludes the effect of restructuring expenses, stock-based compensation expense-related charges and employer payroll tax expense related to employee stock-based compensation. We believe the presentation of operating results that exclude these items provides useful supplemental information to investors and facilitates the analysis of our operating results and comparison of operating results across reporting periods."
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\u2022Free cash flow. We believe free cash flow, a non-GAAP financial measure, is useful in evaluating liquidity and provides information to management and investors about our ability to fund future operating needs and strategic initiatives. We calculate free cash flow as net cash provided by (used in) operating activities less purchases of property and equipment and capitalized software development costs. This non-GAAP financial measure may be different than similarly titled measures used by other companies. Additionally, the utility of free cash flow is further limited as it does not represent the total increase or decrease in our cash balances for a given period."
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "We use these non-GAAP financial measures internally for financial and operational decision-making purposes and as a means to evaluate period-to-period comparisons. Non-GAAP financial measures are not meant to be considered in isolation or as a substitute for comparable GAAP financial measures and should be read only in conjunction with our condensed consolidated financial statements prepared in accordance with GAAP. Our presentation of non-GAAP financial measures may not be comparable to similar measures used by other companies. We encourage investors to carefully consider our results under GAAP, as well as our supplemental non-GAAP information and the reconciliation between these presentations, to more fully understand our business. Please see the tables included at the end of this release and in our press release dated June 3, 2026 for the reconciliation of GAAP to non-GAAP financial measures."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "Other Information"
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "Professional Services Revenue"
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "Our professional services revenue includes service fees and prioritized engineering services. Service fees include revenue from services such as consulting, training, and paid implementation services."
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "Prioritized engineering services are undertaken when a customer requests that we accelerate the design, development, and delivery of software features and functions that are planned in our future product roadmap. When we agree to this, we negotiate an agreed upon fee to accelerate the development of the software. When the software feature is delivered, it becomes integrated to our core product offering, is available to all subscribers of the underlying software product, and enhances the operation of that product going forward. Such prioritized engineering services result in production-level computer software - compiled code that enhances the functionality of our production products - which is available for our customers to use over the life of their software licenses. Per Accounting Standards Codification (ASC) 606, Prioritized engineering services revenue is recognized as professional services over the period in which the software development is completed."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "Total professional services revenue consists of:"
+  },
+  {
+   "id": "P33",
+   "kind": "table",
+   "text": "Three Months Ended July 31,\n2026 | 2025\n(in thousands)\nPrioritized engineering services | $ | 1,760 | $ | 8,663\nService fees | 1,446 | 1,297\nTotal professional services revenue | $ | 3,206 | $ | 9,960"
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "Use of Forward-Looking Statements"
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "This press release contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. The words \"anticipate,\" \"believe,\" \"continue,\" \"estimate,\" \"expect,\" \"intend,\" \"may,\" \"on track,\" \"positioned,\" \"will\" and similar expressions are intended to identify forward-looking statements, although not all forward-looking statements contain these words. Forward-looking statements in this press release include, but are not limited to, statements regarding our restructuring plan and the reorganization of our sales, services, and products organizations, our market leadership position, anticipated benefits from our partnerships, our financial outlook for the second quarter of fiscal 2027 and full 2027 fiscal year, our ability to successfully implement a turnaround in our business, our ability to grow revenue, generate cash, attain Non-GAAP profitability, maintain technology leadership, and increase customer satisfaction, our sales and customer opportunity pipeline, including continued growth in the Federal market, the expected benefits of our offerings, and our business strategies, plans, and objectives for future operations. We have based these forward-looking statements largely on our current expectations and projections about future events and trends that we believe may affect our financial condition, results of operations, business strategy, short-term and long-term business operations and objectives, and financial needs. These forward-looking statements are subject to a number of risks and uncertainties, including our history of losses and ability to achieve and maintain profitability in the future, our historic dependence on a limited number of existing customers that account for a substantial portion of our revenue, our ability to attract new customers and retain existing customers, the ability of our restructured global sales and services organization to achieve desired productivity levels in a reasonable period of time, the impact of return of Tom Siebel as our Chief Executive Officer, and our ability to retain key members of our senior management, market awareness and acceptance of enterprise AI solutions in general and our products in particular, the length and unpredictability of our sales cycles and the time and expense required for our sales efforts. Some of these risks are described in greater detail in our filings with the Securities and Exchange Commission, including our Annual Report on Form 10-K for the fiscal year ended April 30, 2026, and other filings and reports we make with the Securities and Exchange Commission from time to time, including our Quarterly Report on Form 10-Q that will be filed for the fiscal quarter ended July 31, 2026, although new and unanticipated risks may arise. The future events and trends discussed in this press release may not occur and actual results could differ materially and adversely from those anticipated or implied in the forward-looking statements. Although we believe that the expectations reflected in the forward-looking statements are reasonable, we cannot guarantee future results, levels of activity, performance, achievements, or events and circumstances reflected in the forward-looking statements will occur. Except to the extent required by law, we do not undertake to update any of these forward-looking statements after the date of this press release to conform these statements to actual results or revised expectations."
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "About C3.ai, Inc."
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "C3.ai, Inc. (NYSE:AI) is the Enterprise AI application software company. C3 AI delivers a family of fully integrated products including the C3 Agentic AI Platform, an end-to-end platform for developing, deploying, and operating enterprise AI applications, C3 AI applications, a portfolio of industry-specific SaaS enterprise AI applications that enable the digital transformation of organizations globally, and C3 Generative AI, a suite of domain-specific generative AI offerings for the enterprise."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "Investor Contact"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "ir@c3.ai"
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "C3 AI Public Relations"
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "Axicom"
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "Mindy Nelson"
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "830-214-4823"
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "pr@c3.ai"
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "C3.AI, INC."
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS"
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "(In thousands, except per share data)"
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P49",
+   "kind": "table",
+   "text": "Three Months Ended July 31,\n2026 | 2025\nRevenue\nSubscription | $ | 49,169 | $ | 60,301\nProfessional services | 3,206 | 9,960\nTotal revenue | 52,375 | 70,261\nCost of revenue\nSubscription | 34,720 | 41,481\nProfessional services | 986 | 2,336\nTotal cost of revenue | 35,706 | 43,817\nGross profit | 16,669 | 26,444\nOperating expenses\nSales and marketing | 41,611 | 62,513\nResearch and development | 46,549 | 64,651\nGeneral and administrative | 26,079 | 24,099\nRestructuring | 698 | -\nTotal operating expenses | 114,937 | 151,263\nLoss from operations | (98,268) | (124,819)\nInterest income | 5,957 | 8,218\nOther (expense) income, net | (338) | 132\nLoss before provision for income taxes | (92,649) | (116,469)\nProvision for income taxes | 163 | 300\nNet loss | $ | (92,812) | $ | (116,769)\nNet loss per share attributable to Class A and Class B common stockholders, basic and diluted | $ | (0.60) | $ | (0.86)\nWeighted-average shares used in computing net loss per share attributable to Class A and Class B common stockholders, basic and diluted | 154,999 | 135,375"
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "C3.AI, INC."
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "CONDENSED CONSOLIDATED BALANCE SHEETS"
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "(In thousands, except for share and per share data)"
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P54",
+   "kind": "table",
+   "text": "July 31, 2026 | April 30, 2026\nAssets\nCurrent assets\nCash and cash equivalents | $ | 136,435 | $ | 66,197\nMarketable securities | 514,634 | 509,252\nAccounts receivable, net of allowance of $1,099 and $1,065 as of July 31, 2026 and April 30, 2026, respectively | 94,568 | 100,548\nPrepaid expenses and other current assets | 24,531 | 31,965\nTotal current assets | 770,168 | 707,962\nProperty and equipment, net | 63,569 | 66,904\nGoodwill | 625 | 625\nOther assets, non-current | 40,442 | 40,782\nTotal assets | $ | 874,804 | $ | 816,273\nLiabilities and stockholders' equity\nCurrent liabilities\nAccounts payable | $ | 8,741 | $ | 5,509\nAccrued compensation and employee benefits | 44,038 | 48,560\nDeferred revenue, current | 52,568 | 34,861\nAccrued and other current liabilities | 19,775 | 17,641\nTotal current liabilities | 125,122 | 106,571\nDeferred revenue, non-current | 1,106 | 1,560\nOther long-term liabilities | 53,680 | 54,391\nTotal liabilities | 179,908 | 162,522\nCommitments and contingencies\nStockholders' equity\nClass A common stock | 156 | 145\nClass B common stock | 3 | 3\nAdditional paid-in capital | 2,637,163 | 2,502,657\nAccumulated other comprehensive loss | (610) | (50)\nAccumulated deficit | (1,941,816) | (1,849,004)\nTotal stockholders' equity | 694,896 | 653,751\nTotal liabilities and stockholders' equity | $ | 874,804 | $ | 816,273"
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "C3.AI, INC."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS"
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "(In thousands)"
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P59",
+   "kind": "table",
+   "text": "Three Months Ended July 31,\n2026 | 2025\nCash flows from operating activities:\nNet loss | $ | (92,812) | $ | (116,769)\nAdjustments to reconcile net loss to net cash provided by (used in) operating activities\nDepreciation and amortization | 3,403 | 3,415\nNon-cash operating lease cost | 149 | 88\nStock-based compensation expense | 59,233 | 64,775\nAccretion of discounts on marketable securities | (1,305) | (2,811)\nOther | 34 | 262\nChanges in operating assets and liabilities\nAccounts receivable | 5,946 | 23,302\nPrepaid expenses, other current assets and other assets | 7,562 | (230)\nAccounts payable | 3,083 | (2,931)\nAccrued compensation and employee benefits | (2,048) | 3,343\nOperating lease liabilities | (1,300) | 2,187\nOther liabilities | 2,874 | (1,538)\nDeferred revenue | 17,253 | (6,628)\nNet cash provided by (used in) operating activities | 2,072 | (33,535)\nCash flows from investing activities:\nPurchases of property and equipment | (8) | (760)\nPurchases of marketable securities | (129,154) | (206,492)\nMaturities and sales of marketable securities | 124,516 | 156,081\nNet cash used in investing activities | (4,646) | (51,171)\nCash flows from financing activities:\nProceeds from exercise of Class A common stock options | 72,812 | 1,289\nNet cash provided by financing activities | 72,812 | 1,289\nNet increase (decrease) in cash, cash equivalents and restricted cash | 70,238 | (83,417)\nCash, cash equivalents and restricted cash at beginning of period | 78,763 | 176,924\nCash, cash equivalents and restricted cash at end of period | $ | 149,001 | $ | 93,507\nCash and cash equivalents | $ | 136,435 | $ | 80,941\nRestricted cash included in other assets, non-current | 12,566 | 12,566\nTotal cash, cash equivalents and restricted cash | $ | 149,001 | $ | 93,507\nSupplemental disclosure of cash flow information-cash paid for income taxes | $ | 518 | $ | 452\nSupplemental disclosures of non-cash investing and financing activities:\nPurchases of property and equipment included in accounts payable and accrued liabilities | $ | 149 | $ | 201\nRight-of-use assets obtained in exchange for lease obligations (including remeasurement of right-of-use assets and lease liabilities due to changes in the timing of receipt of lease incentives) | $ | - | $ | (166)\nVesting of early exercised stock options | $ | - | $ | 5"
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "C3.AI, INC."
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES"
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "(In thousands, except percentages)"
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "(Unaudited)"
+  },
+  {
+   "id": "P64",
+   "kind": "table",
+   "text": "Three Months Ended July 31,\n2026 | 2025\nReconciliation of GAAP gross profit to non-GAAP gross profit:\nGross profit on a GAAP basis | $ | 16,669 | $ | 26,444\nStock-based compensation expense (1) | 8,788 | 9,290\nEmployer payroll tax expense related to employee stock-based compensation (2) | 635 | 586\nGross profit on a non-GAAP basis | $ | 26,092 | $ | 36,320\nGross margin on a GAAP basis | 32% | 38%\nGross margin on a non-GAAP basis | 50% | 52%\nReconciliation of GAAP loss from operations to non-GAAP loss from operations:\nLoss from operations on a GAAP basis | $ | (98,268) | $ | (124,819)\nStock-based compensation expense (1) | 59,233 | 64,775\nEmployer payroll tax expense related to employee stock-based compensation (2) | 2,178 | 2,220\nRestructuring (3) | 698 | -\nLoss from operations on a non-GAAP basis | $ | (36,159) | $ | (57,824)\nReconciliation of GAAP net loss per share to non-GAAP net loss per share:\nNet loss on a GAAP basis | $ | (92,812) | $ | (116,769)\nStock-based compensation expense (1) | 59,233 | 64,775\nEmployer payroll tax expense related to employee stock-based compensation (2) | 2,178 | 2,220\nRestructuring (3) | 698 | -\nNet loss on a non-GAAP basis | $ | (30,703) | $ | (49,774)\nGAAP net loss per share attributable to Class A and Class B common shareholders, basic and diluted | $ | (0.60) | $ | (0.86)\nNon-GAAP net loss per share attributable to Class A and Class B common shareholders, basic and diluted | $ | (0.20) | $ | (0.37)\nWeighted-average shares used in computing net loss per share attributable to Class A and Class B common stockholders, basic and diluted | 154,999 | 135,375"
+  },
+  {
+   "id": "P65",
+   "kind": "table",
+   "text": "Three Months Ended\nJuly 31, 2026 | April 30, 2026 | July 31, 2025\nReconciliation of GAAP expenses to non-GAAP expenses:\nTotal cost of revenue | $ | 35,706 | $ | 40,277 | $ | 43,817\nTotal operating expenses | 114,937 | 132,481 | 151,263\nGAAP expenses | 150,643 | 172,758 | 195,080\nStock-based compensation expense (1) | 59,233 | 54,187 | 64,775\nEmployer payroll tax expense related to employee stock-based compensation (2) | 2,178 | 1,785 | 2,220\nRestructuring (3) | 698 | 10,828 | -\nNon-GAAP expenses | $ | 88,534 | $ | 105,958 | $ | 128,085"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "(1)Stock-based compensation expense for gross profits and gross margin includes costs of subscription and cost of professional services as follows. Stock-based compensation expense for loss from operations includes total stock-based compensation expense as follows:"
+  },
+  {
+   "id": "P67",
+   "kind": "table",
+   "text": "Three Months Ended July 31,\n2026 | 2025\nCost of subscription | $ | 8,524 | $ | 8,622\nCost of professional services | 264 | 668\nSales and marketing | 17,592 | 24,181\nResearch and development | 20,037 | 19,323\nGeneral and administrative | 12,816 | 11,981\nTotal stock-based compensation expense | $ | 59,233 | $ | 64,775"
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "(2) Employer payroll tax expense related to employee stock-based compensation for gross profits and gross margin includes costs of subscription and cost of professional services as follows. Employer payroll tax expense related to employee stock-based compensation for loss from operations includes total employer payroll tax expense related to employee stock-based compensation as follows:"
+  },
+  {
+   "id": "P69",
+   "kind": "table",
+   "text": "Three Months Ended July 31,\n2026 | 2025\nCost of subscription | $ | 615 | $ | 550\nCost of professional services | 20 | 36\nSales and marketing | 573 | 674\nResearch and development | 700 | 793\nGeneral and administrative | 270 | 167\nTotal employer payroll tax expense | $ | 2,178 | $ | 2,220"
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "(3) Non-GAAP Loss from Operations exclude approximately $0.7 million of pre-tax restructuring charges which primarily consists of vendor consolidation costs."
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "Reconciliation of free cash flow to the GAAP measure of net cash provided by (used in) operating activities:"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "The following table below provides a reconciliation of free cash flow to the GAAP measure of net cash provided by (used in) operating activities for the periods presented:"
+  },
+  {
+   "id": "P73",
+   "kind": "table",
+   "text": "Three Months Ended July 31,\n2026 | 2025\nNet cash provided by (used in) operating activities | $ | 2,072 | $ | (33,535)\nLess:\nPurchases of property and equipment | (8) | (760)\nFree cash flow | $ | 2,064 | $ | (34,295)\nNet cash used in investing activities | $ | (4,646) | $ | (51,171)\nNet cash provided by financing activities | $ | 72,812 | $ | 1,289"
+  }
+ ]
+}

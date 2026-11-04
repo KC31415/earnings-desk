@@ -1,0 +1,1446 @@
+{
+ "ticker": "MSFT",
+ "name": "MICROSOFT CORP",
+ "fiscal_label": "FY2027 Q1",
+ "calendar_label": "CY2026 Q3",
+ "period_end": "2026-09-30",
+ "source": {
+  "earnings_8k_accn": "0001193125-26-436122",
+  "earnings_8k_date": "2026-10-28",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/0001193125-26-436122-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-ex99_1.htm"
+ },
+ "generated_at": "2026-11-04T18:50:14+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 8552,
+   "output_tokens": 102
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 9783,
+   "output_tokens": 1967
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P5",
+  "P6",
+  "P7",
+  "P8",
+  "P10",
+  "P11",
+  "P13",
+  "P16",
+  "P17",
+  "P18",
+  "P19",
+  "P20",
+  "P21",
+  "P22",
+  "P23",
+  "P24",
+  "P25",
+  "P26",
+  "P27",
+  "P29",
+  "P36",
+  "P41",
+  "P43",
+  "P46",
+  "P84",
+  "P86",
+  "P92",
+  "P99",
+  "P103"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "Microsoft reported FY2027 Q1 revenue of $92.3 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2027 Q1",
+     "value": "92.3",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 92279000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 92279000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Operating income was $45.9 billion.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2027 Q1",
+     "value": "45.9",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 45915000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "operating_income",
+         "value": 45915000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP net income was $36.6 billion.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2027 Q1",
+     "value": "36.6",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 36629000000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "net_income",
+         "value": 36629000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Diluted EPS was $4.92.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2027 Q1",
+     "value": "4.92",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 4.92,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "eps_diluted",
+         "value": 4.92,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Microsoft Cloud revenue was $63.9 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "63.9",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P18"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P18"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue rose 18.8% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2027 Q1",
+     "value": "18.8",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 18.804475171552536,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 92279000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-09-30",
+         "metric": "revenue",
+         "value": 77673000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Net income grew 32% year over year.",
+     "claim_type": "numeric",
+     "metric": "net_income_yoy",
+     "period": "FY2027 Q1",
+     "value": "32",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 32.0106678199445,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "net_income",
+         "value": 36629000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-09-30",
+         "metric": "net_income",
+         "value": 27747000000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Capital expenditures roughly doubled, up 103% year over year.",
+     "claim_type": "numeric",
+     "metric": "capex_yoy",
+     "period": "FY2027 Q1",
+     "value": "103",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "PaymentsToAcquirePropertyPlantAndEquipment"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 102.98545942043931,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "capex",
+         "value": 39367000000.0,
+         "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-09-30",
+         "metric": "capex",
+         "value": 19394000000.0,
+         "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Free cash flow fell 27.4% year over year.",
+     "claim_type": "numeric",
+     "metric": "free_cash_flow_yoy",
+     "period": "FY2027 Q1",
+     "value": "27.4",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -27.393523750146127,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "free_cash_flow",
+         "value": 18633000000.0,
+         "concept": "(derived)",
+         "accn": "0001193125-26-436133",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        },
+        {
+         "period": "FY2026 Q1",
+         "period_end": "2025-09-30",
+         "metric": "free_cash_flow",
+         "value": 25663000000.0,
+         "concept": "(derived)",
+         "accn": "0001193125-26-436133",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        }
+       ],
+       "formula": "(FY2027 Q1 / FY2026 Q1 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Azure revenue increased 48%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "48",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    },
+    {
+     "text": "Operating margin was 49.8%.",
+     "claim_type": "numeric",
+     "metric": "operating_margin",
+     "period": "FY2027 Q1",
+     "value": "49.8",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 49.75671604590427,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "operating_income",
+         "value": 45915000000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 92279000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "operating_income / revenue \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "The CFO highlighted accelerating cloud growth, saying results \"exceeded expectations across revenue, operating income, and earnings per share.\"",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "Results exceeded expectations across revenue, operating income, and earnings per share.",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P11"
+     },
+     "verification": {
+      "status": "mismatch",
+      "reason": "the sentence paraphrases instead of containing the quoted words",
+      "actual": null,
+      "method": "exact_substring"
+     }
+    },
+    {
+     "text": "Nadella said Microsoft is \"translating our innovation into growing adoption and real-world impact across every industry.\"",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "we are translating our innovation into growing adoption and real-world impact across every industry",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P10"
+     },
+     "verification": {
+      "status": "mismatch",
+      "reason": "the sentence paraphrases instead of containing the quoted words",
+      "actual": null,
+      "method": "exact_substring"
+     }
+    },
+    {
+     "text": "Net income growth benefited from a comparison against prior-year OpenAI investment losses.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P36"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P36"
+      }
+     }
+    },
+    {
+     "text": "Formal forward guidance was deferred to the earnings call.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P29"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P29"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Commercial remaining performance obligation was $677 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "677",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P17"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P17"
+      }
+     }
+    },
+    {
+     "text": "Watch whether capex intensity continues to compress free cash flow margin, which was 20.2% this quarter.",
+     "claim_type": "numeric",
+     "metric": "fcf_margin",
+     "period": "FY2027 Q1",
+     "value": "20.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "(derived)"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 20.192026354858637,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "free_cash_flow",
+         "value": 18633000000.0,
+         "concept": "(derived)",
+         "accn": "0001193125-26-436133",
+         "derived": true,
+         "derivation": "operating cash flow \u2212 capex"
+        },
+        {
+         "period": "FY2027 Q1",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 92279000000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001193125-26-436133",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "free_cash_flow / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Windows OEM and Devices revenue decreased 22%.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2027 Q1",
+     "value": "22",
+     "unit": "percent",
+     "source": {
+      "type": "press_release",
+      "ref": "P26"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P26"
+      }
+     }
+    },
+    {
+     "text": "Investors should track whether Azure growth stays elevated and whether Microsoft Cloud growth holds its acceleration.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P11"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P11"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 19,
+  "by_status": {
+   "verified": 14,
+   "mismatch": 2,
+   "sourced": 3
+  },
+  "numeric": 14,
+  "numeric_verified": 14,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "Microsoft reported FY2027 Q1 revenue of $92.3 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2027 Q1",
+      "value": "92.3",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Operating income was $45.9 billion.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2027 Q1",
+      "value": "45.9",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP net income was $36.6 billion.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2027 Q1",
+      "value": "36.6",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Diluted EPS was $4.92.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2027 Q1",
+      "value": "4.92",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Microsoft Cloud revenue was $63.9 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "63.9",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P18"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue rose 18.8% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2027 Q1",
+      "value": "18.8",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Net income grew 32% year over year.",
+      "claim_type": "numeric",
+      "metric": "net_income_yoy",
+      "period": "FY2027 Q1",
+      "value": "32",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Capital expenditures roughly doubled, up 103% year over year.",
+      "claim_type": "numeric",
+      "metric": "capex_yoy",
+      "period": "FY2027 Q1",
+      "value": "103",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "PaymentsToAcquirePropertyPlantAndEquipment"
+      }
+     },
+     {
+      "text": "Free cash flow fell 27.4% year over year.",
+      "claim_type": "numeric",
+      "metric": "free_cash_flow_yoy",
+      "period": "FY2027 Q1",
+      "value": "27.4",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     },
+     {
+      "text": "Azure revenue increased 48%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "48",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     },
+     {
+      "text": "Operating margin was 49.8%.",
+      "claim_type": "numeric",
+      "metric": "operating_margin",
+      "period": "FY2027 Q1",
+      "value": "49.8",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "The CFO highlighted accelerating cloud growth, saying results \"exceeded expectations across revenue, operating income, and earnings per share.\"",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "Results exceeded expectations across revenue, operating income, and earnings per share.",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P11"
+      }
+     },
+     {
+      "text": "Nadella said Microsoft is \"translating our innovation into growing adoption and real-world impact across every industry.\"",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "we are translating our innovation into growing adoption and real-world impact across every industry",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P10"
+      }
+     },
+     {
+      "text": "Net income growth benefited from a comparison against prior-year OpenAI investment losses.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P36"
+      }
+     },
+     {
+      "text": "Formal forward guidance was deferred to the earnings call.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P29"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Commercial remaining performance obligation was $677 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "677",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P17"
+      }
+     },
+     {
+      "text": "Watch whether capex intensity continues to compress free cash flow margin, which was 20.2% this quarter.",
+      "claim_type": "numeric",
+      "metric": "fcf_margin",
+      "period": "FY2027 Q1",
+      "value": "20.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "(derived)"
+      }
+     },
+     {
+      "text": "Windows OEM and Devices revenue decreased 22%.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2027 Q1",
+      "value": "22",
+      "unit": "percent",
+      "source": {
+       "type": "press_release",
+       "ref": "P26"
+      }
+     },
+     {
+      "text": "Investors should track whether Azure growth stays elevated and whether Microsoft Cloud growth holds its acceleration.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P11"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 msft-ex99_1.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Exhibit 99.1"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "Microsoft Announces First Quarter Results"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "REDMOND, Wash. - October 28, 2026 - Microsoft Corp. today announced the following results for the quarter ended September 30, 2026, as compared to the corresponding period of last fiscal year:"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "Revenue was $92.3 billion and increased 19%"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "Operating income was $45.9 billion and increased 21% (up 22% in constant currency)"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "Net income was $36.6 billion and increased 32% on a GAAP basis, and was $36.4 billion and increased 18% (up 19% in constant currency) on a non-GAAP basis"
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "Diluted earnings per share was $4.92 and increased 32% on a GAAP basis, and was $4.89 and increased 18% (up 19% in constant currency) on a non-GAAP basis"
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "Non-GAAP results exclude the impact from investments in OpenAI, explained in the Non-GAAP Definition section below"
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "\"We are delivering greater capability, choice, control, and cost efficiency for customers across our entire stack,\" said Satya Nadella, chairman and chief executive officer of Microsoft. \"By helping organizations build and own their own intelligence, and earning trust through agent safety and security, we are translating our innovation into growing adoption and real-world impact across every industry.\""
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "\"We delivered a strong start to the fiscal year with Microsoft Cloud revenue of $63.9 billion, with growth accelerating to 30% (up 31% in constant currency) year-over-year,\" said Amy Hood, executive vice president and chief financial officer of Microsoft. \"Results exceeded expectations across revenue, operating income, and earnings per share.\""
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "The following table adjusts for the impact from investments in OpenAI and reconciles our financial results reported in accordance with generally accepted accounting principles (GAAP) to non-GAAP financial results. Additional information regarding our non-GAAP definition is provided below. All growth comparisons relate to the corresponding period in the last fiscal year."
+  },
+  {
+   "id": "P13",
+   "kind": "table",
+   "text": "Three Months Ended September 30,\n2026 | 2025 | Percentage Change Y/Y | Percentage Change Y/Y\n($ in millions, except per share amounts) | As Reported (GAAP) | Impact from OpenAI* | As Adjusted (non-GAAP) | As Reported (GAAP) | Impact from OpenAI* | As Adjusted (non-GAAP) | GAAP | Constant Currency | Net Impact from OpenAI* | Non-GAAP | Non-GAAP Constant Currency\nNet income | $36,629 | $(207) | $36,422 | $27,747 | $3,086 | $30,833 | 32% | 33% | $(3,293) | 18% | 19%\nDiluted earnings per share | $4.92 | $(0.03) | $4.89 | $3.72 | $0.41 | $4.13 | 32% | 33% | $(0.44) | 18% | 19%"
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "*Impact from OpenAI adjusts for the impact from investments in OpenAI"
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "Business Highlights"
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "Revenue in Agents and Infra was $76.8 billion and increased 25%, with the following business highlights:"
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "Commercial remaining performance obligation increased 73% to $677 billion"
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "Microsoft Cloud revenue was $63.9 billion and increased 30% (up 31% in constant currency)"
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "Azure revenue increased 48%"
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "Microsoft 365 commercial cloud revenue increased 18% (up 19% in constant currency) on an adjusted basis, normalized for a 1-point benefit from in-period revenue recognition in the prior year, and increased 17% (up 18% in constant currency) on a reported basis"
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "Microsoft 365 consumer cloud revenue increased 17% (up 16% in constant currency)"
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "Industry solutions cloud revenue increased 10%"
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "Revenue in Devices and Consumer was $15.5 billion and decreased 3%, with the following business highlights:"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "Search and advertising revenue excluding traffic acquisition costs increased 12%"
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "XBOX content and services revenue decreased 2% (down 1% in constant currency)"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "Windows OEM and Devices revenue decreased 22%"
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "Microsoft returned $10.2 billion to shareholders in the form of dividends and share repurchases in the first quarter of fiscal year 2027."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "Business Outlook"
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "Microsoft will provide forward-looking guidance in connection with this quarterly earnings announcement on its earnings conference call and webcast."
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "Quarterly Highlights, Product Releases, and Customer Stories"
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "Every quarter Microsoft delivers hundreds of products, services, and enhancements. These releases are driven by years of significant research and development investments, to empower customers with greater productivity, security, and differentiated value."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "This momentum is reflected in stories that showcase how our technology is shaping industries and driving customer success. We share innovation updates on our product blogs across Azure, Microsoft 365, and more on our Official Microsoft blog."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "Webcast Details"
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "Satya Nadella, chairman and chief executive officer, Amy Hood, executive vice president and chief financial officer, Alice Jolla, chief accounting officer, Brian DeFoe, deputy general counsel and corporate secretary, and Jonathan Neilson, vice president of investor relations, will host a conference call and webcast at 2:30 p.m. Pacific time (5:30 p.m. Eastern time) today to discuss details of the company's performance for the quarter and certain forward-looking information. The session may be accessed at http://www.microsoft.com/en-us/investor. Participants can also dial into the conference call at (877) 407-0666 or +1 (201) 689-8023 for international, no password required. The webcast will be available for replay through the close of business on October 28, 2027."
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "Non-GAAP Definition"
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "Impact from investments in OpenAI. In the first quarter of fiscal year 2027, net income and diluted earnings per share were impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted earnings per share of $207 million and $0.03, respectively. In the first quarter of fiscal year 2026, net income and diluted earnings per share were impacted by net losses from investments in OpenAI, which resulted in a decrease in net income and diluted earnings per share of $3.1 billion and $0.41, respectively."
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "Microsoft has provided non-GAAP financial measures related to the impact from investments in OpenAI to aid investors in better understanding our performance. Microsoft believes these non-GAAP measures assist investors by providing additional insight into its operational performance and help clarify trends affecting its business. For comparability of reporting, management considers non-GAAP measures in conjunction with GAAP financial results in evaluating business performance. The non-GAAP financial measures presented in this release should not be considered as a substitute for, or superior to, the measures of financial performance prepared in accordance with GAAP."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "Constant Currency"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "Microsoft presents constant currency information to provide a framework for assessing how our underlying businesses performed excluding the effect of foreign currency rate fluctuations. To present this information, current and comparative prior period results for entities reporting in currencies other than United States dollars are converted into United States dollars using the average exchange rates from the comparative period rather than the actual exchange rates in effect during the respective periods. All growth comparisons relate to the corresponding period in the last fiscal year. Microsoft has provided this non-GAAP financial information to aid investors in better understanding our performance. The non-GAAP financial measures presented in this release should not be considered as a substitute for, or superior to, the measures of financial performance prepared in accordance with GAAP."
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "Financial Performance Constant Currency Reconciliation"
+  },
+  {
+   "id": "P41",
+   "kind": "table",
+   "text": "Three Months Ended September 30,\n2026 | 2025 | Percentage Change Y/Y | Percentage Change Y/Y\n($ in millions, except per share amounts) | As Reported (GAAP) | As Adjusted (non-GAAP) | As Reported (GAAP) | As Adjusted (non-GAAP) | GAAP | Non-GAAP | Constant Currency Impact | Constant Currency | Non-GAAP Constant Currency\nRevenue | $92,279 | - | $77,673 | - | 19% | - | $(309) | 19% | -\nOperating income | $45,915 | - | $37,961 | - | 21% | - | $(297) | 22% | -\nNet income | $36,629 | $36,422 | $27,747 | $30,833 | 32% | 18% | $(242) | 33% | 19%\nDiluted earnings per share | $4.92 | $4.89 | $3.72 | $4.13 | 32% | 18% | $(0.03) | 33% | 19%"
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "Segment Revenue Constant Currency Reconciliation"
+  },
+  {
+   "id": "P43",
+   "kind": "table",
+   "text": "Three Months Ended September 30,\n2026 | 2025 | Percentage Change Y/Y | Percentage Change Y/Y\n($ in millions) | As Reported (GAAP) | As Reported (GAAP) | GAAP | Constant Currency Impact | Constant Currency\nAgents and Infra | $76,795 | $61,672 | 25% | $(290) | 25%\nDevices and Consumer | $15,484 | $16,001 | (3)% | $(19) | (3)%"
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026."
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "Selected Product and Service Information Constant Currency Reconciliation"
+  },
+  {
+   "id": "P46",
+   "kind": "table",
+   "text": "Three Months Ended September 30, 2026\nPercentage Change Y/Y (GAAP) | Constant Currency Impact | Percentage Change Y/Y Constant Currency\nCommercial remaining performance obligation | 73% | 0% | 73%\nMicrosoft Cloud revenue | 30% | 1% | 31%\nAzure revenue | 48% | 0% | 48%\nMicrosoft 365 commercial cloud revenue | 17% | 1% | 18%\nMicrosoft 365 consumer cloud revenue | 17% | (1)% | 16%\nIndustry solutions cloud revenue | 10% | 0% | 10%\nSearch and advertising revenue excluding traffic acquisition costs | 12% | 0% | 12%\nXBOX content and services revenue | (2)% | 1% | (1)%\nWindows OEM and devices revenue | (22)% | 0% | (22)%"
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "About Microsoft"
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "Microsoft (Nasdaq \"MSFT\" @microsoft) creates platforms and tools powered by AI to deliver innovative solutions that meet the evolving needs of our customers. The technology company is committed to making AI available broadly and doing so responsibly, with a mission to empower every person and every organization on the planet to achieve more."
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "Forward-Looking Statements"
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "Statements in this release that are \"forward-looking statements\" are based on current expectations and assumptions that are subject to risks and uncertainties. Actual results could differ materially because of factors such as:"
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "intense competition in all of our markets that could adversely affect our results of operations;"
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "substantial investments in cloud and AI strategy that depend on customer demand, technological developments, competitive dynamics, and regulatory condition;"
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "development, delivery, and maintenance of competitive cloud-based and AI products and services that achieve broad customer adoption and sustainable revenue growth;"
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "significant investments in products and services that may not achieve expected returns;"
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "acquisitions, joint ventures, and strategic alliances that could have an adverse effect on our business;"
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "cyberattacks and security vulnerabilities that could lead to reduced revenue, increased costs, liability claims, or harm to our reputation or competitive position;"
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "disclosure and misuse of personal data that could cause liability and harm to our reputation;"
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "the possibility that we may not be able to protect information in our products and services from use by others;"
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "abuse of our platforms that may harm our reputation or user engagement;"
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "products and services, how they are used by customers, and how third-party products and services interact with them, presenting security, privacy, and execution risks;"
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "issues about the development, deployment, and use of AI that may result in reputational or competitive harm, or liability;"
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "inability to develop and expand adequate infrastructure;"
+  },
+  {
+   "id": "P63",
+   "kind": "text",
+   "text": "supply or other quality problems;"
+  },
+  {
+   "id": "P64",
+   "kind": "text",
+   "text": "excessive outages, disruptions, or capacity constraints of our services if we fail to maintain an adequate operations infrastructure or secure resources necessary to support it;"
+  },
+  {
+   "id": "P65",
+   "kind": "text",
+   "text": "potential consequences of new, existing, and evolving legal and regulatory requirements;"
+  },
+  {
+   "id": "P66",
+   "kind": "text",
+   "text": "claims against us that could result in adverse outcomes in legal disputes;"
+  },
+  {
+   "id": "P67",
+   "kind": "text",
+   "text": "uncertainties relating to our business with government customers;"
+  },
+  {
+   "id": "P68",
+   "kind": "text",
+   "text": "additional tax liabilities;"
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "an inability to protect and utilize our intellectual property may harm our business and operating results;"
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "claims that Microsoft has infringed the intellectual property rights of others;"
+  },
+  {
+   "id": "P71",
+   "kind": "text",
+   "text": "damage to our reputation or our brands that may harm our business and results of operations;"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "adverse economic or market conditions that could harm our business;"
+  },
+  {
+   "id": "P73",
+   "kind": "text",
+   "text": "catastrophic events or geopolitical conditions that could disrupt our business;"
+  },
+  {
+   "id": "P74",
+   "kind": "text",
+   "text": "exposure to increased economic and operational uncertainties from operating a global business, including the effects of foreign currency exchange; and"
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "the dependence of our business on our ability to attract and retain talented employees."
+  },
+  {
+   "id": "P76",
+   "kind": "text",
+   "text": "For more information about risks and uncertainties associated with Microsoft's business, please refer to the \"Management's Discussion and Analysis of Financial Condition and Results of Operations\" and \"Risk Factors\" sections of Microsoft's SEC filings, including, but not limited to, its annual report on Form 10-K and quarterly reports on Form 10-Q, copies of which may be obtained by contacting Microsoft's Investor Relations department at (800) 285-7772 or at Microsoft's Investor Relations website at http://www.microsoft.com/en-us/investor."
+  },
+  {
+   "id": "P77",
+   "kind": "text",
+   "text": "All information in this release is as of September 30, 2026. The company undertakes no duty to update any forward-looking statement to conform the statement to actual results or changes in the company's expectations."
+  },
+  {
+   "id": "P78",
+   "kind": "text",
+   "text": "For more information, press only:"
+  },
+  {
+   "id": "P79",
+   "kind": "text",
+   "text": "Microsoft Media Relations, WE Communications for Microsoft, (425) 638-7777, rrt@we-worldwide.com"
+  },
+  {
+   "id": "P80",
+   "kind": "text",
+   "text": "For more information, financial analysts and investors only:"
+  },
+  {
+   "id": "P81",
+   "kind": "text",
+   "text": "Jonathan Neilson, Vice President, Investor Relations, (425) 706-4400"
+  },
+  {
+   "id": "P82",
+   "kind": "text",
+   "text": "Note to editors: For more information, news and perspectives from Microsoft, please visit the Microsoft News Center at http://www.microsoft.com/news. Web links, telephone numbers, and titles were correct at time of publication, but may since have changed. Shareholder and financial information, as well as today's 2:30 p.m. Pacific time conference call with investors and analysts, is available at http://www.microsoft.com/en-us/investor."
+  },
+  {
+   "id": "P83",
+   "kind": "text",
+   "text": "MICROSOFT CORPORATION"
+  },
+  {
+   "id": "P84",
+   "kind": "text",
+   "text": "INCOME STATEMENTS"
+  },
+  {
+   "id": "P85",
+   "kind": "text",
+   "text": "(In millions, except per share amounts) (Unaudited)"
+  },
+  {
+   "id": "P86",
+   "kind": "table",
+   "text": "Three Months EndedSeptember 30,\n2026 | 2025\nRevenue:\nProduct | $14,631 | $15,922\nService and other | 77,648 | 61,751\nTotal revenue | 92,279 | 77,673\nCost of revenue:\nProduct | 2,471 | 2,922\nService and other | 27,249 | 21,121\nTotal cost of revenue | 29,720 | 24,043\nGross margin | 62,559 | 53,630\nResearch and development | 9,047 | 8,146\nSales and marketing | 5,716 | 5,717\nGeneral and administrative | 1,881 | 1,806\nOperating income | 45,915 | 37,961\nOther income (expense), net | 38 | (3,660)\nIncome before income taxes | 45,953 | 34,301\nProvision for income taxes | 9,324 | 6,554\nNet income | $36,629 | $27,747\nEarnings per share:\nBasic | $4.93 | $3.73\nDiluted | $4.92 | $3.72\nWeighted average shares outstanding:\nBasic | 7,426 | 7,433\nDiluted | 7,446 | 7,466"
+  },
+  {
+   "id": "P87",
+   "kind": "text",
+   "text": "COMPREHENSIVE INCOME STATEMENTS"
+  },
+  {
+   "id": "P88",
+   "kind": "text",
+   "text": "(In millions) (Unaudited)"
+  },
+  {
+   "id": "P89",
+   "kind": "table",
+   "text": "Three Months Ended\nSeptember 30,\n2026 | 2025\nNet income | $36,629 | $27,747\nOther comprehensive income (loss), net of tax:\nNet change related to derivatives | 3 | (3)\nNet change related to investments | (559) | 687\nTranslation adjustments and other | (17) | (98)\nOther comprehensive income (loss) | (573) | 586\nComprehensive income | $36,056 | $28,333"
+  },
+  {
+   "id": "P90",
+   "kind": "text",
+   "text": "BALANCE SHEETS"
+  },
+  {
+   "id": "P91",
+   "kind": "text",
+   "text": "(In millions) (Unaudited)"
+  },
+  {
+   "id": "P92",
+   "kind": "table",
+   "text": "September 30,2026 | June 30,2026\nAssets\nCurrent assets:\nCash and cash equivalents | $20,281 | $20,935\nShort-term investments | 44,228 | 55,908\nTotal cash, cash equivalents, and short-term investments | 64,509 | 76,843\nAccounts receivable, net of allowance for doubtful accounts of $728 and $1,040 | 62,084 | 80,876\nInventories | 1,835 | 1,397\nOther current assets | 57,709 | 48,594\nTotal current assets | 186,137 | 207,710\nProperty and equipment, net of accumulated depreciation of $127,208 and $118,691 | 346,844 | 313,076\nOperating lease right-of-use assets | 30,178 | 24,177\nEquity and other investments | 37,808 | 36,348\nGoodwill | 119,646 | 119,651\nIntangible assets, net | 17,751 | 18,609\nOther long-term assets | 41,039 | 38,805\nTotal assets | $779,403 | $758,376\nLiabilities and stockholders' equity\nCurrent liabilities:\nAccounts payable | $42,625 | $42,416\nCurrent portion of long-term debt | 4,391 | 9,227\nAccrued compensation | 10,156 | 14,945\nShort-term income taxes | 1,447 | 2,534\nShort-term unearned revenue | 66,866 | 72,965\nOther current liabilities | 26,483 | 26,738\nTotal current liabilities | 151,968 | 168,825\nLong-term debt | 31,090 | 31,067\nLong-term income taxes | 29,235 | 28,647\nLong-term unearned revenue | 2,697 | 2,747\nDeferred income taxes | 3,174 | 3,054\nOperating lease liabilities | 21,719 | 16,532\nOther long-term liabilities | 69,011 | 65,117\nTotal liabilities | 308,894 | 315,989\nCommitments and contingencies\nStockholders' equity:\nCommon stock and paid-in capital - shares authorized 24,000; outstanding 7,427 and 7,427 | 119,571 | 117,406\nRetained earnings | 354,795 | 328,265\nAccumulated other comprehensive loss | (3,857) | (3,284)\nTotal stockholders' equity | 470,509 | 442,387\nTotal liabilities and stockholders' equity | $779,403 | $758,376"
+  },
+  {
+   "id": "P93",
+   "kind": "text",
+   "text": "CASH FLOWS STATEMENTS"
+  },
+  {
+   "id": "P94",
+   "kind": "text",
+   "text": "(In millions) (Unaudited)"
+  },
+  {
+   "id": "P95",
+   "kind": "table",
+   "text": "Three Months Ended\nSeptember 30,\n2026 | 2025\nOperations\nNet income | $36,629 | $27,747\nAdjustments to reconcile net income to net cash from operations:\nDepreciation, amortization, and other | 11,744 | 8,147\nStock-based compensation expense | 3,134 | 2,983\nNet recognized losses (gains) on investments and derivatives | (231) | 3,907\nDeferred income taxes | 4,609 | 2,491\nChanges in operating assets and liabilities:\nAccounts receivable | 17,104 | 16,490\nInventories | (436) | (192)\nOther current assets | (1,903) | (1,162)\nOther long-term assets | (6,389) | (394)\nAccounts payable | 525 | (614)\nUnearned revenue | (5,942) | (5,418)\nIncome taxes | (556) | (2,944)\nOther current liabilities | (4,528) | (5,507)\nOther long-term liabilities | 4,240 | (477)\nNet cash from operations | 58,000 | 45,057\nFinancing\nRepayments of debt | (4,850) | 0\nCommon stock issued | 598 | 689\nCommon stock repurchased | (4,379) | (5,650)\nCommon stock cash dividends paid | (6,757) | (6,169)\nOther, net | (1,252) | (669)\nNet cash used in financing | (16,640) | (11,799)\nInvesting\nAdditions to property and equipment | (39,367) | (19,394)\nAcquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets | (397) | (578)\nPurchases of investments | (5,394) | (17,671)\nMaturities of investments | 5,672 | 6,031\nSales of investments | 10,470 | 3,262\nOther, net | (12,949) | (6,209)\nNet cash used in investing | (41,965) | (34,559)\nEffect of foreign exchange rates on cash and cash equivalents | (49) | (92)\nNet change in cash and cash equivalents | (654) | (1,393)\nCash and cash equivalents, beginning of period | 20,935 | 30,242\nCash and cash equivalents, end of period | $20,281 | $28,849"
+  },
+  {
+   "id": "P96",
+   "kind": "text",
+   "text": "We have recast certain prior period amounts to conform to the current period presentation."
+  },
+  {
+   "id": "P97",
+   "kind": "text",
+   "text": "SEGMENT RESULTS"
+  },
+  {
+   "id": "P98",
+   "kind": "text",
+   "text": "(In millions) (Unaudited)"
+  },
+  {
+   "id": "P99",
+   "kind": "table",
+   "text": "Three Months Ended\nSeptember 30,\n2026 | 2025\nAgents and Infra\nRevenue | $76,795 | $61,672\nCost of revenue | 23,887 | 17,701\nOperating expenses | 12,350 | 11,253\nOperating income | $40,558 | $32,718\nDevices and Consumer\nRevenue | $15,484 | $16,001\nCost of revenue | 5,833 | 6,342\nOperating expenses | 4,294 | 4,416\nOperating income | $5,357 | $5,243\nTotal\nRevenue | $92,279 | $77,673\nCost of revenue | 29,720 | 24,043\nOperating expenses | 16,644 | 15,669\nOperating income | $45,915 | $37,961"
+  },
+  {
+   "id": "P100",
+   "kind": "text",
+   "text": "We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026."
+  },
+  {
+   "id": "P101",
+   "kind": "text",
+   "text": "PRODUCT AND SERVICE OFFERINGS REVENUE"
+  },
+  {
+   "id": "P102",
+   "kind": "text",
+   "text": "(In millions) (Unaudited)"
+  },
+  {
+   "id": "P103",
+   "kind": "table",
+   "text": "Three Months Ended\nSeptember 30,\n2026 | 2025\nAzure | $33,165 | $22,384\nMicrosoft 365 cloud | 27,778 | 23,694\nProductivity and server licensing | 8,407 | 8,678\nSearch and advertising | 6,554 | 5,942\nXBOX | 5,379 | 5,508\nIndustry solutions | 5,337 | 4,894\nWindows OEM and devices | 3,551 | 4,551\nFrontier and support services | 2,108 | 2,022\nTotal revenue | $92,279 | $77,673"
+  },
+  {
+   "id": "P104",
+   "kind": "text",
+   "text": "We have recast certain prior period amounts to conform to the way we internally manage and monitor our business, which reflects the fiscal year 2027 changes to our segments announced in September 2026."
+  }
+ ]
+}

@@ -16931,6 +16931,34 @@
      ]
     }
    },
+   "ResearchAndDevelopmentExpenseSoftwareExcludingAcquiredInProcessCost": {
+    "label": "Research and Development Expense, Software (Excluding Acquired in Process Cost)",
+    "description": "Research and development expense during the period related to the costs of developing and achieving technological feasibility of a computer software product to be sold, leased, or otherwise marketed.",
+    "units": {
+     "USD": [
+      {
+       "start": "2011-01-01",
+       "end": "2011-06-30",
+       "val": 0,
+       "accn": "0001193125-12-349586",
+       "fy": 2012,
+       "fp": "Q2",
+       "form": "10-Q",
+       "filed": "2012-08-10"
+      },
+      {
+       "start": "2012-01-01",
+       "end": "2012-06-30",
+       "val": 1100000,
+       "accn": "0001193125-12-349586",
+       "fy": 2012,
+       "fp": "Q2",
+       "form": "10-Q",
+       "filed": "2012-08-10"
+      }
+     ]
+    }
+   },
    "RevenueFromContractWithCustomerExcludingAssessedTax": {
     "label": "Revenue from Contract with Customer, Excluding Assessed Tax",
     "description": "Amount, excluding tax collected from customer, of revenue from satisfaction of performance obligation by transferring promised good or service to customer. Tax collected from customer is tax assessed by governmental authority that is both imposed on and concurrent with specific revenue-producing transaction, including, but not limited to, sales, use, value added and excise.",
