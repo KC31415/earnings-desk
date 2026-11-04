@@ -4,6 +4,7 @@ from __future__ import annotations
 from . import config
 from .note import LLM, anthropic_llm, generate_note
 from .press import paragraphs
+from .verify import verify_note
 from .sec import SECClient, filing_url, find_exhibit_991
 from .store import NoteStore
 
@@ -39,7 +40,11 @@ def press_release(company: dict, quarter_idx: int, client: SECClient | None = No
 def get_note(company: dict, quarter_idx: int, store: NoteStore | None = None) -> dict | None:
     store = store or NoteStore()
     accn = company["quarters"][quarter_idx]["sources"].get("earnings_8k_accn")
-    return store.get(company["ticker"], accn) if accn else None
+    note = store.get(company["ticker"], accn) if accn else None
+    if note and note.get("paragraphs"):
+        # Re-run the deterministic verifier on load, so verifier fixes apply to stored notes too.
+        note = dict(verify_note(note, company, note["paragraphs"]), raw_model_output=note.get("raw_model_output"))
+    return note
 
 
 def create_note(company: dict, quarter_idx: int, store: NoteStore | None = None, llm: LLM = anthropic_llm,

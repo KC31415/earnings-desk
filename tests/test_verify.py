@@ -173,3 +173,13 @@ def test_period_label_variants(crm):
     rev = q["metrics"]["revenue"]["value"]
     for label in (f"Q{qn} FY{fy % 100}", f"FY{fy} Q{qn}", q["period_end"]):
         assert status(numeric("revenue", label, f"{rev / 1e9:.2f}", "usd_billions"), crm)["status"] == "verified"
+
+
+def test_quote_must_appear_in_sentence(crm):
+    _, ps = crm
+    p = max((p for p in ps if p["kind"] == "text"), key=lambda p: len(p["text"]))
+    quote = " ".join(p["text"].split()[3:15])
+    claim = {"text": "Management sounded upbeat.", "claim_type": "quote", "metric": "", "period": "",
+             "value": quote, "unit": "", "source": {"type": "press_release", "ref": p["id"]}}
+    v = status(claim, crm)
+    assert v["status"] == "mismatch" and "paraphrases" in v["reason"]

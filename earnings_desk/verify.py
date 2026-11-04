@@ -183,7 +183,10 @@ def verify_claim(claim: dict, company: dict, paras: dict[str, str]) -> dict:
             res["reason"] = "empty quote"
         else:
             q = norm_text(value_str).strip('"').strip()
-            if q and q in norm_text(para):
+            if q and q not in norm_text(c.get("text", "")):
+                res.update(status="mismatch", method="exact_substring",
+                           reason="the sentence paraphrases instead of containing the quoted words")
+            elif q and q in norm_text(para):
                 res.update(status="verified", method="exact_substring", evidence={"paragraph": ref})
             else:
                 elsewhere = [pid for pid, t in paras.items() if q and q in norm_text(t)]

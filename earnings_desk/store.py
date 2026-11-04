@@ -34,9 +34,9 @@ def _secret(name: str) -> str | None:
 
 def daily_cap() -> int:
     try:
-        return int(_secret("NOTE_DAILY_CAP") or 20)
+        return int(_secret("NOTE_DAILY_CAP") or 5)
     except ValueError:
-        return 20
+        return 5
 
 
 class _Upstash:
