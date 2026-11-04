@@ -109,7 +109,23 @@ def test_quotes(crm):
     v = status(dict(claim, source={"type": "press_release", "ref": other["id"]}), crm)
     assert v["status"] == "mismatch" and p["id"] in v["reason"]
     altered = quote.replace(words[5], words[5] + "x", 1)
-    assert status(dict(claim, value=altered), crm)["status"] == "mismatch"
+    assert status(dict(claim, value=altered, text=f'Management said "{altered}".'), crm)["status"] == "mismatch"
+    # The quoted span shown to the reader is what counts, even if the value field has extra words.
+    assert status(dict(claim, value="Extra " + quote), crm)["status"] == "verified"
+
+
+def test_numeric_sentence_rounding_and_no_number(crm):
+    c, _ = crm
+    label = c["quarters"][-1]["fiscal_label"]
+    yoy, _, _ = actual_value(c, "revenue_yoy", label)
+    claim = numeric("revenue_yoy", label, f"{yoy:.2f}", "percent", text=f"Revenue grew {yoy:.0f}% year over year.")
+    v = status(claim, crm)
+    assert v["status"] == "verified" and v["checked_as_written"] == f"{yoy:.0f}"
+    wrong = numeric("revenue_yoy", label, f"{yoy:.2f}", "percent", text=f"Revenue grew {yoy + 3:.0f}% year over year.")
+    assert status(wrong, crm)["status"] == "mismatch"
+    no_num = dict(numeric("other", label, "456", "usd_millions", text="An acquisition contributed to revenue."),
+                  source={"type": "press_release", "ref": "P5"})
+    assert status(no_num, crm)["status"] == "sourced"
 
 
 def test_qualitative(crm):

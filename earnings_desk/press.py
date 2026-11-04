@@ -92,8 +92,16 @@ def paragraphs(html_text: str) -> list[dict]:
     p = _Parser()
     p.feed(html_text)
     p.close()
-    out = []
+    blocks: list[tuple[str, str]] = []
     for kind, text in p.blocks:
+        # Re-join sentences that the HTML split across blocks ("...guidance to a range of" + "$2.5 to $2.6 billion").
+        if (blocks and kind == "text" and blocks[-1][0] == "text" and not re.search(r"[.!?:;\"')\]]$", blocks[-1][1])
+                and re.match(r"[a-z$\d(]", text)):
+            blocks[-1] = ("text", blocks[-1][1] + " " + text)
+        else:
+            blocks.append((kind, text))
+    out = []
+    for kind, text in blocks:
         if kind == "text" and len(text) < 3:
             continue
         out.append({"id": f"P{len(out) + 1}", "kind": kind, "text": text})

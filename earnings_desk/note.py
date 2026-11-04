@@ -148,10 +148,10 @@ def metrics_block(company: dict, i: int) -> dict:
             if j is not None and k in cur and k in qs[j]["metrics"]:
                 pc = pct_change(cur[k]["value"], qs[j]["metrics"][k]["value"])
                 if pc is not None:
-                    computed[f"{k}_{kind}"] = round(pc * 100, 2)
+                    computed[f"{k}_{kind}"] = round(pc * 100, 4)
     for name, k in MARGIN_METRICS.items():
         if k in cur and "revenue" in cur and cur["revenue"]["value"]:
-            computed[name] = round(cur[k]["value"] / cur["revenue"]["value"] * 100, 2)
+            computed[name] = round(cur[k]["value"] / cur["revenue"]["value"] * 100, 4)
     return {"company": company["name"], "ticker": company["ticker"], "periods": periods,
             "computed_percent_for_current_quarter": computed, "metric_labels": {k: label(k) for k in METRIC_ORDER}}
 

@@ -48,6 +48,14 @@ def numbers_in(text: str) -> list[float]:
     return out
 
 
+def number_strings(text: str) -> list[str]:
+    """Numbers as written (unsigned, commas removed), ignoring labels like FY2026, Q3, 2026, 8-K."""
+    return [m.replace(",", "").lstrip("-") for m in _NUM_RE.findall(_LABEL_RE.sub(" ", norm_text(text)))]
+
+
+_QUOTED_RE = re.compile(r'"([^"]{8,}?)"')
+
+
 def _decimals(s: str) -> int:
     s = s.strip().replace(",", "")
     return len(s.split(".")[1]) if "." in s else 0
@@ -143,14 +151,31 @@ def verify_claim(claim: dict, company: dict, paras: dict[str, str]) -> dict:
     value_str = str(c.get("value") or "").strip()
     res: dict = {"status": "unsupported", "reason": "", "actual": None}
 
+    if ctype == "numeric" and not number_strings(c.get("text", "")):
+        # The sentence shows no number, so the reader sees a qualitative statement: check it as one.
+        ctype = "qualitative"
+        res["note"] = "numeric claim whose sentence contains no number; checked as qualitative"
+
     if ctype == "numeric":
         stated = _parse_value(value_str)
         unit = c.get("unit") or ""
+        shown = None
+        if stated is not None:
+            # Verify the number the reader actually sees: the structured value itself, or the sentence's
+            # rounding of it (e.g. value 105.85 written as "106%").
+            for t in number_strings(c.get("text", "")):
+                if abs(float(t) - abs(stated)) <= 0.5 * 10 ** (-_decimals(t)) + 1e-9:
+                    shown = t
+                    break
         if stated is None or unit not in UNIT_SCALE:
             res["reason"] = f"value '{value_str}' / unit '{unit}' is not a number with a known unit"
-        elif not any(abs(n - abs(stated)) < 1e-9 for n in numbers_in(c.get("text", ""))):
+        elif shown is None:
             res.update(status="mismatch", reason=f"sentence does not contain the structured value {value_str}")
         else:
+            if shown != value_str.replace(",", "").lstrip("-"):
+                res["checked_as_written"] = shown
+                stated = float(shown) * (-1 if stated < 0 else 1)
+                value_str = shown
             metric = c.get("metric") or ""
             actual, a_unit, ev = actual_value(company, metric, c.get("period", "")) if metric != "other" else (None, "", {})
             if actual is not None:
@@ -170,29 +195,37 @@ def verify_claim(claim: dict, company: dict, paras: dict[str, str]) -> dict:
                                reason="" if ok else ("sign/direction is wrong" if same_mag else
                                                      f"stated {value_str} {unit}, XBRL gives {_fmt(actual, a_unit, unit)}"))
             elif para is not None:
-                found = any(abs(n - abs(stated)) < 1e-9 for n in numbers_in(para))
+                scale = UNIT_SCALE[unit]
+                tol = _tolerance(value_str, scale)
+                # Same amount at any scale counts ("$2.58 billion" vs "2,580" in a table in millions).
+                scales = (1.0, 1e3, 1e6, 1e9) if unit.startswith("usd") and unit != "usd_per_share" else (scale,)
+                found = any(abs(n * s - abs(stated) * scale) <= tol for n in numbers_in(para) for s in scales)
                 res.update(status="verified" if found else "mismatch", method="press_release_text",
                            reason="" if found else f"{value_str} does not appear in {ref}",
                            evidence={"paragraph": ref, **({"xbrl_note": ev.get("error")} if ev.get("error") else {})})
             else:
                 res["reason"] = ev.get("error") or "no XBRL equivalent and no valid press-release paragraph cited"
     elif ctype == "quote":
+        text = norm_text(c.get("text", ""))
+        # What the reader sees is the quoted span(s) in the sentence; fall back to the value field.
+        spans = [m.strip().rstrip(".,;:").strip() for m in _QUOTED_RE.findall(text)]
+        q = norm_text(value_str).strip('"').strip()
+        if not spans and q and q in text:
+            spans = [q]
         if para is None:
             res["reason"] = f"cited paragraph '{ref}' does not exist"
-        elif not value_str:
-            res["reason"] = "empty quote"
+        elif not spans:
+            res.update(status="mismatch", method="exact_substring",
+                       reason="the sentence paraphrases instead of containing the quoted words")
         else:
-            q = norm_text(value_str).strip('"').strip()
-            if q and q not in norm_text(c.get("text", "")):
-                res.update(status="mismatch", method="exact_substring",
-                           reason="the sentence paraphrases instead of containing the quoted words")
-            elif q and q in norm_text(para):
-                res.update(status="verified", method="exact_substring", evidence={"paragraph": ref})
+            bad = [sp for sp in spans if sp not in norm_text(para)]
+            if not bad:
+                res.update(status="verified", method="exact_substring", evidence={"paragraph": ref, "spans": spans})
             else:
-                elsewhere = [pid for pid, t in paras.items() if q and q in norm_text(t)]
-                res.update(status="mismatch", method="exact_substring",
-                           reason=f"quote not found in {ref}" + (f" (found in {', '.join(elsewhere)})" if elsewhere else ""))
-    elif ctype == "qualitative":
+                elsewhere = sorted({pid for pid, t in paras.items() for sp in bad if sp in norm_text(t)})
+                res.update(status="mismatch", method="exact_substring", evidence={"paragraph": ref},
+                           reason=f"quoted words not found in {ref}" + (f" (found in {', '.join(elsewhere)})" if elsewhere else ""))
+    if ctype == "qualitative":
         if para is None:
             res["reason"] = f"cited paragraph '{ref}' does not exist" if ref else "no paragraph cited"
         else:
@@ -201,7 +234,7 @@ def verify_claim(claim: dict, company: dict, paras: dict[str, str]) -> dict:
                 res["reason"] = f"numbers {missing} in a qualitative claim are not in {ref}"
             else:
                 res.update(status="sourced", evidence={"paragraph": ref})
-    else:
+    elif ctype not in ("numeric", "quote"):
         res["reason"] = f"unknown claim_type '{ctype}'"
     c["verification"] = res
     return c
@@ -209,13 +242,31 @@ def verify_claim(claim: dict, company: dict, paras: dict[str, str]) -> dict:
 
 def _fmt(actual: float, a_unit: str, unit: str) -> str:
     if a_unit == "percent":
-        return f"{actual:.2f}%"
+        return f"{actual:.3f}%"
     scale = UNIT_SCALE.get(unit, 1.0)
     return f"{actual / scale:,.4g} {unit} ({actual:,.0f})"
 
 
+def _with_continuations(paragraphs: list[dict]) -> dict[str, str]:
+    """Paragraph id -> text, extended with following blocks that continue a broken sentence.
+
+    Notes stored before the splitter re-joined sentences can cite the first half of a sentence that the
+    HTML split in two; this lets them be checked against the whole sentence. New notes are unaffected.
+    """
+    out = {}
+    for i, p in enumerate(paragraphs):
+        text = p["text"]
+        j = i + 1
+        while (p["kind"] == "text" and j < len(paragraphs) and paragraphs[j]["kind"] == "text"
+               and not re.search(r"[.!?:;\"')\]]$", text) and re.match(r"[a-z$\d(]", paragraphs[j]["text"])):
+            text += " " + paragraphs[j]["text"]
+            j += 1
+        out[p["id"].upper()] = text
+    return out
+
+
 def verify_note(note: dict, company: dict, paragraphs: list[dict]) -> dict:
-    paras = {p["id"].upper(): p["text"] for p in paragraphs}
+    paras = _with_continuations(paragraphs)
     out = dict(note)
     out["sections"] = [dict(s, claims=[verify_claim(c, company, paras) for c in s.get("claims", [])])
                        for s in note.get("sections", [])]
@@ -228,7 +279,7 @@ def summarize(claims: list[dict]) -> dict:
     for c in claims:
         k = c["verification"]["status"]
         counts[k] = counts.get(k, 0) + 1
-    numeric = [c for c in claims if c.get("claim_type") == "numeric"]
+    numeric = [c for c in claims if c.get("claim_type") == "numeric" and not c["verification"].get("note")]
     nv = sum(c["verification"]["status"] == "verified" for c in numeric)
     return {"claims": len(claims), "by_status": counts, "numeric": len(numeric), "numeric_verified": nv,
             "numeric_verified_pct": (nv / len(numeric)) if numeric else None}
