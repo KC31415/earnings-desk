@@ -24,7 +24,10 @@ matters. This project measures how far that gets you.</p>
 </ol>
 
 <h2>Result 1: the numbers are almost always right</h2>
-<p><b>{{ r.numeric.verified_pct }}%</b> of {{ r.numeric.claims }} numeric claims matched the filings. That held across fiscal calendars
+{% set xb = r.numeric.by_source.xbrl %}{% set pr = r.numeric.by_source.press_release %}
+<p><b>{{ r.numeric.verified_pct }}%</b> of {{ r.numeric.claims }} numeric claims matched the filings: {{ xb.verified }} of {{ xb.claims }}
+({{ xb.verified_pct }}%) were recomputed from XBRL, and {{ pr.verified }} of {{ pr.claims }} figures with no XBRL equivalent (non-GAAP
+measures, guidance, customer counts) appear as stated in the press-release paragraph they cite, a weaker check. That held across fiscal calendars
 (January, April, June and November year-ends as well as December) and for derived fourth quarters
 ({{ q4.verified_pct }}% of {{ q4.claims }}), the numbers most likely to be wrong in the data layer. The
 {{ r.failures.get("rounding at the boundary", 0) }} misses are rounding at the edge, such as "21.9%" for a true 21.846%.</p>

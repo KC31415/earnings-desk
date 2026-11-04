@@ -5,7 +5,7 @@
 deliberately injected errors. Computed offline by <code>scripts/scorecard.py</code>; no AI is used to grade.</p>
 <div class="grid4">
   <div class="card tile"><div class="label">Company-quarters</div><div class="value">{{ r.company_quarters }}</div><div class="sub">{{ r.tickers|length }} tickers × last 5 quarters</div></div>
-  <div class="card tile"><div class="label">Numeric claims verified</div><div class="value">{{ r.numeric.verified_pct }}%</div><div class="sub">of {{ r.numeric.claims }} numeric claims</div></div>
+  <div class="card tile"><div class="label">Numeric claims verified</div><div class="value">{{ r.numeric.verified_pct }}%</div><div class="sub">of {{ r.numeric.claims }} numeric claims ({{ r.numeric.by_source.xbrl.verified }}/{{ r.numeric.by_source.xbrl.claims }} against XBRL, {{ r.numeric.by_source.press_release.verified }}/{{ r.numeric.by_source.press_release.claims }} against the cited press-release text)</div></div>
   <div class="card tile"><div class="label">Quotes matched verbatim</div><div class="value">{{ r.quote.match_pct }}%</div><div class="sub">of {{ r.quote.claims }} quotes</div></div>
   <div class="card tile"><div class="label">Injected errors caught</div><div class="value">{{ catch_pct }}</div><div class="sub">of {{ injected }} injected errors</div></div>
 </div>

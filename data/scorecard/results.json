@@ -22,7 +22,19 @@
  "numeric": {
   "claims": 734,
   "verified_pct": 99.6,
-  "mismatch_pct": 0.4
+  "mismatch_pct": 0.4,
+  "by_source": {
+   "xbrl": {
+    "claims": 497,
+    "verified": 494,
+    "verified_pct": 99.4
+   },
+   "press_release": {
+    "claims": 237,
+    "verified": 237,
+    "verified_pct": 100.0
+   }
+  }
  },
  "quote": {
   "claims": 70,

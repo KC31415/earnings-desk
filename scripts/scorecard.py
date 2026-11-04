@@ -31,13 +31,16 @@ def update_readme(res: dict) -> None:
     inj = res["injection"]
     injected = sum(r["injected"] for r in inj)
     caught = sum(r["caught"] for r in inj)
+    xb, pr = res["numeric"]["by_source"]["xbrl"], res["numeric"]["by_source"]["press_release"]
     lines = [
         f"Measured on **{res['company_quarters']} company-quarters** ({len(res['tickers'])} tickers, {res['claims']} claims):",
         "",
-        f"- **{res['numeric']['verified_pct']}%** of {res['numeric']['claims']} numeric claims verified against XBRL "
-        f"({res['numeric']['mismatch_pct']}% mismatched).",
+        f"- **{res['numeric']['verified_pct']}%** of {res['numeric']['claims']} numeric claims verified "
+        f"({res['numeric']['mismatch_pct']}% mismatched): {xb['verified']} of {xb['claims']} ({xb['verified_pct']}%) recomputed from XBRL, "
+        f"and {pr['verified']} of {pr['claims']} with no XBRL equivalent (non-GAAP figures, guidance, KPIs) found as stated "
+        f"in the cited press-release paragraph.",
         f"- **{res['quote']['match_pct']}%** of {res['quote']['claims']} quotes matched the press release word for word.",
-        f"- **{caught / injected:.1%}** of {injected} injected errors caught by the verifier "
+        f"- **{caught / injected:.1%}** of {injected} errors injected into verified claims caught by the verifier, a test of its own logic against the same XBRL data "
         f"(" + ", ".join(f"{r['error_type']} {r['caught']}/{r['injected']}" for r in inj) + ").",
         "- Failures: " + (", ".join(f"{k} ({v})" for k, v in res["failures"].items()) or "none") + ".",
         "",

@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import csv
 import json
 import shutil
 from datetime import datetime, timezone
@@ -251,6 +252,23 @@ def scorecard_charts(r: dict) -> dict:
 
 # ---------------------------------------------------------------- main
 
+def index_names() -> dict[str, str]:
+    """Ticker -> company name as the S&P 500 constituents list writes it ("Adobe Inc.")."""
+    path = config.DATA_DIR / "sp500" / "constituents.csv"
+    if not path.exists():
+        return {}
+    with path.open(newline="", encoding="utf-8") as f:
+        return {r["Symbol"].replace(".", "-"): r["Security"] for r in csv.DictReader(f)}
+
+
+def display_name(ticker: str, name: str, names: dict[str, str]) -> str:
+    """SEC registrant names are often all caps ("ADOBE INC.", "HUNT J B TRANSPORT SERVICES INC").
+    Show the index's mixed-case name instead when there is one; otherwise keep the SEC name."""
+    if name and name.isupper() and names.get(ticker):
+        return names[ticker]
+    return name
+
+
 def load_companies(sp500_limit: int = 0) -> tuple[dict[str, dict], set[str]]:
     companies = {}
     for t in config.SHOWCASE_TICKERS:
@@ -263,6 +281,9 @@ def load_companies(sp500_limit: int = 0) -> tuple[dict[str, dict], set[str]]:
         t = f.stem
         if t not in companies:
             companies[t] = json.loads(f.read_text())
+    names = index_names()
+    for t, c in companies.items():
+        c["name"] = display_name(t, c.get("name", ""), names)
     return companies, showcase
 
 
@@ -333,6 +354,8 @@ def build(out: Path, sp500_limit: int = 0) -> dict:
 
     # Landing
     p = panel()
+    names = index_names()
+    p["name"] = [display_name(t, n, names) for t, n in zip(p.ticker, p.name)]
     render("index.html", out / "index.html", "", title="Is AI eating software? What the filings say", active="home",
            description="Ten software and AI companies' SEC filings, aligned by calendar quarter, plus AI earnings notes verified by code.",
            n_companies=len(companies), cards=cards, sc=sc or {"company_quarters": 0, "numeric": {"verified_pct": "—"}},

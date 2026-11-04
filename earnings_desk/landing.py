@@ -70,8 +70,17 @@ def findings(p: pd.DataFrame) -> list[str]:
         b = d[d.calendar_label == end].revenue_yoy.median()
         if pd.notna(a) and pd.notna(b):
             verb = "accelerated" if b > a + 0.005 else "slowed" if b < a - 0.005 else "held steady"
+            # With 2-3 companies a median is one company, so show each one's change too.
+            each = []
+            for t in sorted(d.ticker.unique()):
+                ta = d[(d.ticker == t) & (d.calendar_label == start)].revenue_yoy
+                tb = d[(d.ticker == t) & (d.calendar_label == end)].revenue_yoy
+                if len(ta) and len(tb) and pd.notna(ta.iloc[0]) and pd.notna(tb.iloc[0]):
+                    each.append(f"{t} {ta.iloc[0]:.1%} → {tb.iloc[0]:.1%}")
+                else:
+                    each.append(t)
             out.append(f"**{grp}**: median revenue growth {verb}, from {a:.1%} YoY in {start} to {b:.1%} in {end} "
-                       f"({', '.join(sorted(d.ticker.unique()))}).")
+                       f"({'; '.join(each)}).")
     d = p[p.calendar_label == end]
     om = d.groupby("group")["Operating margin"].median()
     if GROUP_ORDER[0] in om and GROUP_ORDER[2] in om:

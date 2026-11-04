@@ -281,6 +281,18 @@ def hand_grade_summary(path: Path = HAND_GRADE_CSV) -> dict | None:
 
 # ---------------------------------------------------------------- all results
 
+def source_split(num: pd.DataFrame) -> dict:
+    """Numeric claims split by what they were checked against: XBRL values, or the text of the
+    cited press-release paragraph (non-GAAP figures, guidance, KPIs with no XBRL tag)."""
+    kind = num.source.fillna("").str.split(":").str[0].map(lambda k: "xbrl" if k == "xbrl" else "press_release")
+    out = {}
+    for k in ("xbrl", "press_release"):
+        g = num[kind == k]
+        out[k] = {"claims": int(len(g)), "verified": int((g.status == "verified").sum()),
+                  "verified_pct": round((g.status == "verified").mean() * 100, 1) if len(g) else None}
+    return out
+
+
 def compute(notes=None) -> dict:
     notes = notes if notes is not None else load_notes()
     df = claims_frame(notes)
@@ -296,7 +308,8 @@ def compute(notes=None) -> dict:
         "claims": int(len(df)),
         "status_counts": df.status.value_counts().to_dict(),
         "numeric": {"claims": int(len(num)), "verified_pct": round((num.status == "verified").mean() * 100, 1) if len(num) else None,
-                    "mismatch_pct": round((num.status == "mismatch").mean() * 100, 1) if len(num) else None},
+                    "mismatch_pct": round((num.status == "mismatch").mean() * 100, 1) if len(num) else None,
+                    "by_source": source_split(num)},
         "quote": {"claims": int(len(quotes)), "match_pct": round((quotes.status == "verified").mean() * 100, 1) if len(quotes) else None},
         "numeric_by_metric_type": rate_table(num, "metric_type"),
         "numeric_by_calendar": rate_table(num, "fye_group"),
