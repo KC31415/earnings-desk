@@ -1,0 +1,1455 @@
+{
+ "ticker": "DDOG",
+ "name": "Datadog, Inc.",
+ "fiscal_label": "FY2026 Q3",
+ "calendar_label": "CY2026 Q3",
+ "period_end": "2026-09-30",
+ "source": {
+  "earnings_8k_accn": "0001628280-26-069792",
+  "earnings_8k_date": "2026-11-04",
+  "filing_index": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/0001628280-26-069792-index.htm",
+  "periodic_filing": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026070292/ddog-20260930.htm",
+  "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/ex-991x20260930x8k.htm"
+ },
+ "generated_at": "2026-11-05T02:44:57+00:00",
+ "models": {
+  "extraction": "claude-haiku-5-5",
+  "note": "claude-sonnet-5-5"
+ },
+ "usage": [
+  {
+   "model": "claude-haiku-5-5",
+   "input_tokens": 12434,
+   "output_tokens": 99
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 10114,
+   "output_tokens": 2219
+  }
+ ],
+ "prompt_version": 2,
+ "paragraphs_sent": [
+  "P5",
+  "P6",
+  "P7",
+  "P9",
+  "P10",
+  "P12",
+  "P13",
+  "P14",
+  "P15",
+  "P16",
+  "P17",
+  "P19",
+  "P20",
+  "P21",
+  "P22",
+  "P24",
+  "P25",
+  "P26",
+  "P27",
+  "P28",
+  "P29",
+  "P30",
+  "P31",
+  "P32",
+  "P63",
+  "P77",
+  "P80",
+  "P84"
+ ],
+ "sections": [
+  {
+   "title": "What happened",
+   "claims": [
+    {
+     "text": "Datadog reported third quarter revenue of $1.197 billion.",
+     "claim_type": "numeric",
+     "metric": "revenue",
+     "period": "FY2026 Q3",
+     "value": "1.197",
+     "unit": "usd_billions",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 1197090000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 1197090000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP operating income was $74.7 million.",
+     "claim_type": "numeric",
+     "metric": "operating_income",
+     "period": "FY2026 Q3",
+     "value": "74.7",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 74706000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "operating_income",
+         "value": 74706000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "GAAP net income was $118.3 million.",
+     "claim_type": "numeric",
+     "metric": "net_income",
+     "period": "FY2026 Q3",
+     "value": "118.3",
+     "unit": "usd_millions",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 118316000.0,
+      "actual_unit": "usd",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "net_income",
+         "value": 118316000.0,
+         "concept": "NetIncomeLoss",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Diluted GAAP EPS was $0.32.",
+     "claim_type": "numeric",
+     "metric": "eps_diluted",
+     "period": "FY2026 Q3",
+     "value": "0.32",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "xbrl",
+      "ref": "EarningsPerShareDiluted"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 0.32,
+      "actual_unit": "usd_per_share",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "eps_diluted",
+         "value": 0.32,
+         "concept": "EarningsPerShareDiluted",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        }
+       ]
+      }
+     }
+    },
+    {
+     "text": "Non-GAAP operating income was $334 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "334",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P14"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P14"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What changed vs last quarter / last year",
+   "claims": [
+    {
+     "text": "Revenue grew 35.2% year over year.",
+     "claim_type": "numeric",
+     "metric": "revenue_yoy",
+     "period": "FY2026 Q3",
+     "value": "35.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 35.16498033649824,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 1197090000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "revenue",
+         "value": 885651000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Revenue rose 6.7% sequentially.",
+     "claim_type": "numeric",
+     "metric": "revenue_qoq",
+     "period": "FY2026 Q3",
+     "value": "6.7",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 6.744458533296951,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 1197090000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "revenue",
+         "value": 1121454000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001628280-26-054458",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2026 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "GAAP operating margin was 6.2%, versus a slight loss a year ago.",
+     "claim_type": "numeric",
+     "metric": "operating_margin",
+     "period": "FY2026 Q3",
+     "value": "6.2",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "OperatingIncomeLoss"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 6.24063353632559,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "operating_income",
+         "value": 74706000.0,
+         "concept": "OperatingIncomeLoss",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "revenue",
+         "value": 1197090000.0,
+         "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "operating_income / revenue \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Remaining performance obligations were up 38.0% year over year.",
+     "claim_type": "numeric",
+     "metric": "rpo_yoy",
+     "period": "FY2026 Q3",
+     "value": "38.0",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "RevenueRemainingPerformanceObligation"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 38.02912899985651,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "rpo",
+         "value": 3847700000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "rpo",
+         "value": 2787600000.0,
+         "concept": "RevenueRemainingPerformanceObligation",
+         "accn": "0001561550-25-000313",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "Operating cash flow rose 15.3% year over year.",
+     "claim_type": "numeric",
+     "metric": "operating_cash_flow_yoy",
+     "period": "FY2026 Q3",
+     "value": "15.3",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "NetCashProvidedByUsedInOperatingActivities"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 15.3024217600509,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "operating_cash_flow",
+         "value": 289951000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0001628280-26-070292",
+         "derived": true,
+         "derivation": "9M YTD \u2212 6M YTD"
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "operating_cash_flow",
+         "value": 251470000.0,
+         "concept": "NetCashProvidedByUsedInOperatingActivities",
+         "accn": "0001628280-26-070292",
+         "derived": true,
+         "derivation": "9M YTD \u2212 6M YTD"
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    },
+    {
+     "text": "R&D expense increased 22.3% year over year.",
+     "claim_type": "numeric",
+     "metric": "rnd_yoy",
+     "period": "FY2026 Q3",
+     "value": "22.3",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "ResearchAndDevelopmentExpense"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": 22.28657004542492,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "rnd",
+         "value": 491570000.0,
+         "concept": "ResearchAndDevelopmentExpense",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2025 Q3",
+         "period_end": "2025-09-30",
+         "metric": "rnd",
+         "value": 401982000.0,
+         "concept": "ResearchAndDevelopmentExpense",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2025 Q3 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "Management's explanation and guidance",
+   "claims": [
+    {
+     "text": "The CEO highlighted platform adoption as customers scale operations and AI use, saying \"We are seeing strong adoption across our platform as customers scale their digital operations and use of AI.\"",
+     "claim_type": "quote",
+     "metric": "",
+     "period": "",
+     "value": "We are seeing strong adoption across our platform as customers scale their digital operations and use of AI.",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P9"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "exact_substring",
+      "evidence": {
+       "paragraph": "P9",
+       "spans": [
+        "We are seeing strong adoption across our platform as customers scale their digital operations and use of AI"
+       ]
+      }
+     }
+    },
+    {
+     "text": "Management is developing specialized AI models, launching Scout 1.0, which now powers Bits Investigation.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P21"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P21"
+      }
+     }
+    },
+    {
+     "text": "Fourth quarter non-GAAP operating income guidance is a range of $280 million to $290 million.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "280",
+     "unit": "usd_millions",
+     "source": {
+      "type": "press_release",
+      "ref": "P27"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P27"
+      }
+     }
+    },
+    {
+     "text": "Full year 2026 revenue is guided to between $4.515 billion and $4.525 billion.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026",
+     "value": "4.515",
+     "unit": "usd_billions",
+     "source": {
+      "type": "press_release",
+      "ref": "P30"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P30"
+      }
+     }
+    },
+    {
+     "text": "Full year non-GAAP EPS is guided to $2.73 to $2.75.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026",
+     "value": "2.73",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "press_release",
+      "ref": "P32"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P32"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": "What to watch next quarter",
+   "claims": [
+    {
+     "text": "Fourth quarter revenue guidance of $1.19 billion to $1.20 billion implies flat to slightly lower sequential revenue, so watch the pace of usage growth.",
+     "claim_type": "qualitative",
+     "metric": "",
+     "period": "",
+     "value": "",
+     "unit": "",
+     "source": {
+      "type": "press_release",
+      "ref": "P26"
+     },
+     "verification": {
+      "status": "sourced",
+      "reason": "",
+      "actual": null,
+      "evidence": {
+       "paragraph": "P26"
+      }
+     }
+    },
+    {
+     "text": "Q4 non-GAAP EPS guidance low end is $0.69.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q4",
+     "value": "0.69",
+     "unit": "usd_per_share",
+     "source": {
+      "type": "press_release",
+      "ref": "P28"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P28"
+      }
+     }
+    },
+    {
+     "text": "Growth in larger customers is a key indicator, with about 4,860 customers at $100k+ ARR.",
+     "claim_type": "numeric",
+     "metric": "other",
+     "period": "FY2026 Q3",
+     "value": "4,860",
+     "unit": "count",
+     "source": {
+      "type": "press_release",
+      "ref": "P19"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": null,
+      "method": "press_release_text",
+      "evidence": {
+       "paragraph": "P19"
+      }
+     }
+    },
+    {
+     "text": "Deferred revenue declined 4.0% sequentially, which bears watching alongside billings.",
+     "claim_type": "numeric",
+     "metric": "deferred_revenue_qoq",
+     "period": "FY2026 Q3",
+     "value": "4.0",
+     "unit": "percent",
+     "source": {
+      "type": "xbrl",
+      "ref": "ContractWithCustomerLiabilityCurrent"
+     },
+     "verification": {
+      "status": "verified",
+      "reason": "",
+      "actual": -4.0069480605273995,
+      "actual_unit": "percent",
+      "method": "xbrl",
+      "evidence": {
+       "inputs": [
+        {
+         "period": "FY2026 Q3",
+         "period_end": "2026-09-30",
+         "metric": "deferred_revenue",
+         "value": 1235133000.0,
+         "concept": "ContractWithCustomerLiabilityCurrent",
+         "accn": "0001628280-26-070292",
+         "derived": false,
+         "derivation": null
+        },
+        {
+         "period": "FY2026 Q2",
+         "period_end": "2026-06-30",
+         "metric": "deferred_revenue",
+         "value": 1286690000.0,
+         "concept": "ContractWithCustomerLiabilityCurrent",
+         "accn": "0001628280-26-054458",
+         "derived": false,
+         "derivation": null
+        }
+       ],
+       "formula": "(FY2026 Q3 / FY2026 Q2 \u2212 1) \u00d7 100"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "claims": 20,
+  "by_status": {
+   "verified": 18,
+   "sourced": 2
+  },
+  "numeric": 17,
+  "numeric_verified": 17,
+  "numeric_verified_pct": 1.0
+ },
+ "raw_model_output": {
+  "sections": [
+   {
+    "title": "What happened",
+    "claims": [
+     {
+      "text": "Datadog reported third quarter revenue of $1.197 billion.",
+      "claim_type": "numeric",
+      "metric": "revenue",
+      "period": "FY2026 Q3",
+      "value": "1.197",
+      "unit": "usd_billions",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP operating income was $74.7 million.",
+      "claim_type": "numeric",
+      "metric": "operating_income",
+      "period": "FY2026 Q3",
+      "value": "74.7",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "GAAP net income was $118.3 million.",
+      "claim_type": "numeric",
+      "metric": "net_income",
+      "period": "FY2026 Q3",
+      "value": "118.3",
+      "unit": "usd_millions",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetIncomeLoss"
+      }
+     },
+     {
+      "text": "Diluted GAAP EPS was $0.32.",
+      "claim_type": "numeric",
+      "metric": "eps_diluted",
+      "period": "FY2026 Q3",
+      "value": "0.32",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "xbrl",
+       "ref": "EarningsPerShareDiluted"
+      }
+     },
+     {
+      "text": "Non-GAAP operating income was $334 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "334",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P14"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What changed vs last quarter / last year",
+    "claims": [
+     {
+      "text": "Revenue grew 35.2% year over year.",
+      "claim_type": "numeric",
+      "metric": "revenue_yoy",
+      "period": "FY2026 Q3",
+      "value": "35.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "Revenue rose 6.7% sequentially.",
+      "claim_type": "numeric",
+      "metric": "revenue_qoq",
+      "period": "FY2026 Q3",
+      "value": "6.7",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueFromContractWithCustomerExcludingAssessedTax"
+      }
+     },
+     {
+      "text": "GAAP operating margin was 6.2%, versus a slight loss a year ago.",
+      "claim_type": "numeric",
+      "metric": "operating_margin",
+      "period": "FY2026 Q3",
+      "value": "6.2",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "OperatingIncomeLoss"
+      }
+     },
+     {
+      "text": "Remaining performance obligations were up 38.0% year over year.",
+      "claim_type": "numeric",
+      "metric": "rpo_yoy",
+      "period": "FY2026 Q3",
+      "value": "38.0",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "RevenueRemainingPerformanceObligation"
+      }
+     },
+     {
+      "text": "Operating cash flow rose 15.3% year over year.",
+      "claim_type": "numeric",
+      "metric": "operating_cash_flow_yoy",
+      "period": "FY2026 Q3",
+      "value": "15.3",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "NetCashProvidedByUsedInOperatingActivities"
+      }
+     },
+     {
+      "text": "R&D expense increased 22.3% year over year.",
+      "claim_type": "numeric",
+      "metric": "rnd_yoy",
+      "period": "FY2026 Q3",
+      "value": "22.3",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "ResearchAndDevelopmentExpense"
+      }
+     }
+    ]
+   },
+   {
+    "title": "Management's explanation and guidance",
+    "claims": [
+     {
+      "text": "The CEO highlighted platform adoption as customers scale operations and AI use, saying \"We are seeing strong adoption across our platform as customers scale their digital operations and use of AI.\"",
+      "claim_type": "quote",
+      "metric": "",
+      "period": "",
+      "value": "We are seeing strong adoption across our platform as customers scale their digital operations and use of AI.",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P9"
+      }
+     },
+     {
+      "text": "Management is developing specialized AI models, launching Scout 1.0, which now powers Bits Investigation.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P21"
+      }
+     },
+     {
+      "text": "Fourth quarter non-GAAP operating income guidance is a range of $280 million to $290 million.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "280",
+      "unit": "usd_millions",
+      "source": {
+       "type": "press_release",
+       "ref": "P27"
+      }
+     },
+     {
+      "text": "Full year 2026 revenue is guided to between $4.515 billion and $4.525 billion.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026",
+      "value": "4.515",
+      "unit": "usd_billions",
+      "source": {
+       "type": "press_release",
+       "ref": "P30"
+      }
+     },
+     {
+      "text": "Full year non-GAAP EPS is guided to $2.73 to $2.75.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026",
+      "value": "2.73",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "press_release",
+       "ref": "P32"
+      }
+     }
+    ]
+   },
+   {
+    "title": "What to watch next quarter",
+    "claims": [
+     {
+      "text": "Fourth quarter revenue guidance of $1.19 billion to $1.20 billion implies flat to slightly lower sequential revenue, so watch the pace of usage growth.",
+      "claim_type": "qualitative",
+      "metric": "",
+      "period": "",
+      "value": "",
+      "unit": "",
+      "source": {
+       "type": "press_release",
+       "ref": "P26"
+      }
+     },
+     {
+      "text": "Q4 non-GAAP EPS guidance low end is $0.69.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q4",
+      "value": "0.69",
+      "unit": "usd_per_share",
+      "source": {
+       "type": "press_release",
+       "ref": "P28"
+      }
+     },
+     {
+      "text": "Growth in larger customers is a key indicator, with about 4,860 customers at $100k+ ARR.",
+      "claim_type": "numeric",
+      "metric": "other",
+      "period": "FY2026 Q3",
+      "value": "4,860",
+      "unit": "count",
+      "source": {
+       "type": "press_release",
+       "ref": "P19"
+      }
+     },
+     {
+      "text": "Deferred revenue declined 4.0% sequentially, which bears watching alongside billings.",
+      "claim_type": "numeric",
+      "metric": "deferred_revenue_qoq",
+      "period": "FY2026 Q3",
+      "value": "4.0",
+      "unit": "percent",
+      "source": {
+       "type": "xbrl",
+       "ref": "ContractWithCustomerLiabilityCurrent"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "paragraphs": [
+  {
+   "id": "P1",
+   "kind": "text",
+   "text": "EX-99.1 2 ex-991x20260930x8k.htm EX-99.1"
+  },
+  {
+   "id": "P2",
+   "kind": "text",
+   "text": "Exhibit 99.1"
+  },
+  {
+   "id": "P3",
+   "kind": "text",
+   "text": "Datadog Announces Third Quarter 2026 Financial Results"
+  },
+  {
+   "id": "P4",
+   "kind": "text",
+   "text": "November 4, 2026"
+  },
+  {
+   "id": "P5",
+   "kind": "text",
+   "text": "Third quarter revenue grew 35% year-over-year to $1.20 billion"
+  },
+  {
+   "id": "P6",
+   "kind": "text",
+   "text": "Robust growth of larger customers, with about 4,860 $100k+ ARR customers, up from about 4,060 a year ago"
+  },
+  {
+   "id": "P7",
+   "kind": "text",
+   "text": "Launched Scout 1.0, Datadog's first specialized model, now powering Bits Investigation"
+  },
+  {
+   "id": "P8",
+   "kind": "text",
+   "text": "NEW YORK-- Datadog, Inc. (NASDAQ:DDOG), the leading AI-powered observability and security platform, today announced financial results for its third quarter ended September 30, 2026."
+  },
+  {
+   "id": "P9",
+   "kind": "text",
+   "text": "\"Datadog delivered a strong third quarter, with 35% year-over-year revenue growth, $290 million in operating cash flow, and $251 million in free cash flow,\" said Olivier Pomel, co-founder and CEO of Datadog. \"We are seeing strong adoption across our platform as customers scale their digital operations and use of AI.\""
+  },
+  {
+   "id": "P10",
+   "kind": "text",
+   "text": "Pomel added, \"We are innovating rapidly, including developing specialized AI models through our AI Research team, to help customers manage growing complexity and move towards autonomous operations.\""
+  },
+  {
+   "id": "P11",
+   "kind": "text",
+   "text": "Third Quarter 2026 Financial Highlights:"
+  },
+  {
+   "id": "P12",
+   "kind": "text",
+   "text": "\u2022Revenue was $1.20 billion, an increase of 35% year-over-year."
+  },
+  {
+   "id": "P13",
+   "kind": "text",
+   "text": "\u2022GAAP operating income was $75 million; GAAP operating margin was 6%."
+  },
+  {
+   "id": "P14",
+   "kind": "text",
+   "text": "\u2022Non-GAAP operating income was $334 million; non-GAAP operating margin was 28%."
+  },
+  {
+   "id": "P15",
+   "kind": "text",
+   "text": "\u2022GAAP net income per diluted share was $0.32; non-GAAP net income per diluted share was $0.81."
+  },
+  {
+   "id": "P16",
+   "kind": "text",
+   "text": "\u2022Operating cash flow was $290 million, with free cash flow of $251 million."
+  },
+  {
+   "id": "P17",
+   "kind": "text",
+   "text": "\u2022Cash, cash equivalents, and marketable securities were $5.2 billion as of September 30, 2026."
+  },
+  {
+   "id": "P18",
+   "kind": "text",
+   "text": "Third Quarter & Recent Business Highlights:"
+  },
+  {
+   "id": "P19",
+   "kind": "text",
+   "text": "\u2022As of September 30, 2026, we had about 4,860 customers with ARR of $100,000 or more, an increase of 20% from about 4,060 as of September 30, 2025."
+  },
+  {
+   "id": "P20",
+   "kind": "text",
+   "text": "\u2022Earned a Leader designation in the 2026 Forrester Wave for AIOps Platforms, for the second consecutive year. Datadog received the highest scores possible in eleven criteria including Innovation, Roadmap, and AI Governance."
+  },
+  {
+   "id": "P21",
+   "kind": "text",
+   "text": "\u2022Introduced Scout 1.0, Datadog AI Research team's first specialized model for investigating production issues. Scout (in Preview) now powers Bits Investigation and achieves frontier-model performance at a fraction of the inference cost-enabling more frequent, earlier investigations that reduce on-call burden and accelerate incident response."
+  },
+  {
+   "id": "P22",
+   "kind": "text",
+   "text": "\u2022Recognized as the \"Company to Beat\" for observability platforms in Gartner's 2026 AI Vendor Race report, which assessed competitive positioning and market influence across the observability landscape."
+  },
+  {
+   "id": "P23",
+   "kind": "text",
+   "text": "Fourth Quarter and Full Year 2026 Outlook:"
+  },
+  {
+   "id": "P24",
+   "kind": "text",
+   "text": "Based on information as of today, November 4, 2026, Datadog is providing the following guidance:"
+  },
+  {
+   "id": "P25",
+   "kind": "text",
+   "text": "\u2022Fourth Quarter 2026 Outlook:"
+  },
+  {
+   "id": "P26",
+   "kind": "text",
+   "text": "\u25e6Revenue between $1.19 billion and $1.20 billion."
+  },
+  {
+   "id": "P27",
+   "kind": "text",
+   "text": "\u25e6Non-GAAP operating income between $280 million and $290 million."
+  },
+  {
+   "id": "P28",
+   "kind": "text",
+   "text": "\u25e6Non-GAAP net income per share between $0.69 and $0.71, assuming approximately 379 million weighted average diluted shares outstanding."
+  },
+  {
+   "id": "P29",
+   "kind": "text",
+   "text": "\u2022Full Year 2026 Outlook:"
+  },
+  {
+   "id": "P30",
+   "kind": "text",
+   "text": "\u25e6Revenue between $4.515 billion and $4.525 billion."
+  },
+  {
+   "id": "P31",
+   "kind": "text",
+   "text": "\u25e6Non-GAAP operating income between $1.095 billion and $1.105 billion."
+  },
+  {
+   "id": "P32",
+   "kind": "text",
+   "text": "\u25e6Non-GAAP net income per share between $2.73 and $2.75, assuming approximately 375 million weighted average diluted shares outstanding."
+  },
+  {
+   "id": "P33",
+   "kind": "text",
+   "text": "Datadog has not reconciled its expectations as to non-GAAP operating income, or as to non-GAAP net income per share, to their most directly comparable GAAP measure as a result of uncertainty regarding, and the potential variability of, reconciling items such as stock-based compensation and employer payroll taxes on equity incentive plans. Accordingly, reconciliation is not available without unreasonable effort, although it is important to note that these factors could be material to Datadog's results computed in accordance with GAAP."
+  },
+  {
+   "id": "P34",
+   "kind": "text",
+   "text": "Conference Call Details:"
+  },
+  {
+   "id": "P35",
+   "kind": "text",
+   "text": "\u2022What: Datadog financial results for the third quarter of 2026 and outlook for the fourth quarter and the full year 2026"
+  },
+  {
+   "id": "P36",
+   "kind": "text",
+   "text": "\u2022When: November 4, 2026 at 8:00 A.M. Eastern Time (5:00 A.M. Pacific Time)"
+  },
+  {
+   "id": "P37",
+   "kind": "text",
+   "text": "\u2022Dial in: To access the call in the U.S., please register here. Callers are encouraged to dial into the call 10 to 15 minutes prior to the start to prevent any delay in joining."
+  },
+  {
+   "id": "P38",
+   "kind": "text",
+   "text": "\u2022Webcast: https://investors.datadoghq.com (live and replay)"
+  },
+  {
+   "id": "P39",
+   "kind": "text",
+   "text": "\u2022Replay: A replay of the call will be archived on the investor relations website"
+  },
+  {
+   "id": "P40",
+   "kind": "text",
+   "text": "About Datadog"
+  },
+  {
+   "id": "P41",
+   "kind": "text",
+   "text": "Datadog is the leading observability and security platform for the AI era, providing businesses with unified visibility across the technology stack to manage complexity at scale. It brings applications, infrastructure, data, models, and security into one place, using AI to detect and resolve issues before they impact customers. Trusted globally by Fortune 500 companies and high-growth AI leaders, Datadog enables businesses to move faster with clarity and confidence."
+  },
+  {
+   "id": "P42",
+   "kind": "text",
+   "text": "Forward-Looking Statements"
+  },
+  {
+   "id": "P43",
+   "kind": "text",
+   "text": "This press release and the earnings call referencing this press release contain \"forward-looking\" statements, as that term is defined under the federal securities laws, including but not limited to statements regarding Datadog's strategy, product and platform capabilities, the growth in and ability to capitalize on long-term market opportunities including the pace and scope of cloud migration, digital transformation and AI deployment, gross margins, operating margins including with respect to sales and marketing, research and development expenses, net interest and other income, cash taxes, capital expenditures and capitalized software, and Datadog's future financial performance, including its outlook for the fourth quarter and the full year 2026 and related notes and assumptions. These forward-looking statements are based on Datadog's current assumptions, expectations and beliefs and are subject to substantial risks, uncertainties, assumptions and changes in circumstances that may cause Datadog's actual results, performance or achievements to differ materially from those expressed or implied in any forward-looking statement."
+  },
+  {
+   "id": "P44",
+   "kind": "text",
+   "text": "The risks and uncertainties referred to above include, but are not limited to (1) our recent rapid growth may not be indicative of our future growth; (2) our history of operating losses; (3) our limited operating history; (4) our dependence on existing customers purchasing additional subscriptions and products from us and renewing their subscriptions; (5) our ability to attract new customers; (6) our ability to effectively develop and expand our sales and marketing capabilities; (7) risk of a security breach; (8) risk of interruptions or performance problems associated with our products and platform capabilities; (9) our ability to adapt and respond to rapidly changing technology or customer needs; (10) the competitive markets in which we participate; (11) risks associated with successfully managing our growth; (12) risks associated with changing laws, regulations, and contractual obligations related to data privacy and security and (13) general market, political, economic, and business conditions including concerns about trade policies, tariffs, reduced economic growth and associated decreases in information technology spending. These risks and uncertainties are more fully described in our filings with the Securities and Exchange Commission (SEC), including in the section entitled \"Risk Factors\" in our Quarterly Report on Form 10-Q for the quarter ended June 30, 2026, filed with the SEC on August 6, 2026. Additional information will be made available in our Quarterly Report on Form 10-Q for the quarter ended"
+  },
+  {
+   "id": "P45",
+   "kind": "text",
+   "text": "September 30, 2026 and other filings and reports that we may file from time to time with the SEC. Moreover, we operate in a very competitive and rapidly changing environment. New risks emerge from time to time. It is not possible for our management to predict all risks, nor can we assess the impact of all factors on our business or the extent to which any factor, or combination of factors, may cause actual results to differ materially from those contained in any forward-looking statements we may make. In light of these risks, uncertainties and assumptions, we cannot guarantee future results, levels of activity, performance, achievements, or events and circumstances reflected in the forward-looking statements will occur. Forward-looking statements represent our beliefs and assumptions only as of the date of this press release. We disclaim any obligation to update forward-looking statements."
+  },
+  {
+   "id": "P46",
+   "kind": "text",
+   "text": "About Non-GAAP Financial Measures"
+  },
+  {
+   "id": "P47",
+   "kind": "text",
+   "text": "Datadog discloses the following non-GAAP financial measures in this release and the earnings call referencing this press release: non-GAAP gross profit, non-GAAP gross margin, non-GAAP operating expenses (research and development, sales and marketing and general and administrative), non-GAAP operating income (loss), non-GAAP operating margin, non-GAAP net income (loss), non-GAAP net income (loss) per diluted share, non-GAAP net income (loss) per basic share, free cash flow and free cash flow margin. Datadog uses each of these non-GAAP financial measures internally to understand and compare operating results across accounting periods, for internal budgeting and forecasting purposes, for short- and long-term operating plans, and to evaluate Datadog's financial performance. Datadog believes they are useful to investors, as a supplement to GAAP measures, in evaluating its operational performance, as further discussed below. Datadog's non-GAAP financial measures may not provide information that is directly comparable to that provided by other companies in its industry, as other companies in its industry may calculate non-GAAP financial results differently, particularly related to non-recurring and unusual items. In addition, there are limitations in using non-GAAP financial measures because the non-GAAP financial measures are not prepared in accordance with GAAP and may be different from non-GAAP financial measures used by other companies and exclude expenses that may have a material impact on Datadog's reported financial results."
+  },
+  {
+   "id": "P48",
+   "kind": "text",
+   "text": "Non-GAAP financial measures should not be considered in isolation from, or as a substitute for, financial information prepared in accordance with GAAP. A reconciliation of the historical non-GAAP financial measures to their most directly comparable GAAP measures has been provided in the financial statement tables included below in this press release."
+  },
+  {
+   "id": "P49",
+   "kind": "text",
+   "text": "Datadog defines non-GAAP gross profit, non-GAAP gross margin, non-GAAP operating expenses (research and development, sales and marketing and general and administrative), non-GAAP operating income (loss), non-GAAP operating margin and non-GAAP net income (loss) as the respective GAAP balances, adjusted for, as applicable: (1) stock-based compensation expense; (2) the amortization of acquired intangibles; (3) employer payroll taxes on employee stock transactions; (4) M&A transaction costs; (5) amortization of issuance costs; and (6) an assumed provision for income taxes based on our long-term projected tax rate. Non-GAAP financial measures prior to April 1, 2025 have not been adjusted for M&A transaction costs, as such costs were not material to our results of operations in such prior periods. Our estimated long-term projected tax rate is subject to change for a variety of reasons, including the rapidly evolving global tax environment, significant changes in Datadog's geographic earnings mix, or other changes to our strategy or business operations. We will re-evaluate our long-term projected tax rate as appropriate. Datadog defines free cash flow as net cash provided by operating activities, minus capital expenditures and minus capitalized software development costs, if any. Investors are encouraged to review the reconciliation of these historical non-GAAP financial measures to their most directly comparable GAAP financial measures."
+  },
+  {
+   "id": "P50",
+   "kind": "text",
+   "text": "Management believes these non-GAAP financial measures are useful to investors and others in assessing Datadog's operating performance due to the following factors:"
+  },
+  {
+   "id": "P51",
+   "kind": "text",
+   "text": "Stock-based compensation. Datadog utilizes stock-based compensation to attract and retain employees. It is principally aimed at aligning their interests with those of its stockholders and at long-term retention, rather than to address operational performance for any particular period. As a result, stock-based compensation expenses vary for reasons that are generally unrelated to financial and operational performance in any particular period."
+  },
+  {
+   "id": "P52",
+   "kind": "text",
+   "text": "Amortization of acquired intangibles. Datadog views amortization of acquired intangible assets as items arising from pre-acquisition activities determined at the time of an acquisition. While these intangible assets are evaluated for impairment regularly, amortization of the cost of acquired intangibles is an expense that is not typically affected by operations during any particular period."
+  },
+  {
+   "id": "P53",
+   "kind": "text",
+   "text": "Employer payroll taxes on employee stock transactions. Datadog excludes employer payroll tax expense on equity incentive plans as these expenses are tied to the exercise or vesting of underlying equity awards and the price of Datadog's common stock at the time of vesting or exercise. As a result, these taxes may vary in any particular period independent of the financial and operating performance of Datadog's business."
+  },
+  {
+   "id": "P54",
+   "kind": "text",
+   "text": "M&A transaction costs. Datadog views acquisition-related expenses, such as transaction costs, as costs that are not necessarily reflective of operational performance during a period. In particular, Datadog believes the consideration of measures that exclude such expenses can assist in the comparison of operational performance in different periods which may or may not include such expenses."
+  },
+  {
+   "id": "P55",
+   "kind": "text",
+   "text": "Amortization of issuance costs. In June 2020 and December 2024, Datadog issued $747.5 million of 0.125% convertible senior notes due 2025 and $1.0 billion of 0% convertible senior notes due 2029, respectively. Debt issuance costs, which reduce the carrying value of the convertible debt instrument, are amortized as interest expense over the term. The expense for the amortization of debt issuance costs is a non-cash item, and we believe the exclusion of this interest expense will provide for a more useful comparison of our operational performance in different periods."
+  },
+  {
+   "id": "P56",
+   "kind": "text",
+   "text": "Additionally, Datadog's management believes that the non-GAAP financial measure free cash flow is meaningful to investors because it is a measure of liquidity that provides useful information in understanding and evaluating the strength of our liquidity and future ability to generate cash that can be used for strategic opportunities or investing in our business. Free cash flow represents net cash provided by operating activities, reduced by capital expenditures and capitalized software development costs, if any. The reduction of capital expenditures and amounts capitalized for software development facilitates comparisons of Datadog's liquidity on a period-to-period basis and excludes items that management does not consider to be indicative of our liquidity."
+  },
+  {
+   "id": "P57",
+   "kind": "text",
+   "text": "Operating Metrics"
+  },
+  {
+   "id": "P58",
+   "kind": "text",
+   "text": "Datadog's number of customers with ARR of $100,000 or more is based on the ARR of each customer, as of the last month of the quarter."
+  },
+  {
+   "id": "P59",
+   "kind": "text",
+   "text": "We define the number of customers as the number of accounts with a unique account identifier for which we have an active subscription in the period indicated. Users of our free trials or tier are not included in our customer count. A single organization with multiple divisions, segments or subsidiaries is generally counted as a single customer. However, in some cases where they have separate billing terms, we may count separate divisions, segments or subsidiaries as multiple customers."
+  },
+  {
+   "id": "P60",
+   "kind": "text",
+   "text": "We define ARR as the annualized revenue run-rate of subscription agreements from all customers at a point in time. We calculate ARR by taking the monthly recurring revenue, or MRR, and multiplying it by 12. MRR for each month is calculated by aggregating, for all customers during that month, monthly revenue from committed contractual amounts, additional usage, usage from subscriptions for a committed contractual amount of usage that is delivered as used, and monthly subscriptions. ARR and MRR should be viewed independently of revenue, and do not represent our revenue under GAAP on a monthly or annualized basis, as they are operating metrics that can be impacted by contract start and end dates and renewal rates. ARR and MRR are not intended to be replacements or forecasts of revenue."
+  },
+  {
+   "id": "P61",
+   "kind": "text",
+   "text": "Datadog, Inc."
+  },
+  {
+   "id": "P62",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Operations (In thousands, except per share data; unaudited)"
+  },
+  {
+   "id": "P63",
+   "kind": "table",
+   "text": "Three Months EndedSeptember 30, | Nine Months EndedSeptember 30,\n2026 | 2025 | 2026 | 2025\nRevenue | $ | 1,197,090 | $ | 885,651 | $ | 3,324,970 | $ | 2,473,964\nCost of revenue (1)(2)(3) | 237,167 | 176,457 | 686,508 | 500,063\nGross profit | 959,923 | 709,194 | 2,638,462 | 1,973,901\nOperating expenses:\nResearch and development (1)(3) | 491,570 | 401,982 | 1,404,836 | 1,130,525\nSales and marketing (1)(2)(3) | 303,298 | 238,729 | 894,640 | 692,046\nGeneral and administrative (1)(3)(4) | 90,349 | 74,292 | 251,498 | 205,059\nTotal operating expenses | 885,217 | 715,003 | 2,550,974 | 2,027,630\nOperating income (loss) | 74,706 | (5,809) | 87,488 | (53,729)\nOther income:\nInterest expense (5) | (3,235) | (2,421) | (9,609) | (8,459)\nInterest income and other income, net | 53,108 | 43,897 | 157,363 | 135,739\nOther income, net | 49,873 | 41,476 | 147,754 | 127,280\nIncome before provision for income taxes | 124,579 | 35,667 | 235,242 | 73,551\nProvision for income taxes | 6,263 | 1,782 | 19,794 | 12,377\nNet income | $ | 118,316 | $ | 33,885 | $ | 215,448 | $ | 61,174\nNet income per share - basic | $ | 0.33 | $ | 0.10 | $ | 0.61 | $ | 0.18\nNet income per share - diluted | $ | 0.32 | $ | 0.10 | $ | 0.59 | $ | 0.18\nWeighted average shares used in calculating net income per share:\nBasic | 358,617 | 348,645 | 356,067 | 346,012\nDiluted | 375,014 | 362,001 | 371,363 | 361,905"
+  },
+  {
+   "id": "P64",
+   "kind": "table",
+   "text": "(1) Includes stock-based compensation expense as follows:\nCost of revenue | $ | 9,514 | $ | 8,038 | $ | 27,329 | $ | 21,472\nResearch and development | 146,376 | 124,288 | 401,729 | 342,468\nSales and marketing | 49,226 | 41,463 | 138,622 | 113,030\nGeneral and administrative | 32,065 | 26,769 | 86,594 | 68,315\nTotal | $ | 237,181 | $ | 200,558 | $ | 654,274 | $ | 545,285"
+  },
+  {
+   "id": "P65",
+   "kind": "table",
+   "text": "(2) Includes amortization of acquired intangibles as follows:\nCost of revenue | $ | 2,056 | $ | 1,451 | $ | 4,648 | $ | 3,863\nSales and marketing | 366 | 277 | 1,085 | 668\nTotal | $ | 2,422 | $ | 1,728 | $ | 5,733 | $ | 4,531"
+  },
+  {
+   "id": "P66",
+   "kind": "table",
+   "text": "(3) Includes employer payroll taxes on employee stock transactions as follows:\nCost of revenue | $ | 270 | $ | 169 | $ | 850 | $ | 520\nResearch and development | 13,522 | 8,177 | 46,009 | 29,578\nSales and marketing | 2,626 | 1,480 | 8,153 | 4,409\nGeneral and administrative | 2,443 | 1,061 | 8,488 | 6,010\nTotal | $ | 18,861 | $ | 10,887 | $ | 63,500 | $ | 40,517"
+  },
+  {
+   "id": "P67",
+   "kind": "table",
+   "text": "(4) Includes M&A transaction costs as follows:\nGeneral and administrative | $ | 1,119 | $ | - | $ | 3,823 | $ | 1,373\nTotal | $ | 1,119 | $ | - | $ | 3,823 | $ | 1,373"
+  },
+  {
+   "id": "P68",
+   "kind": "table",
+   "text": "(5) Includes amortization of issuance costs as follows:\nInterest expense | $ | 1,050 | $ | 1,046 | $ | 3,146 | $ | 4,556\nTotal | $ | 1,050 | $ | 1,046 | $ | 3,146 | $ | 4,556"
+  },
+  {
+   "id": "P69",
+   "kind": "text",
+   "text": "Datadog, Inc."
+  },
+  {
+   "id": "P70",
+   "kind": "text",
+   "text": "Condensed Consolidated Balance Sheets (In thousands; unaudited)"
+  },
+  {
+   "id": "P71",
+   "kind": "table",
+   "text": "September 30,2026 | December 31,2025\nASSETS\nCURRENT ASSETS:\nCash and cash equivalents | $ | 881,230 | $ | 401,305\nMarketable securities | 4,352,357 | 4,073,531\nAccounts receivable, net of allowance for credit losses of $29,260 and $19,292 as of September 30, 2026 and December 31, 2025, respectively | 793,977 | 741,262\nDeferred contract costs, current | 94,735 | 76,022\nPrepaid expenses and other current assets | 108,995 | 90,160\nTotal current assets | 6,231,294 | 5,382,280\nProperty and equipment, net | 438,173 | 338,093\nOperating lease assets | 229,256 | 214,674\nGoodwill | 706,644 | 530,568\nIntangible assets, net | 19,736 | 14,968\nDeferred contract costs, non-current | 157,958 | 126,708\nOther assets | 55,967 | 36,553\nTOTAL ASSETS | $ | 7,839,028 | $ | 6,643,844\nLIABILITIES AND STOCKHOLDERS' EQUITY\nCURRENT LIABILITIES:\nAccounts payable | $ | 266,417 | $ | 148,791\nAccrued expenses and other current liabilities | 228,610 | 209,595\nOperating lease liabilities, current | 46,177 | 39,369\nDeferred revenue, current | 1,235,133 | 1,193,646\nTotal current liabilities | 1,776,337 | 1,591,401\nOperating lease liabilities, non-current | 274,462 | 256,187\nConvertible senior notes, net, non-current | 986,595 | 983,449\nDeferred revenue, non-current | 65,081 | 68,711\nOther liabilities | 20,741 | 11,890\nTotal liabilities | 3,123,216 | 2,911,638\nSTOCKHOLDERS' EQUITY:\nCommon stock | 3 | 3\nAdditional paid-in capital | 4,383,737 | 3,579,010\nAccumulated other comprehensive (loss) income | (21,165) | 15,404\nRetained earnings | 353,237 | 137,789\nTotal stockholders' equity | 4,715,812 | 3,732,206\nTOTAL LIABILITIES AND STOCKHOLDERS' EQUITY | $ | 7,839,028 | $ | 6,643,844"
+  },
+  {
+   "id": "P72",
+   "kind": "text",
+   "text": "Datadog, Inc."
+  },
+  {
+   "id": "P73",
+   "kind": "text",
+   "text": "Condensed Consolidated Statements of Cash Flow (In thousands; unaudited)"
+  },
+  {
+   "id": "P74",
+   "kind": "table",
+   "text": "Three Months EndedSeptember 30, | Nine Months EndedSeptember 30,\n2026 | 2025 | 2026 | 2025\nCASH FLOWS FROM OPERATING ACTIVITIES:\nNet income | $ | 118,316 | $ | 33,885 | $ | 215,448 | $ | 61,174\nAdjustments to reconcile net income to net cash provided by operating activities:\nDepreciation and amortization | 20,790 | 15,048 | 58,202 | 39,125\nAccretion of discounts on marketable securities | (12,743) | (10,855) | (37,103) | (32,152)\nAmortization of issuance costs | 1,050 | 1,046 | 3,146 | 4,556\nAmortization of deferred contract costs | 23,827 | 17,231 | 66,229 | 48,061\nStock-based compensation, net of amounts capitalized | 237,181 | 200,558 | 654,274 | 545,285\nNon-cash lease expense | 9,749 | 9,060 | 28,339 | 26,450\nAllowance for credit losses on accounts receivable | 8,510 | 3,967 | 19,104 | 12,382\nLoss on disposal of property and equipment | 1,226 | 1,314 | 2,894 | 2,146\nChanges in operating assets and liabilities:\nAccounts receivable, net | 24,858 | 50,559 | (70,917) | 38,887\nDeferred contract costs | (44,141) | (32,718) | (116,191) | (78,538)\nPrepaid expenses and other current assets | (2,737) | (13,116) | (17,912) | (12,036)\nOther assets | (4,551) | (162) | (7,028) | (3,200)\nAccounts payable | (50,416) | (61,341) | 104,704 | 24,299\nAccrued expenses and other liabilities | (3,633) | 30,010 | (535) | 32,408\nDeferred revenue | (37,335) | 6,984 | 37,792 | 14,219\nNet cash provided by operating activities | 289,951 | 251,470 | 940,446 | 723,066\nCASH FLOWS FROM INVESTING ACTIVITIES:\nPurchases of marketable securities | (787,465) | (795,593) | (3,224,925) | (2,517,372)\nMaturities of marketable securities | 984,455 | 631,163 | 2,629,158 | 1,884,273\nProceeds from sale of marketable securities | (3) | (11) | 323,086 | 13,125\nPurchases of property and equipment | (10,872) | (16,786) | (32,119) | (40,686)\nCapitalized software development costs | (28,445) | (20,732) | (89,897) | (58,684)\nCash paid for acquisition of businesses; net of cash acquired | (3,299) | (192) | (115,609) | (117,282)\nNet cash provided by (used in) investing activities | 154,371 | (202,151) | (510,306) | (836,626)\nCASH FLOWS FROM FINANCING ACTIVITIES:\nProceeds from exercise of stock options | 2,368 | 1,271 | 14,833 | 4,629\nProceeds for issuance of common stock under the employee stock purchase plan | - | - | 39,067 | 28,578\nProceeds from issuance of 2029 Convertible Senior Notes, net of issuance costs | - | - | - | (190)\nRepayments of 2025 Convertible Senior Notes | - | - | - | (635,547)\nNet cash provided by (used in) financing activities | 2,368 | 1,271 | 53,900 | (602,530)\nEffect of exchange rate changes on cash and cash equivalents | (417) | 982 | (4,115) | 9,709\nNET INCREASE (DECREASE) IN CASH AND CASH EQUIVALENTS | 446,273 | 51,572 | 479,925 | (706,381)\nCASH AND CASH EQUIVALENTS-Beginning of period | 434,957 | 489,030 | 401,305 | 1,246,983\nCASH AND CASH EQUIVALENTS-End of period | $ | 881,230 | $ | 540,602 | $ | 881,230 | $ | 540,602"
+  },
+  {
+   "id": "P75",
+   "kind": "text",
+   "text": "Datadog, Inc."
+  },
+  {
+   "id": "P76",
+   "kind": "text",
+   "text": "Reconciliation from GAAP to Non-GAAP Results (In thousands; unaudited)"
+  },
+  {
+   "id": "P77",
+   "kind": "table",
+   "text": "Three Months EndedSeptember 30, | Nine Months EndedSeptember 30,\n2026 | 2025 | 2026 | 2025\nReconciliation of gross profit and gross margin\nGAAP gross profit | $ | 959,923 | $ | 709,194 | $ | 2,638,462 | $ | 1,973,901\nPlus: Stock-based compensation expense | 9,514 | 8,038 | 27,329 | 21,472\nPlus: Amortization of acquired intangibles | 2,056 | 1,451 | 4,648 | 3,863\nPlus: Employer payroll taxes on employee stock transactions | 270 | 169 | 850 | 520\nNon-GAAP gross profit | $ | 971,763 | $ | 718,852 | $ | 2,671,289 | $ | 1,999,756\nGAAP gross margin | 80% | 80% | 79% | 80%\nNon-GAAP gross margin | 81% | 81% | 80% | 81%\nReconciliation of operating expenses\nGAAP research and development | $ | 491,570 | $ | 401,982 | $ | 1,404,836 | $ | 1,130,525\nLess: Stock-based compensation expense | (146,376) | (124,288) | (401,729) | (342,468)\nLess: Employer payroll taxes on employee stock transactions | (13,522) | (8,177) | (46,009) | (29,578)\nNon-GAAP research and development | $ | 331,672 | $ | 269,517 | $ | 957,098 | $ | 758,479\nGAAP sales and marketing | $ | 303,298 | $ | 238,729 | $ | 894,640 | $ | 692,046\nLess: Stock-based compensation expense | (49,226) | (41,463) | (138,622) | (113,030)\nLess: Amortization of acquired intangibles | (366) | (277) | (1,085) | (668)\nLess: Employer payroll taxes on employee stock transactions | (2,626) | (1,480) | (8,153) | (4,409)\nNon-GAAP sales and marketing | $ | 251,080 | $ | 195,509 | $ | 746,780 | $ | 573,939\nGAAP general and administrative | $ | 90,349 | $ | 74,292 | $ | 251,498 | $ | 205,059\nLess: Stock-based compensation expense | (32,065) | (26,769) | (86,594) | (68,315)\nLess: Employer payroll taxes on employee stock transactions | (2,443) | (1,061) | (8,488) | (6,010)\nLess: M&A transaction costs | (1,119) | - | (3,823) | (1,373)\nNon-GAAP general and administrative | $ | 54,722 | $ | 46,462 | $ | 152,593 | $ | 129,361\nReconciliation of operating (loss) income and operating margin\nGAAP operating income (loss) | $ | 74,706 | $ | (5,809) | $ | 87,488 | $ | (53,729)\nPlus: Stock-based compensation expense | 237,181 | 200,558 | 654,274 | 545,285\nPlus: Amortization of acquired intangibles | 2,422 | 1,728 | 5,733 | 4,531\nPlus: Employer payroll taxes on employee stock transactions | 18,861 | 10,887 | 63,500 | 40,517\nPlus: M&A transaction costs | 1,119 | - | 3,823 | 1,373\nNon-GAAP operating income | $ | 334,289 | $ | 207,364 | $ | 814,818 | $ | 537,977\nGAAP operating margin | 6% | (1)% | 3% | (2)%\nNon-GAAP operating margin | 28% | 23% | 25% | 22%"
+  },
+  {
+   "id": "P78",
+   "kind": "text",
+   "text": "Datadog, Inc."
+  },
+  {
+   "id": "P79",
+   "kind": "text",
+   "text": "Reconciliation from GAAP to Non-GAAP Results (In thousands, except per share data; unaudited)"
+  },
+  {
+   "id": "P80",
+   "kind": "table",
+   "text": "Three Months EndedSeptember 30, | Nine Months EndedSeptember 30,\n2026 | 2025 | 2026 | 2025\nReconciliation of net income\nGAAP net income | $ | 118,316 | $ | 33,885 | $ | 215,448 | $ | 61,174\nPlus: Stock-based compensation expense | 237,181 | 200,558 | 654,274 | 545,285\nPlus: Amortization of acquired intangibles | 2,422 | 1,728 | 5,733 | 4,531\nPlus: Employer payroll taxes on employee stock transactions | 18,861 | 10,887 | 63,500 | 40,517\nPlus: M&A transaction costs | 1,119 | - | 3,823 | 1,373\nPlus: Amortization of issuance costs | 1,050 | 1,046 | 3,146 | 4,556\nNon-GAAP net income before non-GAAP tax adjustments | $ | 378,949 | $ | 248,104 | $ | 945,924 | $ | 657,436\nIncome tax effects and adjustments (1) | 74,632 | 50,694 | 183,006 | 128,284\nNon-GAAP net income after non-GAAP tax adjustments | $ | 304,317 | $ | 197,410 | $ | 762,918 | $ | 529,152\nNet income per share before non-GAAP tax adjustments - basic | $ | 1.06 | $ | 0.71 | $ | 2.66 | $ | 1.90\nNet income per share before non-GAAP tax adjustments - diluted | $ | 1.01 | $ | 0.69 | $ | 2.55 | $ | 1.82\nNet income per share after non-GAAP tax adjustments - basic | $ | 0.85 | $ | 0.57 | $ | 2.14 | $ | 1.53\nNet income per share after non-GAAP tax adjustments - diluted | $ | 0.81 | $ | 0.55 | $ | 2.05 | $ | 1.46\nShares used in non-GAAP net income per share calculations:\nBasic | 358,617 | 348,645 | 356,067 | 346,012\nDiluted | 375,014 | 362,001 | 371,363 | 361,905"
+  },
+  {
+   "id": "P81",
+   "kind": "text",
+   "text": "1)Non-GAAP financial information for the periods shown are adjusted for an assumed provision for income taxes based on our long-term projected tax rate of 21%. Due to the differences in the tax treatment of items excluded from non-GAAP earnings, our estimated tax rate on non-GAAP income may differ from our GAAP tax rate and from our actual tax liabilities."
+  },
+  {
+   "id": "P82",
+   "kind": "text",
+   "text": "Datadog, Inc."
+  },
+  {
+   "id": "P83",
+   "kind": "text",
+   "text": "Reconciliation of GAAP Cash Flow from Operating Activities to Free Cash Flow (In thousands; unaudited)"
+  },
+  {
+   "id": "P84",
+   "kind": "table",
+   "text": "Three Months EndedSeptember 30, | Nine Months EndedSeptember 30,\n2026 | 2025 | 2026 | 2025\nNet cash provided by operating activities | $ | 289,951 | $ | 251,470 | $ | 940,446 | $ | 723,066\nLess: Purchases of property and equipment | (10,872) | (16,786) | (32,119) | (40,686)\nLess: Capitalized software development costs | (28,445) | (20,732) | (89,897) | (58,684)\nFree cash flow | $ | 250,634 | $ | 213,952 | $ | 818,430 | $ | 623,696\nFree cash flow margin | 21% | 24% | 25% | 25%"
+  },
+  {
+   "id": "P85",
+   "kind": "text",
+   "text": "Contact Information"
+  },
+  {
+   "id": "P86",
+   "kind": "text",
+   "text": "AJ Ljubich"
+  },
+  {
+   "id": "P87",
+   "kind": "text",
+   "text": "Datadog Investor Relations"
+  },
+  {
+   "id": "P88",
+   "kind": "text",
+   "text": "IR@datadoghq.com"
+  },
+  {
+   "id": "P89",
+   "kind": "text",
+   "text": "Sabrina Morse"
+  },
+  {
+   "id": "P90",
+   "kind": "text",
+   "text": "Datadog Public Relations"
+  },
+  {
+   "id": "P91",
+   "kind": "text",
+   "text": "Press@datadoghq.com"
+  },
+  {
+   "id": "P92",
+   "kind": "text",
+   "text": "Datadog is a registered trademark of Datadog, Inc."
+  },
+  {
+   "id": "P93",
+   "kind": "text",
+   "text": "All product and company names herein may be trademarks of their registered owners."
+  }
+ ]
+}

@@ -7379,8 +7379,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7394,8 +7394,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "GrossProfit",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7409,8 +7409,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "OperatingIncomeLoss",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7424,8 +7424,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "NetIncomeLoss",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7439,8 +7439,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "EarningsPerShareDiluted",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7454,8 +7454,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "NetCashProvidedByUsedInOperatingActivities",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": true,
      "derivation": "9M YTD \u2212 6M YTD",
@@ -7467,7 +7467,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 723066000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "+"
       },
       {
@@ -7484,8 +7484,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": true,
      "derivation": "9M YTD \u2212 6M YTD",
@@ -7497,7 +7497,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 40686000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "+"
       },
       {
@@ -7514,8 +7514,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "(derived)",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": true,
      "derivation": "operating cash flow \u2212 capex",
@@ -7526,13 +7526,13 @@
       {
        "concept": "NetCashProvidedByUsedInOperatingActivities",
        "value": 251470000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "+"
       },
       {
        "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
        "value": 16786000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7542,8 +7542,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "ResearchAndDevelopmentExpense",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7557,8 +7557,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "SellingAndMarketingExpense",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7572,8 +7572,8 @@
      "end": "2025-09-30",
      "start": "2025-07-01",
      "concept": "ShareBasedCompensation",
-     "accn": "0001561550-25-000313",
-     "filed": "2025-11-07",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": true,
      "derivation": "9M YTD \u2212 6M YTD",
@@ -7585,7 +7585,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 545285000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "+"
       },
       {
@@ -7671,7 +7671,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 2473964000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7701,7 +7701,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 1973901000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7731,7 +7731,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": -53729000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7761,7 +7761,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 61174000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7791,7 +7791,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 723066000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7821,7 +7821,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 40686000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7879,7 +7879,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 1130525000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7909,7 +7909,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 692046000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7939,7 +7939,7 @@
        "start": "2025-01-01",
        "end": "2025-09-30",
        "value": 545285000.0,
-       "accn": "0001561550-25-000313",
+       "accn": "0001628280-26-070292",
        "sign": "-"
       }
      ]
@@ -7949,8 +7949,8 @@
      "end": "2025-12-31",
      "start": null,
      "concept": "ContractWithCustomerLiabilityCurrent",
-     "accn": "0001628280-26-054458",
-     "filed": "2026-08-06",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -7964,8 +7964,8 @@
      "end": "2025-12-31",
      "start": null,
      "concept": "RevenueRemainingPerformanceObligation",
-     "accn": "0001628280-26-054458",
-     "filed": "2026-08-06",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
      "form": "10-Q",
      "derived": false,
      "derivation": null,
@@ -8469,6 +8469,278 @@
      "derived": false,
      "derivation": null,
      "original_value": 3471400000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    }
+   }
+  },
+  {
+   "period_end": "2026-09-30",
+   "period_start": "2026-07-01",
+   "fiscal_year": 2026,
+   "fiscal_quarter": 3,
+   "fiscal_label": "FY2026 Q3",
+   "calendar_label": "CY2026 Q3",
+   "sources": {
+    "filing_form": "10-Q",
+    "filing_accn": "0001628280-26-070292",
+    "filing_date": "2026-11-04",
+    "filing_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026070292/ddog-20260930.htm",
+    "earnings_8k_accn": "0001628280-26-069792",
+    "earnings_8k_date": "2026-11-04",
+    "earnings_8k_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/0001628280-26-069792-index.htm"
+   },
+   "metrics": {
+    "revenue": {
+     "value": 1197090000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "RevenueFromContractWithCustomerExcludingAssessedTax",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1197090000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "gross_profit": {
+     "value": 959923000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "GrossProfit",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 959923000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "operating_income": {
+     "value": 74706000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "OperatingIncomeLoss",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 74706000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "net_income": {
+     "value": 118316000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "NetIncomeLoss",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 118316000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "eps_diluted": {
+     "value": 0.32,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "EarningsPerShareDiluted",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 0.32,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "operating_cash_flow": {
+     "value": 289951000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "NetCashProvidedByUsedInOperatingActivities",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": true,
+     "derivation": "9M YTD \u2212 6M YTD",
+     "original_value": 289951000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2026-01-01",
+       "end": "2026-09-30",
+       "value": 940446000.0,
+       "accn": "0001628280-26-070292",
+       "sign": "+"
+      },
+      {
+       "start": "2026-01-01",
+       "end": "2026-06-30",
+       "value": 650495000.0,
+       "accn": "0001628280-26-054458",
+       "sign": "-"
+      }
+     ]
+    },
+    "capex": {
+     "value": 10872000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": true,
+     "derivation": "9M YTD \u2212 6M YTD",
+     "original_value": 10872000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2026-01-01",
+       "end": "2026-09-30",
+       "value": 32119000.0,
+       "accn": "0001628280-26-070292",
+       "sign": "+"
+      },
+      {
+       "start": "2026-01-01",
+       "end": "2026-06-30",
+       "value": 21247000.0,
+       "accn": "0001628280-26-054458",
+       "sign": "-"
+      }
+     ]
+    },
+    "free_cash_flow": {
+     "value": 279079000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "(derived)",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": true,
+     "derivation": "operating cash flow \u2212 capex",
+     "original_value": null,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "concept": "NetCashProvidedByUsedInOperatingActivities",
+       "value": 289951000.0,
+       "accn": "0001628280-26-070292",
+       "sign": "+"
+      },
+      {
+       "concept": "PaymentsToAcquirePropertyPlantAndEquipment",
+       "value": 10872000.0,
+       "accn": "0001628280-26-070292",
+       "sign": "-"
+      }
+     ]
+    },
+    "rnd": {
+     "value": 491570000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "ResearchAndDevelopmentExpense",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 491570000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "sm": {
+     "value": 303298000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "SellingAndMarketingExpense",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 303298000.0,
+     "restated": false,
+     "partial": false,
+     "components": []
+    },
+    "sbc": {
+     "value": 237181000.0,
+     "end": "2026-09-30",
+     "start": "2026-07-01",
+     "concept": "ShareBasedCompensation",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": true,
+     "derivation": "9M YTD \u2212 6M YTD",
+     "original_value": 237181000.0,
+     "restated": false,
+     "partial": false,
+     "components": [
+      {
+       "start": "2026-01-01",
+       "end": "2026-09-30",
+       "value": 654274000.0,
+       "accn": "0001628280-26-070292",
+       "sign": "+"
+      },
+      {
+       "start": "2026-01-01",
+       "end": "2026-06-30",
+       "value": 417093000.0,
+       "accn": "0001628280-26-054458",
+       "sign": "-"
+      }
+     ]
+    },
+    "deferred_revenue": {
+     "value": 1235133000.0,
+     "end": "2026-09-30",
+     "start": null,
+     "concept": "ContractWithCustomerLiabilityCurrent",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 1235133000.0,
+     "restated": false,
+     "partial": true,
+     "components": []
+    },
+    "rpo": {
+     "value": 3847700000.0,
+     "end": "2026-09-30",
+     "start": null,
+     "concept": "RevenueRemainingPerformanceObligation",
+     "accn": "0001628280-26-070292",
+     "filed": "2026-11-04",
+     "form": "10-Q",
+     "derived": false,
+     "derivation": null,
+     "original_value": 3847700000.0,
      "restated": false,
      "partial": false,
      "components": []
